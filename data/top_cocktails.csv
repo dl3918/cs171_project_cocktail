@@ -1,0 +1,169 @@
+strDrink,strCategory,strGlass,strIngredients,strInstructions
+Alexander,Ordinary Drink,Cocktail Glass,Creme De Cacao White,Shake all ingredients with ice and strain contents into a cocktail glass. Sprinkle nutmeg on top and serve.
+Alexander,Ordinary Drink,Cocktail Glass,Gin,Shake all ingredients with ice and strain contents into a cocktail glass. Sprinkle nutmeg on top and serve.
+Alexander,Ordinary Drink,Cocktail Glass,Nutmeg,Shake all ingredients with ice and strain contents into a cocktail glass. Sprinkle nutmeg on top and serve.
+Alexander,Ordinary Drink,Cocktail Glass,Light Cream,Shake all ingredients with ice and strain contents into a cocktail glass. Sprinkle nutmeg on top and serve.
+Amaretto Sour,Ordinary Drink,Collins Glass,Sour Mix,Shake and strain. Garnish with a cherry and an orange slice.
+Amaretto Sour,Ordinary Drink,Collins Glass,Amaretto,Shake and strain. Garnish with a cherry and an orange slice.
+Americano,Ordinary Drink,Collins Glass,Lemon Peel,"Pour the Campari and vermouth over ice into glass, add a splash of soda water and garnish with half orange slice."
+Americano,Ordinary Drink,Collins Glass,Campari,"Pour the Campari and vermouth over ice into glass, add a splash of soda water and garnish with half orange slice."
+Americano,Ordinary Drink,Collins Glass,Orange Peel,"Pour the Campari and vermouth over ice into glass, add a splash of soda water and garnish with half orange slice."
+Americano,Ordinary Drink,Collins Glass,Sweet Vermouth Red,"Pour the Campari and vermouth over ice into glass, add a splash of soda water and garnish with half orange slice."
+Aviation,Cocktail,Cocktail Glass,Gin,Add all ingredients into cocktail shaker filled with ice. Shake well and strain into cocktail glass. Garnish with a cherry.
+Aviation,Cocktail,Cocktail Glass,Maraschino Liqueur,Add all ingredients into cocktail shaker filled with ice. Shake well and strain into cocktail glass. Garnish with a cherry.
+Aviation,Cocktail,Cocktail Glass,Lemon Juice,Add all ingredients into cocktail shaker filled with ice. Shake well and strain into cocktail glass. Garnish with a cherry.
+Baby Guinness,Shot,Shot Glass,Bailey'S Irish Cream,"Pour Kahlua, almost filling shot glass. Then, carefully pour Baileys, using wall of shot glass. This will give the ""Guinness"" its ""head""."
+Baby Guinness,Shot,Shot Glass,Kahlua,"Pour Kahlua, almost filling shot glass. Then, carefully pour Baileys, using wall of shot glass. This will give the ""Guinness"" its ""head""."
+Bramble,Ordinary Drink,Old-fashioned glass,Creme De Mure,"Fill glass with crushed ice. Build gin, lemon juice and simple syrup over. Stir, and then pour blackberry liqueur over in a circular fashion to create marbling effect. Garnish with two blackberries and lemon slice."
+Bramble,Ordinary Drink,Old-fashioned glass,Lemon Juice,"Fill glass with crushed ice. Build gin, lemon juice and simple syrup over. Stir, and then pour blackberry liqueur over in a circular fashion to create marbling effect. Garnish with two blackberries and lemon slice."
+Bramble,Ordinary Drink,Old-fashioned glass,Sugar Syrup,"Fill glass with crushed ice. Build gin, lemon juice and simple syrup over. Stir, and then pour blackberry liqueur over in a circular fashion to create marbling effect. Garnish with two blackberries and lemon slice."
+Bramble,Ordinary Drink,Old-fashioned glass,Gin,"Fill glass with crushed ice. Build gin, lemon juice and simple syrup over. Stir, and then pour blackberry liqueur over in a circular fashion to create marbling effect. Garnish with two blackberries and lemon slice."
+Caipirinha,Ordinary Drink,Old-fashioned glass,Cachaca,Place lime and sugar into old fashioned glass and muddle (mash the two ingredients together using a muddler or a wooden spoon). Fill the glass with ice and add the Cachaça.
+Caipirinha,Ordinary Drink,Old-fashioned glass,Sugar,Place lime and sugar into old fashioned glass and muddle (mash the two ingredients together using a muddler or a wooden spoon). Fill the glass with ice and add the Cachaça.
+Caipirinha,Ordinary Drink,Old-fashioned glass,Lime,Place lime and sugar into old fashioned glass and muddle (mash the two ingredients together using a muddler or a wooden spoon). Fill the glass with ice and add the Cachaça.
+Clover Club,Ordinary Drink,Cocktail Glass,Grenadine,"Dry shake ingredients to emulsify, add ice, shake and served straight up."
+Clover Club,Ordinary Drink,Cocktail Glass,Lemon,"Dry shake ingredients to emulsify, add ice, shake and served straight up."
+Clover Club,Ordinary Drink,Cocktail Glass,Egg White,"Dry shake ingredients to emulsify, add ice, shake and served straight up."
+Clover Club,Ordinary Drink,Cocktail Glass,Gin,"Dry shake ingredients to emulsify, add ice, shake and served straight up."
+Cosmopolitan,Cocktail,Cocktail Glass,Cranberry Juice,Add all ingredients into cocktail shaker filled with ice. Shake well and double strain into large cocktail glass. Garnish with lime wheel.
+Cosmopolitan,Cocktail,Cocktail Glass,Absolut Citron,Add all ingredients into cocktail shaker filled with ice. Shake well and double strain into large cocktail glass. Garnish with lime wheel.
+Cosmopolitan,Cocktail,Cocktail Glass,Cointreau,Add all ingredients into cocktail shaker filled with ice. Shake well and double strain into large cocktail glass. Garnish with lime wheel.
+Cosmopolitan,Cocktail,Cocktail Glass,Lime Juice,Add all ingredients into cocktail shaker filled with ice. Shake well and double strain into large cocktail glass. Garnish with lime wheel.
+Daiquiri,Ordinary Drink,Cocktail Glass,Lime,Pour all ingredients into shaker with ice cubes. Shake well. Strain in chilled cocktail glass.
+Daiquiri,Ordinary Drink,Cocktail Glass,Light Rum,Pour all ingredients into shaker with ice cubes. Shake well. Strain in chilled cocktail glass.
+Daiquiri,Ordinary Drink,Cocktail Glass,Sugar,Pour all ingredients into shaker with ice cubes. Shake well. Strain in chilled cocktail glass.
+Dirty Martini,Cocktail,Cocktail Glass,Lemon,"Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well.
+Rub the rim of a martini glass with the wedge of lemon.
+Strain the contents of the cocktail shaker into the glass and add the olive.
+A dirty Martini contains a splash of olive brine or olive juice and is typically garnished with an olive."
+Dirty Martini,Cocktail,Cocktail Glass,Dry Vermouth,"Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well.
+Rub the rim of a martini glass with the wedge of lemon.
+Strain the contents of the cocktail shaker into the glass and add the olive.
+A dirty Martini contains a splash of olive brine or olive juice and is typically garnished with an olive."
+Dirty Martini,Cocktail,Cocktail Glass,Olive,"Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well.
+Rub the rim of a martini glass with the wedge of lemon.
+Strain the contents of the cocktail shaker into the glass and add the olive.
+A dirty Martini contains a splash of olive brine or olive juice and is typically garnished with an olive."
+Dirty Martini,Cocktail,Cocktail Glass,Olive Brine,"Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well.
+Rub the rim of a martini glass with the wedge of lemon.
+Strain the contents of the cocktail shaker into the glass and add the olive.
+A dirty Martini contains a splash of olive brine or olive juice and is typically garnished with an olive."
+Dirty Martini,Cocktail,Cocktail Glass,Vodka,"Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well.
+Rub the rim of a martini glass with the wedge of lemon.
+Strain the contents of the cocktail shaker into the glass and add the olive.
+A dirty Martini contains a splash of olive brine or olive juice and is typically garnished with an olive."
+Espresso Martini,Cocktail,Cocktail Glass,Kahlua,"Pour ingredients into shaker filled with ice, shake vigorously, and strain into chilled martini glass"
+Espresso Martini,Cocktail,Cocktail Glass,Vodka,"Pour ingredients into shaker filled with ice, shake vigorously, and strain into chilled martini glass"
+Espresso Martini,Cocktail,Cocktail Glass,Sugar Syrup,"Pour ingredients into shaker filled with ice, shake vigorously, and strain into chilled martini glass"
+French 75,Ordinary Drink,Collins Glass,Orange,"Combine gin, sugar, and lemon juice in a cocktail shaker filled with ice. Shake vigorously and strain into a chilled champagne glass. Top up with Champagne. Stir gently."
+French 75,Ordinary Drink,Collins Glass,Champagne,"Combine gin, sugar, and lemon juice in a cocktail shaker filled with ice. Shake vigorously and strain into a chilled champagne glass. Top up with Champagne. Stir gently."
+French 75,Ordinary Drink,Collins Glass,Lemon Juice,"Combine gin, sugar, and lemon juice in a cocktail shaker filled with ice. Shake vigorously and strain into a chilled champagne glass. Top up with Champagne. Stir gently."
+French 75,Ordinary Drink,Collins Glass,Gin,"Combine gin, sugar, and lemon juice in a cocktail shaker filled with ice. Shake vigorously and strain into a chilled champagne glass. Top up with Champagne. Stir gently."
+French 75,Ordinary Drink,Collins Glass,Maraschino Cherry,"Combine gin, sugar, and lemon juice in a cocktail shaker filled with ice. Shake vigorously and strain into a chilled champagne glass. Top up with Champagne. Stir gently."
+French 75,Ordinary Drink,Collins Glass,Sugar,"Combine gin, sugar, and lemon juice in a cocktail shaker filled with ice. Shake vigorously and strain into a chilled champagne glass. Top up with Champagne. Stir gently."
+French Martini,Cocktail,Cocktail Glass,Vodka,Pour all ingredients into shaker with ice cubes. Shake well and strain into a chilled cocktail glass. Squeeze oil from lemon peel onto the drink.
+French Martini,Cocktail,Cocktail Glass,Raspberry Liqueur,Pour all ingredients into shaker with ice cubes. Shake well and strain into a chilled cocktail glass. Squeeze oil from lemon peel onto the drink.
+French Martini,Cocktail,Cocktail Glass,Pineapple Juice,Pour all ingredients into shaker with ice cubes. Shake well and strain into a chilled cocktail glass. Squeeze oil from lemon peel onto the drink.
+Godfather,Ordinary Drink,Old-fashioned glass,Scotch,Pour all ingredients directly into old fashioned glass filled with ice cubes. Stir gently.
+Godfather,Ordinary Drink,Old-fashioned glass,Amaretto,Pour all ingredients directly into old fashioned glass filled with ice cubes. Stir gently.
+Hemingway Special,Ordinary Drink,Cocktail Glass,Maraschino Liqueur,Pour all ingredients into a shaker with ice. Shake.
+Hemingway Special,Ordinary Drink,Cocktail Glass,Lime Juice,Pour all ingredients into a shaker with ice. Shake.
+Hemingway Special,Ordinary Drink,Cocktail Glass,Rum,Pour all ingredients into a shaker with ice. Shake.
+Hemingway Special,Ordinary Drink,Cocktail Glass,Grapefruit Juice,Pour all ingredients into a shaker with ice. Shake.
+Long Island Iced Tea,Ordinary Drink,Highball Glass,Gin,Mix all contents in a highball glass and sitr gently. Add dash of Coca-Cola for the coloring and garnish with lemon or lime twist.
+Long Island Iced Tea,Ordinary Drink,Highball Glass,Light Rum,Mix all contents in a highball glass and sitr gently. Add dash of Coca-Cola for the coloring and garnish with lemon or lime twist.
+Long Island Iced Tea,Ordinary Drink,Highball Glass,Vodka,Mix all contents in a highball glass and sitr gently. Add dash of Coca-Cola for the coloring and garnish with lemon or lime twist.
+Long Island Iced Tea,Ordinary Drink,Highball Glass,Coca-Cola,Mix all contents in a highball glass and sitr gently. Add dash of Coca-Cola for the coloring and garnish with lemon or lime twist.
+Long Island Iced Tea,Ordinary Drink,Highball Glass,Tequila,Mix all contents in a highball glass and sitr gently. Add dash of Coca-Cola for the coloring and garnish with lemon or lime twist.
+Long Island Iced Tea,Ordinary Drink,Highball Glass,Lemon Peel,Mix all contents in a highball glass and sitr gently. Add dash of Coca-Cola for the coloring and garnish with lemon or lime twist.
+Mai Tai,Ordinary Drink,Collins Glass,Cherry,Shake all ingredients with ice. Strain into glass. Garnish and serve with straw.
+Mai Tai,Ordinary Drink,Collins Glass,Orgeat Syrup,Shake all ingredients with ice. Strain into glass. Garnish and serve with straw.
+Mai Tai,Ordinary Drink,Collins Glass,Light Rum,Shake all ingredients with ice. Strain into glass. Garnish and serve with straw.
+Mai Tai,Ordinary Drink,Collins Glass,Sweet And Sour,Shake all ingredients with ice. Strain into glass. Garnish and serve with straw.
+Mai Tai,Ordinary Drink,Collins Glass,Triple Sec,Shake all ingredients with ice. Strain into glass. Garnish and serve with straw.
+Manhattan,Cocktail,Cocktail Glass,Maraschino Cherry,"Stirred over ice, strained into a chilled glass, garnished, and served up."
+Manhattan,Cocktail,Cocktail Glass,Bourbon Blended,"Stirred over ice, strained into a chilled glass, garnished, and served up."
+Manhattan,Cocktail,Cocktail Glass,Angostura Bitters,"Stirred over ice, strained into a chilled glass, garnished, and served up."
+Manhattan,Cocktail,Cocktail Glass,Sweet Vermouth,"Stirred over ice, strained into a chilled glass, garnished, and served up."
+Manhattan,Cocktail,Cocktail Glass,Orange Peel,"Stirred over ice, strained into a chilled glass, garnished, and served up."
+Margarita,Ordinary Drink,Cocktail Glass,Tequila,"Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass."
+Margarita,Ordinary Drink,Cocktail Glass,Triple Sec,"Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass."
+Margarita,Ordinary Drink,Cocktail Glass,Lime Juice,"Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass."
+Margarita,Ordinary Drink,Cocktail Glass,Salt,"Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass."
+Mojito,Cocktail,Highball Glass,Sugar,Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw.
+Mojito,Cocktail,Highball Glass,Mint,Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw.
+Mojito,Cocktail,Highball Glass,Lime,Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw.
+Mojito,Cocktail,Highball Glass,Soda Water,Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw.
+Mojito,Cocktail,Highball Glass,Light Rum,Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw.
+Moscow Mule,Punch / Party Drink,Copper Mug,Vodka,Combine vodka and ginger beer in a highball glass filled with ice. Add lime juice. Stir gently. Garnish.
+Moscow Mule,Punch / Party Drink,Copper Mug,Lime Juice,Combine vodka and ginger beer in a highball glass filled with ice. Add lime juice. Stir gently. Garnish.
+Moscow Mule,Punch / Party Drink,Copper Mug,Ginger Ale,Combine vodka and ginger beer in a highball glass filled with ice. Add lime juice. Stir gently. Garnish.
+Negroni,Ordinary Drink,Old-fashioned glass,Sweet Vermouth,"Stir into glass over ice, garnish and serve."
+Negroni,Ordinary Drink,Old-fashioned glass,Campari,"Stir into glass over ice, garnish and serve."
+Negroni,Ordinary Drink,Old-fashioned glass,Gin,"Stir into glass over ice, garnish and serve."
+New York Sour,Ordinary Drink,Whiskey sour glass,Blended Whiskey,"Shake blended whiskey, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass. Float claret on top. Decorate with the half-slice of lemon and the cherry and serve."
+New York Sour,Ordinary Drink,Whiskey sour glass,Cherry,"Shake blended whiskey, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass. Float claret on top. Decorate with the half-slice of lemon and the cherry and serve."
+New York Sour,Ordinary Drink,Whiskey sour glass,Sugar,"Shake blended whiskey, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass. Float claret on top. Decorate with the half-slice of lemon and the cherry and serve."
+New York Sour,Ordinary Drink,Whiskey sour glass,Lemon,"Shake blended whiskey, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass. Float claret on top. Decorate with the half-slice of lemon and the cherry and serve."
+New York Sour,Ordinary Drink,Whiskey sour glass,Red Wine,"Shake blended whiskey, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass. Float claret on top. Decorate with the half-slice of lemon and the cherry and serve."
+New York Sour,Ordinary Drink,Whiskey sour glass,Lemon,"Shake blended whiskey, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass. Float claret on top. Decorate with the half-slice of lemon and the cherry and serve."
+Old Fashioned,Cocktail,Old-fashioned glass,Angostura Bitters,"Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved.
+Fill the glass with ice cubes and add whiskey.
+
+Garnish with orange twist, and a cocktail cherry."
+Old Fashioned,Cocktail,Old-fashioned glass,Water,"Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved.
+Fill the glass with ice cubes and add whiskey.
+
+Garnish with orange twist, and a cocktail cherry."
+Old Fashioned,Cocktail,Old-fashioned glass,Bourbon,"Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved.
+Fill the glass with ice cubes and add whiskey.
+
+Garnish with orange twist, and a cocktail cherry."
+Old Fashioned,Cocktail,Old-fashioned glass,Sugar,"Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved.
+Fill the glass with ice cubes and add whiskey.
+
+Garnish with orange twist, and a cocktail cherry."
+Rum Sour,Ordinary Drink,Whiskey sour glass,Light Rum,"In a shaker half-filled with ice cubes, combine the rum, lemon juice, and sugar. Shake well. Strain into a sour glass and garnish with the orange slice and the cherry."
+Rum Sour,Ordinary Drink,Whiskey sour glass,Sugar,"In a shaker half-filled with ice cubes, combine the rum, lemon juice, and sugar. Shake well. Strain into a sour glass and garnish with the orange slice and the cherry."
+Rum Sour,Ordinary Drink,Whiskey sour glass,Lemon Juice,"In a shaker half-filled with ice cubes, combine the rum, lemon juice, and sugar. Shake well. Strain into a sour glass and garnish with the orange slice and the cherry."
+Rum Sour,Ordinary Drink,Whiskey sour glass,Maraschino Cherry,"In a shaker half-filled with ice cubes, combine the rum, lemon juice, and sugar. Shake well. Strain into a sour glass and garnish with the orange slice and the cherry."
+Rum Sour,Ordinary Drink,Whiskey sour glass,Orange,"In a shaker half-filled with ice cubes, combine the rum, lemon juice, and sugar. Shake well. Strain into a sour glass and garnish with the orange slice and the cherry."
+San Francisco,Ordinary Drink,Highball Glass,Creme De Banane,"Take a tall glass and put in a few ice cubes, fill the vodka over it and fill with juice then the ""creme"", to end fill in the grenadine but very carefully at the side of the glass so it will lay down in the bottom. garnish with orange and strawberry."
+San Francisco,Ordinary Drink,Highball Glass,Orange Juice,"Take a tall glass and put in a few ice cubes, fill the vodka over it and fill with juice then the ""creme"", to end fill in the grenadine but very carefully at the side of the glass so it will lay down in the bottom. garnish with orange and strawberry."
+San Francisco,Ordinary Drink,Highball Glass,Grenadine,"Take a tall glass and put in a few ice cubes, fill the vodka over it and fill with juice then the ""creme"", to end fill in the grenadine but very carefully at the side of the glass so it will lay down in the bottom. garnish with orange and strawberry."
+San Francisco,Ordinary Drink,Highball Glass,Vodka,"Take a tall glass and put in a few ice cubes, fill the vodka over it and fill with juice then the ""creme"", to end fill in the grenadine but very carefully at the side of the glass so it will lay down in the bottom. garnish with orange and strawberry."
+Sazerac,Ordinary Drink,Old-fashioned glass,Bourbon,"Rinse a chilled old-fashioned glass with the absinthe, add crushed ice, and set it aside. Stir the remaining ingredients over ice and set it aside. Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass. Add the lemon peel for garnish."
+Sazerac,Ordinary Drink,Old-fashioned glass,Ricard,"Rinse a chilled old-fashioned glass with the absinthe, add crushed ice, and set it aside. Stir the remaining ingredients over ice and set it aside. Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass. Add the lemon peel for garnish."
+Sazerac,Ordinary Drink,Old-fashioned glass,Water,"Rinse a chilled old-fashioned glass with the absinthe, add crushed ice, and set it aside. Stir the remaining ingredients over ice and set it aside. Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass. Add the lemon peel for garnish."
+Sazerac,Ordinary Drink,Old-fashioned glass,Lemon Peel,"Rinse a chilled old-fashioned glass with the absinthe, add crushed ice, and set it aside. Stir the remaining ingredients over ice and set it aside. Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass. Add the lemon peel for garnish."
+Sazerac,Ordinary Drink,Old-fashioned glass,Peychaud Bitters,"Rinse a chilled old-fashioned glass with the absinthe, add crushed ice, and set it aside. Stir the remaining ingredients over ice and set it aside. Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass. Add the lemon peel for garnish."
+Sazerac,Ordinary Drink,Old-fashioned glass,Sugar,"Rinse a chilled old-fashioned glass with the absinthe, add crushed ice, and set it aside. Stir the remaining ingredients over ice and set it aside. Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass. Add the lemon peel for garnish."
+Screaming Orgasm,Ordinary Drink,Cocktail Glass,Bailey'S Irish Cream,"Pour first vodka, then Bailey's, then Kahlua into a cocktail glass over crushed ice. Stir. Caution: use only high quality vodka. Cheap vodka can cause the Bailey's to curdle. Test your brand of vodka by mixing 1 Tsp each of vodka and Bailey's first."
+Screaming Orgasm,Ordinary Drink,Cocktail Glass,Kahlua,"Pour first vodka, then Bailey's, then Kahlua into a cocktail glass over crushed ice. Stir. Caution: use only high quality vodka. Cheap vodka can cause the Bailey's to curdle. Test your brand of vodka by mixing 1 Tsp each of vodka and Bailey's first."
+Screaming Orgasm,Ordinary Drink,Cocktail Glass,Vodka,"Pour first vodka, then Bailey's, then Kahlua into a cocktail glass over crushed ice. Stir. Caution: use only high quality vodka. Cheap vodka can cause the Bailey's to curdle. Test your brand of vodka by mixing 1 Tsp each of vodka and Bailey's first."
+Sidecar,Ordinary Drink,Cocktail Glass,Cognac,Pour all ingredients into cocktail shaker filled with ice. Shake well and strain into cocktail glass.
+Sidecar,Ordinary Drink,Cocktail Glass,Lemon Juice,Pour all ingredients into cocktail shaker filled with ice. Shake well and strain into cocktail glass.
+Sidecar,Ordinary Drink,Cocktail Glass,Cointreau,Pour all ingredients into cocktail shaker filled with ice. Shake well and strain into cocktail glass.
+Singapore Sling,Ordinary Drink,Hurricane glass,Grenadine,Pour all ingredients into cocktail shaker filled with ice cubes. Shake well. Strain into highball glass. Garnish with pineapple and cocktail cherry.
+Singapore Sling,Ordinary Drink,Hurricane glass,Cherry,Pour all ingredients into cocktail shaker filled with ice cubes. Shake well. Strain into highball glass. Garnish with pineapple and cocktail cherry.
+Singapore Sling,Ordinary Drink,Hurricane glass,Carbonated Water,Pour all ingredients into cocktail shaker filled with ice cubes. Shake well. Strain into highball glass. Garnish with pineapple and cocktail cherry.
+Singapore Sling,Ordinary Drink,Hurricane glass,Cherry Brandy,Pour all ingredients into cocktail shaker filled with ice cubes. Shake well. Strain into highball glass. Garnish with pineapple and cocktail cherry.
+Singapore Sling,Ordinary Drink,Hurricane glass,Sweet And Sour,Pour all ingredients into cocktail shaker filled with ice cubes. Shake well. Strain into highball glass. Garnish with pineapple and cocktail cherry.
+Singapore Sling,Ordinary Drink,Hurricane glass,Gin,Pour all ingredients into cocktail shaker filled with ice cubes. Shake well. Strain into highball glass. Garnish with pineapple and cocktail cherry.
+Tequila Sunrise,Cocktail,Highball Glass,Tequila,"Pour the tequila and orange juice into glass over ice. Add the grenadine, which will sink to the bottom. Stir gently to create the sunrise effect. Garnish and serve."
+Tequila Sunrise,Cocktail,Highball Glass,Orange Juice,"Pour the tequila and orange juice into glass over ice. Add the grenadine, which will sink to the bottom. Stir gently to create the sunrise effect. Garnish and serve."
+Tequila Sunrise,Cocktail,Highball Glass,Grenadine,"Pour the tequila and orange juice into glass over ice. Add the grenadine, which will sink to the bottom. Stir gently to create the sunrise effect. Garnish and serve."
+Tommy's Margarita,Ordinary Drink,Old-fashioned glass,Tequila,Shake and strain into a chilled cocktail glass.
+Tommy's Margarita,Ordinary Drink,Old-fashioned glass,Lime Juice,Shake and strain into a chilled cocktail glass.
+Tommy's Margarita,Ordinary Drink,Old-fashioned glass,Agave Syrup,Shake and strain into a chilled cocktail glass.
+Vesper,Cocktail,Cocktail Glass,Gin,"Shake over ice until well chilled, then strain into a deep goblet and garnish with a thin slice of lemon peel."
+Vesper,Cocktail,Cocktail Glass,Vodka,"Shake over ice until well chilled, then strain into a deep goblet and garnish with a thin slice of lemon peel."
+Vesper,Cocktail,Cocktail Glass,Lillet Blanc,"Shake over ice until well chilled, then strain into a deep goblet and garnish with a thin slice of lemon peel."
+Whiskey Sour,Ordinary Drink,Old-fashioned glass,Lemon,"Shake with ice. Strain into chilled glass, garnish and serve. If served 'On the rocks', strain ingredients into old-fashioned glass filled with ice."
+Whiskey Sour,Ordinary Drink,Old-fashioned glass,Lemon,"Shake with ice. Strain into chilled glass, garnish and serve. If served 'On the rocks', strain ingredients into old-fashioned glass filled with ice."
+Whiskey Sour,Ordinary Drink,Old-fashioned glass,Blended Whiskey,"Shake with ice. Strain into chilled glass, garnish and serve. If served 'On the rocks', strain ingredients into old-fashioned glass filled with ice."
+Whiskey Sour,Ordinary Drink,Old-fashioned glass,Cherry,"Shake with ice. Strain into chilled glass, garnish and serve. If served 'On the rocks', strain ingredients into old-fashioned glass filled with ice."
+Whiskey Sour,Ordinary Drink,Old-fashioned glass,Sugar,"Shake with ice. Strain into chilled glass, garnish and serve. If served 'On the rocks', strain ingredients into old-fashioned glass filled with ice."
+White Lady,Ordinary Drink,Cocktail Glass,Lemon Juice,Add all ingredients into cocktail shaker filled with ice. Shake well and strain into large cocktail glass.
+White Lady,Ordinary Drink,Cocktail Glass,Triple Sec,Add all ingredients into cocktail shaker filled with ice. Shake well and strain into large cocktail glass.
+White Lady,Ordinary Drink,Cocktail Glass,Gin,Add all ingredients into cocktail shaker filled with ice. Shake well and strain into large cocktail glass.
