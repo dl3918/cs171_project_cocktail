@@ -1,0 +1,496 @@
+[
+  {
+    "strDrink":"Alexander",
+    "strIngredients":[
+      "Creme De Cacao White",
+      "Gin",
+      "Nutmeg",
+      "Light Cream"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Gin"
+    ],
+    "rank":76
+  },
+  {
+    "strDrink":"Amaretto Sour",
+    "strIngredients":[
+      "Sour Mix",
+      "Amaretto"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur"
+    ],
+    "rank":4
+  },
+  {
+    "strDrink":"Americano",
+    "strIngredients":[
+      "Lemon Peel",
+      "Campari",
+      "Orange Peel",
+      "Sweet Vermouth Red"
+    ],
+    "Alc_type":[
+      "Campari",
+      "Vermouth"
+    ],
+    "rank":68
+  },
+  {
+    "strDrink":"Aviation",
+    "strIngredients":[
+      "Gin",
+      "Maraschino Liqueur",
+      "Lemon Juice"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Sweet Liqueur"
+    ],
+    "rank":15
+  },
+  {
+    "strDrink":"Baby Guinness",
+    "strIngredients":[
+      "Bailey'S Irish Cream",
+      "Kahlua"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur"
+    ],
+    "rank":31
+  },
+  {
+    "strDrink":"Bramble",
+    "strIngredients":[
+      "Creme De Mure",
+      "Lemon Juice",
+      "Sugar Syrup",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Gin"
+    ],
+    "rank":30
+  },
+  {
+    "strDrink":"Caipirinha",
+    "strIngredients":[
+      "Cachaca",
+      "Sugar",
+      "Lime"
+    ],
+    "Alc_type":[
+      "Cachaca"
+    ],
+    "rank":94
+  },
+  {
+    "strDrink":"Clover Club",
+    "strIngredients":[
+      "Grenadine",
+      "Lemon",
+      "Egg White",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "rank":38
+  },
+  {
+    "strDrink":"Cosmopolitan",
+    "strIngredients":[
+      "Cranberry Juice",
+      "Absolut Citron",
+      "Cointreau",
+      "Lime Juice"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Triple Sec"
+    ],
+    "rank":52
+  },
+  {
+    "strDrink":"Daiquiri",
+    "strIngredients":[
+      "Lime",
+      "Light Rum",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "rank":7
+  },
+  {
+    "strDrink":"Dirty Martini",
+    "strIngredients":[
+      "Lemon",
+      "Dry Vermouth",
+      "Olive",
+      "Olive Brine",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Vermouth",
+      "Vodka"
+    ],
+    "rank":79
+  },
+  {
+    "strDrink":"Espresso Martini",
+    "strIngredients":[
+      "Kahlua",
+      "Vodka",
+      "Sugar Syrup"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Vodka"
+    ],
+    "rank":3
+  },
+  {
+    "strDrink":"French 75",
+    "strIngredients":[
+      "Orange",
+      "Champagne",
+      "Lemon Juice",
+      "Gin",
+      "Maraschino Cherry",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Champagne",
+      "Gin"
+    ],
+    "rank":65
+  },
+  {
+    "strDrink":"French Martini",
+    "strIngredients":[
+      "Vodka",
+      "Raspberry Liqueur",
+      "Pineapple Juice"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Sweet Liqueur"
+    ],
+    "rank":11
+  },
+  {
+    "strDrink":"Godfather",
+    "strIngredients":[
+      "Scotch",
+      "Amaretto"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Sweet Liqueur"
+    ],
+    "rank":83
+  },
+  {
+    "strDrink":"Hemingway Special",
+    "strIngredients":[
+      "Maraschino Liqueur",
+      "Lime Juice",
+      "Rum",
+      "Grapefruit Juice"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Rum"
+    ],
+    "rank":59
+  },
+  {
+    "strDrink":"Long Island Iced Tea",
+    "strIngredients":[
+      "Gin",
+      "Light Rum",
+      "Vodka",
+      "Coca-Cola",
+      "Tequila",
+      "Lemon Peel"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Rum",
+      "Vodka",
+      "Tequila"
+    ],
+    "rank":58
+  },
+  {
+    "strDrink":"Mai Tai",
+    "strIngredients":[
+      "Cherry",
+      "Orgeat Syrup",
+      "Light Rum",
+      "Sweet And Sour",
+      "Triple Sec"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Triple Sec"
+    ],
+    "rank":32
+  },
+  {
+    "strDrink":"Manhattan",
+    "strIngredients":[
+      "Maraschino Cherry",
+      "Bourbon Blended",
+      "Angostura Bitters",
+      "Sweet Vermouth",
+      "Orange Peel"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Bitters",
+      "Vermouth"
+    ],
+    "rank":40
+  },
+  {
+    "strDrink":"Margarita",
+    "strIngredients":[
+      "Tequila",
+      "Triple Sec",
+      "Lime Juice",
+      "Salt"
+    ],
+    "Alc_type":[
+      "Tequila",
+      "Triple Sec"
+    ],
+    "rank":8
+  },
+  {
+    "strDrink":"Mojito",
+    "strIngredients":[
+      "Sugar",
+      "Mint",
+      "Lime",
+      "Soda Water",
+      "Light Rum"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "rank":55
+  },
+  {
+    "strDrink":"Moscow Mule",
+    "strIngredients":[
+      "Vodka",
+      "Lime Juice",
+      "Ginger Ale"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "rank":19
+  },
+  {
+    "strDrink":"Negroni",
+    "strIngredients":[
+      "Sweet Vermouth",
+      "Campari",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Vermouth",
+      "Campari",
+      "Gin"
+    ],
+    "rank":23
+  },
+  {
+    "strDrink":"New York Sour",
+    "strIngredients":[
+      "Blended Whiskey",
+      "Cherry",
+      "Sugar",
+      "Lemon",
+      "Red Wine"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Wine"
+    ],
+    "rank":80
+  },
+  {
+    "strDrink":"Old Fashioned",
+    "strIngredients":[
+      "Angostura Bitters",
+      "Water",
+      "Bourbon",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Bitters",
+      "Whisky"
+    ],
+    "rank":50
+  },
+  {
+    "strDrink":"Rum Sour",
+    "strIngredients":[
+      "Light Rum",
+      "Sugar",
+      "Lemon Juice",
+      "Maraschino Cherry",
+      "Orange"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "rank":57
+  },
+  {
+    "strDrink":"San Francisco",
+    "strIngredients":[
+      "Creme De Banane",
+      "Orange Juice",
+      "Grenadine",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Vodka"
+    ],
+    "rank":54
+  },
+  {
+    "strDrink":"Sazerac",
+    "strIngredients":[
+      "Bourbon",
+      "Ricard",
+      "Water",
+      "Lemon Peel",
+      "Peychaud Bitters",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Sweet Liqueur",
+      "Bitters"
+    ],
+    "rank":46
+  },
+  {
+    "strDrink":"Screaming Orgasm",
+    "strIngredients":[
+      "Bailey'S Irish Cream",
+      "Kahlua",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Vodka"
+    ],
+    "rank":14
+  },
+  {
+    "strDrink":"Sidecar",
+    "strIngredients":[
+      "Cognac",
+      "Lemon Juice",
+      "Cointreau"
+    ],
+    "Alc_type":[
+      "Brandy",
+      "Triple Sec"
+    ],
+    "rank":86
+  },
+  {
+    "strDrink":"Singapore Sling",
+    "strIngredients":[
+      "Grenadine",
+      "Cherry",
+      "Carbonated Water",
+      "Cherry Brandy",
+      "Sweet And Sour",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Brandy",
+      "Gin"
+    ],
+    "rank":21
+  },
+  {
+    "strDrink":"Tequila Sunrise",
+    "strIngredients":[
+      "Tequila",
+      "Orange Juice",
+      "Grenadine"
+    ],
+    "Alc_type":[
+      "Tequila"
+    ],
+    "rank":39
+  },
+  {
+    "strDrink":"Tommy's Margarita",
+    "strIngredients":[
+      "Tequila",
+      "Lime Juice",
+      "Agave Syrup"
+    ],
+    "Alc_type":[
+      "Tequila"
+    ],
+    "rank":44
+  },
+  {
+    "strDrink":"Vesper",
+    "strIngredients":[
+      "Gin",
+      "Vodka",
+      "Lillet Blanc"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Vodka",
+      "Sweet Liqueur"
+    ],
+    "rank":36
+  },
+  {
+    "strDrink":"Whiskey Sour",
+    "strIngredients":[
+      "Lemon",
+      "Blended Whiskey",
+      "Cherry",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Whisky"
+    ],
+    "rank":28
+  },
+  {
+    "strDrink":"White Lady",
+    "strIngredients":[
+      "Lemon Juice",
+      "Triple Sec",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Gin"
+    ],
+    "rank":25
+  }
+]
