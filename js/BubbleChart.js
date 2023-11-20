@@ -26,45 +26,48 @@ class BubbleChart {
 
     initVis() {
         console.log(this.data)
+        let vis = this;
         // dimensions and margins for the graph
-        this.width = 2000;
-        this.height = 1000;
+        vis.margin = {top: 10, right: 10, bottom: 10, left: 10};
+        vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
+        vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
 
         // create pack layout
-        this.pack = d3.pack()
-            .size([this.width, this.height])
+        vis.pack = d3.pack()
+            .size([vis.width, vis.height])
             .padding(5);
 
         // Create root node
-        this.root = d3.hierarchy({ children: this.data })
+        vis.root = d3.hierarchy({ children: vis.data })
             .sum(d => d.rank * 10);
 
         // Assign packed values to root
-        this.pack(this.root);
+        vis.pack(vis.root);
 
         // Create the SVG container
-        this.svg = d3.select(this.parentElement).append('svg')
-            .attr('width', this.width)
-            .attr('height', this.height)
+        vis.svg = d3.select("#" + vis.parentElement).append('svg')
+            .attr('width', vis.width)
+            .attr('height', vis.height)
             .attr('text-anchor', 'middle');
 
-        this.color = d3.scaleOrdinal(d3.schemeTableau10);
+        vis.color = d3.scaleOrdinal(d3.schemeTableau10);
 
         // Call function to draw bubbles
-        this.drawBubbles();
+        vis.drawBubbles();
     }
 
     drawBubbles() {
+        let vis = this;
 
-        const bubbles = this.svg.selectAll('g')
-            .data(this.root.children)
+        const bubbles = vis.svg.selectAll('g')
+            .data(vis.root.children)
             .enter().append('g')
             .attr('transform', d => `translate(${d.x},${d.y})`);
 
         // Draw circles for each node
         bubbles.append('circle')
             .attr('r', d => d.r)
-            .style('fill', d => this.color(d.data.strDrink))
+            .style('fill', d => vis.color(d.data.strDrink))
             // .style('fill', 'lightblue')
             .style('opacity', 0.7);
 

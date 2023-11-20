@@ -29,10 +29,17 @@ Promise.all(promises)
 let myNetworkVis;
 let myBubbleChart;
 let myAllBubbleChart;
+let myIconVis;
 
 function initMainPage(dataArray) {
-    // myNetworkVis = new NetworkVis('networkDiv', dataArray[0], dataArray[1]);
-    myBubbleChart = new BubbleChart('#bubbles', dataArray[2]);
-    myAllBubbleChart = new BubbleChart('#allDrink', dataArray[2], true);
+    myIconVis = new iconVis('icon-bottom-bar', dataArray[2])
+    myBubbleChart = new BubbleChart('bubbles', dataArray[2]);
+    myAllBubbleChart = new BubbleChart('allDrink', dataArray[2], true);
+    myNetworkVis = new NetworkVis('networkDiv', dataArray[0], dataArray[1]);
 
 }
+
+// Use d3.interval for periodic tasks
+let slideInterval = d3.interval(() => {
+    myIconVis.slideIcons(); // Call the method to slide icons
+}, 800);
