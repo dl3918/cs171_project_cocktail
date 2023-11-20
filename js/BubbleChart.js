@@ -1,17 +1,36 @@
 class BubbleChart {
-    constructor(parentElement, data) {
+    constructor(parentElement, data, allDrink= false) {
         this.parentElement = parentElement;
-        this.data = data;
+        this.allDrink = allDrink;
+        if (!this.allDrink){
+            this.data = this.processData(data); // new. if we want all drinks sized by popularity rank. do not process data
+        } else {
+            this.data = data;
+        }
         this.initVis();
+    }
+
+    processData(data) {
+        // Aggregate data by the first element of Alc_type
+        const counts = {};
+        data.forEach(d => {
+            const alcType = d.Alc_type[0];
+            counts[alcType] = (counts[alcType] || 0) + 1;
+        });
+
+        return Object.entries(counts).map(([alcType, count]) => ({
+            strDrink: alcType,
+            rank: count // Use count for sizing the bubbles
+        }));
     }
 
     initVis() {
         console.log(this.data)
-        // Set dimensions and margins for the graph
+        // dimensions and margins for the graph
         this.width = 2000;
         this.height = 1000;
 
-        // Create pack layout
+        // create pack layout
         this.pack = d3.pack()
             .size([this.width, this.height])
             .padding(5);
@@ -29,12 +48,14 @@ class BubbleChart {
             .attr('height', this.height)
             .attr('text-anchor', 'middle');
 
+        this.color = d3.scaleOrdinal(d3.schemeTableau10);
+
         // Call function to draw bubbles
         this.drawBubbles();
     }
 
     drawBubbles() {
-        // Draw the bubbles
+
         const bubbles = this.svg.selectAll('g')
             .data(this.root.children)
             .enter().append('g')
@@ -43,7 +64,8 @@ class BubbleChart {
         // Draw circles for each node
         bubbles.append('circle')
             .attr('r', d => d.r)
-            .style('fill', 'lightblue')
+            .style('fill', d => this.color(d.data.strDrink))
+            // .style('fill', 'lightblue')
             .style('opacity', 0.7);
 
         // Add labels

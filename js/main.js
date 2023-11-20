@@ -28,8 +28,11 @@ Promise.all(promises)
 
 let myNetworkVis;
 let myBubbleChart;
+let myAllBubbleChart;
 
 function initMainPage(dataArray) {
     // myNetworkVis = new NetworkVis('networkDiv', dataArray[0], dataArray[1]);
     myBubbleChart = new BubbleChart('#bubbles', dataArray[2]);
+    myAllBubbleChart = new BubbleChart('#allDrink', dataArray[2], true);
+
 }
