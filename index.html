@@ -62,6 +62,25 @@
         </div>
     </div>
 
+    <div class="section">
+        <div class = "container-fluid">
+            <h1 style="text-align: center"> All Cocktails </h1>
+            <div class ="row">
+                <select id='categorySelector' class="custom-select align-self-center" style="width: 50%" onchange="categoryChange()">
+                    <option value="strGlass">Glass type</option>
+                    <option value="strCategory">Drink Category</option>
+                    <option value="Alc_type">Alcohol type</option>
+                    <option value="Basic_taste">Basic taste</option>
+                </select>
+            </div>
+            <div class = "row" style="height: 90vh; padding: 0;">
+                <div class="col">
+                    <div id="all_drinks_enoch" style="height: 100%; width:100%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Network -->
     <div class="section" id="network-page">
         <div class="container-fluid" style="height: 100vh; padding-top: 2vh">
@@ -134,6 +153,7 @@
     <!-- own JS -->
     <script src="js/main.js"></script>
     <script src="js/BubbleChart.js"></script>
+    <script src="js/allBubbleChart.js"></script>
     <script src="js/networkVis.js"></script>
     <script src="js/iconVis.js"></script>
 </body>
