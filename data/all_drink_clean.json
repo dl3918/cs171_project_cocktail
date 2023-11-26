@@ -1,0 +1,7647 @@
+[
+  {
+    "strDrink":"1-900-FUK-MEUP",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Grand Marnier",
+      "Midori Melon Liqueur",
+      "Malibu Rum",
+      "Amaretto",
+      "Cranberry Juice",
+      "Pineapple Juice",
+      "Chambord Raspberry Liqueur",
+      "Absolut Kurant"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Sweet Liqueur",
+      "Rum",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Shake ingredients in a mixing tin filled with ice cubes. Strain into a rocks glass."
+  },
+  {
+    "strDrink":"151 Florida Bushwacker",
+    "strGlass":"Beer mug",
+    "strCategory":"Milk \/ Float \/ Shake",
+    "strIngredients":[
+      "Dark Creme De Cacao",
+      "Coconut Liqueur",
+      "Light Rum",
+      "Milk",
+      "Cointreau",
+      "Malibu Rum",
+      "Vanilla Ice-Cream",
+      "151 Proof Rum"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Sweet Liqueur",
+      "Rum",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Combine all ingredients. Blend until smooth. Garnish with chocolate shavings if desired."
+  },
+  {
+    "strDrink":"155 Belmont",
+    "strGlass":"White wine glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Light Rum",
+      "Orange Juice",
+      "Vodka",
+      "Dark Rum"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Blend with ice. Serve in a wine glass. Garnish with carrot."
+  },
+  {
+    "strDrink":"3-Mile Long Island Iced Tea",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Light Rum",
+      "Vodka",
+      "Coca-Cola",
+      "Sweet And Sour",
+      "Triple Sec",
+      "Bitters",
+      "Lemon",
+      "Gin",
+      "Tequila"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Vodka",
+      "Triple Sec",
+      "Bitters",
+      "Gin",
+      "Tequila"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Fill 14oz glass with ice and alcohol. Fill 2\/3 glass with cola and remainder with sweet & sour. Top with dash of bitters and lemon wedge."
+  },
+  {
+    "strDrink":"410 Gone",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Coca-Cola",
+      "Peach Vodka"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour 2oz Vodka into a low ball glass, top up with Coke."
+  },
+  {
+    "strDrink":"50\/50",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Orange Juice",
+      "Vanilla Vodka",
+      "Grand Marnier"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"fill glass with crushed ice. Add vodka. Add a splash of grand-marnier. Fill with o.j."
+  },
+  {
+    "strDrink":"501 Blue",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Sour Mix",
+      "Blueberry Schnapps",
+      "Blue Curacao",
+      "Vodka",
+      "7-Up"
+    ],
+    "Alc_type":[
+      "Schnapps",
+      "Triple Sec",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Mix equal amounts into a glass with ice."
+  },
+  {
+    "strDrink":"69 Special",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "7-Up",
+      "Gin Dry",
+      "Lemon Juice"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Pour 2 oz. gin. Add 4 oz. 7-up. Add Lemon Juice for flavor. If you are weak, top up glass with more 7-Up."
+  },
+  {
+    "strDrink":"9 1\/2 Weeks",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Orange Curacao",
+      "Strawberry Liqueur",
+      "Orange Juice",
+      "Absolut Citron"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Sweet Liqueur",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Combine all ingredients in glass mixer. Chill and strain into Cocktail glass. Garnish with sliced strawberry."
+  },
+  {
+    "strDrink":"A Day at the Beach",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Grenadine",
+      "Amaretto",
+      "Orange Juice",
+      "Coconut Rum"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Shake Rum, Amaretto, and Orange Juice in a shaker filled with ice. Strain over ice into a highball glass. Add Grenadine and garnish with a Pineapple Wedge and a Strawberry."
+  },
+  {
+    "strDrink":"A Furlong Too Late",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Ginger Beer",
+      "Lemon Peel",
+      "Light Rum"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Pour the rum and ginger beer into a highball glass almost filled with ice cubes. Stir well. Garnish with the lemon twist."
+  },
+  {
+    "strDrink":"A Gilligan's Island",
+    "strGlass":"Collins Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Peach Schnapps",
+      "Cranberry Juice",
+      "Orange Juice",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Schnapps",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Shaken, not stirred!"
+  },
+  {
+    "strDrink":"A Night In Old Mandalay",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Ginger Ale",
+      "Lemon Peel",
+      "Lemon Juice",
+      "A\u00f1ejo Rum",
+      "Light Rum",
+      "Orange Juice"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine the light rum, a\u00f1ejo rum, orange juice, and lemon juice. Shake well. Strain into a highball glass almost filled with ice cubes. Top with the ginger ale. Garnish with the lemon twist."
+  },
+  {
+    "strDrink":"A Piece of Ass",
+    "strGlass":"Highball Glass",
+    "strCategory":"Other\/Unknown",
+    "strIngredients":[
+      "Sour Mix",
+      "Amaretto",
+      "Southern Comfort"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Put ice in glass. Pour in shots. Fill with Sour Mix."
+  },
+  {
+    "strDrink":"A Splash of Nash",
+    "strGlass":"Highball Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Creme De Banane",
+      "Midori Melon Liqueur",
+      "Soda Water",
+      "Cranberry Juice"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Drop shot glass with banana & melon liquers into a 9 oz hi- ball glass containing soda water and cranberry juice. Drink in one shot."
+  },
+  {
+    "strDrink":"A True Amaretto Sour",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Lemon",
+      "Maraschino Cherry",
+      "Amaretto"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Rub the rim of an old fashioned glass with lemon, and dip repeatedly into granulated sugar until it has a good \"frosted\" rim. Shake a jigger of Amaretto with the juice of 1\/2 a lemon. Strain into glass and add ice. Garnish with a Marachino Cherry."
+  },
+  {
+    "strDrink":"A midsummernight dream",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Strawberries",
+      "Strawberry Liqueur",
+      "Kirschwasser",
+      "Schweppes Russchian",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Brandy",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "bitter"
+    ],
+    "strInstructions":"Mix the strawberrys in a blender Pour it together with the vodka,kirch and strawberry liquer over ice in a shaker. Shake well and pour in a highballglass. Fill up with the Russchian water"
+  },
+  {
+    "strDrink":"A. J.",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Grapefruit Juice",
+      "Applejack"
+    ],
+    "Alc_type":[
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "bitter"
+    ],
+    "strInstructions":"Shake ingredients with ice, strain into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"A.D.M. (After Dinner Mint)",
+    "strGlass":"Irish coffee cup",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Hot Chocolate",
+      "Southern Comfort",
+      "Vodka",
+      "White Creme De Menthe"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Vodka",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"shake vigorously"
+  },
+  {
+    "strDrink":"A1",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Grenadine",
+      "Gin",
+      "Lemon Juice",
+      "Grand Marnier"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Pour all ingredients into a cocktail shaker, mix and serve over ice into a chilled glass."
+  },
+  {
+    "strDrink":"AT&T",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Tonic Water",
+      "Gin",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "water"
+    ],
+    "strInstructions":"Pour Vodka and Gin over ice, add Tonic and Stir"
+  },
+  {
+    "strDrink":"Abbey Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Orange",
+      "Orange Bitters",
+      "Cherry",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Bitters",
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Shake all ingredients (except for the cherry) with ice and strain into a cocktail glass. Top with the cherry and serve."
+  },
+  {
+    "strDrink":"Abbey Martini",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Sweet Vermouth",
+      "Orange Juice",
+      "Angostura Bitters",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Vermouth",
+      "Bitters",
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Put all ingredients into a shaker and mix, then strain contents into a chilled cocktail glass."
+  },
+  {
+    "strDrink":"Abilene",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Peach Nectar",
+      "Orange Juice",
+      "Dark Rum"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour all of the ingredients into a highball glass almost filled with ice cubes. Stir well."
+  },
+  {
+    "strDrink":"Absolut Sex",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Midori Melon Liqueur",
+      "Sprite",
+      "Cranberry Juice",
+      "Absolut Kurant"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Shake Absolut Kurant, Midori, and Cranberry juice in shaker with ice: Strain into rocks glass: Splash of seven on top.Absolut Sex."
+  },
+  {
+    "strDrink":"Absolut Stress #2",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Pineapple Juice",
+      "Peach Schnapps",
+      "Coconut Liqueur",
+      "Cranberry Juice",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Schnapps",
+      "Sweet Liqueur",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Mix well. Garnish with Orange and Cherry. Enjoy"
+  },
+  {
+    "strDrink":"Absolut Summertime",
+    "strGlass":"Collins Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Absolut Citron",
+      "Sprite",
+      "Lemon",
+      "Sweet And Sour",
+      "Soda Water"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Add all ingredients except lemon to shaker filled with ice. Cover and shake vigorously. Strain contents into ice filled collins glass. Garnish with lemon."
+  },
+  {
+    "strDrink":"Absolut limousine",
+    "strGlass":"Collins Glass",
+    "strCategory":"Other\/Unknown",
+    "strIngredients":[
+      "Lime Juice",
+      "Tonic Water",
+      "Absolut Citron"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sour",
+      "water"
+    ],
+    "strInstructions":"Fill Absolut into a glass. Add Lime juice. Add Ice and lime wedges."
+  },
+  {
+    "strDrink":"Absolutely Cranberry Smash",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Ginger Ale",
+      "Cranberry Juice",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Stir ingredients together. Serve over ice."
+  },
+  {
+    "strDrink":"Absolutely Fabulous",
+    "strGlass":"Champagne Flute",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Champagne",
+      "Cranberry Juice",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Champagne",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Mix the Vodka and Cranberry juice together in a shaker and strain into a glass. Top up with Champagne."
+  },
+  {
+    "strDrink":"Absolutly Screwed Up",
+    "strGlass":"Collins Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Ginger Ale",
+      "Triple Sec",
+      "Absolut Citron",
+      "Orange Juice"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Shake it up it tasts better that way, but you can stir it if you want. 6 of those and you will be wasted for the rest of the night."
+  },
+  {
+    "strDrink":"Acapulco",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Mint",
+      "Egg White",
+      "Light Rum",
+      "Lime Juice",
+      "Triple Sec",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "mint",
+      "egg",
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Combine and shake all ingredients (except mint) with ice and strain into an old-fashioned glass over ice cubes. Add the sprig of mint and serve."
+  },
+  {
+    "strDrink":"Ace",
+    "strGlass":"Martini Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Milk",
+      "Grenadine",
+      "Egg White",
+      "Gin",
+      "Heavy Cream"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "cream",
+      "sweet",
+      "egg"
+    ],
+    "strInstructions":"Shake all the ingredients in a cocktail shaker and ice then strain in a cold glass."
+  },
+  {
+    "strDrink":"Adam",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon Juice",
+      "Dark Rum",
+      "Grenadine"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass."
+  },
+  {
+    "strDrink":"Adam & Eve",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Lemon Juice",
+      "Creme De Cassis",
+      "Cognac",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Brandy",
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Shake together all the ingredients and strain into a cold glass."
+  },
+  {
+    "strDrink":"Adam Bomb",
+    "strGlass":"Margarita glass",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Triple Sec",
+      "Salt",
+      "Fruit Juice",
+      "Vodka",
+      "Tequila",
+      "Rum"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Vodka",
+      "Tequila",
+      "Rum"
+    ],
+    "Basic_taste":[
+      "salty",
+      "sweet"
+    ],
+    "strInstructions":"Add ice to blender (or to glass if prefer on the rocks) then fruit, and fruite juice depending on personal prefference then add the Rum, Vodka, Tequila, and triple sec. blend till smooth, rim glass with sugar or salt and pour mixture in. garnish with lemon or lime slice."
+  },
+  {
+    "strDrink":"Adam Sunrise",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Water",
+      "Sugar",
+      "Lemonade",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "water",
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Fill blender up with ice. Fill half with Bartons Vodka. Put 10 tsp of sugar, add 1\/2 can lemonade concentrate, fill to top with water. Blend for 60 seconds."
+  },
+  {
+    "strDrink":"Addington",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Dry Vermouth",
+      "Soda Water",
+      "Sweet Vermouth"
+    ],
+    "Alc_type":[
+      "Vermouth"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Mix both the vermouth's in a shaker and strain into a cold glass. Top up with a squirt of Soda Water. "
+  },
+  {
+    "strDrink":"Addison Special",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Grenadine",
+      "Orange Juice",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Combine ingredients in the order listed into a shaker. Fill half full with ice and shake well. Strain into glass with ice and garnish with a cherry and orange wedge."
+  },
+  {
+    "strDrink":"Adios Amigos Cocktail",
+    "strGlass":"Martini Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Rum",
+      "Cognac",
+      "Lime Juice",
+      "Dry Vermouth",
+      "Sugar Syrup",
+      "Water",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Brandy",
+      "Vermouth",
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet",
+      "water"
+    ],
+    "strInstructions":"Shake together all the ingredients and strain into a cold glass."
+  },
+  {
+    "strDrink":"Affair",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Orange Juice",
+      "Cranberry Juice",
+      "Club Soda",
+      "Strawberry Schnapps"
+    ],
+    "Alc_type":[
+      "Schnapps"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Pour schnapps, orange juice, and cranberry juice over ice in a highball glass. Top with club soda and serve."
+  },
+  {
+    "strDrink":"After Dinner Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Apricot Brandy",
+      "Triple Sec",
+      "Lime"
+    ],
+    "Alc_type":[
+      "Brandy",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Shake all ingredients (except lime wedge) with ice and strain into a cocktail glass. Add the wedge of lime and serve."
+  },
+  {
+    "strDrink":"After Supper Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Triple Sec",
+      "Lemon Juice",
+      "Apricot Brandy"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Shake all ingredients with ice, strain into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"After sex",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Orange Juice",
+      "Vodka",
+      "Creme De Banane"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour the vodka and creme over some ice cubes in a tall glass and fill up with juice. to make it beuty full make the top of the glass with a grenadine and sugar"
+  },
+  {
+    "strDrink":"Afternoon",
+    "strGlass":"Collins Glass",
+    "strCategory":"Coffee \/ Tea",
+    "strIngredients":[
+      "Kahlua",
+      "Cream",
+      "Frangelico",
+      "Coffee",
+      "Bailey'S Irish Cream"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "cream",
+      "bitter"
+    ],
+    "strInstructions":"Build into a suiting glass, with no ice. Cream on top if wanted. Served directly."
+  },
+  {
+    "strDrink":"Alabama Slammer",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Southern Comfort",
+      "Sloe Gin",
+      "Lemon Juice",
+      "Amaretto"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Gin",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Pour all ingredients (except for lemon juice) over ice in a highball glass. Stir, add a dash of lemon juice, and serve."
+  },
+  {
+    "strDrink":"Alaska Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Orange Bitters",
+      "Gin",
+      "Lemon Peel",
+      "Yellow Chartreuse"
+    ],
+    "Alc_type":[
+      "Bitters",
+      "Gin",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Stir all ingredients with ice, strain contents into a cocktail glass. Drop in a twist of lemon and serve."
+  },
+  {
+    "strDrink":"Alexander",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Creme De Cacao White",
+      "Gin",
+      "Nutmeg",
+      "Light Cream"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Gin"
+    ],
+    "Basic_taste":[
+      "spicy",
+      "cream"
+    ],
+    "strInstructions":"Shake all ingredients with ice and strain contents into a cocktail glass. Sprinkle nutmeg on top and serve."
+  },
+  {
+    "strDrink":"Alfie Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon Vodka",
+      "Triple Sec",
+      "Pineapple Juice"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Combine and shake all ingredients with ice, strain into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Algonquin",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Blended Whiskey",
+      "Dry Vermouth",
+      "Pineapple Juice"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Vermouth"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Combine and shake all ingredients with ice, strain contents into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Allegheny",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon Peel",
+      "Bourbon",
+      "Lemon Juice",
+      "Blackberry Brandy",
+      "Dry Vermouth"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Brandy",
+      "Vermouth"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Shake all ingredients (except lemon peel) with ice and strain into a cocktail glass. Top with the twist of lemon peel and serve."
+  },
+  {
+    "strDrink":"Allies Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Kummel",
+      "Dry Vermouth",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Vermouth",
+      "Gin"
+    ],
+    "Basic_taste":[
+      "spicy"
+    ],
+    "strInstructions":"Stir all ingredients with ice, strain contents into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Almeria",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Dark Rum",
+      "Egg White",
+      "Kahlua"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "egg"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass."
+  },
+  {
+    "strDrink":"Almond Chocolate Coffee",
+    "strGlass":"Coffee Mug",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Dark Creme De Cacao",
+      "Coffee",
+      "Amaretto"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "bitter"
+    ],
+    "strInstructions":"Pour in order into coffee cup. Top with whipped creme and chocolate shcvings."
+  },
+  {
+    "strDrink":"Almond Joy",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Light Cream",
+      "Creme De Cacao White",
+      "Amaretto"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Shake all ingredients with ice, strain into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Amaretto And Cream",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Amaretto",
+      "Light Cream"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Shake well with cracked ice, strain contents into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Amaretto Mist",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Amaretto",
+      "Lime"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Pour amaretto in an old-fashioned glass over crushed ice. Add the wedge of lime and serve. (A wedge of lemon may be substituted for lime, if preferred.)"
+  },
+  {
+    "strDrink":"Amaretto Rose",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Amaretto",
+      "Lime Juice",
+      "Club Soda"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Pour amaretto and lime juice over ice in a collins glass. Fill with club soda and serve."
+  },
+  {
+    "strDrink":"Amaretto Shake",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Brandy",
+      "Chocolate Ice-Cream",
+      "Amaretto"
+    ],
+    "Alc_type":[
+      "Brandy",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Combine all ingredients in a blender and blend at high speed until smooth. Serve in chilled glass garnished with bittersweet chocolate shavings."
+  },
+  {
+    "strDrink":"Amaretto Sour",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Sour Mix",
+      "Amaretto"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Shake and strain. Garnish with a cherry and an orange slice."
+  },
+  {
+    "strDrink":"Amaretto Stone Sour",
+    "strGlass":"Collins Glass",
+    "strCategory":"Other\/Unknown",
+    "strIngredients":[
+      "Orange Juice",
+      "Amaretto",
+      "Sour Mix"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Shake and Serve over ice"
+  },
+  {
+    "strDrink":"Amaretto Stone Sour #3",
+    "strGlass":"Highball Glass",
+    "strCategory":"Other\/Unknown",
+    "strIngredients":[
+      "Amaretto",
+      "Orange Juice",
+      "Tequila",
+      "Sour Mix"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Tequila"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Shake sour mix, tequila and amaretto with ice. Strain into highball glass. Add a splash of OJ. Garnish with orange slice and a cherry."
+  },
+  {
+    "strDrink":"Amaretto Sunrise",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Grenadine",
+      "Amaretto",
+      "Orange Juice"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Mix together the amaretto and orange juice. Pour into glass and then add the grenadine untill you see the sunrise."
+  },
+  {
+    "strDrink":"Amaretto Sweet & Sour",
+    "strGlass":"Margarita glass",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Pineapple Juice",
+      "Amaretto",
+      "Midori Melon Liqueur",
+      "Sweet And Sour"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Fill the blender with 3\/4 ice. Add sweet & sour mix to the top of the ice. Add about 1\" of pineapple juice, 1\/2\" of melon liqeur, and 1\/2 to 1\/4\" of amaretto. Then blend the mix until it is of margaritta consistency or thinner."
+  },
+  {
+    "strDrink":"Amaretto Tea",
+    "strGlass":"Pousse cafe glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Whipped Cream",
+      "Amaretto",
+      "Tea Hot"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "cream",
+      "bitter"
+    ],
+    "strInstructions":"Pour hot tea into a pousse-cafe glass, using a spoon in glass to prevent cracking. Add amaretto, but do not stir. Top with chilled whipped cream and serve."
+  },
+  {
+    "strDrink":"Americano",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon Peel",
+      "Campari",
+      "Orange Peel",
+      "Sweet Vermouth Red"
+    ],
+    "Alc_type":[
+      "Campari",
+      "Vermouth"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Pour the Campari and vermouth over ice into glass, add a splash of soda water and garnish with half orange slice."
+  },
+  {
+    "strDrink":"Apple Cider Punch #1",
+    "strGlass":"Collins Glass",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Allspice",
+      "Orange Juice",
+      "Cinnamon",
+      "Apple Cider",
+      "Lemonade",
+      "Cloves",
+      "Nutmeg",
+      "Brown Sugar"
+    ],
+    "Alc_type":[
+      "Cider"
+    ],
+    "Basic_taste":[
+      "spicy",
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"If you use the whole all spice and cloves, tie them in cheesecloth. Heat the mixture. Stir occasionally. If you want an alcoholic drink, rum would be nice."
+  },
+  {
+    "strDrink":"Apple Pie with A Crust",
+    "strGlass":"Collins Glass",
+    "strCategory":"Other\/Unknown",
+    "strIngredients":[
+      "Malibu Rum",
+      "Cinnamon",
+      "Apple Juice"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "spicy",
+      "sweet"
+    ],
+    "strInstructions":"Just mix the two liquids and sprinkle in the cinnamon. Serve either cold or heated."
+  },
+  {
+    "strDrink":"Apple Slammer",
+    "strGlass":"Shot Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Apple Schnapps",
+      "7-Up"
+    ],
+    "Alc_type":[
+      "Schnapps"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"pour into a shot glass and present to consumer, they are expected to cover the top of the shotglass with thier palm, raise the glass, slam it on the bar and the swallow quickly."
+  },
+  {
+    "strDrink":"Applecar",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Applejack",
+      "Lemon Juice",
+      "Triple Sec"
+    ],
+    "Alc_type":[
+      "Brandy",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Shake all ingredients with ice, strain into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Applejack",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Jack Daniels",
+      "Sour Mix",
+      "Midori Melon Liqueur"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Add all ingredients into mixing glass, chill and strain into cocktail glass"
+  },
+  {
+    "strDrink":"Apricot Lady",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Triple Sec",
+      "Orange",
+      "Light Rum",
+      "Apricot Brandy",
+      "Lemon Juice",
+      "Egg White"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Rum",
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour",
+      "egg"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine the rum, apricot brandy, triple sec, lemon juice, and egg white. Shake well. Strain into an old-fashioned glass almost filled with ice cubes. Garnish with the orange slice."
+  },
+  {
+    "strDrink":"Apricot punch",
+    "strGlass":"Punch Bowl",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Vodka",
+      "Orange Juice",
+      "Champagne",
+      "7-Up",
+      "Apricot Brandy"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Champagne",
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour all ingrediants into a large punch bowl. Add ice and 4 oranges that are peeled and divided."
+  },
+  {
+    "strDrink":"Archbishop",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Benedictine",
+      "Lime",
+      "Gin",
+      "Green Ginger Wine"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Gin",
+      "Wine"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"In an old-fashioned glass almost filled with ice cubes, combine all of the ingredients. Stir well."
+  },
+  {
+    "strDrink":"Arctic Fish",
+    "strGlass":"Beer pilsner",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Orange Juice",
+      "Candy",
+      "Grape Soda",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Fill glass with ice and fish, add vodka, grape soda and orange juice. DO NOT STIR!!!!! Serve well chilled."
+  },
+  {
+    "strDrink":"Arctic Mouthwash",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Maui Blue",
+      "Mountain Dew"
+    ],
+    "Alc_type":[
+      "Schnapps"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Blend all ingredients in a blender on high until ice is finely crushed. It should be of a slushy consistency. Pour immediately and serve."
+  },
+  {
+    "strDrink":"Arizona Antifreeze",
+    "strGlass":"Shot Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Vodka",
+      "Sweet And Sour",
+      "Midori Melon Liqueur"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour all ingredients into shot glass and slam !!!!"
+  },
+  {
+    "strDrink":"Arizona Stingers",
+    "strGlass":"Hurricane glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Iced Tea Lemon",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Place ice cubes in the hurricane glass . Add the 2 HEAPING shots of Absolute Vodka (Note: You can add as many shots of Absolute as you want!) Fill the rest of glass with the Arizona Icetea with lemon. Stir to mix using a spoon. Drink up and enjoy!!!!!!!"
+  },
+  {
+    "strDrink":"Arizona Twister",
+    "strGlass":"Hurricane glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Pineapple",
+      "Orange Juice",
+      "Cream Of Coconut",
+      "Grenadine",
+      "Malibu Rum",
+      "Pineapple Juice",
+      "Vodka",
+      "Gold Tequila"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Vodka",
+      "Tequila"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "cream"
+    ],
+    "strInstructions":"Just mix in the shots of rum, vodka, and tequila. Add splashes of the three juices, heavy on the pineapple. Top off with grenadine. Crushed ice should already be in glass. Top off the glass with a pineapple wedge."
+  },
+  {
+    "strDrink":"Army special",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Vodka",
+      "Lime Juice Cordial",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Pour Vodka, Gin and lime cordial into glass, and top up with crushed ice. Wait for ice to melt slightly and sip without a straw."
+  },
+  {
+    "strDrink":"Arthur Tompkins",
+    "strGlass":"Whiskey sour glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Gin",
+      "Grand Marnier",
+      "Lemon Juice",
+      "Lemon Peel"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine the gin, Grand Marnier, and lemon juice. Shake well. Strain into a sour glass and garnish with the lemon twist."
+  },
+  {
+    "strDrink":"Artillery Punch",
+    "strGlass":"Punch Bowl",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Rye Whiskey",
+      "Lemon Juice",
+      "Brandy",
+      "Rum",
+      "Red Wine",
+      "Benedictine",
+      "Orange Juice",
+      "Tea"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Brandy",
+      "Rum",
+      "Wine",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet",
+      "bitter"
+    ],
+    "strInstructions":"Combine all the ingredients in a large punch bowl with a block of ice. If found too dry, sugar syrup may be added. Decorate with twists of lemon peel."
+  },
+  {
+    "strDrink":"Atlantic Sun",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Club Soda",
+      "Passion Fruit Syrup",
+      "Southern Comfort",
+      "Sweet And Sour",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Shake all the ingredients, top the drink with soda. Garnish with a slice of orange."
+  },
+  {
+    "strDrink":"Atomic Lokade",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Blue Curacao",
+      "Vodka",
+      "Triple Sec",
+      "Lemonade",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"In a shaker, place lemonade, vodka, blue Curacao, and triple sec together. Shake with ice and strain into glass. Add sugar to taste"
+  },
+  {
+    "strDrink":"Autodaf\u00e9",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lime Juice",
+      "Soda Water",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Mix and fill up with soda water. Drunk by finns on a sunny day any time of the year and day."
+  },
+  {
+    "strDrink":"Avalanche",
+    "strGlass":"Highball Glass",
+    "strCategory":"Milk \/ Float \/ Shake",
+    "strIngredients":[
+      "Cream",
+      "Crown Royal",
+      "Kahlua"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Mix in highball glass over ice, shake well."
+  },
+  {
+    "strDrink":"Avalon",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Apple Juice",
+      "Vodka",
+      "Lemon Juice",
+      "Pisang Ambon",
+      "Lemonade"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Fill a tall glass with ice. Layer the Finlandia Vodka, lemon and apple juices, Pisang Ambon, and top up with lemonade. Stir slightly and garnish with a spiralled cucumber skin and a red cherry. The cucumber provides zest and looks attractive. This drink, created by Timo Haimi, took first prize in the 1991 Finlandia Vodka Long Drink Competition."
+  },
+  {
+    "strDrink":"Aviation",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Gin",
+      "Maraschino Liqueur",
+      "Lemon Juice"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Add all ingredients into cocktail shaker filled with ice. Shake well and strain into cocktail glass. Garnish with a cherry."
+  },
+  {
+    "strDrink":"Aztec Punch",
+    "strGlass":"Punch Bowl",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Rum",
+      "Lemonade",
+      "Ginger Ale",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Mix all ingredients in a pitcher. Mix thoroughly and pour into whatever is available, the bigger the better! This drink packs a big punch, so don't over do it."
+  },
+  {
+    "strDrink":"Baby Eskimo",
+    "strGlass":"Collins Glass",
+    "strCategory":"Milk \/ Float \/ Shake",
+    "strIngredients":[
+      "Vanilla Ice-Cream",
+      "Kahlua",
+      "Milk"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Leave ice-cream out for about 10 minutes. Add ingredients in order, stir with chopstick (butter knife or spoon works too). Consume immediately and often. Nice and light, great for following a heavy drink."
+  },
+  {
+    "strDrink":"Bacardi Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Light Rum",
+      "Lime Juice",
+      "Sugar Syrup",
+      "Grenadine"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Shake together with ice. Strain into glass and serve."
+  },
+  {
+    "strDrink":"Bailey's Dream Shake",
+    "strGlass":"Collins Glass",
+    "strCategory":"Soft Drink \/ Soda",
+    "strIngredients":[
+      "Bailey'S Irish Cream",
+      "Vanilla Ice-Cream",
+      "Cream"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Blend ingredients for 30 seconds. Definitely refreshing for a hot summer's day !"
+  },
+  {
+    "strDrink":"Banana Daiquiri",
+    "strGlass":"Champagne Flute",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lime Juice",
+      "Banana",
+      "Sugar",
+      "Cherry",
+      "Light Rum",
+      "Triple Sec"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Pour all ingredients into shaker with ice cubes. Shake well. Strain in chilled cocktail glass."
+  },
+  {
+    "strDrink":"Barracuda",
+    "strGlass":"Margarita glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Pineapple Juice",
+      "Prosecco",
+      "Galliano",
+      "Lime Juice",
+      "Rum"
+    ],
+    "Alc_type":[
+      "Prosecco",
+      "Sweet Liqueur",
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Shake pour ingredients with ice. Strain into glass, top with Sparkling wine."
+  },
+  {
+    "strDrink":"Belgian Blue",
+    "strGlass":"Highball Glass",
+    "strCategory":"Soft Drink \/ Soda",
+    "strIngredients":[
+      "Coconut Liqueur",
+      "Vodka",
+      "Sprite",
+      "Blue Curacao"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Vodka",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Just pour all ingredients in the glass and stir..."
+  },
+  {
+    "strDrink":"Bellini Martini",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon Peel",
+      "Peach Schnapps",
+      "Peach Nectar",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Schnapps",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Add ice cubes to shaker.\r\nAdd vodka.\r\nAdd peach schnapps.\r\nAdd peach nectar.\r\nShake.\r\nStrain into glass.\r\nAdd lemon twist peel."
+  },
+  {
+    "strDrink":"Bermuda Highball",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Dry Vermouth",
+      "Brandy",
+      "Lemon Peel",
+      "Carbonated Water",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Vermouth",
+      "Brandy",
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sour",
+      "water"
+    ],
+    "strInstructions":"Pour brandy, gin, and dry vermouth into a highball glass over ice cubes. Fill with carbonated water and stir. Add the twist of lemon and serve. (Ginger ale may be substituted for carbonated water, if preferred.)"
+  },
+  {
+    "strDrink":"Berry Deadly",
+    "strGlass":"Collins Glass",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Boone's Strawberry Hill Wine",
+      "Everclear",
+      "Orange Juice",
+      "Kool-Aid Tropical Berry"
+    ],
+    "Alc_type":[
+      "Wine",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Add all ingredients to large bowl. Stir gently. Serve chilled."
+  },
+  {
+    "strDrink":"Between The Sheets",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Triple Sec",
+      "Brandy",
+      "Lemon Juice",
+      "Light Rum"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Brandy",
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Pour all ingredients into shaker with ice cubes, shake, strain into chilled cocktail glass."
+  },
+  {
+    "strDrink":"Bible Belt",
+    "strGlass":"Highball Glass",
+    "strCategory":"Other\/Unknown",
+    "strIngredients":[
+      "Sour Mix",
+      "Triple Sec",
+      "Lime",
+      "Southern Comfort"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Mix all ingredients, and pour over ice."
+  },
+  {
+    "strDrink":"Black Forest Shake",
+    "strGlass":"Collins Glass",
+    "strCategory":"Milk \/ Float \/ Shake",
+    "strIngredients":[
+      "Milk",
+      "Cherry Brandy",
+      "Vodka",
+      "Chocolate Syrup"
+    ],
+    "Alc_type":[
+      "Brandy",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "cream",
+      "sweet"
+    ],
+    "strInstructions":"In a blender put ice cubes, chocolate syrup, cherry brandy, vodka, and milk. Blend very well."
+  },
+  {
+    "strDrink":"Black Russian",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Coffee Liqueur",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "bitter"
+    ],
+    "strInstructions":"Pour the ingredients into an old fashioned glass filled with ice cubes. Stir gently."
+  },
+  {
+    "strDrink":"Black and Brown",
+    "strGlass":"Beer pilsner",
+    "strCategory":"Beer",
+    "strIngredients":[
+      "Guinness Stout",
+      "Root Beer"
+    ],
+    "Alc_type":[
+      "Beer"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"CAREFULLY to avoid explosive head formation: Pour Beer glass half full of favorite rootbeer and top off with Guinness."
+  },
+  {
+    "strDrink":"Blackthorn",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon Peel",
+      "Sloe Gin",
+      "Sweet Vermouth"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Vermouth"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Stir sloe gin and vermouth with ice and strain into a cocktail glass. Add the twist of lemon peel and serve."
+  },
+  {
+    "strDrink":"Bleeding Surgeon",
+    "strGlass":"Collins Glass",
+    "strCategory":"Soft Drink \/ Soda",
+    "strIngredients":[
+      "Dark Rum",
+      "Orange",
+      "Surge",
+      "Cranberry Juice"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Pour Shot of Rum over slice of orange. Fill the remaining space in glass half way full of surge or similar drink. Finish off glass with cranberry juice. Be carefull, warm surge may foam over the glass."
+  },
+  {
+    "strDrink":"Blind Russian",
+    "strGlass":"Collins Glass",
+    "strCategory":"Milk \/ Float \/ Shake",
+    "strIngredients":[
+      "Bailey'S Irish Cream",
+      "Milk",
+      "Butterscotch Schnapps",
+      "Kahlua",
+      "Godiva Liqueur"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Schnapps"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Fill glass with ice. Add all liquers. Add milk. shake."
+  },
+  {
+    "strDrink":"Bloody Maria",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon Juice",
+      "Celery Salt",
+      "Tomato Juice",
+      "Tabasco Sauce",
+      "Tequila",
+      "Lemon"
+    ],
+    "Alc_type":[
+      "Tequila"
+    ],
+    "Basic_taste":[
+      "sour",
+      "salty",
+      "spicy"
+    ],
+    "strInstructions":"Shake all ingredients (except lemon slice) with cracked ice and strain into an old-fashioned glass over ice cubes. Add the slice of lemon and serve."
+  },
+  {
+    "strDrink":"Bloody Mary",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon Juice",
+      "Tomato Juice",
+      "Vodka",
+      "Tabasco Sauce",
+      "Worcestershire Sauce",
+      "Lime"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sour",
+      "salty",
+      "spicy"
+    ],
+    "strInstructions":"Stirring gently, pour all ingredients into highball glass. Garnish."
+  },
+  {
+    "strDrink":"Blue Lagoon",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemonade",
+      "Blue Curacao",
+      "Vodka",
+      "Cherry"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Pour vodka and curacao over ice in a highball glass. Fill with lemonade, top with the cherry, and serve."
+  },
+  {
+    "strDrink":"Blue Margarita",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lime Juice",
+      "Salt",
+      "Blue Curacao",
+      "Tequila"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Tequila"
+    ],
+    "Basic_taste":[
+      "sour",
+      "salty"
+    ],
+    "strInstructions":"Rub rim of cocktail glass with lime juice. Dip rim in coarse salt. Shake tequila, blue curacao, and lime juice with ice, strain into the salt-rimmed glass, and serve."
+  },
+  {
+    "strDrink":"Blue Mountain",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "A\u00f1ejo Rum",
+      "Orange Juice",
+      "Lemon Juice",
+      "Tia Maria",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Creamy Liqueur",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into an old-fashioned glass alomst filled with ice cubes."
+  },
+  {
+    "strDrink":"Bluebird",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Maraschino Cherry",
+      "Triple Sec",
+      "Gin",
+      "Blue Curacao",
+      "Bitters",
+      "Lemon Peel"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Gin",
+      "Bitters"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"In a mixing glass half-filled with crushed ice, combine the gin, triple sec, Curacao, and bitters. Stir well. Strain into a cocktail glass and garnish with the lemon twist and the cherry."
+  },
+  {
+    "strDrink":"Bobby Burns Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Scotch",
+      "Sweet Vermouth",
+      "Lemon Peel",
+      "Benedictine"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Vermouth",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Stir all ingredients (except lemon peel) with ice and strain into a cocktail glass. Add the twist of lemon peel and serve."
+  },
+  {
+    "strDrink":"Boomerang",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Maraschino Cherry",
+      "Gin",
+      "Bitters",
+      "Dry Vermouth",
+      "Maraschino Liqueur"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Bitters",
+      "Vermouth",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"In a mixing glass half-filled with ice cubes, combine the gin, vermouth, bitters, and maraschino liqueur. Stir well. Strain into a cocktail glass and garnish with the cherry."
+  },
+  {
+    "strDrink":"Boozy Snickers Milkshake",
+    "strGlass":"Mason jar",
+    "strCategory":"Milk \/ Float \/ Shake",
+    "strIngredients":[
+      "Caramel Sauce",
+      "Godiva Liqueur",
+      "Mini-Snickers Bars",
+      "Vanilla Ice-Cream",
+      "Milk",
+      "Chocolate Sauce",
+      "Whipped Cream"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "cream"
+    ],
+    "strInstructions":"Place the snickers bars in a plastic bag and roll over them with a rolling pin until crushed. Add crushed snickers pieces, ice cream, milk, caramel sauce, chocolate sauce, and chocolate liquor to a blender. Blend until shake is thick and frothy. Pour into glasses and top with chocolate liquor and whip cream."
+  },
+  {
+    "strDrink":"Boston Sidecar",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Light Rum",
+      "Triple Sec",
+      "Lime",
+      "Brandy"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Triple Sec",
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Shake all ingredients with ice, strain into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Boston Sour",
+    "strGlass":"Whiskey sour glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Egg White",
+      "Sugar",
+      "Lemon",
+      "Cherry",
+      "Blended Whiskey"
+    ],
+    "Alc_type":[
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "egg",
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Shake juice of lemon, powdered sugar, blended whiskey, and egg white with cracked ice and strain into a whiskey sour glass. Add the slice of lemon, top with the cherry, and serve."
+  },
+  {
+    "strDrink":"Bourbon Sling",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon Juice",
+      "Water",
+      "Bourbon",
+      "Sugar",
+      "Lemon Peel"
+    ],
+    "Alc_type":[
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "sour",
+      "water",
+      "sweet"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine the sugar, water, lemon juice, and bourbon. Shake well. Strain well. Strain into a highball glass. Garnish with the lemon twist."
+  },
+  {
+    "strDrink":"Bourbon Sour",
+    "strGlass":"Whiskey sour glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Sugar",
+      "Bourbon",
+      "Maraschino Cherry",
+      "Lemon Juice",
+      "Orange"
+    ],
+    "Alc_type":[
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine the bourbon, lemon juice, and sugar. Shake well. Strain into a whiskey sour glass, garnish with the orange slice and cherry."
+  },
+  {
+    "strDrink":"Boxcar",
+    "strGlass":"Whiskey sour glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon Juice",
+      "Gin",
+      "Triple Sec",
+      "Grenadine",
+      "Egg White"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet",
+      "egg"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a sour glass."
+  },
+  {
+    "strDrink":"Brain Fart",
+    "strGlass":"Punch Bowl",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Vodka",
+      "Mountain Dew",
+      "Rum",
+      "Lemon Juice",
+      "Surge",
+      "Everclear"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Mix all ingredients together. Slowly and gently. Works best if ice is added to punch bowl and soda's are very cold."
+  },
+  {
+    "strDrink":"Brainteaser",
+    "strGlass":"Shot Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Erin Cream",
+      "Advocaat",
+      "Sambuca White"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Sambuca"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"layered erin first, then sambuca and then avocart(should sit in middle of other two. To drink: use a straw to suck up avocart then shot the rest and then suck fumes up through straw."
+  },
+  {
+    "strDrink":"Bramble",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Creme De Mure",
+      "Lemon Juice",
+      "Sugar Syrup",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Fill glass with crushed ice. Build gin, lemon juice and simple syrup over. Stir, and then pour blackberry liqueur over in a circular fashion to create marbling effect. Garnish with two blackberries and lemon slice."
+  },
+  {
+    "strDrink":"Brandon and Will's Coke Float",
+    "strGlass":"Beer mug",
+    "strCategory":"Soft Drink \/ Soda",
+    "strIngredients":[
+      "Vanilla Ice-Cream",
+      "Bourbon",
+      "Coca-Cola"
+    ],
+    "Alc_type":[
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "cream",
+      "sweet"
+    ],
+    "strInstructions":"Scoop two large scoops of vanilla ice-cream into frosted beer mug. Next, add 2 ounces Maker's Mark. Then, pour in coke. Gently stir and enjoy."
+  },
+  {
+    "strDrink":"Brandy Alexander",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Light Cream",
+      "Nutmeg",
+      "Creme De Cacao White",
+      "Brandy"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "cream",
+      "spicy"
+    ],
+    "strInstructions":"Shake all ingredients (except nutmeg) with ice and strain contents into a cocktail glass. Sprinkle nutmeg on top and serve."
+  },
+  {
+    "strDrink":"Brandy Cobbler",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Sugar",
+      "Club Soda",
+      "Brandy",
+      "Lemon",
+      "Orange",
+      "Maraschino Cherry"
+    ],
+    "Alc_type":[
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"In an old-fashioned glass, dissolve the sugar in the club soda. Add crushed ice until the glass is almost full. Add the brandy. Stir well. Garnish with the cherry and the orange and lemon slices."
+  },
+  {
+    "strDrink":"Brandy Flip",
+    "strGlass":"Whiskey sour glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Egg",
+      "Sugar",
+      "Light Cream",
+      "Nutmeg",
+      "Brandy"
+    ],
+    "Alc_type":[
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "egg",
+      "sweet",
+      "cream",
+      "spicy"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine the brandy, egg, sugar, and cream. Shake well. Strain into a sour glass and garnish with the nutmeg."
+  },
+  {
+    "strDrink":"Brandy Sour",
+    "strGlass":"Whiskey sour glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon",
+      "Sugar",
+      "Cherry",
+      "Brandy"
+    ],
+    "Alc_type":[
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Shake brandy, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass. Decorate with the lemon slice, top with the cherry, and serve."
+  },
+  {
+    "strDrink":"Brave Bull Shooter",
+    "strGlass":"Shot Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Tabasco Sauce",
+      "Tequila"
+    ],
+    "Alc_type":[
+      "Tequila"
+    ],
+    "Basic_taste":[
+      "spicy"
+    ],
+    "strInstructions":"Pour Tabasco into bottom of shot glass and fill with tequila."
+  },
+  {
+    "strDrink":"Bruce's Puce",
+    "strGlass":"Shot Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Kahlua",
+      "Bailey'S Irish Cream",
+      "Grenadine"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"In a regular-sized shot glass, layer, with a spoon or cherry, the grenadine , the Kahlua , then the Bailey's Irish cream in equal portions. It goes down really smooth ,and you don't even need a chaser. It tastes just like chocolate milk.(Really!)"
+  },
+  {
+    "strDrink":"Bruised Heart",
+    "strGlass":"Shot Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Vodka",
+      "Cranberry Juice",
+      "Chambord Raspberry Liqueur",
+      "Peachtree Schnapps"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Sweet Liqueur",
+      "Schnapps"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Pour all ingredients in a mixing tin over ice, stir, and strain into shot glass"
+  },
+  {
+    "strDrink":"Bubble Gum",
+    "strGlass":"Shot Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Vodka",
+      "Banana Liqueur",
+      "Orange Juice",
+      "Peach Schnapps"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Sweet Liqueur",
+      "Schnapps"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Layer in order into a shot glass."
+  },
+  {
+    "strDrink":"Butter Baby",
+    "strGlass":"Beer mug",
+    "strCategory":"Milk \/ Float \/ Shake",
+    "strIngredients":[
+      "Butterscotch Schnapps",
+      "Vodka",
+      "Milk",
+      "Vanilla Ice-Cream"
+    ],
+    "Alc_type":[
+      "Schnapps",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Blend together in a blender. Serve in a chilled Beer mug with Fresh Blueberries and caramel for topping."
+  },
+  {
+    "strDrink":"Cafe Savoy",
+    "strGlass":"Coffee Mug",
+    "strCategory":"Coffee \/ Tea",
+    "strIngredients":[
+      "Triple Sec",
+      "Coffee",
+      "Milk",
+      "Brandy"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "bitter",
+      "cream"
+    ],
+    "strInstructions":"Fill mug almost to top with coffee.Add milk, triple sec and brandy. Stir."
+  },
+  {
+    "strDrink":"Caipirinha",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Cachaca",
+      "Sugar",
+      "Lime"
+    ],
+    "Alc_type":[
+      "Cachaca"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Place lime and sugar into old fashioned glass and muddle (mash the two ingredients together using a muddler or a wooden spoon). Fill the glass with ice and add the Cacha\u00e7a."
+  },
+  {
+    "strDrink":"Caipirissima",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "White Rum",
+      "Lime",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Same as Caipirinha but instead of cachaca you add WHITE RUM. It's great!!!!!!!!"
+  },
+  {
+    "strDrink":"California Lemonade",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Grenadine",
+      "Blended Whiskey",
+      "Carbonated Water",
+      "Sugar",
+      "Lemon",
+      "Lime"
+    ],
+    "Alc_type":[
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "water",
+      "sour"
+    ],
+    "strInstructions":"Shake all ingredients (except carbonated water) with ice and strain into a collins glass over shaved ice. Fill with carbonated water and stir. Decorate with slices of orange and lemon. Add the cherry and serve with a straw."
+  },
+  {
+    "strDrink":"California Root Beer",
+    "strGlass":"Highball Glass",
+    "strCategory":"Soft Drink \/ Soda",
+    "strIngredients":[
+      "Soda Water",
+      "Galliano",
+      "Kahlua"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Put Kahlua and Galliano in highball glass fill with soda"
+  },
+  {
+    "strDrink":"Casino",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Orange Bitters",
+      "Cherry",
+      "Gin",
+      "Maraschino Liqueur",
+      "Lemon Juice"
+    ],
+    "Alc_type":[
+      "Bitters",
+      "Gin",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Pour all ingredients into shaker with ice cubes. Shake well. Strain into chilled cocktail glass. Garnish with a lemon twist and a maraschino cherry. Serve without a straw."
+  },
+  {
+    "strDrink":"Casino Royale",
+    "strGlass":"Whiskey sour glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Gin",
+      "Lemon Juice",
+      "Orange Bitters",
+      "Maraschino Liqueur",
+      "Egg Yolk"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Bitters",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sour",
+      "egg"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a sour glass."
+  },
+  {
+    "strDrink":"Champagne Cocktail",
+    "strGlass":"Champagne Flute",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Cognac",
+      "Lemon Peel",
+      "Sugar",
+      "Bitters",
+      "Champagne"
+    ],
+    "Alc_type":[
+      "Brandy",
+      "Bitters",
+      "Champagne"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Add dash of Angostura bitter onto sugar cube and drop it into champagne flute. Add cognac followed by gently pouring chilled champagne. Garnish with orange slice and maraschino cherry."
+  },
+  {
+    "strDrink":"Cherry Electric Lemonade",
+    "strGlass":"Pint glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Sweet And Sour",
+      "Vodka",
+      "Club Soda",
+      "White Rum",
+      "Gin",
+      "Cherry Grenadine",
+      "Triple Sec",
+      "Tequila"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Rum",
+      "Gin",
+      "Triple Sec",
+      "Tequila"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Now stir vigorously and then pour over a large cup of ice. Now drink it with a straw and stir occasionally."
+  },
+  {
+    "strDrink":"Cherry Rum",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Light Rum",
+      "Cherry Brandy",
+      "Light Cream"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Shake all ingredients with ice, strain into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Chicago Fizz",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon",
+      "Egg White",
+      "Light Rum",
+      "Carbonated Water",
+      "Port",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Port"
+    ],
+    "Basic_taste":[
+      "sour",
+      "egg",
+      "water",
+      "sweet"
+    ],
+    "strInstructions":"Shake all ingredients (except carbonated water) with ice and strain into a highball glass over two ice cubes. Fill with carbonated water, stir, and serve."
+  },
+  {
+    "strDrink":"Chocolate Black Russian",
+    "strGlass":"Champagne Flute",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Vodka",
+      "Chocolate Ice-Cream",
+      "Kahlua"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Combine all ingredients in an electric blender and blend at a low speed for a short length of time. Pour into a chilled champagne flute and serve."
+  },
+  {
+    "strDrink":"Chocolate Milk",
+    "strGlass":"Shot Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Milk",
+      "Amaretto",
+      "Chocolate Liqueur"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Put the milk in the bottom, pour the Liquer on top and add the dash of amaretto. Do not mix. SLAM IT!"
+  },
+  {
+    "strDrink":"Chocolate Monkey",
+    "strGlass":"Parfait glass",
+    "strCategory":"Milk \/ Float \/ Shake",
+    "strIngredients":[
+      "Chocolate Ice-Cream",
+      "Chocolate Syrup",
+      "Banana",
+      "Chocolate Milk",
+      "Banana Liqueur",
+      "Whipped Cream",
+      "Cherry",
+      "Creme De Cacao"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "cream",
+      "sweet"
+    ],
+    "strInstructions":"blend liqeuors with ice-cream, milk and syrup. pour into parfait glass, top with whipped cream and garnish with banana and cherry."
+  },
+  {
+    "strDrink":"Citrus Coke",
+    "strGlass":"Highball Glass",
+    "strCategory":"Soft Drink \/ Soda",
+    "strIngredients":[
+      "Bacardi Limon",
+      "Coca-Cola"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour half of coke in a glass. Then add Bacardi and top it off with the remaining coke. Stir and drink up!"
+  },
+  {
+    "strDrink":"City Slicker",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon Juice",
+      "Triple Sec",
+      "Brandy"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass."
+  },
+  {
+    "strDrink":"Classic Old-Fashioned",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Water",
+      "Sugar",
+      "Orange",
+      "Bitters",
+      "Maraschino Cherry",
+      "Bourbon"
+    ],
+    "Alc_type":[
+      "Bitters",
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "water",
+      "sweet"
+    ],
+    "strInstructions":"In an old-fashioned glass, muddle the bitters and water into the sugar cube, using the back of a teaspoon. Almost fill the glass with ice cubes and add the bourbon. Garnish with the orange slice and the cherry. Serve with a swizzle stick."
+  },
+  {
+    "strDrink":"Clover Club",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Grenadine",
+      "Lemon",
+      "Egg White",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour",
+      "egg"
+    ],
+    "strInstructions":"Dry shake ingredients to emulsify, add ice, shake and served straight up."
+  },
+  {
+    "strDrink":"Cosmopolitan",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Cranberry Juice",
+      "Absolut Citron",
+      "Cointreau",
+      "Lime Juice"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Add all ingredients into cocktail shaker filled with ice. Shake well and double strain into large cocktail glass. Garnish with lime wheel."
+  },
+  {
+    "strDrink":"Cosmopolitan Martini",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Vodka",
+      "Lime",
+      "Cointreau",
+      "Cranberry Juice"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Pour all ingredients in mixing glass half filled with ice, shake and strain into chilled Martini glass."
+  },
+  {
+    "strDrink":"Cream Soda",
+    "strGlass":"Highball Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Ginger Ale",
+      "Spiced Rum"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour 1oz of Spiced Rum into a highball glass with ice. Fill with Ginger Ale."
+  },
+  {
+    "strDrink":"Cuba Libra",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Dark Rum",
+      "Lime",
+      "Coca-Cola"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Fill tall glass with ice cubes. Add rum. Rub cut edge of lime on rim of glass then squeeze juice into glass. Fill with Coca-Cola. Garnish with lime slice. Enjoy!"
+  },
+  {
+    "strDrink":"Cuba Libre",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Light Rum",
+      "Lime",
+      "Coca-Cola"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Build all ingredients in a Collins glass filled with ice. Garnish with lime wedge."
+  },
+  {
+    "strDrink":"Daiquiri",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lime",
+      "Light Rum",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Pour all ingredients into shaker with ice cubes. Shake well. Strain in chilled cocktail glass."
+  },
+  {
+    "strDrink":"Danbooka",
+    "strGlass":"Coffee Mug",
+    "strCategory":"Coffee \/ Tea",
+    "strIngredients":[
+      "Everclear",
+      "Coffee"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "bitter"
+    ],
+    "strInstructions":"pour it in and mix it."
+  },
+  {
+    "strDrink":"Dark Caipirinha",
+    "strGlass":"Highball Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Cachaca",
+      "Lime",
+      "Demerara Sugar"
+    ],
+    "Alc_type":[
+      "Cachaca"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Muddle the sugar into the lime wedges in an old-fashioned glass.\r\nFill the glass with ice cubes.\r\nPour the cachaca into the glass.\r\nStir well."
+  },
+  {
+    "strDrink":"Dark and Stormy",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Dark Rum",
+      "Ginger Beer"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"In a highball glass filled with ice add 6cl dark rum and top with ginger beer. Garnish with lime wedge."
+  },
+  {
+    "strDrink":"Darkwood Sling",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Soft Drink \/ Soda",
+    "strIngredients":[
+      "Orange Juice",
+      "Cherry Heering",
+      "Soda Water"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"There are many good cherry liqueurs you can use, but I prefere Heering. Add one share of the liqueur. Then you add one share of Soda. For a sour sling use Tonic (most people prefer the drink without Tonic). Afterwards you fill the glass with Orange Juice and ice cubes."
+  },
+  {
+    "strDrink":"Derby",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Mint",
+      "Peach Bitters",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Bitters",
+      "Gin"
+    ],
+    "Basic_taste":[
+      "mint"
+    ],
+    "strInstructions":"Pour all ingredients into a mixing glass with ice. Stir. Strain into a cocktail glass. Garnish with a sprig of fresh mint in the drink."
+  },
+  {
+    "strDrink":"Diesel",
+    "strGlass":"Pint glass",
+    "strCategory":"Beer",
+    "strIngredients":[
+      "Lager",
+      "Cider",
+      "Blackcurrant Cordial"
+    ],
+    "Alc_type":[
+      "Beer",
+      "Cider"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour the lager first then add the blackcurrant cordial. Top up with the cider. The colour sholud be very dark approaching the colour of Guiness."
+  },
+  {
+    "strDrink":"Dirty Martini",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Lemon",
+      "Dry Vermouth",
+      "Olive",
+      "Olive Brine",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Vermouth",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sour",
+      "salty"
+    ],
+    "strInstructions":"Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well.\r\nRub the rim of a martini glass with the wedge of lemon.\r\nStrain the contents of the cocktail shaker into the glass and add the olive.\r\nA dirty Martini contains a splash of olive brine or olive juice and is typically garnished with an olive."
+  },
+  {
+    "strDrink":"Downshift",
+    "strGlass":"Hurricane glass",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Tequila",
+      "Sprite",
+      "151 Proof Rum",
+      "Fruit Punch"
+    ],
+    "Alc_type":[
+      "Tequila",
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Start with the Sprite. Next comes the tequila. After that, add the Minute Maid Fruit Punch, then float the 151. Rocks optional."
+  },
+  {
+    "strDrink":"Dragonfly",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Ginger Ale",
+      "Gin",
+      "Lime"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"In a highball glass almost filled with ice cubes, combine the gin and ginger ale. Stir well. Garnish with the lime wedge."
+  },
+  {
+    "strDrink":"Dry Rob Roy",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Dry Vermouth",
+      "Lemon Peel",
+      "Scotch"
+    ],
+    "Alc_type":[
+      "Vermouth",
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"In a mixing glass half-filled with ice cubes, combine the Scotch and vermouth. Stir well. Strain into a cocktail glass. Garnish with the lemon twist."
+  },
+  {
+    "strDrink":"Dubonnet Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Dubonnet Rouge",
+      "Gin",
+      "Bitters",
+      "Lemon Peel"
+    ],
+    "Alc_type":[
+      "Wine",
+      "Gin",
+      "Bitters"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Stir all ingredients (except lemon peel) with ice and strain into a cocktail glass. Add the twist of lemon peel and serve."
+  },
+  {
+    "strDrink":"Duchamp's Punch",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Pisco",
+      "Lime Juice",
+      "Lavender",
+      "Pepper",
+      "Pineapple Syrup",
+      "Angostura Bitters",
+      "St. Germain"
+    ],
+    "Alc_type":[
+      "Pisco",
+      "Bitters"
+    ],
+    "Basic_taste":[
+      "sour",
+      "spicy",
+      "sweet"
+    ],
+    "strInstructions":"Shake all ingredients.\r\nDouble strain in a chilled double old fashioned glass with abig ice cube.\r\nGarnish with a couple of lavender sprigs"
+  },
+  {
+    "strDrink":"Egg Nog #4",
+    "strGlass":"Punch Bowl",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Light Rum",
+      "Bourbon",
+      "Vanilla Extract",
+      "Salt",
+      "Whipping Cream",
+      "Egg White",
+      "Milk",
+      "Sugar",
+      "Nutmeg",
+      "Egg Yolk"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "salty",
+      "cream",
+      "egg",
+      "spicy"
+    ],
+    "strInstructions":"In a small mixer bowl beat egg yolks till blended. Gradually add 1\/4 cup sugar, beating at high speed till thick and lemon colored. Stir in milk, stir in rum, bourbon, vanilla, and salt. Chill thoroughly. Whip cream. Wash beaters well. In a large mixer bowl beat egg whites till soft peaks form. Gradually add remaining 1\/4 cup sugar, beating to stiff peaks. Fold yolk mixture and whipped cream into egg whites. Serve immediately. Sprinkle nutmeg over each serving. Serve in a punch bowl or another big bowl. NOTE: For a nonalcoholic eggnog, prepare Eggnog as above, except omit the bourbon and rum and increase the milk to 3 cups."
+  },
+  {
+    "strDrink":"Egg Nog - Healthy",
+    "strGlass":"Collins Glass",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Nutmeg",
+      "Rum",
+      "Sugar",
+      "Egg",
+      "Vanilla Extract",
+      "Condensed Milk Skimmed",
+      "Milk Skimmed"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "spicy",
+      "sweet",
+      "egg",
+      "cream"
+    ],
+    "strInstructions":"Whip egg substitute and sugar together, combine with the two kinds of milk, vanilla, and rum. Mix well. Chill over night. Sprinkle with nutmeg. Makes 6 servings."
+  },
+  {
+    "strDrink":"English Highball",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon Peel",
+      "Brandy",
+      "Gin",
+      "Sweet Vermouth",
+      "Carbonated Water"
+    ],
+    "Alc_type":[
+      "Brandy",
+      "Gin",
+      "Vermouth"
+    ],
+    "Basic_taste":[
+      "sour",
+      "water"
+    ],
+    "strInstructions":"Pour brandy, gin, and sweet vermouth into a highball glass over ice cubes. Fill with carbonated water. Add the twist of lemon peel, stir, and serve. (Ginger ale may be substituted for carbonated water, if preferred.)"
+  },
+  {
+    "strDrink":"English Rose Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Dry Vermouth",
+      "Lemon Juice",
+      "Gin",
+      "Grenadine",
+      "Apricot Brandy",
+      "Cherry"
+    ],
+    "Alc_type":[
+      "Vermouth",
+      "Gin",
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Rub rim of cocktail glass with lemon juice and dip rim of glass in powdered sugar. Shake all ingredients (except cherry) with ice and strain into sugar-rimmed glass. Top with the cherry and serve."
+  },
+  {
+    "strDrink":"Espresso Martini",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Kahlua",
+      "Vodka",
+      "Sugar Syrup"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour ingredients into shaker filled with ice, shake vigorously, and strain into chilled martini glass"
+  },
+  {
+    "strDrink":"Fahrenheit 5000",
+    "strGlass":"Shot Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Firewater",
+      "Absolut Peppar",
+      "Tabasco Sauce"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "spicy"
+    ],
+    "strInstructions":"Cover bottom of shot glass with Tabasco Sauce and then fill with half Firewater and half Absolut Peppar."
+  },
+  {
+    "strDrink":"Flaming Dr. Pepper",
+    "strGlass":"Collins Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Amaretto",
+      "Dr. Pepper",
+      "Beer",
+      "151 Proof Rum",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Beer",
+      "Rum",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "spicy"
+    ],
+    "strInstructions":"Add Amaretto, Bacardi, and vodka. Mix in the Dr. Pepper and beer"
+  },
+  {
+    "strDrink":"Flander's Flake-Out",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Sarsaparilla",
+      "Sambuca"
+    ],
+    "Alc_type":[
+      "Sambuca"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Bang 'em both in."
+  },
+  {
+    "strDrink":"Flying Scotchman",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Bitters",
+      "Scotch",
+      "Sweet Vermouth",
+      "Sugar Syrup"
+    ],
+    "Alc_type":[
+      "Bitters",
+      "Whisky",
+      "Vermouth"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Shake all ingredients with ice, strain into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Foxy Lady",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Creme De Cacao",
+      "Light Cream",
+      "Amaretto"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Shake all ingredients with ice, strain into a chilled cocktail glass, and serve."
+  },
+  {
+    "strDrink":"French 75",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Orange",
+      "Champagne",
+      "Lemon Juice",
+      "Gin",
+      "Maraschino Cherry",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Champagne",
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Combine gin, sugar, and lemon juice in a cocktail shaker filled with ice. Shake vigorously and strain into a chilled champagne glass. Top up with Champagne. Stir gently."
+  },
+  {
+    "strDrink":"French Martini",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Vodka",
+      "Raspberry Liqueur",
+      "Pineapple Juice"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour all ingredients into shaker with ice cubes. Shake well and strain into a chilled cocktail glass. Squeeze oil from lemon peel onto the drink."
+  },
+  {
+    "strDrink":"Frisco Sour",
+    "strGlass":"Whiskey sour glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon",
+      "Blended Whiskey",
+      "Lime",
+      "Benedictine"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Shake all ingredients (except slices of lemon and lime) with ice and strain into a whiskey sour glass. Decorate with the slices of lemon and lime and serve."
+  },
+  {
+    "strDrink":"Frozen Daiquiri",
+    "strGlass":"Champagne Flute",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Triple Sec",
+      "Cherry",
+      "Light Rum",
+      "Sugar",
+      "Lime Juice"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Combine all ingredients (except for the cherry) in an electric blender and blend at a low speed for five seconds, then blend at a high speed until firm. Pour contents into a champagne flute, top with the cherry, and serve."
+  },
+  {
+    "strDrink":"Frozen Mint Daiquiri",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Mint",
+      "Lime Juice",
+      "Sugar",
+      "Light Rum"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "mint",
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Combine all ingredients with 1 cup of crushed ice in an electric blender. Blend at a low speed for a short length of time. Pour into an old-fashioned glass and serve."
+  },
+  {
+    "strDrink":"Frozen Pineapple Daiquiri",
+    "strGlass":"Champagne Flute",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Sugar",
+      "Lime Juice",
+      "Light Rum",
+      "Pineapple"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Combine all ingredients with 1 cup of crushed ice in an electric blender. Blend at a low speed for a short length of time. Pour into a champagne flute and serve."
+  },
+  {
+    "strDrink":"Fuzzy Asshole",
+    "strGlass":"Coffee Mug",
+    "strCategory":"Coffee \/ Tea",
+    "strIngredients":[
+      "Peach Schnapps",
+      "Coffee"
+    ],
+    "Alc_type":[
+      "Schnapps"
+    ],
+    "Basic_taste":[
+      "bitter"
+    ],
+    "strInstructions":"fill coffe mug half full of coffee. Fill the other half full of Peach Schnapps. Stir and drink while hot."
+  },
+  {
+    "strDrink":"GG",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Galliano",
+      "Ginger Ale"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour the Galliano liqueur over ice. Fill the remainder of the glass with ginger ale and thats all there is to it. You now have a your very own GG."
+  },
+  {
+    "strDrink":"Gagliardo",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Lemon Juice",
+      "Galliano",
+      "Sirup Of Roses",
+      "Peach Vodka"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Shake well and serve in a cocktail glass. This is a home cocktail of American\/Internet Bar del Pozzo, Pavia, Italy."
+  },
+  {
+    "strDrink":"Gentleman's Club",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Sweet Vermouth",
+      "Brandy",
+      "Gin",
+      "Club Soda"
+    ],
+    "Alc_type":[
+      "Vermouth",
+      "Brandy",
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"In an old-fashioned glass almost filled with ice cubes, combine all of the ingredients. Stir well."
+  },
+  {
+    "strDrink":"Gideon's Green Dinosaur",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Melon Liqueur",
+      "Tequila",
+      "Vodka",
+      "Mountain Dew",
+      "Dark Rum",
+      "Triple Sec"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Tequila",
+      "Vodka",
+      "Rum",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Add all ingredients in collins glass with ice and stir."
+  },
+  {
+    "strDrink":"Gin And Tonic",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lime",
+      "Tonic Water",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sour",
+      "water"
+    ],
+    "strInstructions":"Pour the gin and the tonic water into a highball glass almost filled with ice cubes. Stir well. Garnish with the lime wedge."
+  },
+  {
+    "strDrink":"Gin Cooler",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Sugar",
+      "Gin",
+      "Carbonated Water",
+      "Lemon Peel",
+      "Orange Spiral"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "water",
+      "sour"
+    ],
+    "strInstructions":"Stir powdered sugar and 2 oz. carbonated water in a collins glass. Fill glass with ice and add gin. Fill with carbonated water and stir. Add the lemon peel and the orange spiral so that the end of the orange spiral dangles over rim of glass."
+  },
+  {
+    "strDrink":"Gin Daisy",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Maraschino Cherry",
+      "Sugar",
+      "Gin",
+      "Grenadine",
+      "Orange",
+      "Lemon Juice"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine the wine, lemon juice, sugar, and grenadine. Shake well. Pour into an old-fashioned glass and garnish with the cherry and the orange slice."
+  },
+  {
+    "strDrink":"Gin Fizz",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon",
+      "Gin",
+      "Carbonated Water",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sour",
+      "water",
+      "sweet"
+    ],
+    "strInstructions":"Shake all ingredients with ice cubes, except soda water. Pour into glass. Top with soda water."
+  },
+  {
+    "strDrink":"Gin Rickey",
+    "strGlass":"Highball Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Soda Water",
+      "Lime",
+      "Lemon",
+      "Grenadine",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Half-fill a tall glass with ice. Mix the gin and Grenadine together and pour over the ice. Add the lime or lemon juice and top off with soda water. Decorate the glass with lime and\/or lemon slices."
+  },
+  {
+    "strDrink":"Gin Sling",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon",
+      "Water",
+      "Sugar",
+      "Gin",
+      "Orange Peel"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sour",
+      "water",
+      "sweet"
+    ],
+    "strInstructions":"Dissolve powdered sugar in mixture of water and juice of lemon. Add gin. Pour into an old-fashioned glass over ice cubes and stir. Add the twist of orange peel and serve."
+  },
+  {
+    "strDrink":"Gin Smash",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Gin",
+      "Cherry",
+      "Carbonated Water",
+      "Orange",
+      "Sugar",
+      "Mint"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "water",
+      "mint"
+    ],
+    "strInstructions":"Muddle sugar with carbonated water and mint sprigs in an old-fashioned glass. Add gin and 1 ice cube. Stir, add the orange slice and the cherry, and serve."
+  },
+  {
+    "strDrink":"Gin Sour",
+    "strGlass":"Whiskey sour glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon Juice",
+      "Sugar",
+      "Gin",
+      "Maraschino Cherry",
+      "Orange"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine the gin, lemon juice, and sugar. Shake well. Strain into a sour glass and garnish with the orange slice and the cherry."
+  },
+  {
+    "strDrink":"Gin Squirt",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Grenadine",
+      "Pineapple",
+      "Sugar",
+      "Strawberries",
+      "Gin",
+      "Carbonated Water"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "water"
+    ],
+    "strInstructions":"Stir gin, grenadine, and powdered sugar with ice and strain into a highball glass over ice cubes. Fill with carbonated water and stir. Decorate with the pineapple chunks and the strawberries and serve."
+  },
+  {
+    "strDrink":"Gin Swizzle",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lime Juice",
+      "Bitters",
+      "Sugar",
+      "Gin",
+      "Club Soda"
+    ],
+    "Alc_type":[
+      "Bitters",
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine the lime juice, sugar, gin, and bitters. Shake well. Almost fill a colling glass with ice cubes. Stir until the glass is frosted. Strain the mixture in the shaker into the glass and add the club soda."
+  },
+  {
+    "strDrink":"Gin Toddy",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Water",
+      "Lemon Peel",
+      "Sugar",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "water",
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Mix powdered sugar and water in an old-fashioned glass. Add gin and one ice cube. Stir, add the twist of lemon peel, and serve."
+  },
+  {
+    "strDrink":"Girl From Ipanema",
+    "strGlass":"Wine Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Agave Syrup",
+      "Lemon Juice",
+      "Champagne",
+      "Cachaca"
+    ],
+    "Alc_type":[
+      "Champagne",
+      "Cachaca"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Add the cachaca, lemon juice and syrup to your boston glass. Add ice and shake until ice cold. Pour into a chilled flute and top-up with Champagne"
+  },
+  {
+    "strDrink":"Gluehwein",
+    "strGlass":"Irish coffee cup",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Water",
+      "Cinnamon",
+      "Red Wine",
+      "Sugar",
+      "Cloves",
+      "Lemon Peel"
+    ],
+    "Alc_type":[
+      "Wine"
+    ],
+    "Basic_taste":[
+      "water",
+      "spicy",
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Boil sugar and spices in water, leave in the water for 30 minutes. Strain the spiced water and mix with the wine. Heat slowly until short of boiling temperature. (To remove alcohol, let it boil for a while.) You may add lemon or orange juice to taste. Serve in irish coffee cup."
+  },
+  {
+    "strDrink":"Godchild",
+    "strGlass":"Champagne Flute",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Vodka",
+      "Amaretto",
+      "Heavy Cream"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Shake all ingredients well with cracked ice, strain into a champagne flute, and serve."
+  },
+  {
+    "strDrink":"Golden dream",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Orange Juice",
+      "Cream",
+      "Triple Sec",
+      "Galliano"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "cream"
+    ],
+    "strInstructions":"Shake with cracked ice. Strain into glass and serve."
+  },
+  {
+    "strDrink":"Grand Blue",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Sweet And Sour",
+      "Malibu Rum",
+      "Peach Schnapps",
+      "Blue Curacao"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Schnapps",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Serve in an old fashioned glass."
+  },
+  {
+    "strDrink":"Grass Skirt",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Pineapple Juice",
+      "Pineapple",
+      "Triple Sec",
+      "Gin",
+      "Grenadine"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine the gin, triple sec, pineapple juice, and grenadine. Shake well. Pour into an old-fashioned glass and garnish with the pineapple slice."
+  },
+  {
+    "strDrink":"Grasshopper",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Creme De Cacao White",
+      "Light Cream",
+      "Green Creme De Menthe"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Pour ingredients into a cocktail shaker with ice. Shake briskly and then strain into a chilled cocktail glass."
+  },
+  {
+    "strDrink":"Grim Reaper",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "151 Proof Rum",
+      "Grenadine",
+      "Kahlua"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Mix Kahlua and 151 in glass. Quickly add ice and pour grenadine over ice to give ice red tint."
+  },
+  {
+    "strDrink":"Grizzly Bear",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Milk",
+      "Kahlua",
+      "Amaretto",
+      "J\u00e4germeister"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Sweet Liqueur",
+      "Bitters"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Served over ice. Sounds nasty, but tastes great."
+  },
+  {
+    "strDrink":"H.D.",
+    "strGlass":"Beer mug",
+    "strCategory":"Coffee \/ Tea",
+    "strIngredients":[
+      "Bailey'S Irish Cream",
+      "Coffee",
+      "Whisky"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "bitter"
+    ],
+    "strInstructions":"Mix the whisky and Baileys Cream in a beer-glass (at least 50 cl). Fill the rest of the glass with coffee."
+  },
+  {
+    "strDrink":"Happy Skipper",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Spiced Rum",
+      "Lime",
+      "Ginger Ale"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Pour Captain Morgan's Spiced Rum over ice, fill glass to top with Ginger Ale. Garnish with lime. Tastes like a cream soda. Named for the Gilligan's Island reference (\"The Captain\" *in* \"Ginger\" is a Happy Skipper!)"
+  },
+  {
+    "strDrink":"Harvey Wallbanger",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Orange Juice",
+      "Vodka",
+      "Galliano"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Stir the vodka and orange juice with ice in the glass, then float the Galliano on top. Garnish and serve."
+  },
+  {
+    "strDrink":"Havana Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Light Rum",
+      "Pineapple Juice",
+      "Lemon Juice"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass."
+  },
+  {
+    "strDrink":"Hawaiian Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Triple Sec",
+      "Gin",
+      "Pineapple Juice"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Shake all ingredients with ice, strain into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Hemingway Special",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Maraschino Liqueur",
+      "Lime Juice",
+      "Rum",
+      "Grapefruit Juice"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sour",
+      "bitter"
+    ],
+    "strInstructions":"Pour all ingredients into a shaker with ice. Shake."
+  },
+  {
+    "strDrink":"Herbal flame",
+    "strGlass":"Mason jar",
+    "strCategory":"Coffee \/ Tea",
+    "strIngredients":[
+      "Hot Damn",
+      "Very Sweet Tea"
+    ],
+    "Alc_type":[
+      "Schnapps"
+    ],
+    "Basic_taste":[
+      "bitter"
+    ],
+    "strInstructions":"Pour Hot Damn 100 in bottom of a jar or regular glass. Fill the rest of the glass with sweet tea. Stir with spoon, straw, or better yet a cinnamon stick and leave it in."
+  },
+  {
+    "strDrink":"Highland Fling Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Orange Bitters",
+      "Scotch",
+      "Olive",
+      "Sweet Vermouth"
+    ],
+    "Alc_type":[
+      "Bitters",
+      "Whisky",
+      "Vermouth"
+    ],
+    "Basic_taste":[
+      "salty"
+    ],
+    "strInstructions":"Stir all ingredients (except olive) with ice and strain into a cocktail glass. Add the olive and serve."
+  },
+  {
+    "strDrink":"Horse's Neck",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Brandy",
+      "Ginger Ale",
+      "Lemon Peel",
+      "Bitters"
+    ],
+    "Alc_type":[
+      "Brandy",
+      "Bitters"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Pour brandy and ginger ale directly into highball glass with ice cubes. Stir gently. Garnish with lemon zest. If desired, add dashes of Angostura Bitter."
+  },
+  {
+    "strDrink":"Hot Creamy Bush",
+    "strGlass":"Irish coffee cup",
+    "strCategory":"Coffee \/ Tea",
+    "strIngredients":[
+      "Bailey'S Irish Cream",
+      "Coffee",
+      "Irish Whiskey"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "bitter"
+    ],
+    "strInstructions":"Combine all ingredients in glass"
+  },
+  {
+    "strDrink":"Ice Pick #1",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon Juice",
+      "Iced Tea",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sour",
+      "bitter"
+    ],
+    "strInstructions":"Put Vodka in glass fill with iced tea. Stir in lemon to taste."
+  },
+  {
+    "strDrink":"Iced Coffee Fillip",
+    "strGlass":"Coffee Mug",
+    "strCategory":"Coffee \/ Tea",
+    "strIngredients":[
+      "Coffee",
+      "Kahlua"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "bitter"
+    ],
+    "strInstructions":"Mix together in a coffee mug and chill before serving."
+  },
+  {
+    "strDrink":"Imperial Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Aperol",
+      "Gin",
+      "Lime Juice"
+    ],
+    "Alc_type":[
+      "Aperol",
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Shake with ice and strain into cocktail glass."
+  },
+  {
+    "strDrink":"Imperial Fizz",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon",
+      "Blended Whiskey",
+      "Carbonated Water",
+      "Sugar",
+      "Light Rum"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sour",
+      "water",
+      "sweet"
+    ],
+    "strInstructions":"Shake all ingredients (except carbonated water) with ice and strain into a highball glass over two ice cubes. Fill with carbonated water, stir, and serve."
+  },
+  {
+    "strDrink":"Irish Coffee",
+    "strGlass":"Irish coffee cup",
+    "strCategory":"Coffee \/ Tea",
+    "strIngredients":[
+      "Whipped Cream",
+      "Sugar",
+      "Irish Whiskey",
+      "Coffee"
+    ],
+    "Alc_type":[
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "cream",
+      "sweet",
+      "bitter"
+    ],
+    "strInstructions":"Heat the coffee, whiskey and sugar; do not boil. Pour into glass and top with cream; serve hot."
+  },
+  {
+    "strDrink":"Irish Curdling Cow",
+    "strGlass":"Highball Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Vodka",
+      "Bourbon",
+      "Orange Juice",
+      "Bailey'S Irish Cream"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Whisky",
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour Irish Cream, Vodka, and Bourbon in a glass. Add some ice and mix in the orange juice."
+  },
+  {
+    "strDrink":"Irish Russian",
+    "strGlass":"Highball Glass",
+    "strCategory":"Beer",
+    "strIngredients":[
+      "Kahlua",
+      "Coca-Cola",
+      "Vodka",
+      "Guinness Stout"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Vodka",
+      "Beer"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Add the ingredients in the order listed in the recipe. Care must be taken when adding the Guinness to prevent an excess of foam. Do Not add ice."
+  },
+  {
+    "strDrink":"Irish Spring",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Sweet And Sour",
+      "Orange Juice",
+      "Orange",
+      "Cherry",
+      "Peach Brandy",
+      "Irish Whiskey"
+    ],
+    "Alc_type":[
+      "Brandy",
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour all ingredients (except orange slice and cherry) into a collins glass over ice cubes. Garnish with the slice of orange, add the cherry on top, and serve."
+  },
+  {
+    "strDrink":"Jack Rose Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lime",
+      "Grenadine",
+      "Apple Brandy"
+    ],
+    "Alc_type":[
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Shake all ingredients with ice, strain into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Jack's Vanilla Coke",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Other\/Unknown",
+    "strIngredients":[
+      "Tennessee Whiskey",
+      "Vanilla Extract",
+      "Coca-Cola"
+    ],
+    "Alc_type":[
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"After pouring in your ingredients, and adding 3-5 ice cubes, according to taste. Stir the drink with a stirrer to get the Vanilla off the bottom."
+  },
+  {
+    "strDrink":"Jam Donut",
+    "strGlass":"Shot Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Chambord Raspberry Liqueur",
+      "Bailey'S Irish Cream",
+      "Sugar Syrup",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Coat the rim of a shot glass with sugar using sugar syrup to stick. Add the Chambord raspberry liqueur to the shot glass, and carefully layer the Baileys Irish Cream on top. Serve."
+  },
+  {
+    "strDrink":"Jamaica Kiss",
+    "strGlass":"Hurricane glass",
+    "strCategory":"Milk \/ Float \/ Shake",
+    "strIngredients":[
+      "Light Rum",
+      "Milk",
+      "Coffee Liqueur"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "cream",
+      "bitter"
+    ],
+    "strInstructions":"Fill a tumbler with ice cubes. Add a shot of Tia Maria and a shot of Jamaican light rum. Fill the tumbler with milk. Blend until smooth and serve immediately."
+  },
+  {
+    "strDrink":"Jamaican Coffee",
+    "strGlass":"Champagne Flute",
+    "strCategory":"Coffee \/ Tea",
+    "strIngredients":[
+      "Rum",
+      "Coffee",
+      "Water Cold",
+      "Whipped Cream"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "bitter",
+      "water",
+      "cream"
+    ],
+    "strInstructions":"Stir the rum, coffee and water together. Top with the whipped cream. Sprinkle with a pinch of well ground coffee and drink with a straw."
+  },
+  {
+    "strDrink":"Japanese Fizz",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Egg White",
+      "Port",
+      "Carbonated Water",
+      "Lemon",
+      "Blended Whiskey",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Port",
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "egg",
+      "water",
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Shake all ingredients (except carbonated water) with ice and strain into a highball glass over two ice cubes. Fill with carbonated water, stir, and serve."
+  },
+  {
+    "strDrink":"Jello shots",
+    "strGlass":"Shot Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Vodka",
+      "Jello",
+      "Water"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "water"
+    ],
+    "strInstructions":"Boil 3 cups of water then add jello. Mix jello and water until jello is completely disolved. Add the two cups of vodka and mix together. Pour mixture into plastic shot glasses and chill until firm. Then, eat away..."
+  },
+  {
+    "strDrink":"Jelly Bean",
+    "strGlass":"Cordial glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Blackberry Brandy",
+      "Anisette"
+    ],
+    "Alc_type":[
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "spicy"
+    ],
+    "strInstructions":"mix equal parts in pony glass-tastes just like a jelly bean!"
+  },
+  {
+    "strDrink":"Jitterbug",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Lime Juice",
+      "Vodka",
+      "Soda Water",
+      "Gin",
+      "Grenadine",
+      "Sugar Syrup",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Wet glass, dip rim in sugar. Then add Ice. Then add everything else. It's that simple!"
+  },
+  {
+    "strDrink":"John Collins",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Bourbon",
+      "Orange",
+      "Club Soda",
+      "Maraschino Cherry",
+      "Lemon Juice",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Pour all ingredients directly into highball glass filled with ice. Stir gently. Garnish. Add a dash of Angostura bitters."
+  },
+  {
+    "strDrink":"Kamikaze",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Triple Sec",
+      "Lime Juice",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Shake all ingredients together with ice. Strain into glass, garnish and serve."
+  },
+  {
+    "strDrink":"Karsk",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Coffee",
+      "Grain Alcohol"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "bitter"
+    ],
+    "strInstructions":"Put a copper coin in a coffe-cup and fill up with coffee until you no longer see the coin, then add alcohol until you see the coin. Norwegian speciality."
+  },
+  {
+    "strDrink":"Kentucky Colonel",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon Peel",
+      "Benedictine",
+      "Bourbon"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes combine the courbon and Benedictine. Shake and strain into a cocktail glass. Garnish with the lemon twist."
+  },
+  {
+    "strDrink":"Kioki Coffee",
+    "strGlass":"Coffee Mug",
+    "strCategory":"Coffee \/ Tea",
+    "strIngredients":[
+      "Brandy",
+      "Kahlua",
+      "Coffee"
+    ],
+    "Alc_type":[
+      "Brandy",
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "bitter"
+    ],
+    "strInstructions":"Stir. Add whipped cream to the top."
+  },
+  {
+    "strDrink":"Kiss me Quick",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Apple Juice",
+      "Schweppes Russchian",
+      "Apfelkorn",
+      "Cranberry Vodka"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "bitter"
+    ],
+    "strInstructions":"mix in the glass"
+  },
+  {
+    "strDrink":"Kool First Aid",
+    "strGlass":"Shot Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Kool-Aid Tropical",
+      "151 Proof Rum Light"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Add Kool Aid to a double shot glass, and top with rum. Slam and shoot."
+  },
+  {
+    "strDrink":"Kool-Aid Shot",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Cranberry Juice",
+      "Vodka",
+      "Triple Sec",
+      "Sloe Gin",
+      "Amaretto"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Triple Sec",
+      "Gin",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Pour into a large glass with ice and stir. Add a little cranberry juice to taste."
+  },
+  {
+    "strDrink":"Kool-Aid Slammer",
+    "strGlass":"Shot Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Vodka",
+      "Kool-Aid Grape"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Fill half the shot glass with the kool-aid first. Then put a paper towel over the top of the glass and slowly pour in the vodka. If you do it right, you should be able to see that the two liquids are separated, with the vodka on top. Now slam it! The last thing you'll taste is the kool-aid."
+  },
+  {
+    "strDrink":"Kurant Tea",
+    "strGlass":"Champagne Flute",
+    "strCategory":"Coffee \/ Tea",
+    "strIngredients":[
+      "Turkish Apple Tea",
+      "Absolut Kurant"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour Absolut Kurant into a comfortably big tea-cup. Add the not too hot(!) apple tea and, if you like, some sugar. Enjoy!"
+  },
+  {
+    "strDrink":"Lady Love Fizz",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon",
+      "Light Cream",
+      "Carbonated Water",
+      "Sugar",
+      "Gin",
+      "Egg White"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sour",
+      "cream",
+      "water",
+      "sweet",
+      "egg"
+    ],
+    "strInstructions":"Shake all ingredients (except carbonated water) with ice and strain into a cocktail glass over two ice cubes. Fill with carbonated water, stir, and serve."
+  },
+  {
+    "strDrink":"Lemon Drop",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Lemon",
+      "Vodka",
+      "Cointreau"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Shake and strain into a chilled cocktail glass rimmed with sugar."
+  },
+  {
+    "strDrink":"Lemon Shot",
+    "strGlass":"Shot Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Sugar",
+      "Lemon",
+      "151 Proof Rum",
+      "Galliano",
+      "Absolut Citron"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Sweet Liqueur",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Mix Galliano and Absolut Citron in a shot glass, lay lemon wedge sprinkled with sugar over glass and pour a rum over wedge and glass. light rum with a lighter and let burn for a second. Do shot quickly and suck on lemon. If it is done correctly, this will taste like a shot of sweet lemonade."
+  },
+  {
+    "strDrink":"Loch Lomond",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Scotch",
+      "Dry Vermouth",
+      "Lemon Peel",
+      "Drambuie"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Vermouth"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"In a mixing glass half-filled with ice cubes, combine the Scotch, Drambuie, and vermouth. Stir well. Strain into a cocktail glass. Garnish with the lemon twist."
+  },
+  {
+    "strDrink":"Lone Tree Cooler",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Gin",
+      "Lemon Peel",
+      "Dry Vermouth",
+      "Orange Spiral",
+      "Sugar",
+      "Carbonated Water"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Vermouth"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet",
+      "water"
+    ],
+    "strInstructions":"Stir powdered sugar and 2 oz. carbonated water in a collins glass. Fill glass with ice, add gin and vermouth, and stir. Fill with carbonated water and stir again. Add the twist of lemon peel and the orange spiral so that the end dangles over rim of glass."
+  },
+  {
+    "strDrink":"Long Island Iced Tea",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Gin",
+      "Light Rum",
+      "Vodka",
+      "Coca-Cola",
+      "Tequila",
+      "Lemon Peel"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Rum",
+      "Vodka",
+      "Tequila"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Mix all contents in a highball glass and sitr gently. Add dash of Coca-Cola for the coloring and garnish with lemon or lime twist."
+  },
+  {
+    "strDrink":"Long Island Tea",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Gin",
+      "Vodka",
+      "Coca-Cola",
+      "Light Rum",
+      "Lemon",
+      "Tequila"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Vodka",
+      "Rum",
+      "Tequila"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Combine all ingredients (except cola) and pour over ice in a highball glass. Add the splash of cola for color. Decorate with a slice of lemon and serve."
+  },
+  {
+    "strDrink":"Long vodka",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Tonic Water",
+      "Angostura Bitters",
+      "Vodka",
+      "Lime"
+    ],
+    "Alc_type":[
+      "Bitters",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "bitter",
+      "sour"
+    ],
+    "strInstructions":"Shake a tall glass with ice cubes and Angostura, coating the inside of the glass. Por the vodka onto this, add 1 slice of lime and squeeze juice out of remainder, mix with tonic, stir and voila you have a Long Vodka"
+  },
+  {
+    "strDrink":"Lunch Box",
+    "strGlass":"Pint glass",
+    "strCategory":"Beer",
+    "strIngredients":[
+      "Amaretto",
+      "Beer",
+      "Orange Juice"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Beer"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Fill a pint glass almost full with beer. Then fill the rest with orange juice (careful not to fill it to the top). Then take the shot of Amaretto and drop it in."
+  },
+  {
+    "strDrink":"Mai Tai",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Cherry",
+      "Orgeat Syrup",
+      "Light Rum",
+      "Sweet And Sour",
+      "Triple Sec"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Shake all ingredients with ice. Strain into glass. Garnish and serve with straw."
+  },
+  {
+    "strDrink":"Malibu Twister",
+    "strGlass":"Highball Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Malibu Rum",
+      "Cranberry Juice",
+      "Tropicana"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Add rum & trister then, add cranberry jucie,stir"
+  },
+  {
+    "strDrink":"Manhattan",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Maraschino Cherry",
+      "Bourbon Blended",
+      "Angostura Bitters",
+      "Sweet Vermouth",
+      "Orange Peel"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Bitters",
+      "Vermouth"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Stirred over ice, strained into a chilled glass, garnished, and served up."
+  },
+  {
+    "strDrink":"Margarita",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Tequila",
+      "Triple Sec",
+      "Lime Juice",
+      "Salt"
+    ],
+    "Alc_type":[
+      "Tequila",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sour",
+      "salty"
+    ],
+    "strInstructions":"Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass."
+  },
+  {
+    "strDrink":"Martinez Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Dry Vermouth",
+      "Triple Sec",
+      "Gin",
+      "Cherry",
+      "Orange Bitters"
+    ],
+    "Alc_type":[
+      "Vermouth",
+      "Triple Sec",
+      "Gin",
+      "Bitters"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Stir all ingredients (except cherry) with ice and strain into a cocktail glass. Top with the cherry and serve."
+  },
+  {
+    "strDrink":"Martini",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Gin",
+      "Olive",
+      "Dry Vermouth"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Vermouth"
+    ],
+    "Basic_taste":[
+      "salty"
+    ],
+    "strInstructions":"Straight: Pour all ingredients into mixing glass with ice cubes. Stir well. Strain in chilled martini cocktail glass. Squeeze oil from lemon peel onto the drink, or garnish with olive."
+  },
+  {
+    "strDrink":"Mary Pickford",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Maraschino Cherry",
+      "Pineapple Juice",
+      "Grenadine",
+      "Maraschino Liqueur",
+      "Light Rum"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Shake and strain into a chilled large cocktail glass"
+  },
+  {
+    "strDrink":"Miami Vice",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "151 Proof Rum",
+      "Pina Colada Mix",
+      "Daiquiri Mix"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"First: Mix pina colada with 2.5 oz. of rum with ice(set aside). Second: Mix daiquiri with 2.5 oz. of rum with ice. Third: While frozen, add pina colda mix then daiquiri mix in glass (Making sure they do not get mixed together)."
+  },
+  {
+    "strDrink":"Midnight Cowboy",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Bourbon",
+      "Heavy Cream",
+      "Dark Rum"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Rum"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass."
+  },
+  {
+    "strDrink":"Midnight Manx",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Kahlua",
+      "Heavy Cream",
+      "Bailey'S Irish Cream",
+      "Coffee Hazlenut",
+      "Goldschlager"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Schnapps"
+    ],
+    "Basic_taste":[
+      "cream",
+      "bitter"
+    ],
+    "strInstructions":"Fill a mixer with ice and add Baileys, Kahlua, Goldshlager, and cream. Shake for 5 seconds and Strain into a double rocks glass filled with ice. Add chilled coffee Stir and enjoy!"
+  },
+  {
+    "strDrink":"Midnight Mint",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "White Creme De Menthe",
+      "Bailey'S Irish Cream",
+      "Cream Double"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"If available, rim cocktail (Martini) glass with sugar syrup then dip into chocolate flakes or powder. Add ingredients into shaker with ice. Shake well then strain into cocktail glass."
+  },
+  {
+    "strDrink":"Mimosa",
+    "strGlass":"Champagne Flute",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Orange Juice",
+      "Champagne"
+    ],
+    "Alc_type":[
+      "Champagne"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Ensure both ingredients are well chilled, then mix into the glass. Serve cold."
+  },
+  {
+    "strDrink":"Mississippi Planters Punch",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Bourbon",
+      "Light Rum",
+      "Sugar",
+      "Brandy",
+      "Lemon",
+      "Carbonated Water"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Rum",
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour",
+      "water"
+    ],
+    "strInstructions":"Shake all ingredients (except carbonated water) with ice and strain into a collins glass over ice cubes. Fill with carbonated water, stir, and serve."
+  },
+  {
+    "strDrink":"Mocha-Berry",
+    "strGlass":"Irish coffee cup",
+    "strCategory":"Coffee \/ Tea",
+    "strIngredients":[
+      "Coffee",
+      "Cocoa Powder",
+      "Whipped Cream",
+      "Chambord Raspberry Liqueur"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "bitter",
+      "sweet",
+      "cream"
+    ],
+    "strInstructions":"pour 6 oz. of coffee in a mug or Irish coffee cup. add coca mix and chambord, mix well and top off with whipped cream."
+  },
+  {
+    "strDrink":"Mojito",
+    "strGlass":"Highball Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Sugar",
+      "Mint",
+      "Lime",
+      "Soda Water",
+      "Light Rum"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "mint",
+      "sour"
+    ],
+    "strInstructions":"Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw."
+  },
+  {
+    "strDrink":"Mojito #3",
+    "strGlass":"Collins Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Dark Rum",
+      "Club Soda",
+      "Lemon Juice",
+      "Angostura Bitters",
+      "Mint"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Bitters"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour",
+      "mint"
+    ],
+    "strInstructions":"Put mint with lemon juice in a glas, mash the mint with a spoon, ice, rum & fill up with club soda. Top it with Angostura."
+  },
+  {
+    "strDrink":"Monkey Gland",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Grenadine",
+      "Gin",
+      "Orange Juice",
+      "Benedictine"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Shake well over ice cubes in a shaker, strain into a chilled cocktail glass."
+  },
+  {
+    "strDrink":"Monkey Wrench",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Bitters",
+      "Light Rum",
+      "Grapefruit Juice"
+    ],
+    "Alc_type":[
+      "Bitters",
+      "Rum"
+    ],
+    "Basic_taste":[
+      "bitter"
+    ],
+    "strInstructions":"Pour all of the ingredients into an old-fashioned glass almost filled with ice cubes. Stir well."
+  },
+  {
+    "strDrink":"Moranguito",
+    "strGlass":"Shot Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Absinthe",
+      "Grenadine",
+      "Tequila"
+    ],
+    "Alc_type":[
+      "Absinthe",
+      "Tequila"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"first you put rhe absinthe, then put tequila, then put the Granadine syrup."
+  },
+  {
+    "strDrink":"Moscow Mule",
+    "strGlass":"Copper Mug",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Vodka",
+      "Lime Juice",
+      "Ginger Ale"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Combine vodka and ginger beer in a highball glass filled with ice. Add lime juice. Stir gently. Garnish."
+  },
+  {
+    "strDrink":"Mother's Milk",
+    "strGlass":"Shot Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Milk",
+      "Butterscotch Schnapps",
+      "Goldschlager"
+    ],
+    "Alc_type":[
+      "Schnapps"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Shake over ice, strain. Serves two."
+  },
+  {
+    "strDrink":"Mudslinger",
+    "strGlass":"Punch Bowl",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Southern Comfort",
+      "Orange Juice",
+      "Pepsi Cola"
+    ],
+    "Alc_type":[
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Add all contents to a large jug or punch bowl. Stir well!"
+  },
+  {
+    "strDrink":"Mulled Wine",
+    "strGlass":"Collins Glass",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Water",
+      "Red Wine",
+      "Brandy",
+      "Cinnamon",
+      "Cloves",
+      "Lemon Peel",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Wine",
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "water",
+      "spicy",
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Simmer 3 cups water with, sugar, cloves, cinnamon sticks, and lemon peel in a stainless steel pot for 10 minutes. Add wine heat to a \"coffee temperature\" (DO NOT BOIL) then add the brandy."
+  },
+  {
+    "strDrink":"National Aquarium",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Sour Mix",
+      "Rum",
+      "Vodka",
+      "Lemon-Lime Soda",
+      "Gin",
+      "Blue Curacao"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Vodka",
+      "Gin",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Pour all ingredients into a shaker of ice. Shake well. Serve on the rocks."
+  },
+  {
+    "strDrink":"New York Lemonade",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Absolut Citron",
+      "Club Soda",
+      "Lemon Juice",
+      "Grand Marnier"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Serve in a chilled cocktail glass. Lemon and sugar the rim. Stir and Strain."
+  },
+  {
+    "strDrink":"New York Sour",
+    "strGlass":"Whiskey sour glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Blended Whiskey",
+      "Cherry",
+      "Sugar",
+      "Lemon",
+      "Red Wine"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Wine"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Shake blended whiskey, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass. Float claret on top. Decorate with the half-slice of lemon and the cherry and serve."
+  },
+  {
+    "strDrink":"Nutty Irishman",
+    "strGlass":"Highball Glass",
+    "strCategory":"Milk \/ Float \/ Shake",
+    "strIngredients":[
+      "Milk",
+      "Frangelico",
+      "Bailey'S Irish Cream"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Serve over ice"
+  },
+  {
+    "strDrink":"Old Fashioned",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Angostura Bitters",
+      "Water",
+      "Bourbon",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Bitters",
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "water",
+      "sweet"
+    ],
+    "strInstructions":"Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved.\r\nFill the glass with ice cubes and add whiskey.\r\n\r\nGarnish with orange twist, and a cocktail cherry."
+  },
+  {
+    "strDrink":"Orange Crush",
+    "strGlass":"Shot Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Triple Sec",
+      "Orange Juice",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Add all ingredients to tumbler-Pour as shot"
+  },
+  {
+    "strDrink":"Orange Oasis",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Gin",
+      "Orange Juice",
+      "Cherry Brandy",
+      "Ginger Ale"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Shake brandy, gin, and orange juice with ice and strain into a highball glass over ice cubes. Fill with ginger ale, stir, and serve."
+  },
+  {
+    "strDrink":"Orange Push-up",
+    "strGlass":"Hurricane glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Orange Juice",
+      "Spiced Rum",
+      "Grenadine",
+      "Sour Mix"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Combine liquors in a blender. Add a half scoop of ice and blend. Garnish with an orange and cherry flag. So good it will melt in your mouth!!!"
+  },
+  {
+    "strDrink":"Orange Whip",
+    "strGlass":"Collins Glass",
+    "strCategory":"Other\/Unknown",
+    "strIngredients":[
+      "Rum",
+      "Vodka",
+      "Orange Juice",
+      "Cream"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "cream"
+    ],
+    "strInstructions":"Pour ingredients over ice and stir."
+  },
+  {
+    "strDrink":"Oreo Mudslide",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Kahlua",
+      "Vodka",
+      "Vanilla Ice-Cream",
+      "Oreo Cookie",
+      "Bailey'S Irish Cream"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Blend Vodka, Kahlua, Bailey's, ice-cream and the Oreo well in a blender. Pour into a large frosted glass. Garnish with whipped cream and a cherry."
+  },
+  {
+    "strDrink":"Orgasm",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Amaretto",
+      "Light Cream",
+      "Triple Sec",
+      "Creme De Cacao White",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Triple Sec",
+      "Creamy Liqueur",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Shake all ingredients with ice, strain into a chilled cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Owen's Grandmother's Revenge",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemonade",
+      "Whiskey",
+      "Beer"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Beer"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Add ingredients and mix in blender."
+  },
+  {
+    "strDrink":"Paradise",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Orange Juice",
+      "Gin",
+      "Apricot Brandy"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Shake together over ice. Strain into cocktail glass and serve chilled."
+  },
+  {
+    "strDrink":"Pina Colada",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Light Rum",
+      "Coconut Milk",
+      "Pineapple"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "cream",
+      "sweet"
+    ],
+    "strInstructions":"Mix with crushed ice in blender until smooth. Pour into chilled glass, garnish and serve."
+  },
+  {
+    "strDrink":"Pink Lady",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Egg White",
+      "Grenadine",
+      "Gin",
+      "Light Cream"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "egg",
+      "sweet",
+      "cream"
+    ],
+    "strInstructions":"Shake all ingredients with ice, strain into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Pink Panty Pulldowns",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Sprite",
+      "Pink Lemonade",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Shake well"
+  },
+  {
+    "strDrink":"Pink Penocha",
+    "strGlass":"Punch Bowl",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Cranberry Juice",
+      "Everclear",
+      "Orange Juice",
+      "Vodka",
+      "Peach Schnapps"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Schnapps"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"mix all ingredients into bowl keep iced stir frequently"
+  },
+  {
+    "strDrink":"Pisco Sour",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Pisco",
+      "Lemon Juice",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Pisco"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Vigorously shake and strain contents in a cocktail shaker with ice cubes, then pour into glass and garnish with bitters.[1]"
+  },
+  {
+    "strDrink":"Planter's Punch",
+    "strGlass":"Collins Glass",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Dark Rum",
+      "Orange Juice",
+      "Orgeat Syrup",
+      "Pineapple Juice"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour all ingredients, except the bitters, into shaker filled with ice. Shake well. Pour into large glass, filled with ice. Add Angostura bitters, \"on top\". Garnish with cocktail cherry and pineapple."
+  },
+  {
+    "strDrink":"Popped cherry",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Vodka",
+      "Cherry Liqueur",
+      "Cranberry Juice",
+      "Orange Juice"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Served over ice in a tall glass with a popped cherry (can add more popped cherries if in the mood)!"
+  },
+  {
+    "strDrink":"Port And Starboard",
+    "strGlass":"Pousse cafe glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Green Creme De Menthe",
+      "Grenadine"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour carefully into a pousse-cafe glass, so that creme de menthe floats on grenadine. Serve without mixing."
+  },
+  {
+    "strDrink":"Port Wine Flip",
+    "strGlass":"Whiskey sour glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Nutmeg",
+      "Sugar",
+      "Light Cream",
+      "Egg",
+      "Port"
+    ],
+    "Alc_type":[
+      "Port"
+    ],
+    "Basic_taste":[
+      "spicy",
+      "sweet",
+      "cream",
+      "egg"
+    ],
+    "strInstructions":"Shake all ingredients (except nutmeg) with ice and strain into a whiskey sour glass. Sprinkle nutmeg on top and serve."
+  },
+  {
+    "strDrink":"Porto flip",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Brandy",
+      "Egg Yolk",
+      "Port"
+    ],
+    "Alc_type":[
+      "Brandy",
+      "Port"
+    ],
+    "Basic_taste":[
+      "egg"
+    ],
+    "strInstructions":"Shake ingredients together in a mixer with ice. Strain into glass, garnish and serve."
+  },
+  {
+    "strDrink":"Quaker's Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon",
+      "Brandy",
+      "Light Rum",
+      "Raspberry Syrup"
+    ],
+    "Alc_type":[
+      "Brandy",
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Shake all ingredients with ice, strain into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Quarter Deck Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lime",
+      "Sherry Cream",
+      "Light Rum"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sour",
+      "cream"
+    ],
+    "strInstructions":"Stir all ingredients with ice, strain into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Queen Bee",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Sherry Cream",
+      "Coffee Brandy",
+      "Lime Vodka"
+    ],
+    "Alc_type":[
+      "Brandy",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Shake all ingredients with ice, strain into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Queen Charlotte",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon-Lime Soda",
+      "Grenadine",
+      "Red Wine"
+    ],
+    "Alc_type":[
+      "Wine"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour red wine and grenadine into a collins glass over ice cubes. Fill with lemon-lime soda, stir, and serve."
+  },
+  {
+    "strDrink":"Quentin",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Dark Rum",
+      "Light Cream",
+      "Nutmeg",
+      "Kahlua"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "cream",
+      "spicy"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine the rum, Kahlua, and cream. Shake well. Strain into a cocktail glass and garnish with the nutmeg."
+  },
+  {
+    "strDrink":"Quick-sand",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Black Sambuca",
+      "Orange Juice"
+    ],
+    "Alc_type":[
+      "Sambuca"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Simply add the orange juice, quite a quick pour in order to mix the sambucca with the orange juice. The juice MUST have fruit pulp!"
+  },
+  {
+    "strDrink":"Radler",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Beer",
+      "7-Up"
+    ],
+    "Alc_type":[
+      "Beer"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour beer into large mug, slowly add the 7-up (or Sprite)."
+  },
+  {
+    "strDrink":"Raspberry Cooler",
+    "strGlass":"Highball Glass",
+    "strCategory":"Other\/Unknown",
+    "strIngredients":[
+      "Raspberry Vodka",
+      "Lemon-Lime Soda"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour the raspberry vodka and soda into a highball glass almost filled with ice cubes. Stir well."
+  },
+  {
+    "strDrink":"Red Snapper",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Amaretto",
+      "Crown Royal",
+      "Cranberry Juice"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"One shot each, shake n shoot"
+  },
+  {
+    "strDrink":"Rose",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Gin",
+      "Grenadine",
+      "Apricot Brandy",
+      "Lemon Juice",
+      "Sugar",
+      "Dry Vermouth"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Brandy",
+      "Vermouth"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Shake together in a cocktail shaker, then strain into chilled glass. Garnish and serve."
+  },
+  {
+    "strDrink":"Royal Fizz",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Egg",
+      "Coca-Cola",
+      "Gin",
+      "Sweet And Sour"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "egg",
+      "sweet"
+    ],
+    "strInstructions":"Shake all ingredients (except cola) with ice and strain into a chilled collins glass. Fill with cola and serve."
+  },
+  {
+    "strDrink":"Royal Flush",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Chambord Raspberry Liqueur",
+      "Crown Royal",
+      "Cranberry Juice",
+      "Peach Schnapps"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Whisky",
+      "Schnapps"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Pour all the ingredients into tumbler over ice. Strain into glass."
+  },
+  {
+    "strDrink":"Royal Gin Fizz",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Gin",
+      "Egg",
+      "Carbonated Water",
+      "Lemon",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "egg",
+      "water",
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Shake all ingredients (except carbonated water) with ice and strain into a highball glass over two ice cubes. Fill with carbonated water, stir, and serve."
+  },
+  {
+    "strDrink":"Ruby Tuesday",
+    "strGlass":"Highball Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Cranberry Juice",
+      "Grenadine",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Pour gin and cranberry into a highball filled with ice cubes. Add grenadine and stir."
+  },
+  {
+    "strDrink":"Rum Cobbler",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon",
+      "Dark Rum",
+      "Sugar",
+      "Club Soda",
+      "Orange",
+      "Maraschino Cherry"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"In an old-fashioned glass, dissolve the sugar in the club soda. Add crushed ice until the glass is almost full. Add the rum. Stir well. Garnish with the cherry and the orange and lemon slices."
+  },
+  {
+    "strDrink":"Rum Cooler",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon",
+      "Rum",
+      "Lemon-Lime Soda"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Pour the rum and soda into a collins glass almost filled with ice cubes. Stir well and garnish with the lemon wedge."
+  },
+  {
+    "strDrink":"Rum Milk Punch",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Sugar",
+      "Light Rum",
+      "Nutmeg",
+      "Milk"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "spicy",
+      "cream"
+    ],
+    "strInstructions":"Shake all ingredients (except nutmeg) with ice and strain into a collins glass. Sprinkle nutmeg on top and serve."
+  },
+  {
+    "strDrink":"Rum Old-fashioned",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "151 Proof Rum",
+      "Sugar",
+      "Lime Peel",
+      "Water",
+      "Bitters",
+      "Light Rum"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Bitters"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour",
+      "water"
+    ],
+    "strInstructions":"Stir powdered sugar, water, and bitters in an old-fashioned glass. When sugar has dissolved add ice cubes and light rum. Add the twist of lime peel, float 151 proof rum on top, and serve."
+  },
+  {
+    "strDrink":"Rum Punch",
+    "strGlass":"Punch Bowl",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Rum",
+      "Orange Juice",
+      "Ginger Ale",
+      "Fruit Punch Frozen"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Mix all ingredients in a punch bowl and serve."
+  },
+  {
+    "strDrink":"Rum Runner",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Orange Juice",
+      "Pineapple Juice",
+      "Malibu Rum",
+      "Cranberry Juice",
+      "Blackberry Brandy"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Mix all ingredients in glass & add ice."
+  },
+  {
+    "strDrink":"Rum Screwdriver",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Light Rum",
+      "Orange Juice"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour rum into a highball glass over ice cubes. Add orange juice, stir, and serve."
+  },
+  {
+    "strDrink":"Rum Sour",
+    "strGlass":"Whiskey sour glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Light Rum",
+      "Sugar",
+      "Lemon Juice",
+      "Maraschino Cherry",
+      "Orange"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine the rum, lemon juice, and sugar. Shake well. Strain into a sour glass and garnish with the orange slice and the cherry."
+  },
+  {
+    "strDrink":"Rum Toddy",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Rum",
+      "Sugar",
+      "Lemon Peel",
+      "Water"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour",
+      "water"
+    ],
+    "strInstructions":"Dissolve powdered sugar in water in an old-fashioned glass. Add rum and one ice cube and stir. Add the twist of lemon peel and serve."
+  },
+  {
+    "strDrink":"Russian Spring Punch",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon Juice",
+      "Vodka",
+      "Creme De Cassis",
+      "Sugar Syrup"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Pour the ingredients into an highball glass, top with Sparkling wine."
+  },
+  {
+    "strDrink":"Rusty Nail",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Scotch",
+      "Drambuie",
+      "Lemon Peel"
+    ],
+    "Alc_type":[
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Pour the Scotch and Drambuie into an old-fashioned glass almost filled with ice cubes. Stir well. Garnish with the lemon twist."
+  },
+  {
+    "strDrink":"Salty Dog",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Salt",
+      "Gin",
+      "Grapefruit Juice"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "salty",
+      "bitter"
+    ],
+    "strInstructions":"Pour all ingredients over ice cubes in a highball glass. Stir well and serve. (Vodka may be substituted for gin, if preferred.)"
+  },
+  {
+    "strDrink":"San Francisco",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Creme De Banane",
+      "Orange Juice",
+      "Grenadine",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Take a tall glass and put in a few ice cubes, fill the vodka over it and fill with juice then the \"creme\", to end fill in the grenadine but very carefully at the side of the glass so it will lay down in the bottom. garnish with orange and strawberry."
+  },
+  {
+    "strDrink":"Sangria #1",
+    "strGlass":"Pitcher",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Orange Juice",
+      "Cinnamon",
+      "Cloves",
+      "Red Wine",
+      "Lemon Juice",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Wine"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "spicy",
+      "sour"
+    ],
+    "strInstructions":"Mix all together in a pitcher and refrigerate. Add cloves and cinnamon sticks to taste. Serve in wine glasses."
+  },
+  {
+    "strDrink":"Sangria - The World's Best",
+    "strGlass":"Pitcher",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Brandy",
+      "Red Wine",
+      "Orange",
+      "Soda Water",
+      "Apple",
+      "Lemon",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Brandy",
+      "Wine"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Mix wine, sugar and fruit, and let sit in the fridge for 18-24 hours. The mixture will have a somewhat syrupy consistency. Before serving stir in brandy and cut the mixture with soda water until it have a thinner, more wine like consistency. Serve from a pitcher in wine glasses."
+  },
+  {
+    "strDrink":"Sazerac",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Bourbon",
+      "Ricard",
+      "Water",
+      "Lemon Peel",
+      "Peychaud Bitters",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Sweet Liqueur",
+      "Bitters"
+    ],
+    "Basic_taste":[
+      "water",
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Rinse a chilled old-fashioned glass with the absinthe, add crushed ice, and set it aside. Stir the remaining ingredients over ice and set it aside. Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass. Add the lemon peel for garnish."
+  },
+  {
+    "strDrink":"Scooter",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Light Cream",
+      "Brandy",
+      "Amaretto"
+    ],
+    "Alc_type":[
+      "Brandy",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Shake all ingredients well with cracked ice, strain into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Scotch Cobbler",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Curacao",
+      "Mint",
+      "Brandy",
+      "Scotch",
+      "Orange"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Brandy",
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "mint",
+      "sweet"
+    ],
+    "strInstructions":"Pour scotch, brandy, and curacao over ice in an old-fashioned glass. Add the orange slice, top with the mint sprig, and serve."
+  },
+  {
+    "strDrink":"Scotch Sour",
+    "strGlass":"Whiskey sour glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Sugar",
+      "Lime",
+      "Lemon",
+      "Cherry",
+      "Scotch"
+    ],
+    "Alc_type":[
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Shake scotch, juice of lime, and powdered sugar with ice and strain into a whiskey sour glass. Decorate with 1\/2 slice lemon, top with the cherry, and serve."
+  },
+  {
+    "strDrink":"Screwdriver",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Orange Juice",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Mix in a highball glass with ice. Garnish and serve."
+  },
+  {
+    "strDrink":"Sea breeze",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Vodka",
+      "Grapefruit Juice",
+      "Cranberry Juice"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "bitter",
+      "sour"
+    ],
+    "strInstructions":"Build all ingredients in a highball glass filled with ice. Garnish with lime wedge."
+  },
+  {
+    "strDrink":"Sex on the Beach",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Grapefruit Juice",
+      "Cranberry Juice",
+      "Peach Schnapps",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Schnapps",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "bitter",
+      "sour"
+    ],
+    "strInstructions":"Build all ingredients in a highball glass filled with ice. Garnish with orange slice."
+  },
+  {
+    "strDrink":"Shanghai Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon",
+      "Grenadine",
+      "Light Rum",
+      "Anisette"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet",
+      "spicy"
+    ],
+    "strInstructions":"Shake all ingredients with ice, strain into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Shark Attack",
+    "strGlass":"Pitcher",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Vodka",
+      "Lemonade",
+      "Water"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sour",
+      "water"
+    ],
+    "strInstructions":"Mix lemonade and water according to instructions on back of can. If the instructions say to add 4 1\/3 cans of water do so. Mix into pitcher. Add 1 1\/2 cup of Vodka (Absolut). Mix well. Pour into glass of crushed ice. Excellent!"
+  },
+  {
+    "strDrink":"Sidecar",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Cognac",
+      "Lemon Juice",
+      "Cointreau"
+    ],
+    "Alc_type":[
+      "Brandy",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Pour all ingredients into cocktail shaker filled with ice. Shake well and strain into cocktail glass."
+  },
+  {
+    "strDrink":"Sidecar Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Triple Sec",
+      "Lemon",
+      "Brandy"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Shake all ingredients with ice, strain into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Singapore Sling",
+    "strGlass":"Hurricane glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Grenadine",
+      "Cherry",
+      "Carbonated Water",
+      "Cherry Brandy",
+      "Sweet And Sour",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Brandy",
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "water"
+    ],
+    "strInstructions":"Pour all ingredients into cocktail shaker filled with ice cubes. Shake well. Strain into highball glass. Garnish with pineapple and cocktail cherry."
+  },
+  {
+    "strDrink":"Smut",
+    "strGlass":"Beer mug",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Red Wine",
+      "Orange Juice",
+      "Peach Schnapps",
+      "Pepsi Cola"
+    ],
+    "Alc_type":[
+      "Wine",
+      "Schnapps"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Throw it all together and serve real cold."
+  },
+  {
+    "strDrink":"Snakebite and Black",
+    "strGlass":"Pint glass",
+    "strCategory":"Beer",
+    "strIngredients":[
+      "Blackcurrant Squash",
+      "Cider",
+      "Lager"
+    ],
+    "Alc_type":[
+      "Cider",
+      "Beer"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Put blackcurrant squash in first up to about 1cm in glass. Then add the larger and cider one after another."
+  },
+  {
+    "strDrink":"Snowball",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon",
+      "Lemonade",
+      "Advocaat"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Place one ice cube in the glass and add 1 1\/2 oz of Advocaat. Fill up the glass with lemonade and decorate with a slice of lemon. Serve at once."
+  },
+  {
+    "strDrink":"Sol Y Sombra",
+    "strGlass":"Brandy snifter",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Anisette",
+      "Brandy"
+    ],
+    "Alc_type":[
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "spicy"
+    ],
+    "strInstructions":"Shake ingredients with ice, strain into a brandy snifter, and serve. (The English translation of the name of this drink is \"Sun and Shade\", and after sampling this drink, you'll understand why. Thanks, Kirby.)"
+  },
+  {
+    "strDrink":"Space Odyssey",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Grenadine",
+      "Malibu Rum",
+      "Cherry",
+      "Pineapple Juice",
+      "151 Proof Rum",
+      "Orange Juice"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Fill glass with ice and add shots of Bacardi and Malibu. Add splash of pineapple juice and top with orange juice. Add grenadine for color and garnish with cherries."
+  },
+  {
+    "strDrink":"Spritz",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Soda Water",
+      "Prosecco",
+      "Campari"
+    ],
+    "Alc_type":[
+      "Prosecco",
+      "Campari"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Build into glass over ice, garnish and serve."
+  },
+  {
+    "strDrink":"Stone Sour",
+    "strGlass":"Whiskey sour glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Apricot Brandy",
+      "Sweet And Sour",
+      "Orange Juice"
+    ],
+    "Alc_type":[
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Shake all ingredients with ice, strain into a chilled whiskey sour glass, and serve."
+  },
+  {
+    "strDrink":"Strawberry Daiquiri",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Light Rum",
+      "Strawberry Schnapps",
+      "Strawberries",
+      "Sugar",
+      "Lime Juice"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Schnapps"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Pour all ingredients into shaker with ice cubes. Shake well. Strain in chilled cocktail glass."
+  },
+  {
+    "strDrink":"Strawberry Margarita",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Triple Sec",
+      "Strawberry Schnapps",
+      "Tequila",
+      "Strawberries",
+      "Lemon Juice",
+      "Salt"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Schnapps",
+      "Tequila"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour",
+      "salty"
+    ],
+    "strInstructions":"Rub rim of cocktail glass with lemon juice and dip rim in salt. Shake schnapps, tequila, triple sec, lemon juice, and strawberries with ice, strain into the salt-rimmed glass, and serve."
+  },
+  {
+    "strDrink":"Sunny Holiday Punch",
+    "strGlass":"Punch Bowl",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Berries",
+      "Orange Juice",
+      "Pineapple Juice",
+      "Champagne",
+      "Club Soda",
+      "Lemon"
+    ],
+    "Alc_type":[
+      "Champagne"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Combine all ingredients in a punch bowl."
+  },
+  {
+    "strDrink":"Swedish Coffee",
+    "strGlass":"Coffee Mug",
+    "strCategory":"Coffee \/ Tea",
+    "strIngredients":[
+      "Aquavit",
+      "Coffee"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "bitter"
+    ],
+    "strInstructions":"Pour the coffee in an ordinary coffee cup. Add the aquavit. Add sugar by taste. Stir and have a nice evening (morning)"
+  },
+  {
+    "strDrink":"Sweet Tooth",
+    "strGlass":"Highball Glass",
+    "strCategory":"Milk \/ Float \/ Shake",
+    "strIngredients":[
+      "Godiva Liqueur",
+      "Milk"
+    ],
+    "Alc_type":[
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Put 2 shots Godiva Liquour into a glass, add as much or as little milk as you would like."
+  },
+  {
+    "strDrink":"Talos Coffee",
+    "strGlass":"Brandy snifter",
+    "strCategory":"Coffee \/ Tea",
+    "strIngredients":[
+      "Grand Marnier",
+      "Coffee"
+    ],
+    "Alc_type":[
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "bitter"
+    ],
+    "strInstructions":"Add your GM and then add your coffee."
+  },
+  {
+    "strDrink":"Tennesee Mud",
+    "strGlass":"Coffee Mug",
+    "strCategory":"Coffee \/ Tea",
+    "strIngredients":[
+      "Jack Daniels",
+      "Whipped Cream",
+      "Coffee",
+      "Amaretto"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "cream",
+      "bitter"
+    ],
+    "strInstructions":"Mix Coffee, Jack Daniels and Amaretto. Add Cream on top."
+  },
+  {
+    "strDrink":"Tequila Fizz",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Egg White",
+      "Tequila",
+      "Grenadine",
+      "Lemon Juice",
+      "Ginger Ale"
+    ],
+    "Alc_type":[
+      "Tequila"
+    ],
+    "Basic_taste":[
+      "egg",
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Shake all ingredients (except ginger ale) with ice and strain into a collins glass over ice cubes. Fill with ginger ale, stir, and serve."
+  },
+  {
+    "strDrink":"Tequila Sour",
+    "strGlass":"Whiskey sour glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon",
+      "Sugar",
+      "Cherry",
+      "Tequila"
+    ],
+    "Alc_type":[
+      "Tequila"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Shake tequila, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass. Add the half-slice of lemon, top with the cherry, and serve."
+  },
+  {
+    "strDrink":"Tequila Sunrise",
+    "strGlass":"Highball Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Tequila",
+      "Orange Juice",
+      "Grenadine"
+    ],
+    "Alc_type":[
+      "Tequila"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Pour the tequila and orange juice into glass over ice. Add the grenadine, which will sink to the bottom. Stir gently to create the sunrise effect. Garnish and serve."
+  },
+  {
+    "strDrink":"Tequila Surprise",
+    "strGlass":"Shot Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Tequila",
+      "Tabasco Sauce"
+    ],
+    "Alc_type":[
+      "Tequila"
+    ],
+    "Basic_taste":[
+      "spicy"
+    ],
+    "strInstructions":"Fill shot glass with Tequila. Add drops of Tobasco sauce."
+  },
+  {
+    "strDrink":"Texas Rattlesnake",
+    "strGlass":"Highball Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Yukon Jack",
+      "Southern Comfort",
+      "Sweet And Sour",
+      "Cherry Brandy"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Whisky",
+      "Brandy"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Mix all ingredients and Shake well. Sweet at first, with a BITE at the end..."
+  },
+  {
+    "strDrink":"Texas Sling",
+    "strGlass":"Wine Glass",
+    "strCategory":"Milk \/ Float \/ Shake",
+    "strIngredients":[
+      "Amaretto",
+      "151 Proof Rum",
+      "Cream",
+      "Irish Cream",
+      "Kahlua"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Rum",
+      "Creamy Liqueur"
+    ],
+    "Basic_taste":[
+      "cream"
+    ],
+    "strInstructions":"Blend with Ice until smooth. Serve in a tulip glass, top with whip cream."
+  },
+  {
+    "strDrink":"Thriller",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Scotch",
+      "Green Ginger Wine",
+      "Orange Juice"
+    ],
+    "Alc_type":[
+      "Whisky",
+      "Wine"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass."
+  },
+  {
+    "strDrink":"Tom Collins",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Club Soda",
+      "Gin",
+      "Lemon Juice",
+      "Maraschino Cherry",
+      "Orange",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"In a shaker half-filled with ice cubes, combine the gin, lemon juice, and sugar. Shake well. Strain into a collins glass alomst filled with ice cubes. Add the club soda. Stir and garnish with the cherry and the orange slice."
+  },
+  {
+    "strDrink":"Tommy's Margarita",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Tequila",
+      "Lime Juice",
+      "Agave Syrup"
+    ],
+    "Alc_type":[
+      "Tequila"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Shake and strain into a chilled cocktail glass."
+  },
+  {
+    "strDrink":"Turf Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Gin",
+      "Orange Peel",
+      "Bitters",
+      "Dry Vermouth",
+      "Anisette"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Bitters",
+      "Vermouth"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "spicy"
+    ],
+    "strInstructions":"Stir all ingredients (except orange peel) with ice and strain into a cocktail glass. Add the twist of orange peel and serve."
+  },
+  {
+    "strDrink":"Turkeyball",
+    "strGlass":"Shot Glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Amaretto",
+      "Wild Turkey",
+      "Pineapple Juice"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Shake with ice and strain into a shot glass."
+  },
+  {
+    "strDrink":"Tuxedo Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Dry Vermouth",
+      "Maraschino Liqueur",
+      "Gin",
+      "Orange Bitters",
+      "Anisette",
+      "Cherry"
+    ],
+    "Alc_type":[
+      "Vermouth",
+      "Sweet Liqueur",
+      "Gin",
+      "Bitters"
+    ],
+    "Basic_taste":[
+      "spicy",
+      "sweet"
+    ],
+    "strInstructions":"Stir all ingredients with ice and strain into a cocktail glass. Garnish with a cherry and a twist of lemon zest."
+  },
+  {
+    "strDrink":"Valencia Cocktail",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Apricot Brandy",
+      "Orange Juice",
+      "Orange Bitters"
+    ],
+    "Alc_type":[
+      "Brandy",
+      "Bitters"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Shake all ingredients with ice, strain into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Vampiro",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Tomato Juice",
+      "Sugar Syrup",
+      "Salt",
+      "Tequila",
+      "Orange Juice",
+      "Lime Juice"
+    ],
+    "Alc_type":[
+      "Tequila"
+    ],
+    "Basic_taste":[
+      "salty",
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Vampiros may be made in a tall glass or an old fashioned glass. Bartenders may first \"rim\" the glass with Kosher Salt, which is done by placing a layer of Kosher Salt on a chopping board, moistening the glass' rim with lime juice or water, and then placing the upside down glass rim onto the Kosher Salt, so that the salt sticks to the moistened rim. The second step is to fill half the glass with ice and add one or two shooter glasses full of high quality Tequila. The next stage is to add the flavouring elements. This is done by squeezing a fresh lime into the glass, adding a few grains of salt, adding citrus-flavoured soda pop, until the glass is 4\/5 full, and then adding spicy Viuda de Sanchez (or orange juice, lime juice and pico de gallo). The final step is to stir the ingredients so that the flavours are properly blended."
+  },
+  {
+    "strDrink":"Van Vleet",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon Juice",
+      "Light Rum",
+      "Maple Syrup"
+    ],
+    "Alc_type":[
+      "Rum"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Shake all ingredients with ice, strain into an old-fashioned glass over ice cubes, and serve."
+  },
+  {
+    "strDrink":"Vermouth Cassis",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Carbonated Water",
+      "Creme De Cassis",
+      "Dry Vermouth"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Vermouth"
+    ],
+    "Basic_taste":[
+      "water"
+    ],
+    "strInstructions":"Stir vermouth and creme de cassis in a highball glass with ice cubes. Fill with carbonated water, stir again, and serve."
+  },
+  {
+    "strDrink":"Vesuvio",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Egg White",
+      "Light Rum",
+      "Sweet Vermouth",
+      "Sugar",
+      "Lemon"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Vermouth"
+    ],
+    "Basic_taste":[
+      "egg",
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Shake all ingredients with ice, strain into an old-fashioned glass over ice cubes, and serve."
+  },
+  {
+    "strDrink":"Victory Collins",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Vodka",
+      "Grape Juice Unsweetened",
+      "Lemon Juice",
+      "Sugar",
+      "Orange"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Shake all ingredients (except orange slice) with ice and strain into a collins glass over ice cubes. Add the slice of orange and serve."
+  },
+  {
+    "strDrink":"Vodka And Tonic",
+    "strGlass":"Highball Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Tonic Water",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "water"
+    ],
+    "strInstructions":"Pour vodka into a highball glass over ice cubes. Fill with tonic water, stir, and serve."
+  },
+  {
+    "strDrink":"Vodka Fizz",
+    "strGlass":"White wine glass",
+    "strCategory":"Other\/Unknown",
+    "strIngredients":[
+      "Half-And-Half",
+      "Limeade",
+      "Vodka",
+      "Nutmeg"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "cream",
+      "sour",
+      "spicy"
+    ],
+    "strInstructions":"Blend all ingredients, save nutmeg. Pour into large white wine glass and sprinkle nutmeg on top."
+  },
+  {
+    "strDrink":"Vodka Martini",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Olive",
+      "Vodka",
+      "Dry Vermouth"
+    ],
+    "Alc_type":[
+      "Vodka",
+      "Vermouth"
+    ],
+    "Basic_taste":[
+      "salty"
+    ],
+    "strInstructions":"Shake the vodka and vermouth together with a number of ice cubes, strain into a cocktail glass, add the olive and serve."
+  },
+  {
+    "strDrink":"Vodka Russian",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Vodka",
+      "Schweppes Russchian"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "bitter"
+    ],
+    "strInstructions":"Mix it as a ordinary drink ."
+  },
+  {
+    "strDrink":"Waikiki Beachcomber",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Gin",
+      "Pineapple Juice",
+      "Triple Sec"
+    ],
+    "Alc_type":[
+      "Gin",
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Shake all ingredients with ice, strain into a cocktail glass, and serve."
+  },
+  {
+    "strDrink":"Whiskey Sour",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon",
+      "Blended Whiskey",
+      "Cherry",
+      "Sugar"
+    ],
+    "Alc_type":[
+      "Whisky"
+    ],
+    "Basic_taste":[
+      "sour",
+      "sweet"
+    ],
+    "strInstructions":"Shake with ice. Strain into chilled glass, garnish and serve. If served 'On the rocks', strain ingredients into old-fashioned glass filled with ice."
+  },
+  {
+    "strDrink":"White Lady",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Lemon Juice",
+      "Triple Sec",
+      "Gin"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Gin"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Add all ingredients into cocktail shaker filled with ice. Shake well and strain into large cocktail glass."
+  },
+  {
+    "strDrink":"White Russian",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Light Cream",
+      "Coffee Liqueur",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "cream",
+      "bitter"
+    ],
+    "strInstructions":"Pour vodka and coffee liqueur over ice cubes in an old-fashioned glass. Fill with light cream and serve."
+  },
+  {
+    "strDrink":"Whitecap Margarita",
+    "strGlass":"Margarita glass",
+    "strCategory":"Other\/Unknown",
+    "strIngredients":[
+      "Lime Juice",
+      "Tequila",
+      "Cream Of Coconut"
+    ],
+    "Alc_type":[
+      "Tequila"
+    ],
+    "Basic_taste":[
+      "sour",
+      "cream"
+    ],
+    "strInstructions":"Place all ingredients in a blender and blend until smooth. This makes one drink."
+  },
+  {
+    "strDrink":"Wine Cooler",
+    "strGlass":"Collins Glass",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Lemon-Lime Soda",
+      "White Or Red Wine"
+    ],
+    "Alc_type":[
+      "Wine"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Mix wine and soft drink. Pour into glass. Add ice."
+  },
+  {
+    "strDrink":"Wine Punch",
+    "strGlass":"Collins Glass",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Orange",
+      "Lemon",
+      "Pineapple Juice",
+      "Red Wine",
+      "Orange Juice"
+    ],
+    "Alc_type":[
+      "Wine"
+    ],
+    "Basic_taste":[
+      "sweet",
+      "sour"
+    ],
+    "strInstructions":"Combine all of the ingredients and pour over a block of ice."
+  },
+  {
+    "strDrink":"Yellow Bird",
+    "strGlass":"Cocktail Glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Triple Sec",
+      "Lime Juice",
+      "White Rum",
+      "Galliano"
+    ],
+    "Alc_type":[
+      "Triple Sec",
+      "Rum",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Shake and strain into a chilled cocktail glass"
+  },
+  {
+    "strDrink":"Zambeer",
+    "strGlass":"Collins Glass",
+    "strCategory":"Soft Drink \/ Soda",
+    "strIngredients":[
+      "Root Beer",
+      "Sambuca"
+    ],
+    "Alc_type":[
+      "Sambuca"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Mix sambuca with rootbeer and stir. Add ice"
+  },
+  {
+    "strDrink":"Zenmeister",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "J\u00e4germeister",
+      "Root Beer"
+    ],
+    "Alc_type":[
+      "Bitters"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Mix together and enjoy"
+  },
+  {
+    "strDrink":"Ziemes Martini Apfelsaft",
+    "strGlass":"Collins Glass",
+    "strCategory":"Ordinary Drink",
+    "strIngredients":[
+      "Apple Juice",
+      "Vermouth"
+    ],
+    "Alc_type":[
+      "Vermouth"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Serve without ice. At least the juice shold have room temperature."
+  },
+  {
+    "strDrink":"Zinger",
+    "strGlass":"Highball Glass",
+    "strCategory":"Soft Drink \/ Soda",
+    "strIngredients":[
+      "Surge",
+      "Peachtree Schnapps"
+    ],
+    "Alc_type":[
+      "Schnapps"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Get a shot glass and pour in three shots of the schnapps. Do the same with the Surge Cola. Then down it like Scheetz would."
+  },
+  {
+    "strDrink":"Zipperhead",
+    "strGlass":"Whiskey sour glass",
+    "strCategory":"Shot",
+    "strIngredients":[
+      "Chambord Raspberry Liqueur",
+      "Soda Water",
+      "Vodka"
+    ],
+    "Alc_type":[
+      "Sweet Liqueur",
+      "Vodka"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Fill glass with rocks, add straw before putting in liquor. Then add the ingredients in order, trying to keep layered as much as possible (i.e. Chambord on bottom, then Vodka, Then soda on top)."
+  },
+  {
+    "strDrink":"Zippy's Revenge",
+    "strGlass":"Old-fashioned glass",
+    "strCategory":"Cocktail",
+    "strIngredients":[
+      "Rum",
+      "Kool-Aid Grape",
+      "Amaretto"
+    ],
+    "Alc_type":[
+      "Rum",
+      "Sweet Liqueur"
+    ],
+    "Basic_taste":[
+      "sweet"
+    ],
+    "strInstructions":"Mix Kool-Aid to taste then add Rum and ammaretto. shake well to disolve the sugar in the Kool-Aid... serve cold"
+  },
+  {
+    "strDrink":"Zizi Coin-coin",
+    "strGlass":"Margarita glass",
+    "strCategory":"Punch \/ Party Drink",
+    "strIngredients":[
+      "Cointreau",
+      "Lemon Juice",
+      "Lemon"
+    ],
+    "Alc_type":[
+      "Triple Sec"
+    ],
+    "Basic_taste":[
+      "sour"
+    ],
+    "strInstructions":"Pour 5cl of Cointreau on ice, add 2cl of fresh lemon (or lime) juice, stir gently, and finally add slices of lemon\/lime in glass."
+  }
+]
