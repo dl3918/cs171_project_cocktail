@@ -8,7 +8,7 @@ class BubbleChart {
 
     initVis() {
         let vis = this;
-        console.log(vis.originalData)
+        //console.log(vis.originalData)
         // dimensions and margins for the graph
         vis.margin = {top: 10, right: 10, bottom: 10, left: 10};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
@@ -82,7 +82,7 @@ class BubbleChart {
         //         rank: count // Use count for sizing the bubbles
         //     }));
         // }
-        console.log(vis.displayData)
+        //console.log(vis.displayData)
     }
 
 
@@ -163,18 +163,21 @@ class BubbleChart {
             d3.select(this).style('opacity', 0);
 
             let selectedDrinks = vis.originalData.filter(drink => drink.Alc_type.includes(clickedBubbleData.strDrink));
+            console.log(selectedDrinks)
+            // Unique identifier for the smaller bubbles (e.g., using strDrink)
+            let smallBubbleClass = 'small-bubble-' + clickedBubbleData.strDrink.replace(/[^a-zA-Z0-9]/g, ""); // Sanitize for class name
 
             // Calculate positions for smaller bubbles
             let smallBubblePositions = getCirclePositions(clickedBubbleData.x, clickedBubbleData.y, selectedDrinks.length, 50); // 50 is the spread radius
 
-            // Create smaller bubbles
-            vis.svg.selectAll('.small-bubble')
+            // Create smaller bubbles for the clicked big bubble
+            vis.svg.selectAll('.' + smallBubbleClass)
                 .data(selectedDrinks)
                 .enter().append('circle')
-                .attr('class', 'small-bubble')
+                .attr('class', smallBubbleClass)
                 .attr('cx', (d, i) => smallBubblePositions[i].x)
                 .attr('cy', (d, i) => smallBubblePositions[i].y)
-                .attr('r', 50) // Smaller bubble radius
+                .attr('r', 20) // Smaller bubble radius
                 .style('fill', vis.alcTypeColorMap[clickedBubbleData.strDrink])
                 .style('opacity', 0.7)
                 .on('mouseover', function(event, d) {
@@ -190,8 +193,6 @@ class BubbleChart {
                         .duration(400)
                         .style('opacity', 0);
                 });
-
-            // Add any other necessary styles or interactions
         });
 
     }
