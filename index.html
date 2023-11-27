@@ -22,11 +22,12 @@
 
     <!-- own CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <script src="../../BubbleChart.js"></script>
 </head>
 
 <body>
 <div id="fullpage">
+
+    <!-- Title page -->
     <div class="section">
         <div class = "container-fluid">
             <div class = "row justify-content-center align-self-center intro-title" style="height: 50vh; padding: 0;">
@@ -46,7 +47,6 @@
             <h1 style="text-align: center"> Popular Cocktails by Category</h1>
             <div class = "row" style="height: 90vh; padding: 0;">
                 <div class="col">
-                    <button id="resetViewButton" onclick="myBubbleChart.resetView()">Reset View</button>
                     <div id="bubbles" style="height: 100%; width:100%;"></div>
                 </div>
             </div>
@@ -64,6 +64,7 @@
         </div>
     </div>
 
+    <!-- All drink enoch -->
     <div class="section">
         <div class = "container-fluid">
             <h1 style="text-align: center"> All Cocktails </h1>
@@ -82,6 +83,27 @@
             </div>
         </div>
     </div>
+
+    <!-- TreeMap -->
+    <div class="section">
+        <div class = "container-fluid">
+            <h1 style="text-align: center"> TreeMap </h1>
+            <div class = "row" style="height: 90vh; padding: 0;">
+                <div class="col-md-1"></div>
+                <div class="col-md-7">
+                    <div id="treemapDiv" style="height: 100%; width:100%;"></div>
+                </div>
+                <div class="col-md-3">
+                    <br>
+                    <h4> Click left sub rectangle to see more detail</h4>
+                    <br>
+                    <br>
+                    <div id="treemap_right" style="height: 100%; width:100%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Network -->
     <div class="section" id="network-page">
@@ -113,25 +135,12 @@
         </div>
     </div>
 
-    <div class="section">
-        <h1> Page 3</h1>
-    </div>
+
 
     <div class="section">
         <h1> Page 4</h1>
     </div>
 
-    <div class="section">
-        <h1> Page 5</h1>
-    </div>
-
-    <div class="section">
-        <h1> Page 6</h1>
-    </div>
-
-    <div class="section">
-        <h1> Page 7</h1>
-    </div>
 </div>
 
 
@@ -156,6 +165,7 @@
     <script src="js/main.js"></script>
     <script src="js/BubbleChart.js"></script>
     <script src="js/allBubbleChart.js"></script>
+    <script src="js/treemap.js"></script>
     <script src="js/networkVis.js"></script>
     <script src="js/iconVis.js"></script>
 </body>
