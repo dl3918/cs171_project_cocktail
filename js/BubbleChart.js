@@ -87,7 +87,6 @@ class BubbleChart {
         console.log(vis.data)
 
         // Add hover interaction
-        // Add hover interaction
         vis.bubbles.on('mouseover', function(event, d) {
             // Enlarge the hovered bubble
             d3.select(this).transition().attr('r', d.rank * radiusMultiplier * 2);
