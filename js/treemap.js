@@ -144,11 +144,3 @@ class TreeMap {
 
 }
 
-
-// Assuming you have an element with id 'allDrink' in your HTML and data loaded as JSON
-let mytree;
-d3.json('data/treemap_data.json').then(data => {
-    mytree = new TreeMap('treemapDiv', data);
-});
-
-

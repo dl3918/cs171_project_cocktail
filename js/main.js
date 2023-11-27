@@ -40,7 +40,7 @@ let myBubbleChart;
 let myAllBubbleChart;
 let myIconVis;
 let myallBubbleChart_enoch;
-// let myTreeMap;
+let myTreeMap;
 
 function initMainPage(dataArray) {
     const groupedByAlcType = groupByAlcType(dataArray[2]);
@@ -50,6 +50,7 @@ function initMainPage(dataArray) {
     myBubbleChart = new BubbleChart('bubbles', dataArray[2]);
     myAllBubbleChart = new BubbleChart('allDrink', dataArray[2],true);
     myallBubbleChart_enoch = new allBubbleChart('all_drinks_enoch', dataArray[3]);
+    myTreeMap = new TreeMap('treemapDiv', dataArray[4]);
     myNetworkVis = new NetworkVis('networkDiv', dataArray[0], dataArray[1]);
 
     document.getElementById('resetViewButton').addEventListener('click', () => {
