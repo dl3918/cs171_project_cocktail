@@ -16,7 +16,8 @@ let promises = [
     d3.csv('data/network/network_ingredients.csv'),
     d3.csv('data/network/ingredient_relationships.csv'),
     d3.json('data/grouped_cocktails.json'),
-    d3.json('data/all_drink_clean.json')
+    d3.json('data/all_drink_clean.json'),
+    d3.json('data/treemap_data.json')
 ]
 let dataArray = []
 Promise.all(promises)
