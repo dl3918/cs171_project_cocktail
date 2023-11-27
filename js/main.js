@@ -18,9 +18,7 @@ let promises = [
     d3.json('data/grouped_cocktails.json'),
     d3.json('data/all_drink_clean.json'),
     d3.json('data/treemap_data.json'),
-    d3.csv('data/data_cocktails_cleaned.csv')
     d3.csv('data/data_cocktails_cleaned.csv'),
-    d3.csv('data/mixology/essential_ingredients.csv'),
 ]
 let dataArray = []
 Promise.all(promises)
@@ -58,7 +56,7 @@ function initMainPage(dataArray) {
     myTreeMap = new TreeMap('treemapDiv', dataArray[4]);
     myTasteVis = new tasteBubbleChart('taste', dataArray[5]);
     myNetworkVis = new NetworkVis('networkDiv', dataArray[0], dataArray[1]);
-    myMixologyVis = new MixologyVis('mixologyDiv', dataArray[6], dataArray[7]);
+    // myMixologyVis = new MixologyVis('mixologyDiv', dataArray[6], dataArray[7]);
 
     document.getElementById('resetViewButton').addEventListener('click', () => {
         myBubbleChart.resetView();
