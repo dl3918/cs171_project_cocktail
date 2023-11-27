@@ -18,3 +18,34 @@
     pointer-events: none;  /* Don't block mouse events */
     font-size: 12px;
 }
+
+.section {
+    background-size: cover;
+    background-attachment: scroll; /* or scroll, depending on desired effect */
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#section1 {
+    background-image: url('../img/clem-onojeghuo-zlABb6Gke24-unsplash.jpg');
+    /*background: rgba(0, 0, 0, 0.5);*/
+    /* ... other background styles ... */
+}
+
+#section2 {
+    background-image: url('path/to/image2.jpg');
+    /* ... other background styles ... */
+}
+
+#section3 {
+    background-image: url('path/to/image3.jpg');
+    /* ... other background styles ... */
+}
+
+h1 {
+    color: rgba(183, 161, 124, 0.92);
+    font-size: 50px;
+    padding: 10px;
+    font-weight: bold;
+
+}

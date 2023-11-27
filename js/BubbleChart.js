@@ -186,8 +186,8 @@ class BubbleChart {
                         .style('top', (event.pageY - 28) + 'px');
                 })
                 .on('mouseout', function() {
-                    tooltip.transition()
-                        .duration(500)
+                    vis.tooltip.transition()
+                        .duration(400)
                         .style('opacity', 0);
                 });
 
@@ -200,8 +200,9 @@ class BubbleChart {
         this.allDrink = false;
         this.wrangleData();
 
-        // Make original bubbles visible
-        this.bubbles.style('opacity', 0.7);
+        this.bubbles.transition()
+            .duration(800)
+            .style('opacity', 0.7);
 
         // Remove smaller bubbles
         this.svg.selectAll('.small-bubble').remove();
