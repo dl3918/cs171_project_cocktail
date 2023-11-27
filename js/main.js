@@ -28,11 +28,18 @@ Promise.all(promises)
         console.log(err)
     });
 
+// Use d3.interval for periodic tasks
+let slideInterval = d3.interval(() => {
+    myIconVis.slideIcons(); // Call the method to slide icons
+}, 800);
+
+
 let myNetworkVis;
 let myBubbleChart;
 let myAllBubbleChart;
 let myIconVis;
 let myallBubbleChart_enoch;
+// let myTreeMap;
 
 function initMainPage(dataArray) {
     const groupedByAlcType = groupByAlcType(dataArray[2]);
@@ -49,11 +56,6 @@ function initMainPage(dataArray) {
     });
 
 }
-
-// Use d3.interval for periodic tasks
-let slideInterval = d3.interval(() => {
-    myIconVis.slideIcons(); // Call the method to slide icons
-}, 800);
 
 let selectedCategory =  document.getElementById('categorySelector').value;
 
