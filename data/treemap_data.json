@@ -1,0 +1,196 @@
+[
+  {
+    "strGlass":"Champagne Flute",
+    "number_glass":4,
+    "strDrink":[
+      "Banana Daiquiri",
+      "Champagne Cocktail",
+      "Frozen Daiquiri",
+      "Jamaican Coffee"
+    ],
+    "strIngredients":[
+      "Cherry",
+      "Lemon Peel",
+      "Whipped Cream"
+    ]
+  },
+  {
+    "strGlass":"Cocktail Glass",
+    "number_glass":29,
+    "strDrink":[
+      "Abbey Cocktail",
+      "Alaska Cocktail",
+      "Alexander",
+      "Allegheny",
+      "Blackthorn",
+      "Blue Margarita",
+      "Bluebird",
+      "Bobby Burns Cocktail",
+      "Boomerang",
+      "Brandy Alexander",
+      "Casino",
+      "Derby",
+      "Dirty Martini",
+      "Dry Rob Roy",
+      "Dubonnet Cocktail",
+      "English Rose Cocktail",
+      "Jitterbug",
+      "Kentucky Colonel",
+      "Loch Lomond",
+      "Manhattan",
+      "Margarita",
+      "Martinez Cocktail",
+      "Mary Pickford",
+      "Quentin",
+      "Strawberry Margarita",
+      "Turf Cocktail",
+      "Tuxedo Cocktail"
+    ],
+    "strIngredients":[
+      "Cherry",
+      "Lemon Peel",
+      "Nutmeg",
+      "Salt",
+      "Maraschino Cherry",
+      "Mint",
+      "Lemon",
+      "Sugar",
+      "Orange Peel"
+    ]
+  },
+  {
+    "strGlass":"Collins Glass",
+    "number_glass":23,
+    "strDrink":[
+      "3-Mile Long Island Iced Tea",
+      "Absolut Summertime",
+      "Americano",
+      "Apple Cider Punch #1",
+      "Bleeding Surgeon",
+      "Egg Nog - Healthy",
+      "French 75",
+      "Irish Spring",
+      "John Collins",
+      "Mai Tai",
+      "Mulled Wine",
+      "Rum Milk Punch",
+      "Sherry Eggnog",
+      "Tom Collins",
+      "Victory Collins",
+      "Wine Punch"
+    ],
+    "strIngredients":[
+      "Lemon",
+      "Lemon Peel",
+      "Orange Peel",
+      "Allspice",
+      "Cinnamon",
+      "Cloves",
+      "Orange",
+      "Nutmeg",
+      "Maraschino Cherry",
+      "Cherry"
+    ]
+  },
+  {
+    "strGlass":"Highball Glass",
+    "number_glass":10,
+    "strDrink":[
+      "A Furlong Too Late",
+      "A Night In Old Mandalay",
+      "Blue Lagoon",
+      "Bourbon Sling",
+      "Gin Rickey",
+      "Happy Skipper",
+      "Horse's Neck",
+      "Long Island Iced Tea",
+      "Snowball",
+      "Space Odyssey"
+    ],
+    "strIngredients":[
+      "Lemon Peel",
+      "Cherry",
+      "Lime",
+      "Lemon"
+    ]
+  },
+  {
+    "strGlass":"Irish coffee cup",
+    "number_glass":3,
+    "strDrink":[
+      "Gluehwein",
+      "Irish Coffee",
+      "Mocha-Berry"
+    ],
+    "strIngredients":[
+      "Cloves",
+      "Whipped Cream"
+    ]
+  },
+  {
+    "strGlass":"Old-fashioned glass",
+    "number_glass":28,
+    "strDrink":[
+      "A True Amaretto Sour",
+      "Acapulco",
+      "Apricot Lady",
+      "Bloody Maria",
+      "Bloody Mary",
+      "Brandy Cobbler",
+      "Classic Old-Fashioned",
+      "Duchamp's Punch",
+      "Gin Daisy",
+      "Gin Sling",
+      "Gin Smash",
+      "Gin Toddy",
+      "Rum Cobbler",
+      "Rum Old-fashioned",
+      "Rum Toddy",
+      "Rusty Nail",
+      "Sazerac",
+      "Scotch Cobbler",
+      "Whiskey Sour"
+    ],
+    "strIngredients":[
+      "Maraschino Cherry",
+      "Mint",
+      "Orange",
+      "Lemon",
+      "Lime",
+      "Lavender",
+      "Pepper",
+      "Orange Peel",
+      "Cherry",
+      "Lemon Peel",
+      "Lime Peel"
+    ]
+  },
+  {
+    "strGlass":"Whiskey sour glass",
+    "number_glass":21,
+    "strDrink":[
+      "Arthur Tompkins",
+      "Boston Sour",
+      "Bourbon Sour",
+      "Brandy Flip",
+      "Brandy Sour",
+      "Frisco Sour",
+      "Gin Sour",
+      "New York Sour",
+      "Port Wine Flip",
+      "Rum Sour",
+      "Scotch Sour",
+      "Sherry Flip",
+      "Tequila Sour"
+    ],
+    "strIngredients":[
+      "Lemon Peel",
+      "Lemon",
+      "Cherry",
+      "Maraschino Cherry",
+      "Orange",
+      "Nutmeg",
+      "Lime"
+    ]
+  }
+]
