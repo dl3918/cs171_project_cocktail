@@ -32,15 +32,15 @@
     /* ... other background styles ... */
 }
 
-#section2 {
-    background-image: url('path/to/image2.jpg');
-    /* ... other background styles ... */
-}
+/*#section2 {*/
+/*    background-image: url('path/to/image2.jpg');*/
+/*    !* ... other background styles ... *!*/
+/*}*/
 
-#section3 {
-    background-image: url('path/to/image3.jpg');
-    /* ... other background styles ... */
-}
+/*#section3 {*/
+/*    background-image: url('path/to/image3.jpg');*/
+/*    !* ... other background styles ... *!*/
+/*}*/
 
 h1 {
     color: rgba(183, 161, 124, 0.92);

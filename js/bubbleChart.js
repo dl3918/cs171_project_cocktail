@@ -177,7 +177,7 @@ class BubbleChart {
                 .attr('class', smallBubbleClass)
                 .attr('cx', (d, i) => smallBubblePositions[i].x)
                 .attr('cy', (d, i) => smallBubblePositions[i].y)
-                .attr('r', 20) // Smaller bubble radius
+                .attr('r', 30) // Smaller bubble radius
                 .style('fill', vis.alcTypeColorMap[clickedBubbleData.strDrink])
                 .style('opacity', 0.7)
                 .on('mouseover', function(event, d) {
@@ -186,12 +186,19 @@ class BubbleChart {
                         .style('opacity', .9);
                     vis.tooltip.html(d.strDrink)  // Set the tooltip content
                         .style('left', (event.pageX) + 'px')
-                        .style('top', (event.pageY - 28) + 'px');
+                        .style('top', (event.pageY - 28) + 'px')
+                        .html(`
+                         <div style="border: thin solid grey; border-radius: 5px; background: lightgrey; padding: 20px">
+                             <h3> ${d.strDrink}</h3>      
+                             <h4> Ingredients: ${d.strIngredients.join(', ')}<h4>          
+                           
+                         </div>`);
                 })
                 .on('mouseout', function() {
                     vis.tooltip.transition()
                         .duration(400)
-                        .style('opacity', 0);
+                        .style('opacity', 0)
+                        .html(``)
                 });
         });
 
@@ -208,7 +215,6 @@ class BubbleChart {
         // Remove smaller bubbles
         this.svg.selectAll('.small-bubble').remove();
     }
-
 
 
 }

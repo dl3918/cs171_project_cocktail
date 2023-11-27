@@ -48,6 +48,7 @@
             <div class = "row" style="height: 90vh; padding: 0;">
                 <div class="col">
                     <button id="resetViewButton" onclick="myBubbleChart.resetView()">Reset View</button>
+                    <h2 style="text-align: center"> Click on bubbles to see more details!</h2>
                     <div id="bubbles" style="height: 100%; width:100%;"></div>
                 </div>
             </div>
@@ -137,9 +138,21 @@
     </div>
 
 
-    <div class="section" id="taste">
-        <h1> "Taste" Them</h1>
+    <div class="section" id="taste-page">
+        <div class = "container-fluid">
+            <h1 style="text-align: center"> "Taste" Them</h1>
+            <div class = "row" style="height: 90vh; padding: 0;">
+                <div class="col">
+                    <div id="taste" style="height: 100%; width:100%;"></div>
+                </div>
+            </div>
+        </div>
+
+    <div class="section">
+        <h1> Page 4</h1>
     </div>
+
+
 
 </div>
 
@@ -163,10 +176,11 @@
 
     <!-- own JS -->
     <script src="js/main.js"></script>
-    <script src="js/BubbleChart.js"></script>
+    <script src="js/bubbleChart.js"></script>
     <script src="js/allBubbleChart.js"></script>
     <script src="js/treemap.js"></script>
     <script src="js/networkVis.js"></script>
     <script src="js/iconVis.js"></script>
+    <script src="js/tasteBubbleChart.js"></script>
 </body>
 </html>
