@@ -107,11 +107,12 @@ class TreeMap {
         labels.exit().remove();
     }
 
+
     show_detail(d) {
         d3.select("#treemap_right").append("img")
             .attr("src", 'img/'+ d.data.id + '.jpg')
             .attr("class", "card")
-            .attr("width", 300)
+            .attr("width", document.getElementById('treemap_right').getBoundingClientRect().width * 0.6)
             .style("margin", "auto");
 
         d3.select("#treemap_right").append("h2").text(d.data.id).style("text-align", "center");
