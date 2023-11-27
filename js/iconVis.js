@@ -42,7 +42,7 @@ class iconVis {
         vis.icons.enter().append("svg:image")
             .attr("class", "icon")
             .attr("x", (d, i) => i * vis.iconWidth) // Set x based on index
-            .attr("y", vis.height / 2 - 25) // Center vertically, adjust as needed
+            .attr("y", vis.height / 2 - 40) // Center vertically, adjust as needed
             .attr('width', '70') // Set your icon width
             .attr('height', '70') // Set your icon height
             .merge(vis.icons) // Enter + Update selection: Update attributes of existing elements
