@@ -107,7 +107,7 @@ class NetworkVis {
                     let string1 = diff(lineName, actalName);
                     let string2 = diff(string1, 'line');
                     finalString = string2.trim()+'text';
-                    d3.selectAll('.'+finalString).style('color', 'red');
+                    // d3.selectAll('.'+finalString).style('color', 'red');
                     d3.selectAll('#connect-img').style('border', '5px solid red');
                 }
 
@@ -115,7 +115,7 @@ class NetworkVis {
             .on('mouseout', function(event, d){
                 d3.select(this)
                     .style('stroke', 'grey')
-                d3.selectAll('.'+finalString).style('color', 'black')
+                // d3.selectAll('.'+finalString).style('color', 'black')
             })
             .merge(vis.edges)
 
