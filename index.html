@@ -29,25 +29,26 @@
 
     <!-- Title page -->
     <div class="section" id="section1">
-        <div class = "container-fluid">
-            <div class = "row justify-content-center align-self-center intro-title" style="height: 50vh; padding: 0;">
+        <div class = "container-fluid" style="height: 95vh">
+            <div class = "row justify-content-center align-self-center intro-title" style="height: 70vh; padding: 10vh;">
                 <h1 style="text-align: center"> The Art of Mixology </h1>
                 <h2 style="text-align: center"> All about Cocktails </h2>
             </div>
             <div class = "row" style="height: 30vh; padding: 0;">
                 <div class="col">
-                    <div id ="icon-bottom-bar" style="height: 100%; width:100%;"></div>
+                    <div id ="icon-bottom-bar" style="height: 50%; width:100%; background-color: white"></div>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="section" id="section2">
-        <div class = "container-fluid">
+        <div class = "container-fluid" style="height: 95vh">
             <h1 style="text-align: center"> Popular Cocktails by Category</h1>
             <div class = "row" style="height: 90vh; padding: 0;">
                 <div class="col">
                     <button id="resetViewButton" onclick="myBubbleChart.resetView()">Reset View</button>
+                    <h2 style="text-align: center"> Click on bubbles to see more details!</h2>
                     <div id="bubbles" style="height: 100%; width:100%;"></div>
                 </div>
             </div>
@@ -55,7 +56,7 @@
     </div>
 
     <div class="section" id="section3">
-        <div class = "container-fluid">
+        <div class = "container-fluid" style="height: 95vh">
             <h1 style="text-align: center"> All Cocktails </h1>
             <div class = "row" style="height: 90vh; padding: 0;">
                 <div class="col">
@@ -66,16 +67,18 @@
     </div>
 
     <!-- All drink enoch -->
-    <div class="section" id="section4">
-        <div class = "container-fluid">
+    <div class="section">
+        <div class = "container-fluid" style="height: 95vh">
             <h1 style="text-align: center"> All Cocktails </h1>
             <div class ="row">
+                <div class="col-md-3">
                 <select id='categorySelector' class="custom-select align-self-center" style="width: 50%" onchange="categoryChange()">
                     <option value="strGlass">Glass type</option>
                     <option value="strCategory">Drink Category</option>
                     <option value="Alc_type">Alcohol type</option>
                     <option value="Basic_taste">Basic taste</option>
                 </select>
+                </div>
             </div>
             <div class = "row" style="height: 90vh; padding: 0;">
                 <div class="col">
@@ -86,8 +89,8 @@
     </div>
 
     <!-- TreeMap -->
-    <div class="section" id="section5">
-        <div class = "container-fluid">
+    <div class="section">
+        <div class = "container-fluid" style="height: 95vh">
             <h1 style="text-align: center"> TreeMap </h1>
             <div class = "row" style="height: 90vh; padding: 0;">
                 <div class="col-md-1"></div>
@@ -99,7 +102,7 @@
                     <h4> Click left sub rectangle to see more detail</h4>
                     <br>
                     <br>
-                    <div id="treemap_right" style="height: 70%; width:70%;"></div>
+                    <div id="treemap_right" style="height: 100%; width:100%;"></div>
                 </div>
             </div>
         </div>
@@ -108,7 +111,7 @@
 
     <!-- Network -->
     <div class="section" id="network-page">
-        <div class="container-fluid">
+        <div class="container-fluid" style="height: 95vh">
             <div class="row">
                 <div class="col-10 offset-1">
                     <!-- HEADING -->
@@ -119,7 +122,7 @@
                     </div>
 
                     <!-- CONTENT -->
-                    <div class="row d-flex justify-content-center" style="height: 90vh; padding: 0;">
+                    <div class="row d-flex justify-content-center" style="height: 80vh; padding: 0;">
                         <div class="col-10">
                             <div id="networkDiv" style="height: 100%; width:100%;"></div>
                         </div>
@@ -137,9 +140,34 @@
     </div>
 
 
-    <div class="section" id="taste">
-        <h1> "Taste" Them</h1>
+    <div class="section" id="taste-page">
+        <div class = "container-fluid" style="height: 95vh">
+            <h1 style="text-align: center"> "Taste" Them</h1>
+            <div class = "row" style="height: 90vh; padding: 0;">
+                <div class="col">
+                    <div id="taste" style="height: 100%; width:100%;"></div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Mixology -->
+<!--    <div class="section" id="mixology-page">-->
+<!--        <div class="container-fluid" style="height: 95vh">-->
+<!--            <h1> Mixology 101</h1>-->
+<!--            <div class="row">-->
+<!--                <div class="col-6">-->
+<!--                    <div id="ingredients-container"></div>-->
+<!--                </div>-->
+<!--                <div class="col-6">-->
+<!--                    <div id="cocktail-shaker">-->
+<!--                        &lt;!&ndash; SVG of the cocktail shaker goes here &ndash;&gt;-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div id="recipe-container"></div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
 </div>
 
@@ -163,10 +191,12 @@
 
     <!-- own JS -->
     <script src="js/main.js"></script>
-    <script src="js/BubbleChart.js"></script>
+    <script src="js/bubbleChart.js"></script>
     <script src="js/allBubbleChart.js"></script>
     <script src="js/treemap.js"></script>
     <script src="js/networkVis.js"></script>
     <script src="js/iconVis.js"></script>
+    <script src="js/tasteBubbleChart.js"></script>
+<!--    <script src="js/mixologyVis.js"></script>-->
 </body>
 </html>
