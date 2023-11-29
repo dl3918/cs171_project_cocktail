@@ -107,12 +107,11 @@ class TreeMap {
         labels.exit().remove();
     }
 
-
     show_detail(d) {
         d3.select("#treemap_right").append("img")
             .attr("src", 'img/'+ d.data.id + '.jpg')
             .attr("class", "card")
-            .attr("width", document.getElementById('treemap_right').getBoundingClientRect().width * 0.6)
+            .attr("width", 300)
             .style("margin", "auto");
 
         d3.select("#treemap_right").append("h2").text(d.data.id).style("text-align", "center");
@@ -121,7 +120,7 @@ class TreeMap {
 
         d3.select("#treemap_right").append("h4").text("Pair if with:")
 
-        d3.select("#treemap_right").append("p").text(d.data.garish.join(', ')).style("text-align", "center");
+        d3.select("#treemap_right").append("p").text(d.data.garish.join(', ' )).style("text-align", "center");
 
         d3.select("#treemap_right").append("h4").text("Recommended drink:")
 
@@ -144,4 +143,6 @@ class TreeMap {
     }
 
 }
+
+
 
