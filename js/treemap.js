@@ -208,11 +208,11 @@ class TreeMap {
             .attr("y", 0);
 
         // Update Y position for text elements
-        let textY = vis.height * 0.3; // Adjust starting Y position based on the image height
+        let textY = vis.height * 0.32; // Adjust starting Y position based on the image height
 
         // Add title (glass type)
         let titleText = detailGroup.append("text")
-            .text(d.data.id)
+            .text(`${d.data.id}:  ${d.data.value} drinks`)
             .attr("font-size", "20px")
             .attr("font-weight", "bold");
 
