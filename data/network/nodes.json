@@ -1,0 +1,224 @@
+[
+    {
+        "id": 0,
+        "value": 3,
+        "label": "Orange Juice",
+        "group": "mixer"
+    },
+    {
+        "id": 1,
+        "value": 9,
+        "label": "Vodka",
+        "group": "spirit"
+    },
+    {
+        "id": 2,
+        "value": 1,
+        "label": "Bitters",
+        "group": "spirit"
+    },
+    {
+        "id": 3,
+        "value": 16,
+        "label": "Gin",
+        "group": "spirit"
+    },
+    {
+        "id": 4,
+        "value": 11,
+        "label": "Lemon",
+        "group": "garnish"
+    },
+    {
+        "id": 5,
+        "value": 6,
+        "label": "Triple Sec",
+        "group": "spirit"
+    },
+    {
+        "id": 6,
+        "value": 5,
+        "label": "Light Rum",
+        "group": "spirit"
+    },
+    {
+        "id": 7,
+        "value": 2,
+        "label": "Tequila",
+        "group": "spirit"
+    },
+    {
+        "id": 8,
+        "value": 1,
+        "label": "Bailey'S Irish Cream",
+        "group": "spirit"
+    },
+    {
+        "id": 9,
+        "value": 1,
+        "label": "Kahlua",
+        "group": "spirit"
+    },
+    {
+        "id": 10,
+        "value": 3,
+        "label": "Grenadine",
+        "group": "mixer"
+    },
+    {
+        "id": 11,
+        "value": 1,
+        "label": "Cranberry Juice",
+        "group": "mixer"
+    },
+    {
+        "id": 12,
+        "value": 1,
+        "label": "Peach Schnapps",
+        "group": "spirit"
+    },
+    {
+        "id": 13,
+        "value": 8,
+        "label": "Lemon Juice",
+        "group": "mixer"
+    },
+    {
+        "id": 14,
+        "value": 3,
+        "label": "Cherry",
+        "group": "garnish"
+    },
+    {
+        "id": 15,
+        "value": 4,
+        "label": "Orange",
+        "group": "garnish"
+    },
+    {
+        "id": 16,
+        "value": 1,
+        "label": "Orange Bitters",
+        "group": "spirit"
+    },
+    {
+        "id": 17,
+        "value": 1,
+        "label": "Sweet Vermouth",
+        "group": "spirit"
+    },
+    {
+        "id": 18,
+        "value": 2,
+        "label": "Egg White",
+        "group": "mixer"
+    },
+    {
+        "id": 19,
+        "value": 18,
+        "label": "Sugar",
+        "group": "garnish"
+    },
+    {
+        "id": 20,
+        "value": 3,
+        "label": "Lime Juice",
+        "group": "mixer"
+    },
+    {
+        "id": 21,
+        "value": 1,
+        "label": "Rum",
+        "group": "spirit"
+    },
+    {
+        "id": 22,
+        "value": 1,
+        "label": "Lemonade",
+        "group": "mixer"
+    },
+    {
+        "id": 23,
+        "value": 2,
+        "label": "Water",
+        "group": "mixer"
+    },
+    {
+        "id": 24,
+        "value": 1,
+        "label": "Dry Vermouth",
+        "group": "spirit"
+    },
+    {
+        "id": 25,
+        "value": 3,
+        "label": "Lemon Peel",
+        "group": "garnish"
+    },
+    {
+        "id": 26,
+        "value": 1,
+        "label": "Light Cream",
+        "group": "mixer"
+    },
+    {
+        "id": 27,
+        "value": 2,
+        "label": "Nutmeg",
+        "group": "garnish"
+    },
+    {
+        "id": 28,
+        "value": 1,
+        "label": "Pineapple Juice",
+        "group": "mixer"
+    },
+    {
+        "id": 29,
+        "value": 1,
+        "label": "Maraschino Liqueur",
+        "group": "spirit"
+    },
+    {
+        "id": 30,
+        "value": 3,
+        "label": "Carbonated Water",
+        "group": "mixer"
+    },
+    {
+        "id": 31,
+        "value": 4,
+        "label": "Maraschino Cherry",
+        "group": "garnish"
+    },
+    {
+        "id": 32,
+        "value": 2,
+        "label": "Blended Whiskey",
+        "group": "spirit"
+    },
+    {
+        "id": 33,
+        "value": 1,
+        "label": "Bourbon",
+        "group": "spirit"
+    },
+    {
+        "id": 34,
+        "value": 2,
+        "label": "Brandy",
+        "group": "spirit"
+    },
+    {
+        "id": 35,
+        "value": 1,
+        "label": "Egg",
+        "group": "mixer"
+    },
+    {
+        "id": 36,
+        "value": 2,
+        "label": "Lime",
+        "group": "garnish"
+    }
+]

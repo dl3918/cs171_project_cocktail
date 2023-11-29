@@ -49,3 +49,8 @@ h1 {
     font-weight: bold;
 
 }
+
+#networkDiv {
+    width: 80vw;
+    height: 70vh;
+}

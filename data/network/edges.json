@@ -1,0 +1,1008 @@
+[
+    {
+        "from": 0,
+        "to": 1,
+        "value": 17,
+        "cocktails": [
+            "Addison Special",
+            "Screwdriver",
+            "Orange Whip",
+            "Bubble Gum",
+            "Arctic Fish",
+            "Harvey Wallbanger",
+            "Irish Curdling Cow",
+            "After sex",
+            "Blue Mountain",
+            "Arizona Twister",
+            "Popped cherry",
+            "San Francisco",
+            "Orange Crush",
+            "Pink Penocha",
+            "Apricot punch",
+            "A Gilligan's Island",
+            "155 Belmont"
+        ]
+    },
+    {
+        "from": 2,
+        "to": 3,
+        "value": 8,
+        "cocktails": [
+            "Pink Gin",
+            "Turf Cocktail",
+            "Boomerang",
+            "Artillery",
+            "Bluebird",
+            "Gin Swizzle",
+            "3-Mile Long Island Iced Tea",
+            "Dubonnet Cocktail"
+        ]
+    },
+    {
+        "from": 3,
+        "to": 4,
+        "value": 8,
+        "cocktails": [
+            "Clover Club",
+            "Long Island Tea",
+            "Gin Rickey",
+            "Gin Fizz",
+            "Lady Love Fizz",
+            "Royal Gin Fizz",
+            "Gin Sling",
+            "3-Mile Long Island Iced Tea"
+        ]
+    },
+    {
+        "from": 3,
+        "to": 5,
+        "value": 11,
+        "cocktails": [
+            "Grass Skirt",
+            "White Lady",
+            "Boxcar",
+            "Cherry Electric Lemonade",
+            "Bluebird",
+            "Martinez Cocktail",
+            "Flying Dutchman",
+            "Waikiki Beachcomber",
+            "Hawaiian Cocktail",
+            "Radioactive Long Island Iced Tea",
+            "3-Mile Long Island Iced Tea"
+        ]
+    },
+    {
+        "from": 3,
+        "to": 1,
+        "value": 10,
+        "cocktails": [
+            "AT&T",
+            "Long Island Tea",
+            "Vesper",
+            "Army special",
+            "Cherry Electric Lemonade",
+            "Long Island Iced Tea",
+            "National Aquarium",
+            "Jitterbug",
+            "Radioactive Long Island Iced Tea",
+            "3-Mile Long Island Iced Tea"
+        ]
+    },
+    {
+        "from": 4,
+        "to": 6,
+        "value": 8,
+        "cocktails": [
+            "Long Island Tea",
+            "Quaker's Cocktail",
+            "Chicago Fizz",
+            "Vesuvio",
+            "Imperial Fizz",
+            "Shanghai Cocktail",
+            "3-Mile Long Island Iced Tea",
+            "Mississippi Planters Punch"
+        ]
+    },
+    {
+        "from": 6,
+        "to": 5,
+        "value": 8,
+        "cocktails": [
+            "Acapulco",
+            "Between The Sheets",
+            "Boston Sidecar",
+            "Apricot Lady",
+            "Frozen Daiquiri",
+            "3-Mile Long Island Iced Tea",
+            "Banana Daiquiri",
+            "Mai Tai"
+        ]
+    },
+    {
+        "from": 7,
+        "to": 5,
+        "value": 7,
+        "cocktails": [
+            "Adam Bomb",
+            "Strawberry Margarita",
+            "Margarita",
+            "Cherry Electric Lemonade",
+            "Gideon's Green Dinosaur",
+            "3-Mile Long Island Iced Tea",
+            "Radioactive Long Island Iced Tea"
+        ]
+    },
+    {
+        "from": 7,
+        "to": 1,
+        "value": 7,
+        "cocktails": [
+            "Long Island Tea",
+            "Adam Bomb",
+            "Cherry Electric Lemonade",
+            "Long Island Iced Tea",
+            "Gideon's Green Dinosaur",
+            "3-Mile Long Island Iced Tea",
+            "Radioactive Long Island Iced Tea"
+        ]
+    },
+    {
+        "from": 5,
+        "to": 1,
+        "value": 10,
+        "cocktails": [
+            "Adam Bomb",
+            "Atomic Lokade",
+            "Kool-Aid Shot",
+            "Cherry Electric Lemonade",
+            "Kamikaze",
+            "Orange Crush",
+            "Gideon's Green Dinosaur",
+            "3-Mile Long Island Iced Tea",
+            "Radioactive Long Island Iced Tea",
+            "Orgasm"
+        ]
+    },
+    {
+        "from": 8,
+        "to": 9,
+        "value": 14,
+        "cocktails": [
+            "Flaming Lamborghini",
+            "B-52",
+            "After Five",
+            "Dirty Nipple",
+            "747",
+            "Quick F**K",
+            "Midnight Manx",
+            "Screaming Orgasm",
+            "Baby Guinness",
+            "Afternoon",
+            "Blind Russian",
+            "Bumble Bee #1",
+            "Bruce's Puce",
+            "Oreo Mudslide"
+        ]
+    },
+    {
+        "from": 10,
+        "to": 0,
+        "value": 9,
+        "cocktails": [
+            "Addison Special",
+            "Orange Push-up",
+            "Tequila Sunrise",
+            "Space Odyssey",
+            "Arizona Twister",
+            "San Francisco",
+            "A Day at the Beach",
+            "Monkey Gland",
+            "Amaretto Sunrise"
+        ]
+    },
+    {
+        "from": 11,
+        "to": 1,
+        "value": 11,
+        "cocktails": [
+            "Sea breeze",
+            "Absolutely Fabulous",
+            "Bruised Heart",
+            "Kool-Aid Shot",
+            "Sex on the Beach",
+            "Cosmopolitan Martini",
+            "Absolut Stress #2",
+            "Popped cherry",
+            "Pink Penocha",
+            "A Gilligan's Island",
+            "Absolutely Cranberry Smash"
+        ]
+    },
+    {
+        "from": 12,
+        "to": 1,
+        "value": 6,
+        "cocktails": [
+            "Bubble Gum",
+            "Sex on the Beach",
+            "Absolut Stress #2",
+            "Bellini Martini",
+            "Pink Penocha",
+            "A Gilligan's Island"
+        ]
+    },
+    {
+        "from": 13,
+        "to": 6,
+        "value": 6,
+        "cocktails": [
+            "Havana Cocktail",
+            "Rum Sour",
+            "Apricot Lady",
+            "A Night In Old Mandalay",
+            "Between The Sheets",
+            "Van Vleet"
+        ]
+    },
+    {
+        "from": 3,
+        "to": 10,
+        "value": 15,
+        "cocktails": [
+            "Clover Club",
+            "Grass Skirt",
+            "Gin Rickey",
+            "Gin Squirt",
+            "A1",
+            "Ace",
+            "Boxcar",
+            "Pink Lady",
+            "Gin Daisy",
+            "Rose",
+            "Monkey Gland",
+            "Singapore Sling",
+            "Jitterbug",
+            "English Rose Cocktail",
+            "Ruby Tuesday"
+        ]
+    },
+    {
+        "from": 3,
+        "to": 13,
+        "value": 15,
+        "cocktails": [
+            "Adam & Eve",
+            "White Lady",
+            "A1",
+            "Casino Royale",
+            "French 75",
+            "Arthur Tompkins",
+            "Boxcar",
+            "Gin Daisy",
+            "Rose",
+            "Aviation",
+            "Casino",
+            "English Rose Cocktail",
+            "Gin Sour",
+            "Bramble",
+            "Tom Collins"
+        ]
+    },
+    {
+        "from": 10,
+        "to": 13,
+        "value": 7,
+        "cocktails": [
+            "Adam",
+            "A1",
+            "Boxcar",
+            "Gin Daisy",
+            "Rose",
+            "Tequila Fizz",
+            "English Rose Cocktail"
+        ]
+    },
+    {
+        "from": 14,
+        "to": 3,
+        "value": 7,
+        "cocktails": [
+            "Abbey Cocktail",
+            "Gin Smash",
+            "Martinez Cocktail",
+            "Casino",
+            "Tuxedo Cocktail",
+            "Singapore Sling",
+            "English Rose Cocktail"
+        ]
+    },
+    {
+        "from": 3,
+        "to": 15,
+        "value": 6,
+        "cocktails": [
+            "Abbey Cocktail",
+            "French 75",
+            "Gin Smash",
+            "Gin Daisy",
+            "Gin Sour",
+            "Tom Collins"
+        ]
+    },
+    {
+        "from": 3,
+        "to": 16,
+        "value": 7,
+        "cocktails": [
+            "London Town",
+            "Abbey Cocktail",
+            "Casino Royale",
+            "Alaska Cocktail",
+            "Martinez Cocktail",
+            "Casino",
+            "Tuxedo Cocktail"
+        ]
+    },
+    {
+        "from": 3,
+        "to": 17,
+        "value": 7,
+        "cocktails": [
+            "Abbey Martini",
+            "Lone Tree Cocktail",
+            "Gentleman's Club",
+            "Negroni",
+            "Artillery",
+            "English Highball",
+            "Victor"
+        ]
+    },
+    {
+        "from": 18,
+        "to": 19,
+        "value": 8,
+        "cocktails": [
+            "Acapulco",
+            "Egg Nog #4",
+            "Lady Love Fizz",
+            "Boston Sour",
+            "Japanese Fizz",
+            "Vesuvio",
+            "Chicago Fizz"
+        ]
+    },
+    {
+        "from": 6,
+        "to": 20,
+        "value": 7,
+        "cocktails": [
+            "Bacardi Cocktail",
+            "Acapulco",
+            "Frozen Daiquiri",
+            "Strawberry Daiquiri",
+            "Banana Daiquiri",
+            "Frozen Mint Daiquiri",
+            "Frozen Pineapple Daiquiri"
+        ]
+    },
+    {
+        "from": 6,
+        "to": 19,
+        "value": 17,
+        "cocktails": [
+            "Mississippi Planters Punch",
+            "Acapulco",
+            "Mojito",
+            "Rum Milk Punch",
+            "Egg Nog #4",
+            "Daiquiri",
+            "Rum Sour",
+            "Frozen Daiquiri",
+            "Strawberry Daiquiri",
+            "Vesuvio",
+            "Rum Old-fashioned",
+            "Imperial Fizz",
+            "Chicago Fizz",
+            "Banana Daiquiri",
+            "Frozen Mint Daiquiri",
+            "Frozen Pineapple Daiquiri"
+        ]
+    },
+    {
+        "from": 20,
+        "to": 19,
+        "value": 8,
+        "cocktails": [
+            "Acapulco",
+            "Frozen Daiquiri",
+            "Strawberry Daiquiri",
+            "Gin Swizzle",
+            "Jitterbug",
+            "Banana Daiquiri",
+            "Frozen Mint Daiquiri",
+            "Frozen Pineapple Daiquiri"
+        ]
+    },
+    {
+        "from": 20,
+        "to": 5,
+        "value": 6,
+        "cocktails": [
+            "Acapulco",
+            "Margarita",
+            "Frozen Daiquiri",
+            "Yellow Bird",
+            "Kamikaze",
+            "Banana Daiquiri"
+        ]
+    },
+    {
+        "from": 21,
+        "to": 1,
+        "value": 6,
+        "cocktails": [
+            "Adam Bomb",
+            "Orange Whip",
+            "Aztec Punch",
+            "National Aquarium",
+            "Brain Fart",
+            "Radioactive Long Island Iced Tea"
+        ]
+    },
+    {
+        "from": 22,
+        "to": 1,
+        "value": 6,
+        "cocktails": [
+            "Aztec Punch",
+            "Atomic Lokade",
+            "Shark Attack",
+            "Avalon",
+            "Adam Sunrise",
+            "Blue Lagoon"
+        ]
+    },
+    {
+        "from": 19,
+        "to": 23,
+        "value": 11,
+        "cocktails": [
+            "Mulled Wine",
+            "Old Fashioned",
+            "Gin Toddy",
+            "Rum Toddy",
+            "Rum Old-fashioned",
+            "Adam Sunrise",
+            "Gluehwein",
+            "Bourbon Sling",
+            "Gin Sling",
+            "Sazerac",
+            "Classic Old-Fashioned"
+        ]
+    },
+    {
+        "from": 24,
+        "to": 3,
+        "value": 12,
+        "cocktails": [
+            "Lone Tree Cooler",
+            "Turf Cocktail",
+            "Boomerang",
+            "Queen Elizabeth",
+            "Bermuda Highball",
+            "Martinez Cocktail",
+            "Rose",
+            "Tuxedo Cocktail",
+            "Allies Cocktail",
+            "English Rose Cocktail",
+            "Adios Amigos Cocktail",
+            "Martini"
+        ]
+    },
+    {
+        "from": 13,
+        "to": 5,
+        "value": 8,
+        "cocktails": [
+            "White Lady",
+            "Strawberry Margarita",
+            "Applecar",
+            "After Supper Cocktail",
+            "Boxcar",
+            "Apricot Lady",
+            "City Slicker",
+            "Between The Sheets"
+        ]
+    },
+    {
+        "from": 3,
+        "to": 25,
+        "value": 10,
+        "cocktails": [
+            "Lone Tree Cooler",
+            "Gin Toddy",
+            "Arthur Tompkins",
+            "Alaska Cocktail",
+            "Bermuda Highball",
+            "Bluebird",
+            "English Highball",
+            "Long Island Iced Tea",
+            "Dubonnet Cocktail",
+            "Gin Cooler"
+        ]
+    },
+    {
+        "from": 26,
+        "to": 27,
+        "value": 6,
+        "cocktails": [
+            "Port Wine Flip",
+            "Alexander",
+            "Brandy Flip",
+            "Brandy Alexander",
+            "Quentin",
+            "Sherry Flip"
+        ]
+    },
+    {
+        "from": 13,
+        "to": 15,
+        "value": 9,
+        "cocktails": [
+            "Victory Collins",
+            "French 75",
+            "Bourbon Sour",
+            "Apricot Lady",
+            "Rum Sour",
+            "Gin Daisy",
+            "Gin Sour",
+            "John Collins",
+            "Tom Collins"
+        ]
+    },
+    {
+        "from": 0,
+        "to": 28,
+        "value": 6,
+        "cocktails": [
+            "Planter's Punch",
+            "Space Odyssey",
+            "Sunny Holiday Punch",
+            "Rum Runner",
+            "Arizona Twister",
+            "Wine Punch"
+        ]
+    },
+    {
+        "from": 13,
+        "to": 1,
+        "value": 7,
+        "cocktails": [
+            "Victory Collins",
+            "Blue Mountain",
+            "Avalon",
+            "Bloody Mary",
+            "Ice Pick #1",
+            "Brain Fart",
+            "Russian Spring Punch"
+        ]
+    },
+    {
+        "from": 3,
+        "to": 29,
+        "value": 6,
+        "cocktails": [
+            "London Town",
+            "Casino Royale",
+            "Boomerang",
+            "Aviation",
+            "Casino",
+            "Tuxedo Cocktail"
+        ]
+    },
+    {
+        "from": 14,
+        "to": 19,
+        "value": 9,
+        "cocktails": [
+            "Tequila Sour",
+            "Scotch Sour",
+            "New York Sour",
+            "Boston Sour",
+            "Gin Smash",
+            "Frozen Daiquiri",
+            "Whiskey Sour",
+            "Brandy Sour",
+            "Banana Daiquiri"
+        ]
+    },
+    {
+        "from": 30,
+        "to": 3,
+        "value": 10,
+        "cocktails": [
+            "Gin Squirt",
+            "Lone Tree Cooler",
+            "Gin Fizz",
+            "Lady Love Fizz",
+            "Gin Smash",
+            "Royal Gin Fizz",
+            "Bermuda Highball",
+            "English Highball",
+            "Singapore Sling",
+            "Gin Cooler"
+        ]
+    },
+    {
+        "from": 3,
+        "to": 31,
+        "value": 6,
+        "cocktails": [
+            "French 75",
+            "Boomerang",
+            "Gin Daisy",
+            "Bluebird",
+            "Gin Sour",
+            "Tom Collins"
+        ]
+    },
+    {
+        "from": 32,
+        "to": 4,
+        "value": 11,
+        "cocktails": [
+            "New York Sour",
+            "Boston Sour",
+            "Japanese Fizz",
+            "Whiskey Sour",
+            "California Lemonade",
+            "Imperial Fizz",
+            "Frisco Sour"
+        ]
+    },
+    {
+        "from": 32,
+        "to": 19,
+        "value": 6,
+        "cocktails": [
+            "New York Sour",
+            "Boston Sour",
+            "Japanese Fizz",
+            "Whiskey Sour",
+            "California Lemonade",
+            "Imperial Fizz"
+        ]
+    },
+    {
+        "from": 14,
+        "to": 4,
+        "value": 11,
+        "cocktails": [
+            "Tequila Sour",
+            "Scotch Sour",
+            "New York Sour",
+            "Boston Sour",
+            "Whiskey Sour",
+            "Brandy Sour"
+        ]
+    },
+    {
+        "from": 18,
+        "to": 4,
+        "value": 7,
+        "cocktails": [
+            "Clover Club",
+            "Lady Love Fizz",
+            "Boston Sour",
+            "Japanese Fizz",
+            "Vesuvio",
+            "Chicago Fizz"
+        ]
+    },
+    {
+        "from": 4,
+        "to": 4,
+        "value": 6,
+        "cocktails": [
+            "Tequila Sour",
+            "New York Sour",
+            "Boston Sour",
+            "Whiskey Sour",
+            "Brandy Sour",
+            "Frisco Sour"
+        ]
+    },
+    {
+        "from": 4,
+        "to": 19,
+        "value": 25,
+        "cocktails": [
+            "Brandy Sour",
+            "Scotch Sour",
+            "Royal Gin Fizz",
+            "Rum Cobbler",
+            "Whiskey Sour",
+            "Chicago Fizz",
+            "Lemon Shot",
+            "Gin Fizz",
+            "Lady Love Fizz",
+            "Boston Sour",
+            "Japanese Fizz",
+            "California Lemonade",
+            "Brandy Cobbler",
+            "New York Sour",
+            "Vesuvio",
+            "Imperial Fizz",
+            "Gin Sling",
+            "Tequila Sour",
+            "Sangria - The World's Best",
+            "Mississippi Planters Punch"
+        ]
+    },
+    {
+        "from": 33,
+        "to": 19,
+        "value": 9,
+        "cocktails": [
+            "Old Fashioned",
+            "Egg Nog #4",
+            "Bourbon Sour",
+            "Bourbon Sling",
+            "John Collins",
+            "Sazerac",
+            "Mississippi Planters Punch",
+            "Classic Old-Fashioned"
+        ]
+    },
+    {
+        "from": 13,
+        "to": 19,
+        "value": 12,
+        "cocktails": [
+            "Victory Collins",
+            "Pisco Sour",
+            "French 75",
+            "Bourbon Sour",
+            "Rum Sour",
+            "Sangria #1",
+            "Gin Daisy",
+            "Rose",
+            "Bourbon Sling",
+            "Gin Sour",
+            "John Collins",
+            "Tom Collins"
+        ]
+    },
+    {
+        "from": 25,
+        "to": 19,
+        "value": 9,
+        "cocktails": [
+            "Lone Tree Cooler",
+            "Mulled Wine",
+            "Champagne Cocktail",
+            "Gin Toddy",
+            "Rum Toddy",
+            "Gluehwein",
+            "Bourbon Sling",
+            "Sazerac",
+            "Gin Cooler"
+        ]
+    },
+    {
+        "from": 25,
+        "to": 23,
+        "value": 6,
+        "cocktails": [
+            "Mulled Wine",
+            "Gin Toddy",
+            "Rum Toddy",
+            "Gluehwein",
+            "Bourbon Sling",
+            "Sazerac"
+        ]
+    },
+    {
+        "from": 13,
+        "to": 31,
+        "value": 7,
+        "cocktails": [
+            "French 75",
+            "Bourbon Sour",
+            "Rum Sour",
+            "Gin Daisy",
+            "Gin Sour",
+            "John Collins",
+            "Tom Collins"
+        ]
+    },
+    {
+        "from": 31,
+        "to": 15,
+        "value": 10,
+        "cocktails": [
+            "Brandy Cobbler",
+            "French 75",
+            "Bourbon Sour",
+            "Rum Sour",
+            "Gin Daisy",
+            "Rum Cobbler",
+            "Gin Sour",
+            "John Collins",
+            "Tom Collins",
+            "Classic Old-Fashioned"
+        ]
+    },
+    {
+        "from": 31,
+        "to": 19,
+        "value": 10,
+        "cocktails": [
+            "Brandy Cobbler",
+            "French 75",
+            "Bourbon Sour",
+            "Rum Sour",
+            "Gin Daisy",
+            "Rum Cobbler",
+            "Gin Sour",
+            "John Collins",
+            "Tom Collins",
+            "Classic Old-Fashioned"
+        ]
+    },
+    {
+        "from": 15,
+        "to": 19,
+        "value": 13,
+        "cocktails": [
+            "Victory Collins",
+            "Brandy Cobbler",
+            "French 75",
+            "Bourbon Sour",
+            "Gin Smash",
+            "Rum Sour",
+            "Gin Daisy",
+            "Rum Cobbler",
+            "Sangria - The World's Best",
+            "Gin Sour",
+            "John Collins",
+            "Tom Collins",
+            "Classic Old-Fashioned"
+        ]
+    },
+    {
+        "from": 34,
+        "to": 4,
+        "value": 7,
+        "cocktails": [
+            "Brandy Cobbler",
+            "Sidecar Cocktail",
+            "Quaker's Cocktail",
+            "Sangria - The World's Best",
+            "Brandy Sour",
+            "Mississippi Planters Punch"
+        ]
+    },
+    {
+        "from": 34,
+        "to": 19,
+        "value": 6,
+        "cocktails": [
+            "Brandy Cobbler",
+            "Mulled Wine",
+            "Brandy Flip",
+            "Sangria - The World's Best",
+            "Brandy Sour",
+            "Mississippi Planters Punch"
+        ]
+    },
+    {
+        "from": 35,
+        "to": 19,
+        "value": 7,
+        "cocktails": [
+            "Port Wine Flip",
+            "Sherry Flip",
+            "Royal Gin Fizz",
+            "Egg Nog - Healthy",
+            "Brandy Flip",
+            "Egg-Nog - Classic Cooked",
+            "Sherry Eggnog"
+        ]
+    },
+    {
+        "from": 27,
+        "to": 19,
+        "value": 8,
+        "cocktails": [
+            "Port Wine Flip",
+            "Rum Milk Punch",
+            "Egg Nog #4",
+            "Sherry Flip",
+            "Egg Nog - Healthy",
+            "Brandy Flip",
+            "Sherry Eggnog"
+        ]
+    },
+    {
+        "from": 36,
+        "to": 19,
+        "value": 6,
+        "cocktails": [
+            "Mojito",
+            "Scotch Sour",
+            "Daiquiri",
+            "Caipirinha",
+            "California Lemonade",
+            "Caipirissima"
+        ]
+    },
+    {
+        "from": 30,
+        "to": 4,
+        "value": 8,
+        "cocktails": [
+            "Gin Fizz",
+            "Lady Love Fizz",
+            "Japanese Fizz",
+            "Royal Gin Fizz",
+            "Chicago Fizz",
+            "California Lemonade",
+            "Imperial Fizz",
+            "Mississippi Planters Punch"
+        ]
+    },
+    {
+        "from": 30,
+        "to": 19,
+        "value": 12,
+        "cocktails": [
+            "Mississippi Planters Punch",
+            "Gin Squirt",
+            "Lone Tree Cooler",
+            "Gin Fizz",
+            "Lady Love Fizz",
+            "Gin Smash",
+            "Japanese Fizz",
+            "Royal Gin Fizz",
+            "California Lemonade",
+            "Imperial Fizz",
+            "Chicago Fizz",
+            "Gin Cooler"
+        ]
+    },
+    {
+        "from": 4,
+        "to": 36,
+        "value": 7,
+        "cocktails": [
+            "Gin Rickey",
+            "Frisco Sour",
+            "California Lemonade",
+            "Scotch Sour"
+        ]
+    },
+    {
+        "from": 3,
+        "to": 19,
+        "value": 16,
+        "cocktails": [
+            "Gin Squirt",
+            "Lone Tree Cooler",
+            "Tom Collins",
+            "Gin Fizz",
+            "Lady Love Fizz",
+            "French 75",
+            "Gin Smash",
+            "Gin Toddy",
+            "Royal Gin Fizz",
+            "Gin Daisy",
+            "Rose",
+            "Gin Swizzle",
+            "Gin Sour",
+            "Jitterbug",
+            "Gin Sling",
+            "Gin Cooler"
+        ]
+    }
+]

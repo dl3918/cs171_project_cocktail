@@ -13,8 +13,8 @@ new fullpage('#fullpage', {
 
 
 let promises = [
-    d3.csv('data/network/network_ingredients.csv'),
-    d3.csv('data/network/ingredient_relationships.csv'),
+    d3.json('data/network/nodes.json'),
+    d3.json('data/network/edges.json'),
     d3.json('data/grouped_cocktails.json'),
     d3.json('data/all_drink_clean.json'),
     d3.json('data/treemap_data.json'),
@@ -56,7 +56,6 @@ function initMainPage(dataArray) {
     myTreeMap = new TreeMap('treemapDiv', dataArray[4]);
     myTasteVis = new tasteBubbleChart('taste', dataArray[5]);
     myNetworkVis = new NetworkVis('networkDiv', dataArray[0], dataArray[1]);
-    // myMixologyVis = new MixologyVis('mixologyDiv', dataArray[6], dataArray[7]);
 
     // document.getElementById('resetViewButton').addEventListener('click', () => {
     //     myBubbleChart.resetView();
