@@ -63,7 +63,7 @@ class NetworkVis {
     updateVis() {
         let vis = this;
         //setting up forces
-        let networkCenter = "Gin";
+        let networkPrincess = "Belle";
 
         vis.dragDrop = d3.drag()
             .on('start', (event, d) => {
@@ -92,7 +92,7 @@ class NetworkVis {
         vis.edgeEnter = vis.edges.enter()
             .append('line')
             .style('stroke', 'grey')
-            .style('stroke-width', d => 5**(d.score/10))
+            .style('stroke-width', d => 10**(d.score/10))
             .attr('class', function(d){
                 return d.name1 + ' ' + d.name2 + ' ' + 'line'
             })
@@ -107,7 +107,7 @@ class NetworkVis {
                     let string1 = diff(lineName, actalName);
                     let string2 = diff(string1, 'line');
                     finalString = string2.trim()+'text';
-                    // d3.selectAll('.'+finalString).style('color', 'red');
+                    d3.selectAll('.'+finalString).style('color', 'red');
                     d3.selectAll('#connect-img').style('border', '5px solid red');
                 }
 
@@ -115,7 +115,7 @@ class NetworkVis {
             .on('mouseout', function(event, d){
                 d3.select(this)
                     .style('stroke', 'grey')
-                // d3.selectAll('.'+finalString).style('color', 'black')
+                d3.selectAll('.'+finalString).style('color', 'black')
             })
             .merge(vis.edges)
 
@@ -125,12 +125,8 @@ class NetworkVis {
         vis.nodes.exit().remove()
 
         vis.nodeEnter = vis.nodes.enter()
-            // .append('path')
-            // .attr('d', icon)
-            .append("circle")
-            // .attr('cx', 50)
-            // .attr('cy', 50)
-            .attr('r', 70)
+            .append('path')
+            .attr('d', icon)
             .attr('stroke', 'black')
             .attr('stroke-width', "8px")
             .attr('class', function(d){
@@ -195,9 +191,10 @@ class NetworkVis {
             .merge(vis.nodes)
 
         vis.simulation = d3.forceSimulation(vis.networkData.nodes)
-            .force('charge', d3.forceManyBody().strength(-300))
-            .force('link', d3.forceLink(vis.networkData.edges).distance(80))
-            // .force('center', d3.forceCenter(vis.width / 2, vis.height / 2))
+            .force('charge', d3.forceManyBody().strength(-500))
+            .force('link', d3.forceLink(vis.networkData.edges).distance(100))
+            //.force('center', d3.forceCenter().x(vis.width/2).y(vis.height/2))
+            .force('center', d3.forceCenter(vis.width / 2, vis.height / 2))
             .force('collide', d3.forceCollide(vis.networkData.nodes.count).iterations(20))
             .force('x', d3.forceX(vis.width / 2).strength(0.05))
             .force('y', d3.forceY(vis.height / 2).strength(0.05))
@@ -219,20 +216,20 @@ class NetworkVis {
             return target.name === source;
         }
         vis.networkData.edges.forEach(function(d, i) {
-            if (d.name1 === networkCenter) {
+            if (d.name1 === networkPrincess) {
                 source = d.name2
                 nameDisplay = vis.networkData.nodes.find(findConnection).nameDisplay
                 connections += "<div class="+d.name2+"text"+">"+nameDisplay + ": " + d.score + "</div>";
-            } else if (d.name2 === networkCenter) {
+            } else if (d.name2 === networkPrincess) {
                 source = d.name1
                 nameDisplay = vis.networkData.nodes.find(findConnection).nameDisplay
                 connections += "<div class="+d.name1+"text"+">"+nameDisplay + ": " + d.score + "</div>";
             }
         });
 
-        document.getElementById("node-name").innerText = networkCenter;
+        document.getElementById("node-name").innerText = networkPrincess;
         document.getElementById("node-connections").innerHTML = connections;
-        // document.getElementById("node-img").src = "img/node-img/" + networkCenter + '.jpeg';
+        document.getElementById("node-img").src = "img/node-img/" + networkPrincess + '.jpeg';
 
         vis.simulation.force('link').links(vis.networkData.edges);
         vis.simulation.nodes(vis.networkData.nodes);

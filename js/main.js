@@ -17,8 +17,7 @@ let promises = [
     d3.csv('data/network/ingredient_relationships.csv'),
     d3.json('data/grouped_cocktails.json'),
     d3.json('data/all_drink_clean.json'),
-    d3.json('data/treemap_data.json'),
-    d3.csv('data/data_cocktails_cleaned.csv'),
+    d3.json('data/treemap_data.json')
 ]
 let dataArray = []
 Promise.all(promises)
@@ -31,9 +30,9 @@ Promise.all(promises)
     });
 
 // Use d3.interval for periodic tasks
-// let slideInterval = d3.interval(() => {
-//     myIconVis.slideIcons(); // Call the method to slide icons
-// }, 800);
+let slideInterval = d3.interval(() => {
+    myIconVis.slideIcons(); // Call the method to slide icons
+}, 800);
 
 
 let myNetworkVis;
@@ -42,8 +41,7 @@ let myAllBubbleChart;
 let myIconVis;
 let myallBubbleChart_enoch;
 let myTreeMap;
-let myTasteVis;
-let myMixologyVis;
+
 
 function initMainPage(dataArray) {
     const groupedByAlcType = groupByAlcType(dataArray[2]);
@@ -54,17 +52,14 @@ function initMainPage(dataArray) {
     myAllBubbleChart = new BubbleChart('allDrink', dataArray[2],true);
     myallBubbleChart_enoch = new allBubbleChart('all_drinks_enoch', dataArray[3]);
     myTreeMap = new TreeMap('treemapDiv', dataArray[4]);
-    myTasteVis = new tasteBubbleChart('taste', dataArray[5]);
     myNetworkVis = new NetworkVis('networkDiv', dataArray[0], dataArray[1]);
-    // myMixologyVis = new MixologyVis('mixologyDiv', dataArray[6], dataArray[7]);
+
 
     document.getElementById('resetViewButton').addEventListener('click', () => {
         myBubbleChart.resetView();
     });
 
 }
-
-let selectedCategory =  document.getElementById('categorySelector').value;
 
 function categoryChange() {
     selectedCategory = document.getElementById('categorySelector').value;

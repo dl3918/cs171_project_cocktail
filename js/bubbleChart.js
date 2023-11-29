@@ -9,21 +9,10 @@ class BubbleChart {
     initVis() {
         let vis = this;
         //console.log(vis.originalData)
-        // Get viewport dimensions
-        let viewportHeight = window.innerHeight;
-        let viewportWidth = window.innerWidth;
-
-        // Set the size for each Fullpage section
-        document.querySelectorAll('.section').forEach(section => {
-            section.style.height = viewportHeight + 'px';
-            section.style.width = viewportWidth + 'px';
-        });
-
         // dimensions and margins for the graph
         vis.margin = {top: 10, right: 10, bottom: 10, left: 10};
-        // document.getElementById(vis.parentElement).getBoundingClientRect().width
-        vis.width = viewportWidth - vis.margin.left - vis.margin.right;
-        vis.height = viewportHeight - vis.margin.top - vis.margin.bottom;
+        vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
+        vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
 
         // Create the SVG container
         vis.svg = d3.select("#" + vis.parentElement).append('svg')
@@ -96,28 +85,11 @@ class BubbleChart {
         //console.log(vis.displayData)
     }
 
-    mouseoverEvent(event, d) {
-        let vis = this;
-        console.log(d)
-        let tooltip = d3.select('.tooltip')
-        tooltip.transition()
-            .duration(200)
-            .style('opacity', .9);
-        tooltip.html(d.strDrink)  // Set the tooltip content
-            .style('left', (event.pageX) + 'px')
-            .style('top', (event.pageY - 28) + 'px')
-            .html(`
-                         <div style="border: thin solid grey; border-radius: 5px; background: lightgrey; padding: 20px">
-                             <h3> ${d.strDrink}</h3>      
-                             <h4> Ingredients: ${d.strIngredients.join(', ')}<h4>          
-                           
-                         </div>`); // put function,
-    }
 
     updateVis() {
         let vis = this;
 
-        const radiusMultiplier = vis.allDrink ? 1 : 10; // Smaller multiplier for all drinks, larger for categories
+        const radiusMultiplier = vis.allDrink ? 1 : 15; // Smaller multiplier for all drinks, larger for categories
         vis.alcTypeColorMap = {};
         vis.svg.selectAll('*').remove();
 
@@ -143,10 +115,7 @@ class BubbleChart {
             .text(d => d.strDrink)
             .attr('dy', '0.3em')
             .style('font-size', '14px')
-            .style('text-anchor', 'middle')
-            .on('mouseover', vis.mouseoverEvent)
-
-
+            .style('text-anchor', 'middle');
 
         // Create force simulation
         vis.simulation = d3.forceSimulation(vis.displayData)
@@ -166,11 +135,7 @@ class BubbleChart {
         // Add hover interaction
         vis.bubbles.on('mouseover', function(event, d) {
             // Enlarge the hovered bubble
-            d3.select(this).transition()
-                .attr('r', d.rank * radiusMultiplier * 2)
-                .duration(200)
-                .style('fill', d3.rgb(vis.color(d.strDrink)).darker(0.7)); // Darken the fill color
-
+            d3.select(this).transition().attr('r', d.rank * radiusMultiplier * 2);
 
             // Update the collision force to account for the enlarged bubble
             vis.simulation.force('collision', d3.forceCollide().radius(node => {
@@ -179,36 +144,31 @@ class BubbleChart {
         })
             .on('mouseout', function(event, d) {
                 // Reset the radius of the bubble
-                d3.select(this).transition()
-                    .duration(200)
-                    .style('fill', vis.color(d.strDrink)) // Revert fill color
-                    .attr('r', d.rank * radiusMultiplier);
+                d3.select(this).transition().attr('r', d.rank * radiusMultiplier);
+
                 // Reset the collision force
-                vis.simulation.force('collision', d3.forceCollide().radius(maxRadius)).alpha(0.1).restart();
+                vis.simulation.force('collision', d3.forceCollide().radius(maxRadius)).alpha(1).restart();
             })
-
+            // .on('click', function(event, d) {
+            //     if (!vis.allDrink) {
+            //         // Find all drinks with this Alc_type and update vis.data
+            //         let selectedDrinks = vis.originalData.filter(drink => drink.Alc_type.includes(d.strDrink));
+            //         vis.allDrink = true;
+            //         vis.displayData = selectedDrinks;
+            //         vis.wrangleData();
+            //     }
+            // });
         vis.bubbles.on('click', function(event, clickedBubbleData) {
-            // Hide all bubbles except the clicked one
-            vis.bubbles.transition()
-                .duration(400)
-                .style('opacity', d => d === clickedBubbleData ? 1 : 0);
-
-            // Move the clicked bubble to the center
-            d3.select(this)
-                .transition()
-                .duration(400)
-                .attr('cx', vis.width / 2)
-                .attr('cy', vis.height / 2);
+            // Hide only the clicked bubble
+            d3.select(this).style('opacity', 0);
 
             let selectedDrinks = vis.originalData.filter(drink => drink.Alc_type.includes(clickedBubbleData.strDrink));
             console.log(selectedDrinks)
             // Unique identifier for the smaller bubbles (e.g., using strDrink)
             let smallBubbleClass = 'small-bubble-' + clickedBubbleData.strDrink.replace(/[^a-zA-Z0-9]/g, ""); // Sanitize for class name
 
-            // Calculate positions for smaller bubbles around the center
-            let smallBubblePositions = getCirclePositions(vis.width / 2, vis.height / 2, selectedDrinks.length, 50); // 50 is the spread radius
-
-            // let smallBubblePositions = getCirclePositions(clickedBubbleData.x, clickedBubbleData.y, selectedDrinks.length, 50); // 50 is the spread radius
+            // Calculate positions for smaller bubbles
+            let smallBubblePositions = getCirclePositions(clickedBubbleData.x, clickedBubbleData.y, selectedDrinks.length, 50); // 50 is the spread radius
 
             // Create smaller bubbles for the clicked big bubble
             vis.svg.selectAll('.' + smallBubbleClass)
@@ -217,20 +177,25 @@ class BubbleChart {
                 .attr('class', smallBubbleClass)
                 .attr('cx', (d, i) => smallBubblePositions[i].x)
                 .attr('cy', (d, i) => smallBubblePositions[i].y)
-                .attr('r', 30) // Smaller bubble radius
+                .attr('r', 20) // Smaller bubble radius
                 .style('fill', vis.alcTypeColorMap[clickedBubbleData.strDrink])
                 .style('opacity', 0.7)
-                .on('mouseover', vis.mouseoverEvent)
+                .on('mouseover', function(event, d) {
+                    vis.tooltip.transition()
+                        .duration(200)
+                        .style('opacity', .9);
+                    vis.tooltip.html(d.strDrink)  // Set the tooltip content
+                        .style('left', (event.pageX) + 'px')
+                        .style('top', (event.pageY - 28) + 'px');
+                })
                 .on('mouseout', function() {
                     vis.tooltip.transition()
                         .duration(400)
-                        .style('opacity', 0)
-                        .html(``)
+                        .style('opacity', 0);
                 });
         });
 
     }
-
 
     resetView() {
         this.allDrink = false;
@@ -240,17 +205,10 @@ class BubbleChart {
             .duration(800)
             .style('opacity', 0.7);
 
-        // Restore the original positions and opacity of the bubbles
-        this.bubbles.transition()
-            .duration(800)
-            .style('opacity', 1)
-            .attr('cx', d => d.originalX) // Assuming original positions are stored
-            .attr('cy', d => d.originalY);
-
-
         // Remove smaller bubbles
         this.svg.selectAll('.small-bubble').remove();
     }
+
 
 
 }
@@ -259,10 +217,9 @@ function getCirclePositions(centerX, centerY, numberOfItems, radius) {
     let positions = [];
     for (let i = 0; i < numberOfItems; i++) {
         let angle = (i / numberOfItems) * (2 * Math.PI); // Distribute around the circle
-        let x = centerX + radius*2 * Math.cos(angle);
-        let y = centerY + radius*2 * Math.sin(angle);
+        let x = centerX + radius*3 * Math.cos(angle);
+        let y = centerY + radius*3 * Math.sin(angle);
         positions.push({ x: x, y: y });
     }
     return positions;
 }
-
