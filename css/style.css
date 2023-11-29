@@ -49,3 +49,22 @@ h1 {
     font-weight: bold;
 
 }
+
+#treemapDiv {
+    position: relative;
+}
+
+#treemapDiv svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#treemapDiv svg:nth-of-type(2) { /* targeting svg2 */
+    z-index: 2;
+    pointer-events: none;  /* Allow click events to pass through */
+}
+
+#treemapDiv svg:nth-of-type(1) { /* targeting svg1 */
+    z-index: 1;
+}
