@@ -96,7 +96,7 @@ class allBubbleChart {
             .force("y", d3.forceY(d => vis.categoryCenters[d[vis.currentCategory]].y).strength(0.5))
             .on("tick", () => vis.ticked());
     }
-
+    
     createLegend() {
         const vis = this;
 
@@ -138,21 +138,22 @@ class allBubbleChart {
             event.stopPropagation();
             const isSelected = d3.select(this).classed("selected");
 
-            // Toggle selected class
-            d3.select(this).classed("selected", !isSelected);
+            // Reset all bubbles to full opacity if the same legend is clicked again
+            if (isSelected) {
+                vis.svg.selectAll(".bubble").style("opacity", 1);
+                vis.legend.selectAll(".legend-item").classed("selected", false);
+            } else {
+                // Highlight corresponding bubbles and dim others
+                vis.svg.selectAll(".bubble")
+                    .style("opacity", d => d[vis.currentCategory] === clickedCategory ? 1 : 0.1);
 
-            // Highlight or reset bubbles
-            vis.svg.selectAll(".bubble")
-                .style("opacity", d => d[vis.currentCategory] === clickedCategory && !isSelected ? 1 : 0.1);
-
-            // Reset other legend items if necessary
-            if (!isSelected) {
-                vis.legend.selectAll(".legend-item")
-                    .filter(d => d !== clickedCategory)
-                    .classed("selected", false);
+                // Update the selected state
+                vis.legend.selectAll(".legend-item").classed("selected", false);
+                d3.select(this).classed("selected", true);
             }
         });
     }
+
 
 
 
