@@ -27,16 +27,31 @@ class allBubbleChart {
             .append("svg")
             .attr("width", vis.width + vis.margin.left + vis.margin.right)
             .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
+            .on("click", function(event) {
+                // Check if the clicked element is the SVG itself
+                if (event.target === this) {
+                    // Reset all bubbles to full opacity
+                    vis.svg.selectAll(".bubble").style("opacity", 1);
+
+                    // Reset the legend items
+                    vis.legend.selectAll(".legend-item").classed("selected", false);
+                }
+            })
             .append("g")
             .attr("transform", `translate(${vis.margin.left},${vis.margin.top})`);
 
         // Define a scale for bubble size
         vis.z = d3.scaleSqrt()
-            .domain([0, d3.max(vis.data, d => d.Alc_type.length)])
+            .domain([0, d3.max(vis.data, d => d.Alc_type.length)* 1.2])
             .range([2, 20]);
 
-        // Define a scale for colors
-        vis.color = d3.scaleOrdinal(d3.schemeCategory10);
+        // // Define a scale for colors
+        const myColors = [
+            "#e6194b", "#3cb44b", "#ffe119", "#4363d8", "#f58231", "#911eb4", "#46f0f0", "#f032e6",
+            "#bcf60c", "#fabebe", "#008080", "#e6beff", "#9a6324", "#fffac8", "#800000", "#aaffc3",
+            "#808000", "#ffd8b1", "#000075", "#808080", "#000000", "#fabed4", "#ffd700", "#aa6e28"
+        ];
+        vis.color = d3.scaleOrdinal(myColors);
 
 
         // Initialize the tooltip
@@ -71,68 +86,110 @@ class allBubbleChart {
     initSimulation() {
         const vis = this;
 
+        // Calculate category centers
+        vis.calculateCategoryCenters();
+
         vis.simulation = d3.forceSimulation()
-            .force("center", d3.forceCenter(vis.width / 2, vis.height / 2))
-            .force("charge", d3.forceManyBody().strength(15))
+            .force("charge", d3.forceManyBody().strength(-50)) // Adjust strength as needed
             .force("collide", d3.forceCollide().radius(d => vis.z(d.Alc_type.length) + 1))
-            .on("tick", () => vis.ticked()); // Reference the ticked method of the class
+            .force("x", d3.forceX(d => vis.categoryCenters[d[vis.currentCategory]].x).strength(0.5))
+            .force("y", d3.forceY(d => vis.categoryCenters[d[vis.currentCategory]].y).strength(0.5))
+            .on("tick", () => vis.ticked());
     }
 
     createLegend() {
         const vis = this;
 
-        // Define legend group with positioning
+        // Clear existing legend
+        if (vis.legend) {
+            vis.legend.remove();
+        }
+
+        // Define legend
         vis.legend = vis.svg.append("g")
             .attr("class", "legend")
             .attr("transform", `translate(${vis.width - 150},${vis.margin.top})`);
 
-        // Add legend circles
-        vis.legend.selectAll(".legend-circle")
+        // Create legend items
+        const legendItems = vis.legend.selectAll(".legend-item")
             .data(vis.color.domain())
-            .enter().append("circle")
+            .enter().append("g")
+            .attr("class", "legend-item")
+            .attr("transform", (d, i) => `translate(0, ${i * 25})`);
+
+        // Add circles to legend items
+        legendItems.append("circle")
             .attr("class", "legend-circle")
             .attr("r", 10)
-            .attr("cy", (d, i) => i * 25)
             .attr("fill", vis.color)
-            .style("opacity", 0.7)
+            .style("opacity", 0.7);
 
-        // Add legend text
-        vis.legend.selectAll(".legend-label")
-            .data(vis.color.domain())
-            .enter().append("text")
+        // Add labels to legend items
+        legendItems.append("text")
             .attr("class", "legend-label")
             .attr("x", 25)
-            .attr("y", (d, i) => i * 25 + 5)
+            .attr("y", 5)
             .attr("dy", "0.35em")
             .style("font-size", "12px")
             .text(d => d);
+
+        // Add click event listener
+        legendItems.on("click", function(event, clickedCategory) {
+            event.stopPropagation();
+            const isSelected = d3.select(this).classed("selected");
+
+            // Toggle selected class
+            d3.select(this).classed("selected", !isSelected);
+
+            // Highlight or reset bubbles
+            vis.svg.selectAll(".bubble")
+                .style("opacity", d => d[vis.currentCategory] === clickedCategory && !isSelected ? 1 : 0.1);
+
+            // Reset other legend items if necessary
+            if (!isSelected) {
+                vis.legend.selectAll(".legend-item")
+                    .filter(d => d !== clickedCategory)
+                    .classed("selected", false);
+            }
+        });
     }
+
+
 
     wrangleData() {
         const vis = this;
 
         // Filter data based on the current category selected
-        vis.displayData = vis.data;
+        vis.displayData = vis.data.filter(d => d[vis.currentCategory]);
 
         // Update the domain of the color scale to match the new category
-        vis.color.domain(vis.displayData.map(d => d[vis.currentCategory]));
+        vis.color.domain([...new Set(vis.displayData.map(d => d[vis.currentCategory]))]);
+
+
+        // Dynamically adjust bubble size based on the number of items in each category
+        const maxItemsInCategory = d3.max(vis.color.domain().map(category => {
+            return vis.displayData.filter(d => d[vis.currentCategory] === category).length;
+        }));
+
+        vis.z.range([2, Math.max(15, 20 / Math.sqrt(maxItemsInCategory))]); // Adjust the max size of bubbles based on the number of items
 
         // Update the visualization
         vis.updateVis();
     }
+
 
     updateVis() {
         const vis = this;
 
         // Bind data to bubbles and handle enter, update, and exit selections
         vis.bubbles = vis.svg.selectAll(".bubble")
-            .data(vis.data, d => d.strDrink)
+            .data(vis.data, d => d.strCategory)
             .join(
                 // Enter selection
                 enter => enter.append("circle")
                     .attr("class", "bubble")
                     .attr("r", d => vis.z(d.Alc_type.length)) // Set the initial radius
-                    .style("fill", d => vis.color(d.Alc_type[0])) // Set the color
+                    .style("fill", d => vis.color(d[vis.currentCategory])) // Set the color
                     .style("opacity", 0.7)
                     .on("mouseover", function(event, d) {
                         // Enlarge the bubble on mouseover
@@ -162,6 +219,10 @@ class allBubbleChart {
                             .transition()
                             .duration(200)
                             .style("opacity", 0);
+                    })
+                    .on("click", function(event, d) {
+                        // Bubble specific logic...
+                        event.stopPropagation(); // Prevent this click from propagating to the SVG
                     }),
                 // Update selection
                 update => update
@@ -189,19 +250,51 @@ class allBubbleChart {
         vis.createLegend();
     }
 
+
     categoryChange(newCategory) {
         const vis = this;
         vis.currentCategory = newCategory;
+
+        // Recalculate the category centers based on the new category
+        vis.calculateCategoryCenters();
+
+        // Recalculate bubble sizes based on the new category
         vis.wrangleData();
+
+        // Restart the simulation with new forces
+        vis.simulation
+            .force("x", d3.forceX(d => vis.categoryCenters[d[vis.currentCategory]].x).strength(0.5))
+            .force("y", d3.forceY(d => vis.categoryCenters[d[vis.currentCategory]].y).strength(0.5))
+            .alpha(1)
+            .restart();
+        vis.createLegend();
     }
+
 
     ticked() {
         const vis = this;
         vis.bubbles
-            .attr("cx", d => d.x)
-            .attr("cy", d => d.y);
+            .attr("cx", d => Math.max(vis.z(d.Alc_type.length), Math.min(vis.width -175 - vis.z(d.Alc_type.length), d.x))) // Keep within horizontal bounds
+            .attr("cy", d => Math.max(vis.z(d.Alc_type.length), Math.min(vis.height - vis.z(d.Alc_type.length), d.y))); // Keep within vertical bounds
     }
 
+    calculateCategoryCenters() {
+        const vis = this;
+
+        // Initialize an object to store the centers
+        vis.categoryCenters = {};
+
+        // Calculate distinct categories from the data
+        const categories = [...new Set(vis.data.map(d => d[vis.currentCategory]))];
+
+        // Assign a center for each category
+        categories.forEach((category, index) => {
+            vis.categoryCenters[category] = {
+                x: vis.width * (index + 1) / categories.length + 50 , // Evenly distribute across the width
+                y: vis.height / 2
+            };
+        });
+    }
 }
 
 
