@@ -50,6 +50,7 @@ h1 {
 
 }
 
+
 #treemapDiv {
     position: relative;
 }
@@ -67,4 +68,9 @@ h1 {
 
 #treemapDiv svg:nth-of-type(1) { /* targeting svg1 */
     z-index: 1;
+}
+
+#networkDiv {
+    width: 80vw;
+    height: 70vh;
 }

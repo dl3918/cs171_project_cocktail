@@ -1,9 +1,9 @@
 new fullpage('#fullpage', {
     //options here
     autoScrolling:true,
-    scrollHorizontally: true,
+    //scrollHorizontally: true,
     fitToSection: true,
-    parallax: true,
+    //parallax: true,
     navigation: true,
     navigationPosition: 'right',
 
@@ -13,8 +13,8 @@ new fullpage('#fullpage', {
 
 
 let promises = [
-    d3.csv('data/network/network_ingredients.csv'),
-    d3.csv('data/network/ingredient_relationships.csv'),
+    d3.json('data/network/nodes.json'),
+    d3.json('data/network/edges.json'),
     d3.json('data/grouped_cocktails.json'),
     d3.json('data/all_drink_clean.json'),
     d3.json('data/treemap_data.json'),
@@ -51,12 +51,11 @@ function initMainPage(dataArray) {
 
     myIconVis = new iconVis('icon-bottom-bar', dataArray[2])
     myBubbleChart = new BubbleChart('bubbles', dataArray[2]);
-    myAllBubbleChart = new BubbleChart('allDrink', dataArray[2],true);
+    //myAllBubbleChart = new BubbleChart('allDrink', dataArray[2],true);
     myallBubbleChart_enoch = new allBubbleChart('all_drinks_enoch', dataArray[3]);
     myTreeMap = new TreeMap('treemapDiv', dataArray[4]);
     myTasteVis = new tasteBubbleChart('taste', dataArray[5]);
     myNetworkVis = new NetworkVis('networkDiv', dataArray[0], dataArray[1]);
-    // myMixologyVis = new MixologyVis('mixologyDiv', dataArray[6], dataArray[7]);
 
     // document.getElementById('resetViewButton').addEventListener('click', () => {
     //     myBubbleChart.resetView();

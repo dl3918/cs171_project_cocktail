@@ -4,7 +4,7 @@ class BubbleChart {
         this.originalData = data;
         this.allDrink = allDrink;
         this.initVis()
-        this.enlargeBubble = this.enlargeBubble.bind(this);
+        //this.enlargeBubble = this.enlargeBubble.bind(this);
     }
 
     initVis() {
@@ -105,23 +105,37 @@ class BubbleChart {
     updateVis() {
         let vis = this;
 
+        // Calculate the min and max rank values in displayData
+        let minRank = d3.min(vis.displayData, d => d.rank);
+        let maxRank = d3.max(vis.displayData, d => d.rank);
+
+// Define the range for the bubble radius (minimum and maximum radius)
+        let minRadius = 30;  // Minimum bubble radius in pixels
+        let maxRadiuss = 80; // Maximum bubble radius in pixels
+
+// Create a linear scale for the bubble radius
+         vis.radiusScale = d3.scaleLinear()
+            .domain([minRank, maxRank])
+            .range([minRadius, maxRadiuss]);
+
+
         vis.radiusMultiplier = vis.allDrink ? 1 : 10; // Smaller multiplier for all drinks, larger for categories
         vis.alcTypeColorMap = {};
         vis.svg.selectAll('*').remove();
-
-        //vis.radiusScale().domain([d3.min(vis.displayData, d=>d.rank), d3.max(vis.displayData, d=>d.rank)])
 
         // Draw circles for each node
         vis.bubbles = vis.svg.selectAll('circle')
             .data(vis.displayData)
             .enter().append('circle')
-            .attr('r', d => d.rank * vis.radiusMultiplier)
+            .attr('r', d => vis.radiusScale(d.rank)) // Apply the scale here
             .style('fill', d => {
                 let color = vis.color(d.strDrink);
                 vis.alcTypeColorMap[d.strDrink] = color;  // Store the color
                 return color;
             })
             .style('opacity', 0.7);
+            //.attr('r', d => d.rank * vis.radiusMultiplier)
+
 
         // Adjust the radius for collision detection
         const maxRadius = d3.max(vis.displayData, d => d.rank * vis.radiusMultiplier);
@@ -169,7 +183,7 @@ class BubbleChart {
                 d3.select(this).transition()
                     .duration(200)
                     .style('fill', vis.color(d.strDrink)) // Revert fill color
-                    .attr('r', d.rank * vis.radiusMultiplier);
+                    .attr('r', vis.radiusScale(d.rank));
                 // Reset the collision force
                 vis.simulation.force('collision', d3.forceCollide().radius(maxRadius)).alpha(0.1).restart();
             })
@@ -193,7 +207,7 @@ class BubbleChart {
                     .attr('class', 'background-bubble')
                     .attr('cx', vis.width / 2)
                     .attr('cy', vis.height / 2)
-                    .attr('r', 150)
+                    .attr('r', 200)
                     .style('fill', vis.alcTypeColorMap[clickedBubbleData.strDrink])
                     .style('opacity', 0.2)
 
@@ -204,7 +218,7 @@ class BubbleChart {
                     .attr('y', vis.height / 2)
                     .text(clickedBubbleData.strDrink)
                     .style('text-anchor', 'middle')
-                    .style('fill', '#fff');
+                    .style('fill', vis.alcTypeColorMap[clickedBubbleData.strDrink]);
 
                 let selectedDrinks = vis.originalData.filter(drink => drink.Alc_type.includes(clickedBubbleData.strDrink));
                 console.log(selectedDrinks)
@@ -212,9 +226,7 @@ class BubbleChart {
                 let smallBubbleClass = 'small-bubble-' + clickedBubbleData.strDrink.replace(/[^a-zA-Z0-9]/g, ""); // Sanitize for class name
 
                 // Calculate positions for smaller bubbles around the center
-                let smallBubblePositions = getCirclePositions(vis.width / 2, vis.height / 2, selectedDrinks.length, 50); // 50 is the spread radius
-
-                // let smallBubblePositions = getCirclePositions(clickedBubbleData.x, clickedBubbleData.y, selectedDrinks.length, 50); // 50 is the spread radius
+                let smallBubblePositions = getCirclePositions(vis.width / 2, vis.height / 2, selectedDrinks.length, 75); // 50 is the spread radius
 
                 // Create smaller bubbles for the clicked big bubble
                 vis.svg.selectAll('.' + smallBubbleClass)
@@ -223,7 +235,7 @@ class BubbleChart {
                     .attr('class', smallBubbleClass)
                     .attr('cx', (d, i) => smallBubblePositions[i].x)
                     .attr('cy', (d, i) => smallBubblePositions[i].y)
-                    .attr('r', 30) // Smaller bubble radius
+                    .attr('r', 40) // Smaller bubble radius
                     .style('fill', vis.alcTypeColorMap[clickedBubbleData.strDrink])
                     .style('opacity', 0.8)
                     .on('mouseover', vis.mouseoverTooltip)
@@ -231,8 +243,24 @@ class BubbleChart {
                         vis.tooltip.transition()
                             .duration(400)
                             .style('opacity', 0)
-                            .html(``)
+                            //.html(``);
                     });
+
+                vis.svg.selectAll('.text-small-bubble')
+                    .data(selectedDrinks)
+                    .enter().append('text')
+                    .attr('class', 'text-small-bubble')
+                    .text(d => d.strDrink)
+                    .attr('x', (d, i) => smallBubblePositions[i].x)
+                    .attr('y', (d, i) => smallBubblePositions[i].y)
+                    .attr('dy', '0.3em')
+                    .style('font-size', '14px')
+                    .style('text-anchor', 'middle')
+
+
+
+                    //.attr('fill', vis.alcTypeColorMap[clickedBubbleData.strDrink])
+                //.on('mouseover', vis.enlargeBubble)
 
             })
         });
@@ -251,7 +279,7 @@ class BubbleChart {
 
         // Enlarge the hovered bubble
         d3.select(element).transition()
-            .attr('r', d.rank * this.radiusMultiplier * 2)
+            .attr('r', this.radiusScale(d.rank)*2)
             .duration(200)
             .style('fill', d3.rgb(this.color(d.strDrink)).darker(0.9)); // Darken the fill color
 
