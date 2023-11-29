@@ -1,9 +1,9 @@
 new fullpage('#fullpage', {
     //options here
     autoScrolling:true,
-    scrollHorizontally: true,
+    //scrollHorizontally: true,
     fitToSection: true,
-    parallax: true,
+    //parallax: true,
     navigation: true,
     navigationPosition: 'right',
 

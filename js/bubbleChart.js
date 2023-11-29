@@ -193,7 +193,7 @@ class BubbleChart {
                     .attr('class', 'background-bubble')
                     .attr('cx', vis.width / 2)
                     .attr('cy', vis.height / 2)
-                    .attr('r', 150)
+                    .attr('r', 200)
                     .style('fill', vis.alcTypeColorMap[clickedBubbleData.strDrink])
                     .style('opacity', 0.2)
 
@@ -204,7 +204,7 @@ class BubbleChart {
                     .attr('y', vis.height / 2)
                     .text(clickedBubbleData.strDrink)
                     .style('text-anchor', 'middle')
-                    .style('fill', '#fff');
+                    .style('fill', vis.alcTypeColorMap[clickedBubbleData.strDrink]);
 
                 let selectedDrinks = vis.originalData.filter(drink => drink.Alc_type.includes(clickedBubbleData.strDrink));
                 console.log(selectedDrinks)
@@ -212,7 +212,7 @@ class BubbleChart {
                 let smallBubbleClass = 'small-bubble-' + clickedBubbleData.strDrink.replace(/[^a-zA-Z0-9]/g, ""); // Sanitize for class name
 
                 // Calculate positions for smaller bubbles around the center
-                let smallBubblePositions = getCirclePositions(vis.width / 2, vis.height / 2, selectedDrinks.length, 50); // 50 is the spread radius
+                let smallBubblePositions = getCirclePositions(vis.width / 2, vis.height / 2, selectedDrinks.length, 75); // 50 is the spread radius
 
                 // let smallBubblePositions = getCirclePositions(clickedBubbleData.x, clickedBubbleData.y, selectedDrinks.length, 50); // 50 is the spread radius
 
@@ -223,7 +223,7 @@ class BubbleChart {
                     .attr('class', smallBubbleClass)
                     .attr('cx', (d, i) => smallBubblePositions[i].x)
                     .attr('cy', (d, i) => smallBubblePositions[i].y)
-                    .attr('r', 30) // Smaller bubble radius
+                    .attr('r', 40) // Smaller bubble radius
                     .style('fill', vis.alcTypeColorMap[clickedBubbleData.strDrink])
                     .style('opacity', 0.8)
                     .on('mouseover', vis.mouseoverTooltip)
@@ -231,8 +231,24 @@ class BubbleChart {
                         vis.tooltip.transition()
                             .duration(400)
                             .style('opacity', 0)
-                            .html(``)
+                            //.html(``);
                     });
+
+                vis.svg.selectAll('.text-small-bubble')
+                    .data(selectedDrinks)
+                    .enter().append('text')
+                    .attr('class', 'text-small-bubble')
+                    .text(d => d.strDrink)
+                    .attr('x', (d, i) => smallBubblePositions[i].x)
+                    .attr('y', (d, i) => smallBubblePositions[i].y)
+                    .attr('dy', '0.3em')
+                    .style('font-size', '14px')
+                    .style('text-anchor', 'middle')
+
+
+
+                    //.attr('fill', vis.alcTypeColorMap[clickedBubbleData.strDrink])
+                //.on('mouseover', vis.enlargeBubble)
 
             })
         });
