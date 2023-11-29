@@ -29,7 +29,7 @@
 
     <!-- Title page -->
     <div class="section" id="section1">
-        <div class = "container-fluid" style="height: 100vh;">
+        <div class = "container-fluid" style="height: 95vh">
             <div class = "row justify-content-center align-self-center intro-title" style="height: 70vh; padding: 10vh;">
                 <h1 style="text-align: center"> The Art of Mixology </h1>
                 <h2 style="text-align: center"> All about Cocktails </h2>
@@ -43,24 +43,23 @@
     </div>
 
     <div class="section" id="section2">
-        <div class = "container-fluid" style="height: 100vh; padding-top: 2vh">
+        <div class = "container-fluid">
             <h1 style="text-align: center"> Popular Cocktails by Category</h1>
-            <div class = "row" style="height: 80vh; padding: 0;">
-                <div class="col">
-                    <button id="resetViewButton" onclick="myBubbleChart.resetView()">Reset View</button>
-                    <h2 style="text-align: center"> Click on bubbles to see more details!</h2>
-                    <div id="bubbles" style="height: 100%; width:100%;"></div>
+            <div class = "row">
+                <div id="bubbles">
+<!--                    <h2 style="text-align: center"> Click on bubbles to see more details!</h2>-->
                 </div>
+<!--                <button id="resetViewButton" onclick="myBubbleChart.resetView()">Reset View</button>-->
             </div>
         </div>
     </div>
 
     <div class="section" id="section3">
-        <div class = "container-fluid" style="height: 100vh; padding-top: 2vh">
+        <div class = "container-fluid" style="height: 95vh">
             <h1 style="text-align: center"> All Cocktails </h1>
-            <div class = "row" style="height: 80vh; padding: 0;">
+            <div class = "row" >
                 <div class="col">
-                    <div id="allDrink" style="height: 100%; width:100%;"></div>
+                    <div id="allDrink"></div>
                 </div>
             </div>
         </div>
@@ -72,12 +71,12 @@
             <h1 style="text-align: center"> All Cocktails </h1>
             <div class ="row">
                 <div class="col-md-3">
-                <select id='categorySelector' class="custom-select align-self-center" style="width: 50%" onchange="categoryChange()">
-                    <option value="strGlass">Glass type</option>
-                    <option value="strCategory">Drink Category</option>
-                    <option value="Alc_type">Alcohol type</option>
-                    <option value="Basic_taste">Basic taste</option>
-                </select>
+                    <select id='categorySelector' class="custom-select align-self-center" style="width: 50%" onchange="categoryChange()">
+                        <option value="strGlass">Glass type</option>
+                        <option value="strCategory">Drink Category</option>
+                        <option value="Alc_type">Alcohol type</option>
+                        <option value="Basic_taste">Basic taste</option>
+                    </select>
                 </div>
             </div>
             <div class = "row" style="height: 80vh;">
@@ -111,7 +110,7 @@
 
     <!-- Network -->
     <div class="section" id="network-page">
-        <div class="container-fluid" style="height: 100vh; padding-top: 2vh">
+        <div class="container-fluid" style="height: 95vh">
             <div class="row">
                 <div class="col-10 offset-1">
                     <!-- HEADING -->
@@ -141,7 +140,7 @@
 
 
     <div class="section" id="taste-page">
-        <div class = "container-fluid" style="height: 100vh; padding-top: 2vh">
+        <div class = "container-fluid" style="height: 95vh">
             <h1 style="text-align: center"> "Taste" Them</h1>
             <div class = "row" style="height: 90vh; padding: 0;">
                 <div class="col">
@@ -172,7 +171,18 @@
 </div>
 
 
+    <script>
+        window.addEventListener('resize', () => {
+            let viewportHeight = window.innerHeight;
+            let viewportWidth = window.innerWidth;
 
+            document.querySelectorAll('.section').forEach(section => {
+                section.style.height = viewportHeight + 'px';
+                section.style.width = viewportWidth + 'px';
+            });
+        });
+
+    </script>
 
 
 
@@ -198,5 +208,6 @@
     <script src="js/iconVis.js"></script>
     <script src="js/tasteBubbleChart.js"></script>
 <!--    <script src="js/mixologyVis.js"></script>-->
+
 </body>
 </html>
