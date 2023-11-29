@@ -9,9 +9,9 @@
       "Jamaican Coffee"
     ],
     "strIngredients":[
-      "Cherry",
-      "Lemon Peel",
-      "Whipped Cream"
+      {"Cherry":2},
+      {"Lemon Peel":1},
+      {"Whipped Cream":1}
     ]
   },
   {
@@ -47,15 +47,15 @@
       "Tuxedo Cocktail"
     ],
     "strIngredients":[
-      "Cherry",
-      "Lemon Peel",
-      "Nutmeg",
-      "Salt",
-      "Maraschino Cherry",
-      "Mint",
-      "Lemon",
-      "Sugar",
-      "Orange Peel"
+      {"Lemon Peel":9},
+      {"Cherry":5},
+      {"Maraschino Cherry":4},
+      {"Salt":3},
+      {"Nutmeg":3},
+      {"Orange Peel":2},
+      {"Lemon":1},
+      {"Sugar":1},
+      {"Mint":1}
     ]
   },
   {
@@ -80,16 +80,16 @@
       "Wine Punch"
     ],
     "strIngredients":[
-      "Lemon",
-      "Lemon Peel",
-      "Orange Peel",
-      "Allspice",
-      "Cinnamon",
-      "Cloves",
-      "Orange",
-      "Nutmeg",
-      "Maraschino Cherry",
-      "Cherry"
+      {"Orange":7},
+      {"Nutmeg":3},
+      {"Maraschino Cherry":3},
+      {"Cherry":2},
+      {"Cloves":2},
+      {"Lemon":2},
+      {"Allspice":1},
+      {"Cinnamon":1},
+      {"Orange Peel":1},
+      {"Lemon Peel":1}
     ]
   },
   {
@@ -108,10 +108,10 @@
       "Space Odyssey"
     ],
     "strIngredients":[
-      "Lemon Peel",
-      "Cherry",
-      "Lime",
-      "Lemon"
+      {"Lemon Peel":5},
+      {"Cherry":2},
+      {"Lime":2},
+      {"Lemon":1}
     ]
   },
   {
@@ -123,8 +123,8 @@
       "Mocha-Berry"
     ],
     "strIngredients":[
-      "Cloves",
-      "Whipped Cream"
+      {"Whipped Cream":2},
+      {"Cloves":1}
     ]
   },
   {
@@ -152,17 +152,17 @@
       "Whiskey Sour"
     ],
     "strIngredients":[
-      "Maraschino Cherry",
-      "Mint",
-      "Orange",
-      "Lemon",
-      "Lime",
-      "Lavender",
-      "Pepper",
-      "Orange Peel",
-      "Cherry",
-      "Lemon Peel",
-      "Lime Peel"
+      {"Orange":7},
+      {"Maraschino Cherry":5},
+      {"Lemon Peel":4},
+      {"Mint":3},
+      {"Cherry":2},
+      {"Lemon":2},
+      {"Lavender":1},
+      {"Pepper":1},
+      {"Orange Peel":1},
+      {"Lime":1},
+      {"Lime Peel":1}
     ]
   },
   {
@@ -184,13 +184,13 @@
       "Tequila Sour"
     ],
     "strIngredients":[
-      "Lemon Peel",
-      "Lemon",
-      "Cherry",
-      "Maraschino Cherry",
-      "Orange",
-      "Nutmeg",
-      "Lime"
+      {"Cherry":5},
+      {"Lemon":5},
+      {"Nutmeg":3},
+      {"Orange":3},
+      {"Maraschino Cherry":3},
+      {"Lime":1},
+      {"Lemon Peel":1}
     ]
   }
 ]

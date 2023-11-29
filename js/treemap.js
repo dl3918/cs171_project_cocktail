@@ -121,7 +121,8 @@ class TreeMap {
 
         d3.select("#treemap_right").append("h4").text("Pair if with:")
 
-        d3.select("#treemap_right").append("p").text(d.data.garish.join(', ')).style("text-align", "center");
+        d3.select("#treemap_right").append("p").text(d.data.garish.map(obj => Object.keys(obj)).join(', ')).style("text-align", "center");
+        console.log(d.data.garish)
 
         d3.select("#treemap_right").append("h4").text("Recommended drink:")
 
