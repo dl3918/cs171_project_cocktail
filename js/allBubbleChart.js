@@ -18,7 +18,7 @@ class allBubbleChart {
         const vis = this;
 
         // Set dimensions and margins for the graph
-        vis.margin = { top: 20, right: 40, bottom: 30, left: 40 };
+        vis.margin = { top: 10, right: 10, bottom: 10, left: 10 };
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
 
@@ -160,7 +160,7 @@ class allBubbleChart {
                         // Hide the tooltip
                         vis.tooltip
                             .transition()
-                            .duration(500)
+                            .duration(200)
                             .style("opacity", 0);
                     }),
                 // Update selection
