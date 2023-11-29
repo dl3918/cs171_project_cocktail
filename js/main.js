@@ -30,7 +30,7 @@ Promise.all(promises)
         console.log(err)
     });
 
-// Use d3.interval for periodic tasks
+//Use d3.interval for periodic tasks
 let slideInterval = d3.interval(() => {
     myIconVis.slideIcons(); // Call the method to slide icons
 }, 800);
@@ -58,9 +58,9 @@ function initMainPage(dataArray) {
     myNetworkVis = new NetworkVis('networkDiv', dataArray[0], dataArray[1]);
     // myMixologyVis = new MixologyVis('mixologyDiv', dataArray[6], dataArray[7]);
 
-    document.getElementById('resetViewButton').addEventListener('click', () => {
-        myBubbleChart.resetView();
-    });
+    // document.getElementById('resetViewButton').addEventListener('click', () => {
+    //     myBubbleChart.resetView();
+    // });
 
 }
 
