@@ -51,7 +51,7 @@ function initMainPage(dataArray) {
 
     myIconVis = new iconVis('icon-bottom-bar', dataArray[2])
     myBubbleChart = new BubbleChart('bubbles', dataArray[2]);
-    myAllBubbleChart = new BubbleChart('allDrink', dataArray[2],true);
+    //myAllBubbleChart = new BubbleChart('allDrink', dataArray[2],true);
     myallBubbleChart_enoch = new allBubbleChart('all_drinks_enoch', dataArray[3]);
     myTreeMap = new TreeMap('treemapDiv', dataArray[4]);
     myTasteVis = new tasteBubbleChart('taste', dataArray[5]);
