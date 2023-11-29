@@ -701,19 +701,6 @@
     },
     {
         "from": 4,
-        "to": 4,
-        "value": 6,
-        "cocktails": [
-            "Tequila Sour",
-            "New York Sour",
-            "Boston Sour",
-            "Whiskey Sour",
-            "Brandy Sour",
-            "Frisco Sour"
-        ]
-    },
-    {
-        "from": 4,
         "to": 19,
         "value": 25,
         "cocktails": [
