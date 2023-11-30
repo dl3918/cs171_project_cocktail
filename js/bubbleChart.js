@@ -205,6 +205,7 @@ class BubbleChart {
             .data(vis.displayData)
             .enter().append('circle')
             .attr('r', d => vis.radiusScale(d.rank)) // Apply the scale here
+            .attr('class', 'large-bubbles')
             .style('fill', d => {
                 let color = vis.color(d.strDrink);
                 vis.alcTypeColorMap[d.strDrink] = color;  // Store the color
@@ -357,16 +358,16 @@ class BubbleChart {
 
 
     enlargeBubble(element, d) {
-
+        let vis = this;
         // Enlarge the hovered bubble
         d3.select(element).transition()
-            .attr('r', this.radiusScale(d.rank)*2)
+            .attr('r', vis.radiusScale(d.rank)*2)
             .duration(200)
-            .style('fill', d3.rgb(this.color(d.strDrink)).darker(0.9)); // Darken the fill color
+            .style('fill', d3.rgb(vis.color(d.strDrink)).darker(0.9)); // Darken the fill color
 
         // Update the collision force to account for the enlarged bubble
         this.simulation.force('collision', d3.forceCollide().radius(node => {
-            return node === d ? d.rank * this.radiusMultiplier * 2 : d.rank * this.radiusMultiplier;
+            return node === d ? d.rank * vis.radiusMultiplier * 2 : d.rank * vis.radiusMultiplier;
         })).alpha(0.1).restart(); // Restart the simulation with updated collision radius
     }
 
