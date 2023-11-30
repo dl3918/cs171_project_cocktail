@@ -197,7 +197,7 @@ class allBubbleChart {
 
         // Bind data to bubbles and handle enter, update, and exit selections
         vis.bubbles = vis.svg.selectAll(".bubble")
-            .data(vis.data, d => d.strCategory)
+            .data(vis.data, d => d.currentCategory)
             .join(
                 // Enter selection
                 enter => enter.append("circle")
