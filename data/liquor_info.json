@@ -1,0 +1,72 @@
+[
+  {
+    "Alc_type": "Whisky",
+    "Info": "Whisky, known for its rich and complex flavors, is a distilled alcoholic beverage made from fermented grain mash.",
+    "Fun": "The aging process of whisky in barrels can contribute up to 60% of its final flavor."
+  },
+  {
+    "Alc_type": "Sweet Liquor",
+    "Info": "Sweet Liquor, often enjoyed as a dessert drink, is a category of liqueurs that are notably sugary and flavored with various ingredients.",
+    "Fun": "Sweet liqueurs were originally used medicinally, believed to aid digestion."
+  },
+  {
+    "Alc_type": "Gin",
+    "Info": "Gin, a spirit distinguished by its predominant juniper flavor, is crafted through the distillation of grain and botanicals.",
+    "Fun": "London Dry Gin doesn't have to be made in London; it's a style of gin that's dry and juniper-forward."
+  },
+  {
+    "Alc_type": "Vodka",
+    "Info": "Vodka, characterized by its neutral taste and purity, is a versatile spirit traditionally made from fermented grains or potatoes.",
+    "Fun": "The name 'vodka' is a diminutive form of the Slavic word 'voda' (water), meaning little water."
+  },
+  {
+    "Alc_type": "Rum",
+    "Info": "Rum, a spirit synonymous with the Caribbean, is made from sugarcane byproducts like molasses or directly from sugarcane juice.",
+    "Fun": "Rum was a popular medium of economic exchange in the early American colonies, often used to pay soldiers."
+  },
+  {
+    "Alc_type": "Campari",
+    "Info": "Campari is an iconic Italian bitter liqueur, known for its deep red color and a bitter, herbal flavor profile.",
+    "Fun": "The original Campari recipe remains a closely guarded secret, known only to a few people."
+  },
+  {
+    "Alc_type": "Tequila",
+    "Info": "Tequila, a symbol of Mexican heritage, is a distilled spirit made from the blue agave plant, primarily in the area surrounding the city of Tequila.",
+    "Fun": "Tequila must be produced in specific regions of Mexico, much like how Champagne is region-specific to France."
+  },
+  {
+    "Alc_type": "Brandy",
+    "Info": "Brandy, a spirit made by distilling wine, is known for its rich, fruity essence and is often aged in wooden casks.",
+    "Fun": "The term 'brandy' comes from the Dutch word 'brandewijn', meaning 'burnt wine'."
+  },
+  {
+    "Alc_type": "Bitters",
+    "Info": "Bitters are a diverse group of potent flavoring agents, typically made from herbs, roots, and other plant materials.",
+    "Fun": "Bitters were originally developed as patent medicines but are now primarily used as digestifs and as flavoring in cocktails."
+  },
+  {
+    "Alc_type": "Triple Sec",
+    "Info": "Triple Sec, a type of sweet orange-flavored liqueur, is widely used in cocktails for its bright citrus notes.",
+    "Fun": "The 'triple' in Triple Sec refers to the triple distillation of the orange peel used to make this liqueur."
+  },
+  {
+    "Alc_type": "Champagne",
+    "Info": "Champagne, a prestigious sparkling wine, comes exclusively from the Champagne region of France and is celebrated for its effervescence.",
+    "Fun": "Only sparkling wine made in the Champagne region of France can legally be called Champagne."
+  },
+  {
+    "Alc_type": "Cachaça",
+    "Info": "Cachaça, a Brazilian spirit similar to rum, is made from fresh sugarcane juice and is a key ingredient in the famous caipirinha cocktail.",
+    "Fun": "Cachaça was one of the first spirits distilled in the Americas and predates Caribbean rum."
+  },
+  {
+    "Alc_type": "Wine",
+    "Info": "Wine, an ancient and globally beloved beverage, is made by fermenting grapes or other fruits.",
+    "Fun": "There are over 10,000 varieties of wine grapes worldwide."
+  },
+  {
+    "Alc_type": "Vermouth",
+    "Info": "Vermouth, a fortified wine flavored with various botanicals, is a staple in many classic cocktails like the Martini and Manhattan.",
+    "Fun": "Vermouth was originally used as a medicinal tonic, with wormwood being one of its primary ingredients."
+  }
+]

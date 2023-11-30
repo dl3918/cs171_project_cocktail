@@ -10,26 +10,30 @@ class BubbleChart {
     initVis() {
         let vis = this;
         //console.log(vis.originalData)
-        // Get viewport dimensions
-        let viewportHeight = window.innerHeight;
-        let viewportWidth = window.innerWidth;
+        // // Get viewport dimensions
+        // let viewportHeight = window.innerHeight;
+        // let viewportWidth = window.innerWidth;
+        //
+        // // Set the size for each Fullpage section
+        // document.querySelectorAll('.section').forEach(section => {
+        //     section.style.height = viewportHeight + 'px';
+        //     section.style.width = viewportWidth + 'px';
+        // });
+        //
+        // // dimensions and margins for the graph
+        // vis.margin = {top: 50, right: 20, bottom: 30, left: 30};
+        //
+        // vis.width = viewportWidth - vis.margin.left - vis.margin.right;
+        // vis.height = viewportHeight - vis.margin.top - vis.margin.bottom;
+        vis.margin = { top: 10, right: 10, bottom: 10, left: 10 };
+        vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
+        vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
 
-        // Set the size for each Fullpage section
-        document.querySelectorAll('.section').forEach(section => {
-            section.style.height = viewportHeight + 'px';
-            section.style.width = viewportWidth + 'px';
-        });
-
-        // dimensions and margins for the graph
-        vis.margin = {top: 20, right: 20, bottom: 30, left: 30};
-
-        vis.width = viewportWidth - vis.margin.left - vis.margin.right;
-        vis.height = viewportHeight - vis.margin.top - vis.margin.bottom;
-
+        console.log(vis.height)
         // Create the SVG container
         vis.svg = d3.select("#" + vis.parentElement).append('svg')
-            .attr('width', viewportWidth)
-            .attr('height', viewportHeight);
+            .attr("width", vis.width + vis.margin.left + vis.margin.right)
+            .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
 
         vis.color = d3.scaleOrdinal(d3.schemeTableau10);
 
