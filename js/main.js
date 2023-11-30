@@ -30,11 +30,6 @@ Promise.all(promises)
         console.log(err)
     });
 
-//Use d3.interval for periodic tasks
-let slideInterval = d3.interval(() => {
-    myIconVis.slideIcons(); // Call the method to slide icons
-}, 800);
-
 
 let myNetworkVis;
 let myBubbleChart;
