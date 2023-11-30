@@ -118,9 +118,9 @@ class allBubbleChart {
             .attr("transform", (d, i) => `translate(0, ${i * 25})`);
 
         // Add circles to legend items
-        legendItems.append("circle")
+        const legendCircles = legendItems.append("circle")
             .attr("class", "legend-circle")
-            .attr("r", 10)
+            .attr("r", 10)  // Initial radius
             .attr("fill", vis.color)
             .style("opacity", 0.7);
 
@@ -132,6 +132,21 @@ class allBubbleChart {
             .attr("dy", "0.35em")
             .style("font-size", "12px")
             .text(d => d);
+
+        // Add mouseover and mouseout event handlers for legend circles
+        legendCircles
+            .on("mouseover", function() {
+                d3.select(this)
+                    .transition()
+                    .duration(200)
+                    .attr("r", 15);  // Enlarged radius
+            })
+            .on("mouseout", function() {
+                d3.select(this)
+                    .transition()
+                    .duration(200)
+                    .attr("r", 10);  // Original radius
+            });
 
         // Add click event listener
         legendItems.on("click", function(event, clickedCategory) {
@@ -153,8 +168,6 @@ class allBubbleChart {
             }
         });
     }
-
-
 
 
     wrangleData() {
@@ -193,6 +206,12 @@ class allBubbleChart {
                     .style("fill", d => vis.color(d[vis.currentCategory])) // Set the color
                     .style("opacity", 0.7)
                     .on("mouseover", function(event, d) {
+                        // Enlarge the bubble on mouseover
+                        d3.select(this)
+                            .transition()
+                            .duration(200)
+                            .attr("r", vis.z(d.Alc_type.length) * 1.5);
+
                         // Construct tooltip content with additional details
                         vis.tooltip
                             .html(`<strong>${d.strDrink}</strong> <br>
@@ -207,6 +226,12 @@ class allBubbleChart {
                             .style("opacity", 1);
                     })
                     .on("mouseout", function(event, d) {
+                        // Return the bubble to its original size on mouseout
+                        d3.select(this)
+                            .transition()
+                            .duration(200)
+                            .attr("r", vis.z(d.Alc_type.length));
+
                         // Hide the tooltip
                         vis.tooltip
                             .transition()
