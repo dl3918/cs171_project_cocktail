@@ -96,7 +96,7 @@ class allBubbleChart {
             .force("y", d3.forceY(d => vis.categoryCenters[d[vis.currentCategory]].y).strength(0.5))
             .on("tick", () => vis.ticked());
     }
-    
+
     createLegend() {
         const vis = this;
 
@@ -193,15 +193,13 @@ class allBubbleChart {
                     .style("fill", d => vis.color(d[vis.currentCategory])) // Set the color
                     .style("opacity", 0.7)
                     .on("mouseover", function(event, d) {
-                        // Enlarge the bubble on mouseover
-                        d3.select(this)
-                            .transition()
-                            .duration(200)
-                            .attr("r", vis.z(d.Alc_type.length) * 1.5);
-
-                        // Show the tooltip with the drink's name
+                        // Construct tooltip content with additional details
                         vis.tooltip
-                            .html(d.strDrink)
+                            .html(`<strong>${d.strDrink}</strong> <br>
+                            <div style="text-align: left;">
+                                 <strong>Alcohol Type:</strong> ${d.Alc_type}<br>
+                                 <strong>Basic Taste:</strong> ${d.Basic_taste}
+                            </div>`)
                             .style("left", `${event.pageX}px`)
                             .style("top", `${event.pageY}px`)
                             .transition()
@@ -209,12 +207,6 @@ class allBubbleChart {
                             .style("opacity", 1);
                     })
                     .on("mouseout", function(event, d) {
-                        // Return the bubble to its original size on mouseout
-                        d3.select(this)
-                            .transition()
-                            .duration(200)
-                            .attr("r", vis.z(d.Alc_type.length));
-
                         // Hide the tooltip
                         vis.tooltip
                             .transition()
@@ -224,6 +216,8 @@ class allBubbleChart {
                     .on("click", function(event, d) {
                         // Bubble specific logic...
                         event.stopPropagation(); // Prevent this click from propagating to the SVG
+                        const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(d.strDrink)} drink`;
+                        window.open(googleSearchUrl, '_blank');
                     }),
                 // Update selection
                 update => update

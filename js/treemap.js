@@ -276,41 +276,6 @@ class TreeMap {
 
 
 
-    // show_detail(d) {
-    //     d3.select("#treemap_right").append("img")
-    //         .attr("src", 'img/'+ d.data.id + '.jpg')
-    //         .attr("class", "card")
-    //         .attr("width", document.getElementById('treemap_right').getBoundingClientRect().width * 0.6)
-    //         .style("margin", "auto");
-    //
-    //     d3.select("#treemap_right").append("h2").text(d.data.id).style("text-align", "center");
-    //
-    //     d3.select("#treemap_right").append("br")
-    //
-    //     d3.select("#treemap_right").append("h4").text("Pair if with:")
-    //
-    //     d3.select("#treemap_right").append("p").text(d.data.garish.map(obj => Object.keys(obj)).join(', ')).style("text-align", "center");
-    //     console.log(d.data.garish)
-    //
-    //     d3.select("#treemap_right").append("h4").text("Recommended drink:")
-    //
-    //     // recommended random 3 drinks in the data.recommended list
-    //     let recommendations = [...d.data.recommended];
-    //
-    //     // Shuffle the array using the Fisher-Yates (Durstenfeld) shuffle algorithm
-    //     for (let i = recommendations.length - 1; i > 0; i--) {
-    //         const j = Math.floor(Math.random() * (i + 1));
-    //         [recommendations[i], recommendations[j]] = [recommendations[j], recommendations[i]];
-    //     }
-    //
-    //     // Now that the array is shuffled, take the first 3 items for recommendations
-    //     let randomRecommendations = recommendations.slice(0, 3);
-    //
-    //     // Append the recommendations
-    //     d3.select("#treemap_right").append("p")
-    //         .text(`${randomRecommendations[0]}, ${randomRecommendations[1]}, ${randomRecommendations[2]}`)
-    //         .style("text-align", "center");
-    // }
 
 
 
