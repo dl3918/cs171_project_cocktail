@@ -10,7 +10,7 @@ class allBubbleChart {
         }));
 
         this.displayData = [...this.data]; // Clone the preprocessed data
-        this.currentCategory = 'strGlass'; // Default filter
+        this.currentCategory = 'strCategory'; // Default filter
         this.initVis(); // Call to initialize the visualization
     }
 
@@ -316,8 +316,3 @@ class allBubbleChart {
         });
     }
 }
-
-
-
-
-

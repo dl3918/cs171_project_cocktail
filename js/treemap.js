@@ -52,6 +52,17 @@ class TreeMap {
     updateVis() {
         let vis = this;
 
+        // Determine the range of 'number_glass' values
+        let minValue = d3.min(vis.processedData, d => d.value);
+        let maxValue = d3.max(vis.processedData, d => d.value);
+
+        // Define a color scale
+        let colorScale = d3.scaleLinear()
+            .domain([minValue, maxValue])
+            .range(["#7ee3db", "#319ba8"]);
+
+        let hoverColor = "#fae97b"
+
         // Create the root variable
         let root = d3.stratify()
             .id(d => d.id)
@@ -76,15 +87,15 @@ class TreeMap {
             .attr('width', d => d.x1 - d.x0)
             .attr('height', d => d.y1 - d.y0)
             .style("stroke", "black")
-            .style("fill", "lightblue")
+            .style("fill", d => colorScale(d.data.value))
             .attr("class", "treemap_rect")
             .on('mouseover', function() {
                 d3.select(this)
-                    .style("fill", "#a4c2f4"); // color when mouse is over
+                    .style("fill", hoverColor); // color when mouse is over
             })
             .on('mouseout', function() {
                 d3.select(this)
-                    .style("fill", "lightblue"); // original color
+                    .style("fill", d => colorScale(d.data.value)); // original color
             })
             .on('click', function(event, d) {
                 // d3.select("#treemap_right").selectAll("*").remove();
@@ -106,15 +117,15 @@ class TreeMap {
                     .attr('width', d => (d.x1 - d.x0)/2)
                     .attr('height', d => d.y1 - d.y0)
                     .style("stroke", "black")
-                    .style("fill", "lightblue")
+                    .style("fill", d => colorScale(d.data.value))
                     .attr("class", "treemap_rect")
                     .on('mouseover', function() {
                         d3.select(this)
-                            .style("fill", "#a4c2f4"); // color when mouse is over
+                            .style("fill", hoverColor); // color when mouse is over
                     })
                     .on('mouseout', function() {
                         d3.select(this)
-                            .style("fill", "lightblue"); // original color
+                            .style("fill", d => colorScale(d.data.value)); // original color
                     })
                     .on('click', function(event, d) {
                         vis.show_detail(d);
