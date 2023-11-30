@@ -32,6 +32,18 @@ class NetworkVis {
 
         nodes = this.ingNodes
         edges = this.ingEdges
+
+        // Function to randomly select 5 cocktails from an array
+        function getRandomCocktails(cocktailsArray) {
+            return cocktailsArray.sort(() => Math.random() - 0.5).slice(0, 5);
+        }
+
+        // Modify the JSON data to include the "title" attribute with 5 randomly selected cocktails
+        edges.forEach(record => {
+            const randomCocktails = getRandomCocktails(record.cocktails);
+            record.title = "Used in cocktails:\n"+randomCocktails.join('\n');
+        });
+
         console.log(nodes)
         console.log(edges)
 
@@ -46,13 +58,17 @@ class NetworkVis {
                 shape: "dot",
                 scaling: {
                     label: {
-                        min: 8,
-                        max: 20,
+                        min: 10,
+                        max: 30,
                     },
                 },
             },
             interaction: {
-                zoomView: false
+                zoomView: false,
+                dragView: false,
+                hover:true,
+                tooltipDelay: 100
+                // hoverConnectedEdges: true
             }
         };
         network = new vis.Network(container, data, options);
