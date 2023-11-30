@@ -53,7 +53,7 @@ let liquorData = {
         "Info": "Champagne, a prestigious sparkling wine, comes exclusively from the Champagne region of France and is celebrated for its effervescence.",
         "Fun": "Only sparkling wine made in the Champagne region of France can legally be called Champagne."
     },
-    "Cachaça": {
+    "Cachaca": {
         "Info": "Cachaça, a Brazilian spirit similar to rum, is made from fresh sugarcane juice and is a key ingredient in the famous caipirinha cocktail.",
         "Fun": "Cachaça was one of the first spirits distilled in the Americas and predates Caribbean rum."
     },
@@ -254,6 +254,7 @@ class BubbleChart {
             .on('mouseover', function(event, d) {
                 vis.enlargeBubble(this, d)
                 console.log(d)
+                d3.select("#info").selectAll("*").remove();
                 showInfo(d)
             })
             .on('mouseout', function(event, d) {
@@ -398,14 +399,7 @@ function getCirclePositions(centerX, centerY, numberOfItems, radius) {
 
 function showInfo(data) {
 
-    // display image
-    // d3.select("#info")
-    //     .append("img")
-    //     .attr("y", 50)
-    //     .attr("src", "img/" + data.image)
-    //     .attr("width", 300)
-    //     .attr("class", "buildingImages")
-    //     .style("margin", "auto");
+
 
     d3.select("#info")
         .append("h2")
@@ -413,6 +407,15 @@ function showInfo(data) {
 
     let alcohol = data.strDrink.split(' ').join('_');
     console.log(alcohol)
+
+    // display image
+    d3.select("#info")
+        .append("img")
+        .attr("y", 50)
+        .attr("src", "img/Base_liquor/" + alcohol + '.png')
+        .attr("width", 300)
+        .attr("class", "liquorImages")
+        .style("margin", "auto");
 
     // get the selected data for a building that we want to display
     let displayData = [
