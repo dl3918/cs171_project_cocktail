@@ -1,3 +1,76 @@
+// fetch('/data/liquorData.json')
+//     .then(response => response.json())
+//     .then(data => {
+//         console.log(data['Gin'].Info);
+//         // Handle your data here
+//     })
+//     .catch(error => {
+//         console.error('Error fetching JSON:', error);
+//     });
+
+let liquorData = {
+    "Whisky": {
+        "Info": "Whisky, known for its rich and complex flavors, is a distilled alcoholic beverage made from fermented grain mash.",
+        "Fun": "The aging process of whisky in barrels can contribute up to 60% of its final flavor."
+    },
+    "Sweet_Liqueur": {
+        "Info": "Sweet Liquor, often enjoyed as a dessert drink, is a category of liqueurs that are notably sugary and flavored with various ingredients.",
+        "Fun": "Sweet liqueurs were originally used medicinally, believed to aid digestion."
+    },
+    "Gin": {
+        "Info": "Gin, a spirit distinguished by its predominant juniper flavor, is crafted through the distillation of grain and botanicals.",
+        "Fun": "London Dry Gin doesn't have to be made in London; it's a style of gin that's dry and juniper-forward."
+    },
+    "Vodka": {
+        "Info": "Vodka, characterized by its neutral taste and purity, is a versatile spirit traditionally made from fermented grains or potatoes.",
+        "Fun": "The name 'vodka' is a diminutive form of the Slavic word 'voda' (water), meaning little water."
+    },
+    "Rum": {
+        "Info": "Rum, a spirit synonymous with the Caribbean, is made from sugarcane byproducts like molasses or directly from sugarcane juice.",
+        "Fun": "Rum was a popular medium of economic exchange in the early American colonies, often used to pay soldiers."
+    },
+    "Campari": {
+        "Info": "Campari is an iconic Italian bitter liqueur, known for its deep red color and a bitter, herbal flavor profile.",
+        "Fun": "The original Campari recipe remains a closely guarded secret, known only to a few people."
+    },
+    "Tequila": {
+        "Info": "Tequila, a symbol of Mexican heritage, is a distilled spirit made from the blue agave plant, primarily in the area surrounding the city of Tequila.",
+        "Fun": "Tequila must be produced in specific regions of Mexico, much like how Champagne is region-specific to France."
+    },
+    "Brandy": {
+        "Info": "Brandy, a spirit made by distilling wine, is known for its rich, fruity essence and is often aged in wooden casks.",
+        "Fun": "The term 'brandy' comes from the Dutch word 'brandewijn', meaning 'burnt wine'."
+    },
+    "Bitters": {
+        "Info": "Bitters are a diverse group of potent flavoring agents, typically made from herbs, roots, and other plant materials.",
+        "Fun": "Bitters were originally developed as patent medicines but are now primarily used as digestifs and as flavoring in cocktails."
+    },
+    "Triple_Sec": {
+        "Info": "Triple Sec, a type of sweet orange-flavored liqueur, is widely used in cocktails for its bright citrus notes.",
+        "Fun": "The 'triple' in Triple Sec refers to the triple distillation of the orange peel used to make this liqueur."
+    },
+    "Champagne": {
+        "Info": "Champagne, a prestigious sparkling wine, comes exclusively from the Champagne region of France and is celebrated for its effervescence.",
+        "Fun": "Only sparkling wine made in the Champagne region of France can legally be called Champagne."
+    },
+    "Cachaça": {
+        "Info": "Cachaça, a Brazilian spirit similar to rum, is made from fresh sugarcane juice and is a key ingredient in the famous caipirinha cocktail.",
+        "Fun": "Cachaça was one of the first spirits distilled in the Americas and predates Caribbean rum."
+    },
+    "Wine": {
+        "Info": "Wine, an ancient and globally beloved beverage, is made by fermenting grapes or other fruits.",
+        "Fun": "There are over 10,000 varieties of wine grapes worldwide."
+    },
+    "Vermouth": {
+        "Info": "Vermouth, a fortified wine flavored with various botanicals, is a staple in many classic cocktails like the Martini and Manhattan.",
+        "Fun": "Vermouth was originally used as a medicinal tonic, with wormwood being one of its primary ingredients."
+    },
+    "Creamy_Liqueur": {
+        "Info": "Creamy Liqueur, often rich and sweet, combines liquor with cream and flavorings such as coffee, chocolate, or fruit.",
+        "Fun": "Creamy liqueurs, like the famous Irish Cream, are a popular choice for festive drinks and are often enjoyed over ice or in coffee."
+    }
+}
+
 class BubbleChart {
     constructor(parentElement, data, allDrink= false) {
         this.parentElement = parentElement;
@@ -180,10 +253,13 @@ class BubbleChart {
         vis.bubbles
             .on('mouseover', function(event, d) {
                 vis.enlargeBubble(this, d)
+                console.log(d)
+                showInfo(d)
             })
             .on('mouseout', function(event, d) {
                 // Reset the radius of the bubble
                 //console.log(this)
+                //d3.select("#info").selectAll("*").remove();
                 d3.select(this).transition()
                     .duration(200)
                     .style('fill', vis.color(d.strDrink)) // Revert fill color
@@ -243,7 +319,7 @@ class BubbleChart {
                     .style('fill', vis.alcTypeColorMap[clickedBubbleData.strDrink])
                     .style('opacity', 0.8)
                     .on('mouseover', vis.mouseoverTooltip)
-                    .on('mouseout', function () {
+                    .on('mouseout', function (event, d) {
                         vis.tooltip.transition()
                             .duration(400)
                             .style('opacity', 0)
@@ -320,4 +396,52 @@ function getCirclePositions(centerX, centerY, numberOfItems, radius) {
     return positions;
 }
 
+function showInfo(data) {
+
+    // display image
+    // d3.select("#info")
+    //     .append("img")
+    //     .attr("y", 50)
+    //     .attr("src", "img/" + data.image)
+    //     .attr("width", 300)
+    //     .attr("class", "buildingImages")
+    //     .style("margin", "auto");
+
+    d3.select("#info")
+        .append("h2")
+        .text(data.strDrink);
+
+    let alcohol = data.strDrink.split(' ').join('_');
+    console.log(alcohol)
+
+    // get the selected data for a building that we want to display
+    let displayData = [
+        {key: "Description", value: liquorData[alcohol].Info},
+        {key: "A Fun Fact", value: liquorData[alcohol].Fun},
+    ];
+
+    let table = d3.select("#info").append("table")
+        .attr("class", "table dashed-table");
+    table.append("tbody")
+
+    let rows = table.select("tbody")
+        .selectAll("tr")
+        .data(displayData)
+        .enter()
+        .append("tr");
+
+    // add information to the table
+    rows.append("th")
+        .text(d => d.key)
+        .attr("class", "col-6");
+    rows.append("td")
+        .text(d => d.value)
+        .attr("class", "col-6");
+
+    d3.select("#info").append("a")
+        .text(">> Read more on Wikipedia")
+        .attr("href", "https://en.wikipedia.org/wiki/" + data.strDrink.split().join('_'))
+        .attr("id", "wikiLink")
+
+}
 
