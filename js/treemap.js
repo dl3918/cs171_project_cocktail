@@ -288,6 +288,19 @@ class TreeMap {
         // Clear previous details
         vis.svg2.selectAll(".detail-group").remove();
 
+        // Function to handle mouseover event on text
+        function handleMouseOver() {
+            d3.select(this)
+                .style("cursor", "pointer")
+                .style("fill", "red"); // Change text color on hover
+        }
+
+        // Function to handle mouseout event on text
+        function handleMouseOut() {
+            d3.select(this)
+                .style("fill", "black"); // Revert text color
+        }
+
         // Define the starting positions for the detail card
         let detailGroupX = vis.width * 0.6;
         let detailGroupY = 20;
@@ -339,8 +352,16 @@ class TreeMap {
                 .text(ingredient)
                 .attr("x", 20) // Indent for list items
                 .attr("y", currentY)
-                .attr("font-size", "14px");
-            currentY += 25; // Increment for next item
+                .attr("font-size", "14px")
+                .on("mouseover", handleMouseOver)
+                .on("mouseout", handleMouseOut)
+                .on("click", function(event, d) {
+                    // Bubble specific logic...
+                    event.stopPropagation(); // Prevent this click from propagating to the SVG
+                    const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(ingredient)} in cocktail`;
+                    window.open(googleSearchUrl, '_blank');
+                })
+            currentY += 20; // Increment for next item
         });
 
         currentY += 20; // Increment Y position for "Recommended drink" section
@@ -362,8 +383,16 @@ class TreeMap {
                 .text(drink)
                 .attr("x", 20) // Indent for list items
                 .attr("y", currentY)
-                .attr("font-size", "14px");
-            currentY += 25; // Increment for next item
+                .attr("font-size", "14px")
+                .on("mouseover", handleMouseOver)
+                .on("mouseout", handleMouseOut)
+                .on("click", function(event, d) {
+                    // Bubble specific logic...
+                    event.stopPropagation(); // Prevent this click from propagating to the SVG
+                    const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(drink)} drink`;
+                    window.open(googleSearchUrl, '_blank');
+                })
+            currentY += 20; // Increment for next item
         });
 
         currentY += 20; // Additional space at the bottom
