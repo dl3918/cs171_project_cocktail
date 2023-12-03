@@ -9,6 +9,8 @@ class iconVis {
         this.height = document.getElementById(this.parentElement).getBoundingClientRect().height;
         this.iconWidth = 70; // Width of each icon
 
+        this.isPaused = false;
+
         // Prepare data by setting initial positions
         this.prepareData();
 
@@ -38,8 +40,36 @@ class iconVis {
             .attr("width", vis.width)
             .attr("height", vis.height);
 
+        // Create a tooltip element
+        vis.tooltip = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
+        // 在 SVG 元素上添加鼠标事件处理器来控制动画
+        vis.svg.on("mouseover", () => this.isPaused = true)
+            .on("mouseout", () => this.isPaused = false);
+
         // Start the continuous scroll
         vis.startContinuousScroll();
+
+        // Modify the icons to include hover events for the tooltip
+        vis.icons.on("mouseover", function(event, d) {
+            vis.tooltip.transition()
+                .duration(200)
+                .style("opacity", .9);
+            vis.tooltip.html(`<strong>${d.strDrink}</strong> <br>
+                            <div style="text-align: left">
+                                 <strong>Ingredients:</strong> ${d.strIngredients} <br>
+                                 <strong>Type:</strong> ${d.Alc_type}
+                            </div>`)
+                .style("left", (event.pageX) + "px")
+                .style("top", (event.pageY - 28) + "px");
+        })
+            .on("mouseout", function(d) {
+                vis.tooltip.transition()
+                    .duration(500)
+                    .style("opacity", 0);
+            });
     }
 
     startContinuousScroll() {
@@ -63,18 +93,19 @@ class iconVis {
 
         // Function to update positions
         function scroll() {
-            vis.icons.attr("x", function(d) {
-                d.xPosition -= 2; // 调整滚动速度
+            if (!vis.isPaused) {
+                vis.icons.attr("x", function (d) {
+                    d.xPosition -= 2; // 调整滚动速度
 
-                // 当图标移动到屏幕左侧时
-                if (d.xPosition < -vis.iconWidth) {
-                    // 计算新位置，确保固定间距
-                    d.xPosition = d.xPosition + vis.data.length * iconSpacing;
-                }
+                    // 当图标移动到屏幕左侧时
+                    if (d.xPosition < -vis.iconWidth) {
+                        // 计算新位置，确保固定间距
+                        d.xPosition = d.xPosition + vis.data.length * iconSpacing;
+                    }
 
-                return d.xPosition;
-            });
-
+                    return d.xPosition;
+                });
+            }
             requestAnimationFrame(scroll);
         }
 
