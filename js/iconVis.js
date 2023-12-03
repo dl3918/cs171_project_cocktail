@@ -45,6 +45,12 @@ class iconVis {
     startContinuousScroll() {
         let vis = this;
 
+        // 修改这里，设置一个固定的图标间距
+        let iconSpacing = vis.iconWidth * 2;  // 两倍图标宽度的间距
+
+        // 添加变量来跟踪最右侧图标的位置
+        let rightMostX = vis.data[vis.data.length - 1].xPosition;
+
         // Bind data to icons
         vis.icons = vis.svg.selectAll(".icon").data(vis.data, d => d.rank)
             .enter().append("svg:image")
@@ -58,10 +64,14 @@ class iconVis {
         // Function to update positions
         function scroll() {
             vis.icons.attr("x", function(d) {
-                d.xPosition -= 2; // Adjust the speed of scrolling here
+                d.xPosition -= 2; // 调整滚动速度
+
+                // 当图标移动到屏幕左侧时
                 if (d.xPosition < -vis.iconWidth) {
-                    d.xPosition = vis.width;
+                    // 计算新位置，确保固定间距
+                    d.xPosition = d.xPosition + vis.data.length * iconSpacing;
                 }
+
                 return d.xPosition;
             });
 
