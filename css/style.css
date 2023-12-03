@@ -1,3 +1,116 @@
+.menu-title, .cocktail-name, .subheading {
+    text-align: center;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.cocktail-image img {
+    max-width: 300px; /* Maximum width, adjust as needed */
+    max-height: 300px; /* Maximum height, adjust as needed */
+    width: 100%; /* Scales down responsively */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    margin: 0 auto; /* Centers the image */
+}
+
+h2.liquor-heading, h2.cocktail-name, h2.liquor-name { !important;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 2.5em; /* Adjust size as needed */
+    text-align: center;
+    margin-bottom: 20px; /* Add some space below the title */
+}
+
+.subheading {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 1.5em; /* Slightly smaller than the cocktail name */
+    text-align: center;
+}
+
+.ingredient-icon {
+    font-family: 'Amatic SC', sans-serif;
+    height: auto;
+    width: 100%; /* Adjust as needed */
+}
+
+
+.centered-text {
+    font-family: 'Amatic SC', sans-serif;
+
+    text-align: center;
+}
+
+.ingredients p {
+    margin-bottom: 5px; /* Adjust spacing as needed */
+}
+
+.ingredient-icon {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+    margin: 10px;
+    cursor: pointer; /* Changes the cursor to indicate it's interactive */
+    /* Add any other styling as needed */
+}
+
+
+.menu-page {
+    /*border: 2px solid #cda34f; !* Gold-like border for a classic menu look *!*/
+    /*padding: 20px;*/
+    /*background-color: #fdf6e3; !* Light background color *!*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    background-image: url('../img/frame5.png');
+    background-size: 100% 100%; /* Stretch the image to fill the container */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center;
+
+}
+
+.menu-title, .cocktail-name {
+    text-align: center;
+    font-family: 'Playfair Display', serif; /* Example font */
+}
+
+.cocktail-image img {
+    width: 100%; /* Adjust as necessary */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.ingredients .ingredient {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 24px; /* Icon size */
+    height: auto;
+    margin-right: 10px;
+}
+
+
+#liquor-tt {
+    height: 55vh;
+    width: 40vh;
+    position: absolute;
+    background-color: transparent;
+    background-image: url("../img/frame7.png");
+    background-size: 100% 100%; /* Stretch the image to fill the container */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center;
+}
+
+.liquor-info, .liquor-fun {
+    font-family: 'Josefin Slab', serif;
+    font-size: 0.9em; /* Slightly smaller than the cocktail name */
+    text-align: center;
+}
+
+
+
+
+
+
+
 #resetViewButton{
     background-color: #89b9d9;
     color: white;
