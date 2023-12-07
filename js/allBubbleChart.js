@@ -217,10 +217,10 @@ class allBubbleChart {
                         vis.tooltip
                             .html(`<strong>${d.strDrink}</strong> <br>
                             <div style="text-align: left;">
-                                 <strong>Alcohol Type:</strong> ${d.Alc_type}<br>
-                                 <strong>Basic Taste:</strong> ${d.Basic_taste}<br>
                                  <strong>Drink Category:</strong> ${d.strCategory}<br>
-                                 <strong>Class Type:</strong> ${d.strGlass}
+                                 <strong>Class Type:</strong> ${d.strGlass}<br>
+                                 <strong>Alcohol Type:</strong> ${d.Alc_type}<br>
+                                 <strong>Basic Taste:</strong> ${d.Basic_taste}
                             </div>`)
                             .style("left", `${event.pageX}px`)
                             .style("top", `${event.pageY}px`)
@@ -251,7 +251,7 @@ class allBubbleChart {
                 update => update
                     .transition()
                     .duration(200)
-                    .attr("fill", d => vis.color(d[vis.currentCategory])), // Update the fill color
+                    .attr("fill", d => vis.color(d[vis.colorCategory])), // Update the fill color
                 // Exit selection
                 exit => exit.remove()
             );
@@ -290,7 +290,6 @@ class allBubbleChart {
             .force("y", d3.forceY(d => vis.categoryCenters[d[vis.currentCategory]].y).strength(0.5))
             .alpha(1)
             .restart();
-        // vis.createLegend();
     }
 
     colorChange(newColorCategory) {
