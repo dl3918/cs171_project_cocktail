@@ -56,6 +56,14 @@ class TreeMap {
         let minValue = d3.min(vis.processedData, d => d.value);
         let maxValue = d3.max(vis.processedData, d => d.value);
 
+        let minimumArea = 200; // This should be your determined minimum area for the smallest rectangles
+        let maximumArea = 2000; // This should be your determined maximum area for the largest rectangles
+        let scaleValue = d3.scalePow()
+            .exponent(0.1)
+            .domain([minValue, maxValue])
+            // .range([minimumArea, maximumArea]);
+
+
         // Define a color scale
         let colorScale = d3.scaleLinear()
             .domain([minValue, maxValue])
@@ -68,12 +76,11 @@ class TreeMap {
             .id(d => d.id)
             .parentId(d => d.parent)
             (vis.processedData)
-            .sum(d => d.value);
+            .sum(d => scaleValue(d.value));
 
         // Then d3.treemap computes the position of each element of the hierarchy
         d3.treemap()
             .size([vis.width, vis.height])
-            .padding(1)
             (root);
 
         // Use this information to add rectangles:
@@ -144,7 +151,7 @@ class TreeMap {
                     .attr("visibility", function(d) {
                         // Calculate the width of the text and compare with the width of the rectangle
                         d.textWidth = this.getComputedTextLength();
-                        d.rectWidth = d.x1 - d.x0;
+                        d.rectWidth = (d.x1 - d.x0)/2;
                         return d.textWidth < d.rectWidth ? "visible" : "hidden";
                     });
 
@@ -152,10 +159,6 @@ class TreeMap {
                 labels2.exit().remove();
 
                 vis.show_detail(d);
-
-
-
-
 
             });
 
