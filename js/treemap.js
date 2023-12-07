@@ -96,13 +96,37 @@ class TreeMap {
             .style("stroke", "black")
             .style("fill", d => colorScale(d.data.value))
             .attr("class", "treemap_rect")
-            .on('mouseover', function() {
+            .on('mouseover', function(event, d) {
                 d3.select(this)
                     .style("fill", hoverColor); // color when mouse is over
+
+                // Calculate rectangle dimensions
+                let rectWidth = d.x1 - d.x0;
+                let rectHeight = d.y1 - d.y0;
+
+                // Determine the size of the image (minimum of rect's width and height)
+                let imageSize = Math.min(rectWidth, rectHeight) * 0.6;
+
+                // Calculate the center of the rectangle
+                let centerX = d.x0 + rectWidth / 2;
+                let centerY = d.y0 + rectHeight / 2;
+
+                vis.svg.append("image")
+                    .attr("xlink:href", 'img/' + d.data.id + '.png')
+                    .attr("x", centerX - imageSize / 2) // Center the image
+                    .attr("y", centerY - imageSize / 2) // Center the image
+                    .attr("width", imageSize)
+                    .attr("height", imageSize)
+                    .attr("class", "hover-image")
+
+                // Class for easy removal
             })
             .on('mouseout', function() {
                 d3.select(this)
                     .style("fill", d => colorScale(d.data.value)); // original color
+
+                // Remove the image when not hovering
+                vis.svg.selectAll(".hover-image").remove();
             })
             .on('click', function(event, d) {
                 // d3.select("#treemap_right").selectAll("*").remove();
@@ -228,18 +252,18 @@ class TreeMap {
             .attr("transform", `translate(${detailGroupX},${detailGroupY})`);
 
         // Initial vertical position for the content
-        let currentY = 0;
+        let currentY = 10;
 
         // Add image
         let imageHeight = vis.height * 0.3;
         detailGroup.append("image")
-            .attr("xlink:href", 'img/' + d.data.id + '.jpg')
+            .attr("xlink:href", 'img/' + d.data.id + '.png')
             .attr("width", cardWidth) // Adjust width as needed
             .attr("height", imageHeight) // Adjust height as needed
             .attr("x", 0)
             .attr("y", currentY+1);
 
-        currentY += imageHeight + 20; // Increment Y position after the image
+        currentY += imageHeight + 30; // Increment Y position after the image
 
         // Add title (glass type)
         detailGroup.append("text")
