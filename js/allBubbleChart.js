@@ -11,6 +11,7 @@ class allBubbleChart {
 
         this.displayData = [...this.data]; // Clone the preprocessed data
         this.currentCategory = 'strCategory'; // Default filter
+        this.colorCategory = 'strCategory';
         this.initVis(); // Call to initialize the visualization
     }
 
@@ -160,7 +161,7 @@ class allBubbleChart {
             } else {
                 // Highlight corresponding bubbles and dim others
                 vis.svg.selectAll(".bubble")
-                    .style("opacity", d => d[vis.currentCategory] === clickedCategory ? 1 : 0.1);
+                    .style("opacity", d => d[vis.colorCategory] === clickedCategory ? 1 : 0.1);
 
                 // Update the selected state
                 vis.legend.selectAll(".legend-item").classed("selected", false);
@@ -177,12 +178,12 @@ class allBubbleChart {
         vis.displayData = vis.data.filter(d => d[vis.currentCategory]);
 
         // Update the domain of the color scale to match the new category
-        vis.color.domain([...new Set(vis.displayData.map(d => d[vis.currentCategory]))]);
+        vis.color.domain([...new Set(vis.displayData.map(d => d[vis.colorCategory]))]);
 
 
         // Dynamically adjust bubble size based on the number of items in each category
         const maxItemsInCategory = d3.max(vis.color.domain().map(category => {
-            return vis.displayData.filter(d => d[vis.currentCategory] === category).length;
+            return vis.displayData.filter(d => d[vis.colorCategory] === category).length;
         }));
 
         vis.z.range([2, Math.max(15, 20 / Math.sqrt(maxItemsInCategory))]); // Adjust the max size of bubbles based on the number of items
@@ -203,7 +204,7 @@ class allBubbleChart {
                 enter => enter.append("circle")
                     .attr("class", "bubble")
                     .attr("r", d => vis.z(d.Alc_type.length)) // Set the initial radius
-                    .style("fill", d => vis.color(d[vis.currentCategory])) // Set the color
+                    .style("fill", d => vis.color(d[vis.colorCategory])) // Set the color
                     .style("opacity", 0.7)
                     .on("mouseover", function(event, d) {
                         // Enlarge the bubble on mouseover
@@ -217,7 +218,9 @@ class allBubbleChart {
                             .html(`<strong>${d.strDrink}</strong> <br>
                             <div style="text-align: left;">
                                  <strong>Alcohol Type:</strong> ${d.Alc_type}<br>
-                                 <strong>Basic Taste:</strong> ${d.Basic_taste}
+                                 <strong>Basic Taste:</strong> ${d.Basic_taste}<br>
+                                 <strong>Drink Category:</strong> ${d.strCategory}<br>
+                                 <strong>Class Type:</strong> ${d.strGlass}
                             </div>`)
                             .style("left", `${event.pageX}px`)
                             .style("top", `${event.pageY}px`)
@@ -287,6 +290,14 @@ class allBubbleChart {
             .force("y", d3.forceY(d => vis.categoryCenters[d[vis.currentCategory]].y).strength(0.5))
             .alpha(1)
             .restart();
+        // vis.createLegend();
+    }
+
+    colorChange(newColorCategory) {
+        const vis = this;
+        vis.colorCategory = newColorCategory;
+
+        vis.wrangleData();
         vis.createLegend();
     }
 

@@ -194,93 +194,6 @@ class TreeMap {
         this.svg2.style("pointer-events", enable ? "auto" : "none");
     }
 
-    // show_detail(d) {
-    //     let vis = this;
-    //
-    //     // Clear previous details
-    //     vis.svg2.selectAll(".detail").remove();
-    //
-    //     // Starting positions for the detail elements
-    //     let detailGroupX = vis.width * 0.6; // Starting X position of the detail group
-    //     let detailGroupY = 20; // Starting Y position of the detail group
-    //     let lineHeight = 20; // Line height for text elements
-    //
-    //     // Create a group for all detail elements
-    //     let detailGroup = vis.svg2.append("g")
-    //         .attr("class", "detail")
-    //         .attr("transform", `translate(${detailGroupX},${detailGroupY})`);
-    //
-    //     // Add image
-    //     detailGroup.append("image")
-    //         .attr("xlink:href", 'img/' + d.data.id + '.jpg')
-    //         .attr("width", vis.width * 0.3) // Adjust width as needed
-    //         .attr("height", vis.height * 0.3) // Adjust height as needed
-    //         .attr("x", 0)
-    //         .attr("y", 0);
-    //
-    //     // Update Y position for text elements
-    //     let textY = vis.height * 0.32; // Adjust starting Y position based on the image height
-    //
-    //     // Add title (glass type)
-    //     let titleText = detailGroup.append("text")
-    //         .text(`${d.data.id}:  ${d.data.value} drinks`)
-    //         .attr("font-size", "20px")
-    //         .attr("font-weight", "bold");
-    //
-    //     let titleWidth = titleText.node().getBBox().width;
-    //     let titleX = (vis.width * 0.3 - titleWidth) / 2; // Centering the title
-    //
-    //     titleText
-    //         .attr("x", titleX)
-    //         .attr("y", textY);
-    //
-    //     textY += lineHeight + 20; // Adjust gap between title and next section
-    //
-    //     // Add "Pair it with" text
-    //     detailGroup.append("text")
-    //         .text("- Pair it with:")
-    //         .attr("x", 0)
-    //         .attr("y", textY)
-    //         .attr("font-weight", "bold")
-    //         .attr("font-size", "16px");
-    //
-    //
-    //     textY += lineHeight;
-    //
-    //     // List ingredients (garish)
-    //     d.data.garish.forEach(item => {
-    //         let ingredient = Object.keys(item).join(', ');
-    //         detailGroup.append("text")
-    //             .text(ingredient)
-    //             .attr("x", 10) // Indent for list items
-    //             .attr("y", textY)
-    //             .attr("font-size", "14px");
-    //         textY += lineHeight;
-    //     });
-    //
-    //     textY += 20; // Extra gap before the next section
-    //
-    //     // Add "Recommended drink" text
-    //     detailGroup.append("text")
-    //         .text("- Recommended 3 drinks:")
-    //         .attr("x", 0)
-    //         .attr("y", textY)
-    //         .attr("font-weight", "bold")
-    //         .attr("font-size", "16px");
-    //
-    //     textY += lineHeight;
-    //
-    //     // List recommended drinks
-    //     let recommendations = d.data.recommended.slice(0, 3); // Taking first 3 recommendations
-    //     recommendations.forEach(drink => {
-    //         detailGroup.append("text")
-    //             .text(drink)
-    //             .attr("x", 10) // Indent for list items
-    //             .attr("y", textY)
-    //             .attr("font-size", "14px");
-    //         textY += lineHeight;
-    //     });
-    // }
 
     show_detail(d) {
         let vis = this;
@@ -407,9 +320,7 @@ class TreeMap {
             .style("stroke", "#ccc") // Card border
             .style("stroke-width", "2px");
     }
-
-
-
+    
 }
 
 
