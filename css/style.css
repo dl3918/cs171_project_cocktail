@@ -133,3 +133,51 @@ h2 {
     stroke-width: 1px;
 }
 
+/*section1-transpage*/
+#section1-transpage h1 {
+    color: #08726d;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    font-size: 66px;
+    font-weight: bold;
+}
+
+#section1-transpage h2 {
+    color: #08726d;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    font-size: 28px;
+}
+
+/*section-allcocktails*/
+#section-allcocktails h1 {
+    color: #08726d;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+#section-allcocktails span {
+    color: #08726d;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    font-size: 20px;
+}
+
+
+/*section-popular-transpage*/
+#section-popular-transpage h1 {
+    color: #08726d;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    font-size: 66px;
+    font-weight: bold;
+}
+
+#section-popular-transpage h2 {
+    color: #08726d;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    font-size: 28px;
+}

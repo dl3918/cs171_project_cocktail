@@ -105,7 +105,7 @@ class TreeMap {
                 let rectHeight = d.y1 - d.y0;
 
                 // Determine the size of the image (minimum of rect's width and height)
-                let imageSize = Math.min(rectWidth, rectHeight) * 0.6;
+                let imageSize = Math.min(rectWidth, rectHeight) * 0.8;
 
                 // Calculate the center of the rectangle
                 let centerX = d.x0 + rectWidth / 2;

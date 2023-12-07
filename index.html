@@ -42,6 +42,74 @@
         </div>
     </div>
 
+    <!-- Title transection page -->
+    <div class="section" id="section1-transpage">
+        <div class = "container-fluid" style="height: 100vh;">
+            <div class = "row justify-content-center align-self-center" style="height: 70vh; padding: 10vh;">
+                <h1 style="text-align: center"> Discover the World in a Glass </h1>
+                <br><br><br><br><br><br><br>
+                <h2 style="text-align: center"> Across the globe, countless drinks tell stories of culture, tradition, and innovation.<br><br>
+                    Do you know them? <br><br>
+                    From the bustling streets of Tokyo to the serene vineyards of Tuscany, every sip offers a journey. <br><br>
+                    Let's embark on an adventure to uncover the secrets and stories behind the world's most fascinating cocktails. <br><br>
+                    Where will your taste take you? </h2>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- All drink enoch -->
+    <div class="section" id = "section-allcocktails">
+        <div class="container-fluid" style="height: 100vh; padding-top: 2vh">
+            <h1 style="text-align: center">The World of Cocktails</h1>
+            <div class="row">
+                <div class="col-md-3 d-flex align-items-center">
+                    <span class="mr-2">Cluster by: &nbsp;</span>
+                    <select id='categorySelector' class="custom-select form-select" style="width: auto" onchange="categoryChange()">
+                        <option value="strCategory" selected>Drink Category</option>
+                        <option value="strGlass">Glass type</option>
+                        <option value="Alc_type">Alcohol type</option>
+                        <option value="Basic_taste">Basic taste</option>
+                    </select>
+                </div>
+
+                <div class="col-md-3 d-flex align-items-center">
+                    <span class="mr-2">Color by: &nbsp;</span>
+                    <select id='colorSelector' class="custom-select form-select" style="width: auto" onchange="colorChange()">
+                        <option value="strCategory" selected>Drink Category</option>
+                        <option value="strGlass">Glass type</option>
+                        <option value="Alc_type">Alcohol type</option>
+                        <option value="Basic_taste">Basic taste</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row" style="height: 80vh;">
+                <div class="col">
+                    <div id="all_drinks_enoch" style="height: 100%; width:100%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- popular cocktail transection page -->
+    <div class="section" id="section-popular-transpage">
+        <div class = "container-fluid" style="height: 100vh;">
+            <div class = "row justify-content-center align-self-center" style="height: 70vh; padding: 10vh;">
+                <h1 style="text-align: center"> Stepping into the World of Classics </h1>
+                <br><br><br><br><br><br><br>
+                <h2 style="text-align: center"> In our journey, you have explored over 400 unique cocktails,
+                    each with its distinct flavors and stories. <br><br>
+                    But amidst this vast array of choices, do you know which ones are the most popular? <br><br>
+                    Now, let's delve deeper and discover the 36 classic cocktails categorized by their base liquors. <br><br>
+                    These beloved drinks are not only exceptional in taste but also hold a revered status across the globe. <br><br>
+                    Are you ready? <br><br>
+                    Let's embark on this exploration of popular mixology together! </h2>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 36 Popular cocktail -->
     <div class="section" id="section2">
         <div class="container-fluid">
             <div class="row" style="height: 100vh;">
@@ -84,38 +152,7 @@
 <!--        </div>-->
 <!--    </div>-->
 
-    <!-- All drink enoch -->
-    <div class="section">
-        <div class = "container-fluid" style="height: 100vh; padding-top: 2vh">
-            <h1 style="text-align: center"> All Cocktails </h1>
-            <div class ="row">
-                <div class="col-md-3">
-                    <span>Cluster by</span>
-                    <select id='categorySelector' class="custom-select align-self-center" style="width: 50%" onchange="categoryChange()">
-                        <option value="strCategory" selected>Drink Category</option>
-                        <option value="strGlass">Glass type</option>
-                        <option value="Alc_type">Alcohol type</option>
-                        <option value="Basic_taste">Basic taste</option>
-                    </select>
-                </div>
 
-                <div class="col-md-3">
-                    <span>Color by</span>
-                    <select id='colorSelector' class="custom-select align-self-center" style="width: 50%" onchange="colorChange()">
-                        <option value="strCategory" selected>Drink Category</option>
-                        <option value="strGlass">Glass type</option>
-                        <option value="Alc_type">Alcohol type</option>
-                        <option value="Basic_taste">Basic taste</option>
-                    </select>
-                </div>
-            </div>
-            <div class = "row" style="height: 80vh;">
-                <div class="col">
-                    <div id="all_drinks_enoch" style="height: 100%; width:100%;"></div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <!-- Network -->
