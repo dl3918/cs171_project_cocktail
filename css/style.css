@@ -181,3 +181,61 @@ h2 {
     font-family: 'Young Serif', serif;
     font-size: 28px;
 }
+
+
+/* Global Styles */
+body, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Section Heading Styles */
+/*.section-heading {*/
+/*    text-align: center;*/
+/*    font-size: 2rem;*/
+/*    padding: 2rem 0;*/
+/*}*/
+
+/* Team Section Styles */
+#our-team-page h1 {
+    color: #08726d;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    font-size: 66px;
+    font-weight: bold;
+}
+
+/*.our-team {*/
+/*    background: #F8F5F0;*/
+/*    padding-bottom: 2rem;*/
+/*}*/
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50vh, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.team-member {
+    text-align: center;
+    padding: 1rem;
+}
+
+.team-member img {
+    width: 50%;
+    height: auto;
+    border-radius: 90%;
+}
+
+.team-member h3 {
+    margin-top: 1rem;
+}
+
+.team-member p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
