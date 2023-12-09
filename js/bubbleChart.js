@@ -76,6 +76,10 @@ class BubbleChart {
         this.parentElement = parentElement;
         this.originalData = data;
         this.allDrink = allDrink;
+
+        this.liquorText = '';
+        this.drinkText = '';
+
         this.initVis()
         //this.enlargeBubble = this.enlargeBubble.bind(this);
     }
@@ -98,7 +102,7 @@ class BubbleChart {
         //
         // vis.width = viewportWidth - vis.margin.left - vis.margin.right;
         // vis.height = viewportHeight - vis.margin.top - vis.margin.bottom;
-        vis.margin = { top: 10, right: 10, bottom: 10, left: 10 };
+        vis.margin = { top: 0, right: 0, bottom: 0, left: 0 };
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
 
@@ -116,7 +120,8 @@ class BubbleChart {
 
         // Create a tooltip div and initially hide it
         vis.tooltip = d3.select('body').append('div')
-            .attr('class', 'tooltip')
+            // .attr('class', 'tooltip')
+            .attr('id', 'liquor-tt')
             .style('opacity', 0);
 
 
@@ -161,23 +166,6 @@ class BubbleChart {
         vis.updateVis();
     }
 
-    mouseoverTooltip(event, d) {
-        let vis = this;
-        console.log(d)
-        let tooltip = d3.select('.tooltip')
-        tooltip.transition()
-            .duration(200)
-            .style('opacity', .9);
-        tooltip.html(d.strDrink)  // Set the tooltip content
-            .style('left', (event.pageX) + 'px')
-            .style('top', (event.pageY - 28) + 'px')
-            .html(`
-                         <div style="border: thin solid grey; border-radius: 5px; background: lightgrey; padding: 20px">
-                             <h3> ${d.strDrink}</h3>      
-                             <h4> Ingredients: ${d.strIngredients.join(', ')}<h4>          
-                           
-                         </div>`); // put function,
-    }
 
     updateVis() {
         let vis = this;
@@ -211,7 +199,9 @@ class BubbleChart {
                 vis.alcTypeColorMap[d.strDrink] = color;  // Store the color
                 return color;
             })
-            .style('opacity', 0.7);
+            .style('opacity', 0.7)
+            .style('stroke', 'rgba(0,0,0,0.87)')
+            .style('stroke-width', "1px")
             //.attr('r', d => d.rank * vis.radiusMultiplier)
 
 
@@ -224,8 +214,9 @@ class BubbleChart {
             .enter().append('text')
             .text(d => d.strDrink)
             .attr('dy', '0.3em')
-            .style('font-size', '14px')
+            .style('font-size', '1.2em')
             .style('text-anchor', 'middle')
+            .style('font-family', 'Amatic SC, sans-serif')
             .attr('fill', d => d3.rgb(vis.color(d.strDrink)).darker(1))
             .on('mouseover', vis.enlargeBubble)
 
@@ -254,64 +245,133 @@ class BubbleChart {
         vis.bubbles
             .on('mouseover', function(event, d) {
                 vis.enlargeBubble(this, d)
-                console.log(d)
+                console.log(event, d)
                 d3.select("#info").selectAll("*").remove();
-                showInfo(d)
+
+                let alcohol = d.strDrink.split(' ').join('_')
+
+                vis.tooltip
+                    .style('left', event.clientX + 10 + 'px')
+                    .style('top', function() {
+
+                        if (event.clientY >= 250){
+                            return event.clientY - 260 + 'px'
+
+                        } else if (event.clientY >= 500){
+                            return event.clientY - 510 + 'px'
+
+                        } else {
+                            return event.clientY + 10 + 'px'
+
+                        }
+                    })
+                    .style('opacity', 1)
+                    .html(`
+                        <div class="liquor-tt" style="padding: 4vh 5vh 2vh 6vh">
+                            <h2 class="liquor-name">${d.strDrink}</h2>
+                            <img src="img/rr_images/${alcohol}_liquor.png" style="width: 30%; margin-left: 35%">
+                            <p class="liquor-info"> ${liquorData[alcohol].Info}</p>
+                            <p class="liquor-fun"> ${liquorData[alcohol].Fun}</p>
+                        </div>
+                    `)
             })
             .on('mouseout', function(event, d) {
                 // Reset the radius of the bubble
-                //console.log(this)
-                //d3.select("#info").selectAll("*").remove();
+                vis.tooltip
+                    .style('left', 0 + 'px')
+                    .style('top', 0 + 'px')
+                    .style('opacity', 0)
+
+                    .html('')
+
                 d3.select(this).transition()
                     .duration(200)
                     .style('fill', vis.color(d.strDrink)) // Revert fill color
                     .attr('r', vis.radiusScale(d.rank));
+
                 // Reset the collision force
                 vis.simulation.force('collision', d3.forceCollide().radius(maxRadius)).alpha(0.1).restart();
             })
             .on('click', function(event, clickedBubbleData) {
+
                 event.stopPropagation();
                 event.preventDefault();
 
-                // // Hide all bubbles
-                // vis.bubbles.transition()
-                //     .duration(400)
-                //     .style('opacity', 0);
-                //
-                // vis.labels.transition()
-                //     .duration(400)
-                //     .style('opacity', 0);
 
+                let bubbleCol = d3.select('.bubble-col');
+                let menuCol = d3.select('.menu-col');
+
+                // Update the classes for bubbleCol and menuCol
+                bubbleCol.classed('col-12', false).classed('col-8', true);
+                menuCol.classed('col-4', true).style('display', 'block');
+
+
+                // grab important info
+                let alcohol = clickedBubbleData.strDrink.split(' ').join('_')
+
+                // update menu-page to display liquor text
+                vis.liquorText = ` 
+                    <div class="row" style="height: 100%">
+                        <div class="col-12">
+                            <div class="row" style="height: 10vh; margin-top: 4vh; padding: 4vh 10vh 2vh 10vh">
+                                <h2 class="cocktail-name">${clickedBubbleData.strDrink}</h2>
+                                <img src="img/rr_images/${alcohol}_liquor.png" style="width: 50%; margin-left: 25%">
+                            <p class="liquor-info"> ${liquorData[alcohol].Info}</p>
+                            <p class="liquor-fun"> ${liquorData[alcohol].Fun}</p>
+                            </div>
+                            
+                        </div>
+                    </div>`
+
+                d3.select('.menu-page')
+                    .html(vis.liquorText)
+
+
+                // Reset tooltip
+                vis.tooltip
+                    .style('left', 0 + 'px')
+                    .style('top', 0 + 'px')
+                    .style('opacity', 0)
+
+                    .html('')
+
+                //
+                // SMALL BUBBLE VIS
+                //
+
+
+                // // Hide all bubbles
                 vis.svg.selectAll('*').remove();
 
+                vis.smallBubbleGroup = vis.svg.append("g").attr('transform', `translate(${-vis.width/6},0)`)
+
+
                 // Create a shaded background bubble
-                vis.svg.append('circle')
+                vis.smallBubbleGroup.append('circle')
                     .attr('class', 'background-bubble')
                     .attr('cx', vis.width / 2)
                     .attr('cy', vis.height / 2)
                     .attr('r', 200)
                     .style('fill', vis.alcTypeColorMap[clickedBubbleData.strDrink])
-                    .style('opacity', 0.2)
+                    .style('opacity', 0.3)
+                    .style('stroke', 'rgba(0,0,0,0.87)')
+                    .style('stroke-width', "1px")
 
-                // Add a label to the shaded background bubble
-                vis.svg.append('text')
-                    .attr('class', 'background-bubble-label')
-                    .attr('x', vis.width / 2)
-                    .attr('y', vis.height / 2)
-                    .text(clickedBubbleData.strDrink)
-                    .style('text-anchor', 'middle')
-                    .style('fill', vis.alcTypeColorMap[clickedBubbleData.strDrink]);
 
                 let selectedDrinks = vis.originalData.filter(drink => drink.Alc_type.includes(clickedBubbleData.strDrink));
                 console.log(selectedDrinks)
+
                 // Unique identifier for the smaller bubbles (e.g., using strDrink)
                 let smallBubbleClass = 'small-bubble-' + clickedBubbleData.strDrink.replace(/[^a-zA-Z0-9]/g, ""); // Sanitize for class name
 
                 // Calculate positions for smaller bubbles around the center
                 let smallBubblePositions = getCirclePositions(vis.width / 2, vis.height / 2, selectedDrinks.length, 75); // 50 is the spread radius
 
+
+                // TODO: SHOW IMAGES INSTEAD OF TEXT!
+
                 // Create smaller bubbles for the clicked big bubble
-                vis.svg.selectAll('.' + smallBubbleClass)
+                vis.smallBubbleGroup.selectAll('.' + smallBubbleClass)
                     .data(selectedDrinks)
                     .enter().append('circle')
                     .attr('class', smallBubbleClass)
@@ -320,15 +380,67 @@ class BubbleChart {
                     .attr('r', 40) // Smaller bubble radius
                     .style('fill', vis.alcTypeColorMap[clickedBubbleData.strDrink])
                     .style('opacity', 0.8)
-                    .on('mouseover', vis.mouseoverTooltip)
+                    .on('mouseover', function(event, d){
+                        console.log(d)
+
+                        // TODO: SHOW IMAGES INSTEAD OF TEXT!
+
+                        let cocktailImgUrl = "img/rr_images/rr_cocktail_1.png"
+                        let liquorIconUrl = "img/rr_images/rum.png"
+
+                        vis.drinkText = ` 
+                            <div class="row" style="height: 100%">
+                                <div class="col-12">
+                                    <div class="row" style="height: 10vh; padding-top:5vh">
+                                        <h2 class="cocktail-name">Mojito</h2>
+                                    </div>
+                                    <div class="row cocktail-image" style="height: 35vh">
+                                        <img src="${cocktailImgUrl}" alt="Cocktail Image">
+                                    </div>
+                                    <!-- Subheading for Liquor -->
+                                    <div class="row" style="height: 10vh">
+                                        <h3 class="subheading">Liquor</h3>
+                                        <div class="centered-text" style="height: 10vh">
+                                            <!-- Liquor icon here -->
+                                            <img src="${liquorIconUrl}" class="ingredient-icon" style="max-height: 80%; width: auto;">
+                                        </div>
+                                    </div>
+        
+                                    <!-- Subheading for Ingredients -->
+                                    <div class="row">
+                                        <h3 class="subheading">Ingredients</h3>
+                                        <div class="ingredients col-12">
+                                            <div class="row" style="padding: 0 20% 0 20%">
+                                                <!-- First Row of Ingredients -->
+                                                <div class="col-3 d-flex justify-content-center">
+                                                    <img src="img/rr_images/sugar.png" alt="Ingredient 1" class="ingredient-icon" title="Ingredient 1">
+                                                </div>
+                                                <div class="col-3 d-flex justify-content-center">
+                                                    <img src="img/rr_images/lime.png" alt="Ingredient 2" class="ingredient-icon" title="Ingredient 2">
+                                                </div>
+                                                <div class="col-3 d-flex justify-content-center">
+                                                    <img src="img/rr_images/mint.png" alt="Ingredient 3" class="ingredient-icon" title="Ingredient 3">
+                                                </div>
+                                                <div class="col-3 d-flex justify-content-center">
+                                                    <img src="img/rr_images/mint.png" alt="Ingredient 4" class="ingredient-icon" title="Ingredient 4">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>`
+
+                        d3.select('.menu-page')
+                            .html(vis.drinkText)
+
+                    })
                     .on('mouseout', function (event, d) {
-                        vis.tooltip.transition()
-                            .duration(400)
-                            .style('opacity', 0)
-                            //.html(``);
+
+                        d3.select('.menu-page')
+                            .html(vis.liquorText)
                     });
 
-                vis.svg.selectAll('.text-small-bubble')
+                vis.smallBubbleGroup.selectAll('.text-small-bubble')
                     .data(selectedDrinks)
                     .enter().append('text')
                     .attr('class', 'text-small-bubble')
@@ -349,6 +461,13 @@ class BubbleChart {
 
         vis.svg.on('click', function(event) {
             vis.resetView();
+
+            let bubbleCol = d3.select('.bubble-col');
+            let menuCol = d3.select('.menu-col');
+
+            // Update the classes for bubbleCol and menuCol
+            bubbleCol.classed('col-8', false).classed('col-12', true);
+            menuCol.classed('col-4', true).style('display', 'none');
             // Check if the click happened on white space, not on a bubble
             // if (event.target.tagName !== 'circle') {
             //
@@ -360,6 +479,7 @@ class BubbleChart {
     enlargeBubble(element, d) {
         let vis = this;
         // Enlarge the hovered bubble
+
         d3.select(element).transition()
             .attr('r', vis.radiusScale(d.rank)*2)
             .duration(200)
@@ -398,54 +518,10 @@ function getCirclePositions(centerX, centerY, numberOfItems, radius) {
     return positions;
 }
 
-function showInfo(data) {
+function showInfo(event, data) {
 
 
 
-    d3.select("#info")
-        .append("h2")
-        .text(data.strDrink);
-
-    let alcohol = data.strDrink.split(' ').join('_');
-    console.log(alcohol)
-
-    // display image
-    d3.select("#info")
-        .append("img")
-        .attr("y", 50)
-        .attr("src", "img/Base_liquor/" + alcohol + '.png')
-        .attr("width", 300)
-        .attr("class", "liquorImages")
-        .style("margin", "auto");
-
-    // get the selected data for a building that we want to display
-    let displayData = [
-        {key: "Description", value: liquorData[alcohol].Info},
-        {key: "A Fun Fact", value: liquorData[alcohol].Fun},
-    ];
-
-    let table = d3.select("#info").append("table")
-        .attr("class", "table dashed-table");
-    table.append("tbody")
-
-    let rows = table.select("tbody")
-        .selectAll("tr")
-        .data(displayData)
-        .enter()
-        .append("tr");
-
-    // add information to the table
-    rows.append("th")
-        .text(d => d.key)
-        .attr("class", "col-6");
-    rows.append("td")
-        .text(d => d.value)
-        .attr("class", "col-6");
-
-    d3.select("#info").append("a")
-        .text(">> Read more on Wikipedia")
-        .attr("href", "https://en.wikipedia.org/wiki/" + data.strDrink.split().join('_'))
-        .attr("id", "wikiLink")
 
 }
 
