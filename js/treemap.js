@@ -240,7 +240,7 @@ class TreeMap {
             d3.select(this)
                 .style("fill", "black"); // Revert text color
         }
-        
+
 
         // Define the starting positions for the detail card
         let detailGroupX = vis.width * 0.6;
