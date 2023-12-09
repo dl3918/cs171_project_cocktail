@@ -81,11 +81,11 @@ h2.liquor-heading, h2.cocktail-name, h2.liquor-name { !important;
     margin-bottom: 10px;
 }
 
-.icon {
-    width: 24px; /* Icon size */
-    height: auto;
-    margin-right: 10px;
-}
+/*.icon {*/
+/*    width: 24px; !* Icon size *!*/
+/*    height: auto;*/
+/*    margin-right: 10px;*/
+/*}*/
 
 
 #liquor-tt {
@@ -97,6 +97,20 @@ h2.liquor-heading, h2.cocktail-name, h2.liquor-name { !important;
     background-size: 100% 100%; /* Stretch the image to fill the container */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-position: center;
+}
+
+.treemap-tooltip {
+    height: 55vh;
+    width: 40vh;
+    position: absolute;
+    background-color: transparent;
+    background-image: url("../img/frame7.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0; /* Initially hidden */
+    pointer-events: none; /* Prevents the tooltip from interfering with mouse events */
+    transition: opacity 0.3s; /* Smooth transition for appearing and disappearing */
 }
 
 .liquor-info, .liquor-fun {

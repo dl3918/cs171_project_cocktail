@@ -240,6 +240,7 @@ class TreeMap {
             d3.select(this)
                 .style("fill", "black"); // Revert text color
         }
+        
 
         // Define the starting positions for the detail card
         let detailGroupX = vis.width * 0.6;
@@ -250,6 +251,7 @@ class TreeMap {
         let detailGroup = vis.svg2.append("g")
             .attr("class", "detail-group")
             .attr("transform", `translate(${detailGroupX},${detailGroupY})`);
+
 
         // Initial vertical position for the content
         let currentY = 10;
@@ -337,17 +339,26 @@ class TreeMap {
 
         currentY += 20; // Additional space at the bottom
 
-        // Add a background rectangle for the card, now that we know the total height
-        detailGroup.insert("rect", ":first-child")
-            .attr("width", cardWidth)
-            .attr("height", currentY)
-            .attr("rx", 15) // Rounded corners
-            .attr("ry", 15)
-            .style("fill", "#fff") // Card background color
-            .style("stroke", "#ccc") // Card border
-            .style("stroke-width", "2px");
+
+
+        // Adjust frame size based on content plus padding
+        let frameWidth = document.getElementById(vis.parentElement).getBoundingClientRect().width * 0.37;
+        let frameHeight = document.getElementById(vis.parentElement).getBoundingClientRect().height * 2 ;
+
+        // Adjust frame position to center it around the content
+        let frameX = -document.getElementById(vis.parentElement).getBoundingClientRect().width * 0.05;
+        let frameY = -document.getElementById(vis.parentElement).getBoundingClientRect().height * 0.58;
+
+        // Add the frame image as the first child of detailGroup
+        detailGroup.insert("image", ":first-child")
+            .attr("xlink:href", 'img/frame7.png')
+            .attr("width", frameWidth)
+            .attr("height", frameHeight)
+            .attr("x", frameX)
+            .attr("y", frameY);
+
     }
-    
+
 }
 
 
