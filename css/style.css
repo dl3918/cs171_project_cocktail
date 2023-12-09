@@ -164,6 +164,16 @@ h2 {
     font-size: 20px;
 }
 
+#categorySelector {
+    color: #08726d;
+    font-family: 'Young Serif', serif;
+}
+
+#colorSelector {
+    color: #08726d;
+    font-family: 'Young Serif', serif;
+}
+
 
 /*section-popular-transpage*/
 #section-popular-transpage h1 {
