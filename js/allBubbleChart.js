@@ -49,11 +49,30 @@ class allBubbleChart {
             .range([2, 20]);
 
         // // Define a scale for colors
-        const myColors = [
-            "#e6194b", "#3cb44b", "#ffe119", "#4363d8", "#f58231", "#911eb4", "#46f0f0", "#f032e6",
-            "#bcf60c", "#fabebe", "#008080", "#e6beff", "#9a6324", "#fffac8", "#800000", "#aaffc3",
-            "#808000", "#ffd8b1", "#000075", "#808080", "#000000", "#fabed4", "#ffd700", "#aa6e28"
-        ];
+        const myColors = ['#e6194b',
+            '#3cb44b',
+            '#ffe119',
+            '#4363d8',
+            '#f58231',
+            '#911eb4',
+            '#46f0f0',
+            '#f032e6',
+            '#bcf60c',
+            '#fabebe',
+            '#008080',
+            '#e6beff',
+            '#9a6324',
+            '#21fd81',
+            '#800000',
+            '#aaffc3',
+            '#808000',
+            '#ffaf5e',
+            '#000075',
+            '#808080',
+            '#000000',
+            '#fabed4',
+            '#ffd700',
+            '#aa6e28']
         vis.color = d3.scaleOrdinal(myColors);
 
 
