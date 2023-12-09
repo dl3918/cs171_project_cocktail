@@ -183,6 +183,10 @@ h1 {
     z-index: 1;
 }
 
+#treemapDiv .hover-image:nth-of-type(1) {
+    pointer-events: none;
+}
+
 #networkDiv {
     width: 80vw;
     height: 70vh;
@@ -240,5 +244,126 @@ h2 {
     cursor: pointer;
     stroke: darkgray;
     stroke-width: 1px;
+}
+
+/*section1-transpage*/
+#section1-transpage h1 {
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    font-size: 8vh;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #117770, #82eeac, #50c2be, #4cbd79);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#section1-transpage h2 {
+    color: #08726d;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    font-size: 3.5vh;
+}
+
+/*section-allcocktails*/
+#section-allcocktails h1 {
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    font-size: 4vh;
+    background-image: linear-gradient(to right, #c3da6e, #da76bb, #9ad352, #a2636f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#section-allcocktails span {
+    color: #08726d;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    font-size: 20px;
+}
+
+#categorySelector {
+    color: #08726d;
+    font-family: 'Young Serif', serif;
+}
+
+#colorSelector {
+    color: #08726d;
+    font-family: 'Young Serif', serif;
+}
+
+
+/*section-popular-transpage*/
+#section-popular-transpage h1 {
+    color: #08726d;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    font-size: 66px;
+    font-weight: bold;
+}
+
+#section-popular-transpage h2 {
+    color: #08726d;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    font-size: 28px;
+}
+
+
+/* Global Styles */
+body, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Section Heading Styles */
+/*.section-heading {*/
+/*    text-align: center;*/
+/*    font-size: 2rem;*/
+/*    padding: 2rem 0;*/
+/*}*/
+
+/* Team Section Styles */
+#our-team-page h1 {
+    color: #08726d;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    font-size: 66px;
+    font-weight: bold;
+}
+
+/*.our-team {*/
+/*    background: #F8F5F0;*/
+/*    padding-bottom: 2rem;*/
+/*}*/
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50vh, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.team-member {
+    text-align: center;
+    padding: 1rem;
+}
+
+.team-member img {
+    width: 50%;
+    height: auto;
+    border-radius: 90%;
+}
+
+.team-member h3 {
+    margin-top: 1rem;
+}
+
+.team-member p {
+    font-size: 0.9rem;
+    color: #666;
 }
 

@@ -56,6 +56,14 @@ class TreeMap {
         let minValue = d3.min(vis.processedData, d => d.value);
         let maxValue = d3.max(vis.processedData, d => d.value);
 
+        let minimumArea = 200; // This should be your determined minimum area for the smallest rectangles
+        let maximumArea = 2000; // This should be your determined maximum area for the largest rectangles
+        let scaleValue = d3.scalePow()
+            .exponent(0.1)
+            .domain([minValue, maxValue])
+            // .range([minimumArea, maximumArea]);
+
+
         // Define a color scale
         let colorScale = d3.scaleLinear()
             .domain([minValue, maxValue])
@@ -68,12 +76,11 @@ class TreeMap {
             .id(d => d.id)
             .parentId(d => d.parent)
             (vis.processedData)
-            .sum(d => d.value);
+            .sum(d => scaleValue(d.value));
 
         // Then d3.treemap computes the position of each element of the hierarchy
         d3.treemap()
             .size([vis.width, vis.height])
-            .padding(1)
             (root);
 
         // Use this information to add rectangles:
@@ -89,13 +96,37 @@ class TreeMap {
             .style("stroke", "black")
             .style("fill", d => colorScale(d.data.value))
             .attr("class", "treemap_rect")
-            .on('mouseover', function() {
+            .on('mouseover', function(event, d) {
                 d3.select(this)
                     .style("fill", hoverColor); // color when mouse is over
+
+                // Calculate rectangle dimensions
+                let rectWidth = d.x1 - d.x0;
+                let rectHeight = d.y1 - d.y0;
+
+                // Determine the size of the image (minimum of rect's width and height)
+                let imageSize = Math.min(rectWidth, rectHeight) * 0.8;
+
+                // Calculate the center of the rectangle
+                let centerX = d.x0 + rectWidth / 2;
+                let centerY = d.y0 + rectHeight / 2;
+
+                vis.svg.append("image")
+                    .attr("xlink:href", 'img/' + d.data.id + '.png')
+                    .attr("x", centerX - imageSize / 2) // Center the image
+                    .attr("y", centerY - imageSize / 2) // Center the image
+                    .attr("width", imageSize)
+                    .attr("height", imageSize)
+                    .attr("class", "hover-image")
+
+                // Class for easy removal
             })
             .on('mouseout', function() {
                 d3.select(this)
                     .style("fill", d => colorScale(d.data.value)); // original color
+
+                // Remove the image when not hovering
+                vis.svg.selectAll(".hover-image").remove();
             })
             .on('click', function(event, d) {
                 // d3.select("#treemap_right").selectAll("*").remove();
@@ -144,7 +175,7 @@ class TreeMap {
                     .attr("visibility", function(d) {
                         // Calculate the width of the text and compare with the width of the rectangle
                         d.textWidth = this.getComputedTextLength();
-                        d.rectWidth = d.x1 - d.x0;
+                        d.rectWidth = (d.x1 - d.x0)/2;
                         return d.textWidth < d.rectWidth ? "visible" : "hidden";
                     });
 
@@ -152,10 +183,6 @@ class TreeMap {
                 labels2.exit().remove();
 
                 vis.show_detail(d);
-
-
-
-
 
             });
 
@@ -194,93 +221,6 @@ class TreeMap {
         this.svg2.style("pointer-events", enable ? "auto" : "none");
     }
 
-    // show_detail(d) {
-    //     let vis = this;
-    //
-    //     // Clear previous details
-    //     vis.svg2.selectAll(".detail").remove();
-    //
-    //     // Starting positions for the detail elements
-    //     let detailGroupX = vis.width * 0.6; // Starting X position of the detail group
-    //     let detailGroupY = 20; // Starting Y position of the detail group
-    //     let lineHeight = 20; // Line height for text elements
-    //
-    //     // Create a group for all detail elements
-    //     let detailGroup = vis.svg2.append("g")
-    //         .attr("class", "detail")
-    //         .attr("transform", `translate(${detailGroupX},${detailGroupY})`);
-    //
-    //     // Add image
-    //     detailGroup.append("image")
-    //         .attr("xlink:href", 'img/' + d.data.id + '.jpg')
-    //         .attr("width", vis.width * 0.3) // Adjust width as needed
-    //         .attr("height", vis.height * 0.3) // Adjust height as needed
-    //         .attr("x", 0)
-    //         .attr("y", 0);
-    //
-    //     // Update Y position for text elements
-    //     let textY = vis.height * 0.32; // Adjust starting Y position based on the image height
-    //
-    //     // Add title (glass type)
-    //     let titleText = detailGroup.append("text")
-    //         .text(`${d.data.id}:  ${d.data.value} drinks`)
-    //         .attr("font-size", "20px")
-    //         .attr("font-weight", "bold");
-    //
-    //     let titleWidth = titleText.node().getBBox().width;
-    //     let titleX = (vis.width * 0.3 - titleWidth) / 2; // Centering the title
-    //
-    //     titleText
-    //         .attr("x", titleX)
-    //         .attr("y", textY);
-    //
-    //     textY += lineHeight + 20; // Adjust gap between title and next section
-    //
-    //     // Add "Pair it with" text
-    //     detailGroup.append("text")
-    //         .text("- Pair it with:")
-    //         .attr("x", 0)
-    //         .attr("y", textY)
-    //         .attr("font-weight", "bold")
-    //         .attr("font-size", "16px");
-    //
-    //
-    //     textY += lineHeight;
-    //
-    //     // List ingredients (garish)
-    //     d.data.garish.forEach(item => {
-    //         let ingredient = Object.keys(item).join(', ');
-    //         detailGroup.append("text")
-    //             .text(ingredient)
-    //             .attr("x", 10) // Indent for list items
-    //             .attr("y", textY)
-    //             .attr("font-size", "14px");
-    //         textY += lineHeight;
-    //     });
-    //
-    //     textY += 20; // Extra gap before the next section
-    //
-    //     // Add "Recommended drink" text
-    //     detailGroup.append("text")
-    //         .text("- Recommended 3 drinks:")
-    //         .attr("x", 0)
-    //         .attr("y", textY)
-    //         .attr("font-weight", "bold")
-    //         .attr("font-size", "16px");
-    //
-    //     textY += lineHeight;
-    //
-    //     // List recommended drinks
-    //     let recommendations = d.data.recommended.slice(0, 3); // Taking first 3 recommendations
-    //     recommendations.forEach(drink => {
-    //         detailGroup.append("text")
-    //             .text(drink)
-    //             .attr("x", 10) // Indent for list items
-    //             .attr("y", textY)
-    //             .attr("font-size", "14px");
-    //         textY += lineHeight;
-    //     });
-    // }
 
     show_detail(d) {
         let vis = this;
@@ -312,18 +252,18 @@ class TreeMap {
             .attr("transform", `translate(${detailGroupX},${detailGroupY})`);
 
         // Initial vertical position for the content
-        let currentY = 0;
+        let currentY = 10;
 
         // Add image
         let imageHeight = vis.height * 0.3;
         detailGroup.append("image")
-            .attr("xlink:href", 'img/' + d.data.id + '.jpg')
+            .attr("xlink:href", 'img/' + d.data.id + '.png')
             .attr("width", cardWidth) // Adjust width as needed
             .attr("height", imageHeight) // Adjust height as needed
             .attr("x", 0)
             .attr("y", currentY+1);
 
-        currentY += imageHeight + 20; // Increment Y position after the image
+        currentY += imageHeight + 30; // Increment Y position after the image
 
         // Add title (glass type)
         detailGroup.append("text")
@@ -407,9 +347,7 @@ class TreeMap {
             .style("stroke", "#ccc") // Card border
             .style("stroke-width", "2px");
     }
-
-
-
+    
 }
 
 

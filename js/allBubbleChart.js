@@ -10,7 +10,10 @@ class allBubbleChart {
         }));
 
         this.displayData = [...this.data]; // Clone the preprocessed data
-        this.currentCategory = 'strCategory'; // Default filter
+        this.currentCategory = 'Basic_taste'; // Default filter
+        this.colorCategory = 'Basic_taste';
+        this.screenWidth = document.getElementById(this.parentElement).getBoundingClientRect().width;
+        this.screenHeight = document.getElementById(this.parentElement).getBoundingClientRect().height;
         this.initVis(); // Call to initialize the visualization
     }
 
@@ -19,8 +22,8 @@ class allBubbleChart {
 
         // Set dimensions and margins for the graph
         vis.margin = { top: 10, right: 10, bottom: 10, left: 10 };
-        vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
+        vis.width = vis.screenWidth - vis.margin.left - vis.margin.right;
+        vis.height = vis.screenHeight - vis.margin.top - vis.margin.bottom;
 
         // Create SVG and append it to the element
         vis.svg = d3.select("#" + vis.parentElement)
@@ -46,11 +49,30 @@ class allBubbleChart {
             .range([2, 20]);
 
         // // Define a scale for colors
-        const myColors = [
-            "#e6194b", "#3cb44b", "#ffe119", "#4363d8", "#f58231", "#911eb4", "#46f0f0", "#f032e6",
-            "#bcf60c", "#fabebe", "#008080", "#e6beff", "#9a6324", "#fffac8", "#800000", "#aaffc3",
-            "#808000", "#ffd8b1", "#000075", "#808080", "#000000", "#fabed4", "#ffd700", "#aa6e28"
-        ];
+        const myColors = ['#e6194b',
+            '#3cb44b',
+            '#ffe119',
+            '#4363d8',
+            '#f58231',
+            '#911eb4',
+            '#46f0f0',
+            '#f032e6',
+            '#bcf60c',
+            '#fabebe',
+            '#008080',
+            '#e6beff',
+            '#9a6324',
+            '#21fd81',
+            '#800000',
+            '#aaffc3',
+            '#808000',
+            '#ffaf5e',
+            '#000075',
+            '#808080',
+            '#000000',
+            '#fabed4',
+            '#ffd700',
+            '#aa6e28']
         vis.color = d3.scaleOrdinal(myColors);
 
 
@@ -65,7 +87,29 @@ class allBubbleChart {
 
         // Process the data
         vis.wrangleData();
+
+        // Add explanatory text at the bottom of the SVG
+        vis.addExplanatoryText();
     }
+
+    addExplanatoryText() {
+        const vis = this;
+
+        // Check if the text will be within the bounds of the SVG
+        const textY = vis.height + vis.margin.top + vis.margin.bottom - 20; // Adjust this value to place it correctly
+
+        // Append the text element to the SVG
+        vis.svg.append('text')
+            .attr('x', vis.margin.left) // Position from the left edge
+            .attr('y', textY) // Position from the top edge
+            .attr('text-anchor', 'start') // Align text to the left
+            .style('fill', '#08726d') // Set the text color
+            .style('font-size', '14px') // Set the text size
+            .style('font-family', 'Young Serif')
+            .text('* The size of the bubbles is determined by the number of ingredients in the cocktail. ' +
+                ' Click to see more details.');
+    }
+
 
     initTooltip() {
         const vis = this;
@@ -160,7 +204,7 @@ class allBubbleChart {
             } else {
                 // Highlight corresponding bubbles and dim others
                 vis.svg.selectAll(".bubble")
-                    .style("opacity", d => d[vis.currentCategory] === clickedCategory ? 1 : 0.1);
+                    .style("opacity", d => d[vis.colorCategory] === clickedCategory ? 1 : 0.1);
 
                 // Update the selected state
                 vis.legend.selectAll(".legend-item").classed("selected", false);
@@ -177,12 +221,12 @@ class allBubbleChart {
         vis.displayData = vis.data.filter(d => d[vis.currentCategory]);
 
         // Update the domain of the color scale to match the new category
-        vis.color.domain([...new Set(vis.displayData.map(d => d[vis.currentCategory]))]);
+        vis.color.domain([...new Set(vis.displayData.map(d => d[vis.colorCategory]))]);
 
 
         // Dynamically adjust bubble size based on the number of items in each category
         const maxItemsInCategory = d3.max(vis.color.domain().map(category => {
-            return vis.displayData.filter(d => d[vis.currentCategory] === category).length;
+            return vis.displayData.filter(d => d[vis.colorCategory] === category).length;
         }));
 
         vis.z.range([2, Math.max(15, 20 / Math.sqrt(maxItemsInCategory))]); // Adjust the max size of bubbles based on the number of items
@@ -203,7 +247,7 @@ class allBubbleChart {
                 enter => enter.append("circle")
                     .attr("class", "bubble")
                     .attr("r", d => vis.z(d.Alc_type.length)) // Set the initial radius
-                    .style("fill", d => vis.color(d[vis.currentCategory])) // Set the color
+                    .style("fill", d => vis.color(d[vis.colorCategory])) // Set the color
                     .style("opacity", 0.7)
                     .on("mouseover", function(event, d) {
                         // Enlarge the bubble on mouseover
@@ -216,6 +260,8 @@ class allBubbleChart {
                         vis.tooltip
                             .html(`<strong>${d.strDrink}</strong> <br>
                             <div style="text-align: left;">
+                                 <strong>Drink Category:</strong> ${d.strCategory}<br>
+                                 <strong>Class Type:</strong> ${d.strGlass}<br>
                                  <strong>Alcohol Type:</strong> ${d.Alc_type}<br>
                                  <strong>Basic Taste:</strong> ${d.Basic_taste}
                             </div>`)
@@ -248,7 +294,7 @@ class allBubbleChart {
                 update => update
                     .transition()
                     .duration(200)
-                    .attr("fill", d => vis.color(d[vis.currentCategory])), // Update the fill color
+                    .attr("fill", d => vis.color(d[vis.colorCategory])), // Update the fill color
                 // Exit selection
                 exit => exit.remove()
             );
@@ -287,6 +333,13 @@ class allBubbleChart {
             .force("y", d3.forceY(d => vis.categoryCenters[d[vis.currentCategory]].y).strength(0.5))
             .alpha(1)
             .restart();
+    }
+
+    colorChange(newColorCategory) {
+        const vis = this;
+        vis.colorCategory = newColorCategory;
+
+        vis.wrangleData();
         vis.createLegend();
     }
 
@@ -304,15 +357,59 @@ class allBubbleChart {
         // Initialize an object to store the centers
         vis.categoryCenters = {};
 
+        // Initialize your seeded random number generator
+        const rng = new SeededRandom(123456); // Use a fixed seed for reproducibility
+
+        // The center of the SVG, minus an offset to account for the legend
+        const offsetX = vis.width * 0.06; // Offset to move clusters left to account for the legend
+        const centerX = (vis.width / 2) - offsetX;
+        const centerY = vis.height / 2 - 50;
+
         // Calculate distinct categories from the data
         const categories = [...new Set(vis.data.map(d => d[vis.currentCategory]))];
 
-        // Assign a center for each category
+        // Define the maximum radius for x to allow for more horizontal spread
+        const maxRadiusX = vis.width * 0.55; // Increase this value to spread clusters more horizontally
+
+        // Define the maximum radius for y
+        const maxRadiusY = Math.min(centerX, centerY) * 0.7;
+
+        // Assign a random center for each category using polar coordinates (angle and radius)
         categories.forEach((category, index) => {
-            vis.categoryCenters[category] = {
-                x: vis.width * (index + 1) / categories.length + 50 , // Evenly distribute across the width
-                y: vis.height / 2
-            };
+            // Generate a random angle between 0 and 2π radians (360 degrees)
+            const angle = rng.normalizedRandom() * Math.PI * 2;
+
+            // Generate a random radius for x and y
+            const radiusX = 0.65 * maxRadiusX * rng.normalizedRandom();
+            const radiusY = 0.4 * (maxRadiusY - 50) * rng.normalizedRandom() + 50;
+
+            // Convert polar coordinates (angle, radius) to Cartesian coordinates (x, y)
+            const x = centerX + radiusX * Math.cos(angle);
+            const y = centerY + radiusY * Math.sin(angle);
+
+            // Adjust x to ensure clusters do not overlap with the legend or go off-screen
+            const adjustedX = Math.max(50, Math.min(vis.width - 50 - offsetX, x));
+
+            vis.categoryCenters[category] = { x: adjustedX, y };
         });
+    }
+
+
+}
+
+// Simple LCG implementation, not meant for cryptographic use
+class SeededRandom {
+    constructor(seed) {
+        this.seed = seed % 2147483647;
+        if (this.seed <= 0) this.seed += 2147483646;
+    }
+
+    random() {
+        this.seed = (this.seed * 16807) % 2147483647;
+        return this.seed;
+    }
+
+    normalizedRandom() {
+        return (this.random() - 1) / (2147483647 - 1);
     }
 }

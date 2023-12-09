@@ -8,7 +8,7 @@ new fullpage('#fullpage', {
     navigationPosition: 'right',
 
     licenseKey: "gplv3-license",
-    anchors: ['page1', 'page2','page3','page4','page5','page6','page7']
+    anchors: ['page1', 'page2','page3','page4','page5','page6','page7','page8','page9','page10']
 });
 
 
@@ -37,7 +37,7 @@ let myAllBubbleChart;
 let myIconVis;
 let myallBubbleChart_enoch;
 let myTreeMap;
-let myTasteVis;
+// let myTasteVis;
 let myMixologyVis;
 
 function initMainPage(dataArray) {
@@ -49,7 +49,7 @@ function initMainPage(dataArray) {
     //myAllBubbleChart = new BubbleChart('allDrink', dataArray[2],true);
     myallBubbleChart_enoch = new allBubbleChart('all_drinks_enoch', dataArray[3]);
     myTreeMap = new TreeMap('treemapDiv', dataArray[4]);
-    myTasteVis = new tasteBubbleChart('taste', dataArray[5]);
+    // myTasteVis = new tasteBubbleChart('taste', dataArray[5]);
     myNetworkVis = new NetworkVis('networkDiv', dataArray[0], dataArray[1]);
 
     // document.getElementById('resetViewButton').addEventListener('click', () => {
@@ -59,11 +59,19 @@ function initMainPage(dataArray) {
 }
 
 let selectedCategory =  document.getElementById('categorySelector').value;
+let colorCategory = document.getElementById('colorSelector').value;
 
 function categoryChange() {
     selectedCategory = document.getElementById('categorySelector').value;
     myallBubbleChart_enoch.categoryChange(selectedCategory);
+    myallBubbleChart_enoch.colorChange(selectedCategory);
 }
+
+function colorChange() {
+    colorCategory = document.getElementById('colorSelector').value;
+    myallBubbleChart_enoch.colorChange(colorCategory);
+}
+
 
 function groupByAlcType(data) {
     let groupedData = {};
