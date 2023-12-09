@@ -135,11 +135,14 @@ h2 {
 
 /*section1-transpage*/
 #section1-transpage h1 {
-    color: #08726d;
     text-align: center;
     font-family: 'Young Serif', serif;
     font-size: 8vh;
     font-weight: bold;
+    background-image: linear-gradient(to right, #117770, #82eeac, #50c2be, #4cbd79);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 #section1-transpage h2 {
@@ -151,10 +154,13 @@ h2 {
 
 /*section-allcocktails*/
 #section-allcocktails h1 {
-    color: #08726d;
     text-align: center;
     font-family: 'Young Serif', serif;
     font-size: 4vh;
+    background-image: linear-gradient(to right, #c3da6e, #da76bb, #9ad352, #a2636f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 #section-allcocktails span {
