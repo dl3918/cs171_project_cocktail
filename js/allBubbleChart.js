@@ -87,7 +87,29 @@ class allBubbleChart {
 
         // Process the data
         vis.wrangleData();
+
+        // Add explanatory text at the bottom of the SVG
+        vis.addExplanatoryText();
     }
+
+    addExplanatoryText() {
+        const vis = this;
+
+        // Check if the text will be within the bounds of the SVG
+        const textY = vis.height + vis.margin.top + vis.margin.bottom - 20; // Adjust this value to place it correctly
+
+        // Append the text element to the SVG
+        vis.svg.append('text')
+            .attr('x', vis.margin.left) // Position from the left edge
+            .attr('y', textY) // Position from the top edge
+            .attr('text-anchor', 'start') // Align text to the left
+            .style('fill', '#08726d') // Set the text color
+            .style('font-size', '14px') // Set the text size
+            .style('font-family', 'Young Serif')
+            .text('* The size of the bubbles is determined by the number of ingredients in the cocktail. ' +
+                ' Click to see more details.');
+    }
+
 
     initTooltip() {
         const vis = this;
@@ -328,24 +350,6 @@ class allBubbleChart {
             .attr("cx", d => Math.max(vis.z(d.Alc_type.length), Math.min(vis.width -175 - vis.z(d.Alc_type.length), d.x))) // Keep within horizontal bounds
             .attr("cy", d => Math.max(vis.z(d.Alc_type.length), Math.min(vis.height - vis.z(d.Alc_type.length), d.y))); // Keep within vertical bounds
     }
-
-    // calculateCategoryCenters() {
-    //     const vis = this;
-    //
-    //     // Initialize an object to store the centers
-    //     vis.categoryCenters = {};
-    //
-    //     // Calculate distinct categories from the data
-    //     const categories = [...new Set(vis.data.map(d => d[vis.currentCategory]))];
-    //
-    //     // Assign a center for each category
-    //     categories.forEach((category, index) => {
-    //         vis.categoryCenters[category] = {
-    //             x: vis.width * (index + 1) / categories.length + 50 , // Evenly distribute across the width
-    //             y: vis.height / 2
-    //         };
-    //     });
-    // }
 
     calculateCategoryCenters() {
         const vis = this;
