@@ -64,12 +64,14 @@ let colorCategory = document.getElementById('colorSelector').value;
 function categoryChange() {
     selectedCategory = document.getElementById('categorySelector').value;
     myallBubbleChart_enoch.categoryChange(selectedCategory);
+    myallBubbleChart_enoch.colorChange(selectedCategory);
 }
 
 function colorChange() {
     colorCategory = document.getElementById('colorSelector').value;
     myallBubbleChart_enoch.colorChange(colorCategory);
 }
+
 
 function groupByAlcType(data) {
     let groupedData = {};

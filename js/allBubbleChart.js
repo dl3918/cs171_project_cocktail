@@ -12,6 +12,8 @@ class allBubbleChart {
         this.displayData = [...this.data]; // Clone the preprocessed data
         this.currentCategory = 'strCategory'; // Default filter
         this.colorCategory = 'strCategory';
+        this.screenWidth = document.getElementById(this.parentElement).getBoundingClientRect().width;
+        this.screenHeight = document.getElementById(this.parentElement).getBoundingClientRect().height;
         this.initVis(); // Call to initialize the visualization
     }
 
@@ -20,8 +22,8 @@ class allBubbleChart {
 
         // Set dimensions and margins for the graph
         vis.margin = { top: 10, right: 10, bottom: 10, left: 10 };
-        vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
+        vis.width = vis.screenWidth - vis.margin.left - vis.margin.right;
+        vis.height = vis.screenHeight - vis.margin.top - vis.margin.bottom;
 
         // Create SVG and append it to the element
         vis.svg = d3.select("#" + vis.parentElement)
@@ -308,21 +310,83 @@ class allBubbleChart {
             .attr("cy", d => Math.max(vis.z(d.Alc_type.length), Math.min(vis.height - vis.z(d.Alc_type.length), d.y))); // Keep within vertical bounds
     }
 
+    // calculateCategoryCenters() {
+    //     const vis = this;
+    //
+    //     // Initialize an object to store the centers
+    //     vis.categoryCenters = {};
+    //
+    //     // Calculate distinct categories from the data
+    //     const categories = [...new Set(vis.data.map(d => d[vis.currentCategory]))];
+    //
+    //     // Assign a center for each category
+    //     categories.forEach((category, index) => {
+    //         vis.categoryCenters[category] = {
+    //             x: vis.width * (index + 1) / categories.length + 50 , // Evenly distribute across the width
+    //             y: vis.height / 2
+    //         };
+    //     });
+    // }
+
     calculateCategoryCenters() {
         const vis = this;
 
         // Initialize an object to store the centers
         vis.categoryCenters = {};
 
+        // Initialize your seeded random number generator
+        const rng = new SeededRandom(123456); // Use a fixed seed for reproducibility
+
+        // The center of the SVG, minus an offset to account for the legend
+        const offsetX = vis.width * 0.06; // Offset to move clusters left to account for the legend
+        const centerX = (vis.width / 2) - offsetX;
+        const centerY = vis.height / 2 - 50;
+
         // Calculate distinct categories from the data
         const categories = [...new Set(vis.data.map(d => d[vis.currentCategory]))];
 
-        // Assign a center for each category
+        // Define the maximum radius for x to allow for more horizontal spread
+        const maxRadiusX = vis.width * 0.55; // Increase this value to spread clusters more horizontally
+
+        // Define the maximum radius for y
+        const maxRadiusY = Math.min(centerX, centerY) * 0.7;
+
+        // Assign a random center for each category using polar coordinates (angle and radius)
         categories.forEach((category, index) => {
-            vis.categoryCenters[category] = {
-                x: vis.width * (index + 1) / categories.length + 50 , // Evenly distribute across the width
-                y: vis.height / 2
-            };
+            // Generate a random angle between 0 and 2π radians (360 degrees)
+            const angle = rng.normalizedRandom() * Math.PI * 2;
+
+            // Generate a random radius for x and y
+            const radiusX = 0.65 * maxRadiusX * rng.normalizedRandom();
+            const radiusY = 0.4 * (maxRadiusY - 50) * rng.normalizedRandom() + 50;
+
+            // Convert polar coordinates (angle, radius) to Cartesian coordinates (x, y)
+            const x = centerX + radiusX * Math.cos(angle);
+            const y = centerY + radiusY * Math.sin(angle);
+
+            // Adjust x to ensure clusters do not overlap with the legend or go off-screen
+            const adjustedX = Math.max(50, Math.min(vis.width - 50 - offsetX, x));
+
+            vis.categoryCenters[category] = { x: adjustedX, y };
         });
+    }
+
+
+}
+
+// Simple LCG implementation, not meant for cryptographic use
+class SeededRandom {
+    constructor(seed) {
+        this.seed = seed % 2147483647;
+        if (this.seed <= 0) this.seed += 2147483646;
+    }
+
+    random() {
+        this.seed = (this.seed * 16807) % 2147483647;
+        return this.seed;
+    }
+
+    normalizedRandom() {
+        return (this.random() - 1) / (2147483647 - 1);
     }
 }
