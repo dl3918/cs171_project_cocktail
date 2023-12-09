@@ -10,8 +10,8 @@ class allBubbleChart {
         }));
 
         this.displayData = [...this.data]; // Clone the preprocessed data
-        this.currentCategory = 'strCategory'; // Default filter
-        this.colorCategory = 'strCategory';
+        this.currentCategory = 'Basic_taste'; // Default filter
+        this.colorCategory = 'Basic_taste';
         this.screenWidth = document.getElementById(this.parentElement).getBoundingClientRect().width;
         this.screenHeight = document.getElementById(this.parentElement).getBoundingClientRect().height;
         this.initVis(); // Call to initialize the visualization
