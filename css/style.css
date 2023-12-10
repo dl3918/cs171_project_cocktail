@@ -357,13 +357,28 @@ body, h2, h3, p {
 /*    padding: 2rem 0;*/
 /*}*/
 
+@keyframes oscillate {
+    0%, 100% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+}
+
 #section1 h1 {
     color: rgb(107, 90, 64);
     text-align: center;
     font-family: 'Amatic SC', sans-serif;
     font-size: 66px;
     font-weight: bold;
+    animation: oscillate 2s ease-in-out infinite;
+    /*background-color: rgba(128, 128, 128, 0.6); !* Grey background with opacity *!*/
+    /*padding: 5px 10px; !* Reduced padding *!*/
+    /*display: inline-block; !* Makes the background wrap the text *!*/
 }
+
+
 
 /* Team Section Styles */
 #our-team-page h1 {
