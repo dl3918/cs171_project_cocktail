@@ -393,3 +393,13 @@ body, h2, h3, p {
     border-radius: 8px;
     pointer-events: none;
 }
+
+#treemapDiv .detail-group {
+    font-family: 'Young Serif', serif;
+    fill: #4b5454;
+}
+
+#treemapDiv .treemap_rect {
+    font-family: 'Young Serif', serif;
+    fill: #d5f6f6;
+}

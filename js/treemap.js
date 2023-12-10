@@ -173,6 +173,7 @@ class TreeMap {
                     .append("text")
                     .text(d => d.data.id)
                     .attr("font-size", "12px")
+                    .attr("font-family", "Young Serif")
                     .attr("fill", "white")
                     .attr("x", d => d.x0/2 + 5)
                     .attr("y", d => d.y0 + 20)
@@ -197,8 +198,9 @@ class TreeMap {
             .enter()
             .append("text")
             .text(d => d.data.id)
-            .attr("font-size", "12px")
+            .attr("font-size", "16px")
             .attr("fill", "white")
+            .attr("font-family", "Young Serif")
             .attr("x", d => d.x0 + 5)
             .attr("y", d => d.y0 + 20)
             .attr("visibility", function(d) {
@@ -273,7 +275,7 @@ class TreeMap {
 
         // Add title (glass type)
         detailGroup.append("text")
-            .text(`${d.data.id}: ${d.data.value} drinks`)
+            .html(`${d.data.id}: &nbsp; ${d.data.value} drinks`)
             .attr("x", 10)
             .attr("y", currentY)
             .attr("font-size", "20px")
@@ -289,7 +291,7 @@ class TreeMap {
             .attr("font-weight", "bold")
             .attr("font-size", "16px");
 
-        currentY += 30; // Increment Y position
+        currentY += 20; // Increment Y position
 
         // Variables to manage image placement in rows
         let imgX = 10, imgY = currentY;
@@ -347,8 +349,9 @@ class TreeMap {
 
         currentY += 30; // Increment Y position
 
-        // List recommended drinks (taking first 3 recommendations)
-        let recommendations = d.data.recommended.slice(0, 3);
+        // Shuffle and take the first 3 recommendations
+        let shuffledRecommendations = shuffle([...d.data.recommended]);
+        let recommendations = shuffledRecommendations.slice(0, 3);
         recommendations.forEach(drink => {
             detailGroup.append("text")
                 .text(drink)
@@ -388,6 +391,15 @@ class TreeMap {
 
     }
 
+
+}
+
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
 }
 
 
