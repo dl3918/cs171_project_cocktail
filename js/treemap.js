@@ -112,7 +112,7 @@ class TreeMap {
                 let centerY = d.y0 + rectHeight / 2;
 
                 vis.svg.append("image")
-                    .attr("xlink:href", 'img/' + d.data.id + '.png')
+                    .attr("xlink:href", 'img/treemap_glass/' + d.data.id + '.png')
                     .attr("x", centerX - imageSize / 2) // Center the image
                     .attr("y", centerY - imageSize / 2) // Center the image
                     .attr("width", imageSize)
@@ -259,7 +259,7 @@ class TreeMap {
         // Add image
         let imageHeight = vis.height * 0.3;
         detailGroup.append("image")
-            .attr("xlink:href", 'img/' + d.data.id + '.png')
+            .attr("xlink:href", 'img/treemap_glass/' + d.data.id + '.png')
             .attr("width", cardWidth) // Adjust width as needed
             .attr("height", imageHeight) // Adjust height as needed
             .attr("x", 0)
