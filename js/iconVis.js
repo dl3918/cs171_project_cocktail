@@ -95,7 +95,7 @@ class iconVis {
         function scroll() {
             if (!vis.isPaused) {
                 vis.icons.attr("x", function (d) {
-                    d.xPosition -= 2; // 调整滚动速度
+                    d.xPosition -= 1.2; // 调整滚动速度
 
                     // 当图标移动到屏幕左侧时
                     if (d.xPosition < -vis.iconWidth) {

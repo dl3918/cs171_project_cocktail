@@ -417,3 +417,17 @@ body, h2, h3, p {
     font-family: 'Young Serif', serif;
     font-size: 18px;
 }
+
+#final-page h1 {
+    color: #08726d;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    font-size: 46px;
+}
+
+#final-page em {
+    color: #08726d;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    font-size: 22px;
+}
