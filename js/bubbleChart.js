@@ -269,9 +269,9 @@ class BubbleChart {
                     .html(`
                         <div class="liquor-tt" style="padding: 4vh 5vh 2vh 6vh">
                             <h2 class="liquor-name">${d.strDrink}</h2>
-                            <img src="img/rr_images/${alcohol}_liquor.png" style="width: 30%; margin-left: 35%">
+                            <img src="img/DALLE_liquor/${alcohol}.png" style="width: 30%; margin-left: 35%">
                             <p class="liquor-info"> ${liquorData[alcohol].Info}</p>
-                            <p class="liquor-fun"> ${liquorData[alcohol].Fun}</p>
+                            <p class="liquor-fun"> Fun Fact: ${liquorData[alcohol].Fun}</p>
                         </div>
                     `)
             })
