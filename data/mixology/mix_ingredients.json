@@ -1,0 +1,278 @@
+[
+    {
+        "id": 0,
+        "value": 15,
+        "label": "Light Rum",
+        "group": "spirit"
+    },
+    {
+        "id": 1,
+        "value": 10,
+        "label": "Orange Juice",
+        "group": "mixer"
+    },
+    {
+        "id": 2,
+        "value": 16,
+        "label": "Vodka",
+        "group": "spirit"
+    },
+    {
+        "id": 3,
+        "value": 6,
+        "label": "Dark Rum",
+        "group": "spirit"
+    },
+    {
+        "id": 4,
+        "value": 5,
+        "label": "Coca-Cola",
+        "group": "mixer"
+    },
+    {
+        "id": 5,
+        "value": 1,
+        "label": "Sweet And Sour",
+        "group": "mixer"
+    },
+    {
+        "id": 6,
+        "value": 16,
+        "label": "Triple Sec",
+        "group": "spirit"
+    },
+    {
+        "id": 7,
+        "value": 8,
+        "label": "Bitters",
+        "group": "spirit"
+    },
+    {
+        "id": 8,
+        "value": 17,
+        "label": "Lemon",
+        "group": "garnish"
+    },
+    {
+        "id": 9,
+        "value": 31,
+        "label": "Gin",
+        "group": "spirit"
+    },
+    {
+        "id": 10,
+        "value": 6,
+        "label": "Tequila",
+        "group": "spirit"
+    },
+    {
+        "id": 11,
+        "value": 3,
+        "label": "Peach Schnapps",
+        "group": "spirit"
+    },
+    {
+        "id": 12,
+        "value": 4,
+        "label": "Cranberry Juice",
+        "group": "mixer"
+    },
+    {
+        "id": 13,
+        "value": 12,
+        "label": "Maraschino Cherry",
+        "group": "garnish"
+    },
+    {
+        "id": 14,
+        "value": 8,
+        "label": "Amaretto",
+        "group": "spirit"
+    },
+    {
+        "id": 15,
+        "value": 11,
+        "label": "Orange",
+        "group": "garnish"
+    },
+    {
+        "id": 16,
+        "value": 3,
+        "label": "Orange Bitters",
+        "group": "spirit"
+    },
+    {
+        "id": 17,
+        "value": 6,
+        "label": "Cherry",
+        "group": "garnish"
+    },
+    {
+        "id": 18,
+        "value": 5,
+        "label": "Ginger Ale",
+        "group": "mixer"
+    },
+    {
+        "id": 19,
+        "value": 4,
+        "label": "Champagne",
+        "group": "spirit"
+    },
+    {
+        "id": 20,
+        "value": 15,
+        "label": "Lemon Juice",
+        "group": "mixer"
+    },
+    {
+        "id": 21,
+        "value": 13,
+        "label": "Grenadine",
+        "group": "mixer"
+    },
+    {
+        "id": 22,
+        "value": 6,
+        "label": "Dry Vermouth",
+        "group": "spirit"
+    },
+    {
+        "id": 23,
+        "value": 3,
+        "label": "Soda Water",
+        "group": "mixer"
+    },
+    {
+        "id": 24,
+        "value": 9,
+        "label": "Sweet Vermouth",
+        "group": "spirit"
+    },
+    {
+        "id": 25,
+        "value": 5,
+        "label": "Scotch",
+        "group": "spirit"
+    },
+    {
+        "id": 26,
+        "value": 7,
+        "label": "Egg White",
+        "group": "mixer"
+    },
+    {
+        "id": 27,
+        "value": 8,
+        "label": "Kahlua",
+        "group": "spirit"
+    },
+    {
+        "id": 28,
+        "value": 5,
+        "label": "Light Cream",
+        "group": "mixer"
+    },
+    {
+        "id": 29,
+        "value": 8,
+        "label": "Lime",
+        "group": "garnish"
+    },
+    {
+        "id": 30,
+        "value": 6,
+        "label": "Lime Juice",
+        "group": "mixer"
+    },
+    {
+        "id": 31,
+        "value": 7,
+        "label": "Club Soda",
+        "group": "mixer"
+    },
+    {
+        "id": 32,
+        "value": 4,
+        "label": "Bailey'S Irish Cream",
+        "group": "spirit"
+    },
+    {
+        "id": 33,
+        "value": 15,
+        "label": "Brandy",
+        "group": "spirit"
+    },
+    {
+        "id": 34,
+        "value": 9,
+        "label": "Lemon Peel",
+        "group": "garnish"
+    },
+    {
+        "id": 35,
+        "value": 5,
+        "label": "Carbonated Water",
+        "group": "mixer"
+    },
+    {
+        "id": 36,
+        "value": 1,
+        "label": "Blue Curacao",
+        "group": "spirit"
+    },
+    {
+        "id": 37,
+        "value": 4,
+        "label": "Water",
+        "group": "mixer"
+    },
+    {
+        "id": 38,
+        "value": 6,
+        "label": "Bourbon",
+        "group": "spirit"
+    },
+    {
+        "id": 39,
+        "value": 24,
+        "label": "Sugar",
+        "group": "garnish"
+    },
+    {
+        "id": 40,
+        "value": 4,
+        "label": "Coffee",
+        "group": "mixer"
+    },
+    {
+        "id": 41,
+        "value": 2,
+        "label": "Milk",
+        "group": "mixer"
+    },
+    {
+        "id": 42,
+        "value": 1,
+        "label": "151 Proof Rum",
+        "group": "spirit"
+    },
+    {
+        "id": 43,
+        "value": 3,
+        "label": "Pineapple Juice",
+        "group": "mixer"
+    },
+    {
+        "id": 44,
+        "value": 2,
+        "label": "Nutmeg",
+        "group": "garnish"
+    },
+    {
+        "id": 45,
+        "value": 1,
+        "label": "Rum",
+        "group": "spirit"
+    }
+]
