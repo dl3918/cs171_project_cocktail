@@ -11,7 +11,7 @@ class TreeMap {
         let vis = this;
 
         // Set the dimensions and margins of the diagram
-        vis.margin = { top: 40, right: 40, bottom: 40, left: 40 };
+        vis.margin = { top: 20, right: 40, bottom: 20, left: 40 };
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;  // Adjust as needed
 

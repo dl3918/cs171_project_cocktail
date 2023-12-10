@@ -403,3 +403,17 @@ body, h2, h3, p {
     font-family: 'Young Serif', serif;
     fill: #d5f6f6;
 }
+
+#treemap-page h1 {
+    color: #08726d;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    font-size: 46px;
+}
+
+#treemap-page em {
+    color: #08726d;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    font-size: 18px;
+}
