@@ -315,7 +315,7 @@ h2 {
     font-size: 20px;
 }
 
-#categorySelector {
+#categorySelector, .legend-label{
     color: #08726d;
     font-family: 'Amatic SC', sans-serif;
 }
@@ -327,7 +327,7 @@ h2 {
 
 
 /*section-popular-transpage*/
-#section-popular-transpage h1, #section1-transpage h2 {
+#section-popular-transpage h1, #section1-transpage h2, #section-treemap-transpage h1 {
     color: #6b5a40;
     text-align: center;
     font-family: 'Amatic SC', sans-serif;
@@ -335,11 +335,11 @@ h2 {
     font-weight: bold;
 }
 
-#section-popular-transpage h2 {
+#section-popular-transpage h2, #section-treemap-transpage h2 {
     color: #6b5a40;
     text-align: center;
-    font-family: 'Amatic SC', sans-serif;
-    font-size: 28px;
+    font-family: 'Indie Flower', sans-serif;
+    font-size: 35px;
 }
 
 
@@ -358,7 +358,7 @@ body, h2, h3, p {
 /*}*/
 
 #section1 h1 {
-    color: rgba(243, 235, 218, 0.92);
+    color: rgb(107, 90, 64);
     text-align: center;
     font-family: 'Amatic SC', sans-serif;
     font-size: 66px;
