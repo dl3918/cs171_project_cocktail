@@ -213,6 +213,7 @@ class BubbleChart {
             .data(vis.displayData)
             .enter().append('text')
             .text(d => d.strDrink)
+            .attr('class', 'bubble-chart-text')
             .attr('font-weight', 'bold')
             .attr('dy', '0.3em')
             .style('font-size', '1.2em')
@@ -240,43 +241,43 @@ class BubbleChart {
                     .attr('y', d => {
                         return d.y = Math.max(d.rank * vis.radiusMultiplier, Math.min(vis.height - d.rank * vis.radiusMultiplier, d.y));
                     });
-        //console.log(vis.displayData)
+                //console.log(vis.displayData)
 
-        // Add hover interaction
-        vis.bubbles
-            .on('mouseover', function(event, d) {
-                vis.enlargeBubble(this, d)
-                console.log(event, d)
-                d3.select("#info").selectAll("*").remove();
+                // Add hover interaction
+                vis.bubbles
+                    .on('mouseover', function(event, d) {
+                        vis.enlargeBubble(this, d)
+                        console.log(event, d)
+                        d3.select("#info").selectAll("*").remove();
 
-                let alcohol = d.strDrink.split(' ').join('_')
+                        let alcohol = d.strDrink.split(' ').join('_')
 
-                vis.tooltip
-                    .style('left', event.clientX + 10 + 'px')
-                    .style('top', function() {
+                        vis.tooltip
+                            .style('left', event.clientX + 10 + 'px')
+                            .style('top', function() {
 
-                        if (event.clientY >= 250){
-                            return event.clientY - 260 + 'px'
+                                if (event.clientY >= 250){
+                                    return event.clientY - 260 + 'px'
 
-                        } else if (event.clientY >= 500){
-                            return event.clientY - 510 + 'px'
+                                } else if (event.clientY >= 500){
+                                    return event.clientY - 510 + 'px'
 
-                        } else {
-                            return event.clientY + 10 + 'px'
+                                } else {
+                                    return event.clientY + 10 + 'px'
 
-                        }
-                    })
-                    .style('opacity', 1)
-                    .html(`
-                        <div class="liquor-tt" style="padding: 4vh 5vh 2vh 6vh">
-                            <h2 class="liquor-name">${d.strDrink}</h2>
-                            <img src="img/DALLE_liquor/${alcohol}.png" style="width: 30%; margin-left: 35%">
-                            <br>
-                            <p class="liquor-info"> ${liquorData[alcohol].Info}</p>
-                            <br>
-                            <p class="liquor-fun"> <b>Fun Fact:</b> ${liquorData[alcohol].Fun}</p>
-                        </div>
-                    `)
+                                }
+                            })
+                            .style('opacity', 1)
+                            .html(`
+                                <div class="liquor-tt" style="padding: 4vh 5vh 2vh 6vh">
+                                    <h2 class="liquor-name">${d.strDrink}</h2>
+                                    <img src="img/DALLE_liquor/${alcohol}.png" style="width: 30%; margin-left: 35%">
+                                    <br>
+                                    <p class="liquor-info"> ${liquorData[alcohol].Info}</p>
+                                    <br>
+                                    <p class="liquor-fun"> <b>Fun Fact:</b> ${liquorData[alcohol].Fun}</p>
+                                </div>
+                            `)
             })
             .on('mouseout', function(event, d) {
                 // Reset the radius of the bubble

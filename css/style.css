@@ -210,6 +210,16 @@ h1 {
     pointer-events: none;
 }
 
+
+#bubbles .bubble-chart-text{
+    pointer-events: none;
+}
+
+#bubbles .text-small-bubble {
+    pointer-events: none;
+}
+
+
 #networkDiv {
     width: 80vw;
     height: 70vh;
