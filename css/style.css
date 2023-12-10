@@ -275,7 +275,7 @@ h2 {
     font-family: 'Young Serif', serif;
     font-size: 8vh;
     font-weight: bold;
-    background-image: linear-gradient(to right, #117770, #82eeac, #50c2be, #4cbd79);
+    background-image: linear-gradient(to right, #eec663, #82eeac, #50c2be, #4cbd79);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;

@@ -356,7 +356,7 @@ class BubbleChart {
                     .attr('class', 'background-bubble')
                     .attr('cx', vis.width / 2)
                     .attr('cy', vis.height / 2)
-                    .attr('r', 300)
+                    .attr('r', 280)
                     .style('fill', vis.alcTypeColorMap[clickedBubbleData.strDrink])
                     .style('opacity', 0.3)
                     .style('stroke', 'rgba(0,0,0,0.87)')
@@ -482,12 +482,12 @@ class BubbleChart {
                                     <div class="row" style="height: 10vh; padding-top: 6vh">
                                         <h2 class="cocktail-name">${d.strDrink}</h2>
                                     </div>
-                                    <div class="row cocktail-image" style="height: 20vh">
-                                        <img src="${cocktailImgUrl}" alt="Cocktail Image">
+                                    <div class="row cocktail-image" style="height: 17vh; padding-top: 5vh">
+                                        <img src="${cocktailImgUrl}" alt="Cocktail Image" style="width: auto; height: 100%">
                                     </div>
                                     
                                     <!-- Subheading for Liquor -->
-                                    <div class="row justify-content-center" style="height: 15vh; margin-top: 2vh">
+                                    <div class="row justify-content-center" style="height: 14vh; margin-top: 2vh">
                                         <br>
                                         <br>
                                         <h3 class="subheading">Base Liquor: ${d.Alc_type[0]}</h3>
@@ -495,7 +495,7 @@ class BubbleChart {
                                     </div>
         
                                     <!-- Subheading for Ingredients -->
-                                    <div class="row">
+                                    <div class="row" style="margin-top: 2vh">
                                         <h3 class="subheading">Ingredients</h3>
                                         <div class="ingredients col-12">
                                             <div class="row" style="padding: 0 20% 0 20%">
@@ -516,7 +516,7 @@ class BubbleChart {
                                             </div>
                                         </div>
                                         
-                                        <div class="centered-text" style="height: 5vh; padding: 0 8vh 2vh 8vh">
+                                        <div class="centered-text" style="height: 5vh; padding: 1vh 8vh 2vh 8vh">
                                             <!-- Liquor icon here -->
                                             <h3 class="subheading">Instruction</h3>
                                             <p class="cocktail-instructions"> ${d.strInstructions}</p>
