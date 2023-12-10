@@ -89,7 +89,7 @@ class iconVis {
             .attr("y", vis.height / 2 - vis.iconWidth / 2)
             .attr("width", vis.iconWidth)
             .attr("height", vis.iconWidth)
-            .attr("xlink:href", d => `img/${d.rank}.png`);
+            .attr("xlink:href", d => `img/intro_icon/${d.rank}.png`);
 
         // Function to update positions
         function scroll() {
