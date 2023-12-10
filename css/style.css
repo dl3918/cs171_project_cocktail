@@ -219,6 +219,10 @@ h1 {
     pointer-events: none;
 }
 
+#liquor-tt {
+    pointer-events: none;
+}
+
 
 #networkDiv {
     width: 80vw;
