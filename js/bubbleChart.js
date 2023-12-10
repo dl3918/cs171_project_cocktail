@@ -102,7 +102,7 @@ class BubbleChart {
         //
         // vis.width = viewportWidth - vis.margin.left - vis.margin.right;
         // vis.height = viewportHeight - vis.margin.top - vis.margin.bottom;
-        vis.margin = { top: 0, right: 0, bottom: 0, left: 0 };
+        vis.margin = { top: 0, right: 0, bottom: 10, left: 10 };
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
 
@@ -462,10 +462,21 @@ class BubbleChart {
             .duration(200)
             .style('fill', d3.rgb(vis.color(d.strDrink)).darker(0.9)); // Darken the fill color
 
+        function boundingBoxForce() {
+            for (let node of vis.bubbles) {
+                node.x = Math.max(node.radius, Math.min(vis.width - node.radius, node.x));
+                node.y = Math.max(node.radius, Math.min(vis.height - node.radius, node.y));
+            }
+        }
         // Update the collision force to account for the enlarged bubble
         this.simulation.force('collision', d3.forceCollide().radius(node => {
             return node === d ? d.rank * vis.radiusMultiplier * 2 : d.rank * vis.radiusMultiplier;
-        })).alpha(0.1).restart(); // Restart the simulation with updated collision radius
+        })) // Restart the simulation with updated collision radius
+
+        this.simulation.force('bounds', boundingBoxForce);
+
+        // Restart the simulation with updated collision radius
+        this.simulation.alpha(0.1).restart();
     }
 
     showCocktailDetails(element, d){
