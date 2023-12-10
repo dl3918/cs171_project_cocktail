@@ -10,6 +10,7 @@ class MixologyVis {
         this.ingredientData = ingredients;
         this.cocktailData = cocktails;
         this.selectedIngredients = [];
+        this.selectableIngredients = new Set();
         this.svgFilePath = "img/cocktail-shaker.svg";
 
         let step0 = "M37,90 Q50,92 62,90 L62,90 Q50, 92 37,90 Z"
@@ -33,12 +34,18 @@ class MixologyVis {
             vis.liquid = d3.select("#liquid");
             d3.select("#fillButton").on("click", () => vis.fillShaker());
         });
+        vis.ingredientData.forEach(ingredient => vis.selectableIngredients.add(ingredient.label));
         vis.drawIngredients();
     }
 
-    fillShaker() {
+    updateShaker(isSelected) {
         let vis = this;
-        this.cocktailStep++;
+        if(isSelected){
+            this.cocktailStep++;
+        }
+        else{
+            this.cocktailStep--;
+        }
         if (vis.cocktailStep < 6){
             vis.liquid
                 .transition()
@@ -67,9 +74,9 @@ class MixologyVis {
             .range(['#1f77b4', '#ff7f0e', '#2ca02c']);
 
         const groupCenters = {
-            mixer: { x: width / 3, y: height / 2 },
+            mixer: { x: width / 2, y: height / 3 },
             spirit: { x: width / 2, y: height / 2 },
-            garnish: { x: 2 * width / 3, y: height / 2 }
+            garnish: { x: width / 2, y: height / 3 * 2 }
         };
 
         const groupForce = function(alpha) {
@@ -99,9 +106,32 @@ class MixologyVis {
             .attr('class', 'bubble')
             .attr('r', d => d.value*2)
             .attr('fill', d => color(d.group))
-            .on('click', function(event, d) {  // Use a regular function here
-                selectIngredient.call(this, d);
+            .on('click', function(event, d) {
+                if (vis.selectableIngredients.has(d.label)) {
+                    const isSelected = !vis.selectedIngredients.includes(d.label);
+                    if (isSelected) {
+                        // Select
+                        vis.selectedIngredients.push(d.label);
+                        d3.select(this)
+                            .attr('stroke', d3.rgb(color(d.group)).darker())
+                            .attr('stroke-width', 3); // Add darker stroke
+                    }
+                    else {
+                        // Deselect
+                        vis.selectedIngredients = vis.selectedIngredients.filter(i => i !== d.label);
+                        d3.select(this).attr('stroke', null); // Remove stroke
+                    }
+                    vis.updateShaker(isSelected);
+
+                    // Update selectable ingredients after each selection change
+                    vis.updateSelectableIngredients();
+
+                    // Check if a cocktail can be made with the selected ingredients
+                    vis.checkCocktail();
+                }
+                // selectIngredient.call(this, d);
             });
+        vis.bubbles = svg.selectAll('.bubble');
 
         // Add labels to each bubble
         const labels = svg.selectAll('.label')
@@ -113,30 +143,67 @@ class MixologyVis {
             .attr('dy', '.3em');
 
 
-        // Event listener for bubbles
-        function selectIngredient(d) {
-            // Since we're using D3 v6 or above, we need to use d3.select(this) to get the current element
-            const bubble = d3.select(this);
-            // Toggle the selected class
-            const isSelected = !bubble.classed('selected');
-
-            // Toggle the selected class
-            bubble.classed('selected', isSelected);
-
-            // Change color based on the selected state
-            bubble.attr('fill', isSelected ? '#d3d3d3':color(d.group));  // Swap the color logic if needed
-
-            console.log('Ingredient selected:', d.label, 'Selected state:', isSelected);
-            if (isSelected) {
-                vis.selectedIngredients.push(d.label);
-                vis.fillShaker();
-            }
-            else{
-                let idx = vis.selectedIngredients.indexOf(d.label);
-                vis.selectedIngredients.splice(idx, 1);
-            }
-            console.log(vis.selectedIngredients);
-        }
+        // // Event listener for bubbles
+        // function selectIngredient(d) {
+        //     // Since we're using D3 v6 or above, we need to use d3.select(this) to get the current element
+        //     const bubble = d3.select(this);
+        //     // Toggle the selected class
+        //     const isSelected = !bubble.classed('selected');
+        //
+        //     // Toggle the selected class
+        //     bubble.classed('selected', isSelected);
+        //
+        //     // Change color based on the selected state
+        //     bubble.attr('fill', isSelected ? '#d3d3d3':color(d.group));  // Swap the color logic if needed
+        //
+        //     console.log('Ingredient selected:', d.label, 'Selected state:', isSelected);
+        //     if (isSelected) {
+        //         vis.selectedIngredients.push(d.label);
+        //     }
+        //     else{
+        //         let idx = vis.selectedIngredients.indexOf(d.label);
+        //         vis.selectedIngredients.splice(idx, 1);
+        //     }
+        //     vis.updateShaker(isSelected);
+        //     console.log(vis.selectedIngredients);
+        // }
 
     }
+
+    updateSelectableIngredients() {
+        let vis = this;
+        // Reset selectable ingredients
+        vis.selectableIngredients.clear();
+        // Go through each cocktail and add ingredients to the set if they can make a cocktail
+        vis.cocktailData.forEach(cocktail => {
+            let canMakeCocktail = cocktail['strIngredients'].every(ingredient =>
+                this.selectedIngredients.includes(ingredient) || !this.selectedIngredients.includes(ingredient) && vis.ingredientData.some(d => d.label === ingredient)
+            );
+
+            if (canMakeCocktail) {
+                cocktail['strIngredients'].forEach(ingredient => vis.selectableIngredients.add(ingredient));
+            }
+        });
+        console.log(vis.selectedIngredients);
+
+        // Update the style of the bubbles based on whether they are selectable
+        vis.bubbles.classed('non-selectable', d => !vis.selectableIngredients.has(d.label))
+            .classed('selectable', d => vis.selectableIngredients.has(d.label));
+    }
+
+    // Function to check if selected ingredients make a cocktail
+    checkCocktail() {
+        let vis = this;
+        const foundCocktail = vis.cocktailData.find(cocktail =>
+            cocktail['strIngredients'].every(ingredient => vis.selectedIngredients.includes(ingredient))
+        );
+
+        // Display a message if a cocktail is found
+        if (foundCocktail) {
+            d3.select('#cocktail-message').text(`You can make a ${foundCocktail.strDrink}!`);
+        } else {
+            d3.select('#cocktail-message').text('');
+        }
+    }
+
 }
