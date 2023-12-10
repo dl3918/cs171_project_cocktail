@@ -382,3 +382,14 @@ body, h2, h3, p {
     color: #666;
 }
 
+
+#treemapDiv .tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 6px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}

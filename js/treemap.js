@@ -28,6 +28,10 @@ class TreeMap {
             .append("g")
             .attr("transform", `translate(${vis.margin.left},${vis.margin.top})`);
 
+        vis.tooltip = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
         vis.wrangleData();
     }
 
@@ -287,26 +291,51 @@ class TreeMap {
 
         currentY += 30; // Increment Y position
 
-        // List ingredients (garish)
+        // Variables to manage image placement in rows
+        let imgX = 10, imgY = currentY;
+        const imgSize = 50; // Adjust size of the image as needed
+        const maxImagesPerRow = 5;
+        let imageCount = 0;
+
+        // Loop through ingredients (garish) to display images
         d.data.garish.forEach(item => {
-            let ingredient = Object.keys(item).join(', ');
-            detailGroup.append("text")
-                .text(ingredient)
-                .attr("x", 20) // Indent for list items
-                .attr("y", currentY)
-                .attr("font-size", "14px")
-                .on("mouseover", handleMouseOver)
-                .on("mouseout", handleMouseOut)
-                .on("click", function(event, d) {
-                    // Bubble specific logic...
-                    event.stopPropagation(); // Prevent this click from propagating to the SVG
-                    const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(ingredient)} in cocktail`;
-                    window.open(googleSearchUrl, '_blank');
+            // If the maximum number of images per row is reached, reset x position and move to next line
+            if (imageCount >= maxImagesPerRow) {
+                imgX = 10; // Reset X to start position
+                imgY += imgSize + 10; // Move to next line
+                imageCount = 0; // Reset image count for new line
+            }
+
+            // Assume images are named as the ingredient and stored in 'img/ingredients/' directory
+            let ingredientImage = 'img/ingredient/' + Object.keys(item).join('') + '.png';
+
+            detailGroup.append("image")
+                .attr("xlink:href", ingredientImage)
+                .attr("x", imgX)
+                .attr("y", imgY)
+                .attr("width", imgSize)
+                .attr("height", imgSize)
+                .on("mouseover", function(event) {
+                    vis.tooltip.transition()
+                        .duration(200)
+                        .style("opacity", .9);
+                    vis.tooltip.html(Object.keys(item))
+                        .style("left", (event.pageX) + "px")
+                        .style("top", (event.pageY - 28) + "px");
                 })
-            currentY += 20; // Increment for next item
+                .on("mouseout", function() {
+                    vis.tooltip.transition()
+                        .duration(500)
+                        .style("opacity", 0);
+                });
+
+                    // Increment X position for next image
+            imgX += imgSize + 10;
+            imageCount++;
         });
 
-        currentY += 20; // Increment Y position for "Recommended drink" section
+        // Adjust currentY for subsequent elements
+        currentY = imgY + imgSize + 30;
 
         // Add "Recommended drink" text
         detailGroup.append("text")
