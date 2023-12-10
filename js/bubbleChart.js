@@ -458,7 +458,7 @@ class BubbleChart {
         // Enlarge the hovered bubble
 
         d3.select(element).transition()
-            .attr('r', vis.radiusScale(d.rank)*2)
+            .attr('r', vis.radiusScale(d.rank)*1.5)
             .duration(200)
             .style('fill', d3.rgb(vis.color(d.strDrink)).darker(0.9)); // Darken the fill color
 
