@@ -275,7 +275,7 @@ h2 {
     font-family: 'Young Serif', serif;
     font-size: 8vh;
     font-weight: bold;
-    background-image: linear-gradient(to right, #eec663, #82eeac, #50c2be, #4cbd79);
+    background-image: linear-gradient(to right, #b8ee60, #74d77c, #6fef8a, #42b770);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -413,28 +413,28 @@ body, h2, h3, p {
 }
 
 #treemap-page h1 {
-    color: #08726d;
+    color: #7c240a;
     text-align: center;
     font-family: 'Young Serif', serif;
     font-size: 46px;
 }
 
 #treemap-page em {
-    color: #08726d;
+    color: #790406;
     text-align: center;
     font-family: 'Young Serif', serif;
     font-size: 18px;
 }
 
 #final-page h1 {
-    color: #08726d;
+    color: #790406;
     text-align: center;
     font-family: 'Young Serif', serif;
     font-size: 46px;
 }
 
 #final-page em {
-    color: #08726d;
+    color: #790406;
     text-align: center;
     font-family: 'Young Serif', serif;
     font-size: 22px;

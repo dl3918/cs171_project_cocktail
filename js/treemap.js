@@ -71,9 +71,9 @@ class TreeMap {
         // Define a color scale
         let colorScale = d3.scaleLinear()
             .domain([minValue, maxValue])
-            .range(["#7ee3db", "#319ba8"]);
+            .range(["#f3b28f", "#f1926e"]);
 
-        let hoverColor = "#fae97b"
+        let hoverColor = "#e1a071"
 
         // Create the root variable
         let root = d3.stratify()
