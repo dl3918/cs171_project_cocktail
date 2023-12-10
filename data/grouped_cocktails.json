@@ -11,7 +11,8 @@
       "Creamy Liqueur",
       "Gin"
     ],
-    "rank":76
+    "rank":76,
+    "strInstructions":"Shake all ingredients with ice and strain contents into a cocktail glass. Sprinkle nutmeg on top and serve."
   },
   {
     "strDrink":"Amaretto Sour",
@@ -22,7 +23,8 @@
     "Alc_type":[
       "Sweet Liqueur"
     ],
-    "rank":4
+    "rank":4,
+    "strInstructions":"Shake and strain. Garnish with a cherry and an orange slice."
   },
   {
     "strDrink":"Americano",
@@ -36,7 +38,8 @@
       "Campari",
       "Vermouth"
     ],
-    "rank":68
+    "rank":68,
+    "strInstructions":"Pour the Campari and vermouth over ice into glass, add a splash of soda water and garnish with half orange slice."
   },
   {
     "strDrink":"Aviation",
@@ -49,7 +52,8 @@
       "Gin",
       "Sweet Liqueur"
     ],
-    "rank":15
+    "rank":15,
+    "strInstructions":"Add all ingredients into cocktail shaker filled with ice. Shake well and strain into cocktail glass. Garnish with a cherry."
   },
   {
     "strDrink":"Baby Guinness",
@@ -60,7 +64,8 @@
     "Alc_type":[
       "Creamy Liqueur"
     ],
-    "rank":31
+    "rank":31,
+    "strInstructions":"Pour Kahlua, almost filling shot glass. Then, carefully pour Baileys, using wall of shot glass. This will give the \"Guinness\" its \"head\"."
   },
   {
     "strDrink":"Bramble",
@@ -74,7 +79,8 @@
       "Creamy Liqueur",
       "Gin"
     ],
-    "rank":30
+    "rank":30,
+    "strInstructions":"Fill glass with crushed ice. Build gin, lemon juice and simple syrup over. Stir, and then pour blackberry liqueur over in a circular fashion to create marbling effect. Garnish with two blackberries and lemon slice."
   },
   {
     "strDrink":"Caipirinha",
@@ -86,7 +92,8 @@
     "Alc_type":[
       "Cachaca"
     ],
-    "rank":94
+    "rank":94,
+    "strInstructions":"Place lime and sugar into old fashioned glass and muddle (mash the two ingredients together using a muddler or a wooden spoon). Fill the glass with ice and add the Cacha\u00e7a."
   },
   {
     "strDrink":"Clover Club",
@@ -99,7 +106,8 @@
     "Alc_type":[
       "Gin"
     ],
-    "rank":38
+    "rank":38,
+    "strInstructions":"Dry shake ingredients to emulsify, add ice, shake and served straight up."
   },
   {
     "strDrink":"Cosmopolitan",
@@ -113,7 +121,8 @@
       "Vodka",
       "Triple Sec"
     ],
-    "rank":52
+    "rank":52,
+    "strInstructions":"Add all ingredients into cocktail shaker filled with ice. Shake well and double strain into large cocktail glass. Garnish with lime wheel."
   },
   {
     "strDrink":"Daiquiri",
@@ -125,7 +134,8 @@
     "Alc_type":[
       "Rum"
     ],
-    "rank":7
+    "rank":7,
+    "strInstructions":"Pour all ingredients into shaker with ice cubes. Shake well. Strain in chilled cocktail glass."
   },
   {
     "strDrink":"Dirty Martini",
@@ -140,12 +150,12 @@
       "Vermouth",
       "Vodka"
     ],
-    "rank":79
+    "rank":79,
+    "strInstructions":"Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well.\r\nRub the rim of a martini glass with the wedge of lemon.\r\nStrain the contents of the cocktail shaker into the glass and add the olive.\r\nA dirty Martini contains a splash of olive brine or olive juice and is typically garnished with an olive."
   },
   {
     "strDrink":"Espresso Martini",
     "strIngredients":[
-      "Espresso",
       "Kahlua",
       "Vodka",
       "Sugar Syrup"
@@ -154,7 +164,8 @@
       "Creamy Liqueur",
       "Vodka"
     ],
-    "rank":3
+    "rank":3,
+    "strInstructions":"Pour ingredients into shaker filled with ice, shake vigorously, and strain into chilled martini glass"
   },
   {
     "strDrink":"French 75",
@@ -170,7 +181,8 @@
       "Champagne",
       "Gin"
     ],
-    "rank":65
+    "rank":65,
+    "strInstructions":"Combine gin, sugar, and lemon juice in a cocktail shaker filled with ice. Shake vigorously and strain into a chilled champagne glass. Top up with Champagne. Stir gently."
   },
   {
     "strDrink":"French Martini",
@@ -183,7 +195,8 @@
       "Vodka",
       "Sweet Liqueur"
     ],
-    "rank":11
+    "rank":11,
+    "strInstructions":"Pour all ingredients into shaker with ice cubes. Shake well and strain into a chilled cocktail glass. Squeeze oil from lemon peel onto the drink."
   },
   {
     "strDrink":"Godfather",
@@ -195,7 +208,8 @@
       "Whisky",
       "Sweet Liqueur"
     ],
-    "rank":83
+    "rank":83,
+    "strInstructions":"Pour all ingredients directly into old fashioned glass filled with ice cubes. Stir gently."
   },
   {
     "strDrink":"Hemingway Special",
@@ -209,7 +223,8 @@
       "Sweet Liqueur",
       "Rum"
     ],
-    "rank":59
+    "rank":59,
+    "strInstructions":"Pour all ingredients into a shaker with ice. Shake."
   },
   {
     "strDrink":"Long Island Iced Tea",
@@ -227,7 +242,8 @@
       "Vodka",
       "Tequila"
     ],
-    "rank":58
+    "rank":58,
+    "strInstructions":"Mix all contents in a highball glass and sitr gently. Add dash of Coca-Cola for the coloring and garnish with lemon or lime twist."
   },
   {
     "strDrink":"Mai Tai",
@@ -242,7 +258,8 @@
       "Rum",
       "Triple Sec"
     ],
-    "rank":32
+    "rank":32,
+    "strInstructions":"Shake all ingredients with ice. Strain into glass. Garnish and serve with straw."
   },
   {
     "strDrink":"Manhattan",
@@ -258,7 +275,8 @@
       "Bitters",
       "Vermouth"
     ],
-    "rank":40
+    "rank":40,
+    "strInstructions":"Stirred over ice, strained into a chilled glass, garnished, and served up."
   },
   {
     "strDrink":"Margarita",
@@ -272,7 +290,8 @@
       "Tequila",
       "Triple Sec"
     ],
-    "rank":8
+    "rank":8,
+    "strInstructions":"Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass."
   },
   {
     "strDrink":"Mojito",
@@ -286,7 +305,8 @@
     "Alc_type":[
       "Rum"
     ],
-    "rank":55
+    "rank":55,
+    "strInstructions":"Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw."
   },
   {
     "strDrink":"Moscow Mule",
@@ -298,7 +318,8 @@
     "Alc_type":[
       "Vodka"
     ],
-    "rank":19
+    "rank":19,
+    "strInstructions":"Combine vodka and ginger beer in a highball glass filled with ice. Add lime juice. Stir gently. Garnish."
   },
   {
     "strDrink":"Negroni",
@@ -312,7 +333,8 @@
       "Campari",
       "Gin"
     ],
-    "rank":23
+    "rank":23,
+    "strInstructions":"Stir into glass over ice, garnish and serve."
   },
   {
     "strDrink":"New York Sour",
@@ -327,7 +349,8 @@
       "Whisky",
       "Wine"
     ],
-    "rank":80
+    "rank":80,
+    "strInstructions":"Shake blended whiskey, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass. Float claret on top. Decorate with the half-slice of lemon and the cherry and serve."
   },
   {
     "strDrink":"Old Fashioned",
@@ -341,7 +364,8 @@
       "Bitters",
       "Whisky"
     ],
-    "rank":50
+    "rank":50,
+    "strInstructions":"Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved.\r\nFill the glass with ice cubes and add whiskey.\r\n\r\nGarnish with orange twist, and a cocktail cherry."
   },
   {
     "strDrink":"Rum Sour",
@@ -355,7 +379,8 @@
     "Alc_type":[
       "Rum"
     ],
-    "rank":57
+    "rank":57,
+    "strInstructions":"In a shaker half-filled with ice cubes, combine the rum, lemon juice, and sugar. Shake well. Strain into a sour glass and garnish with the orange slice and the cherry."
   },
   {
     "strDrink":"San Francisco",
@@ -369,7 +394,8 @@
       "Sweet Liqueur",
       "Vodka"
     ],
-    "rank":54
+    "rank":54,
+    "strInstructions":"Take a tall glass and put in a few ice cubes, fill the vodka over it and fill with juice then the \"creme\", to end fill in the grenadine but very carefully at the side of the glass so it will lay down in the bottom. garnish with orange and strawberry."
   },
   {
     "strDrink":"Sazerac",
@@ -386,7 +412,8 @@
       "Sweet Liqueur",
       "Bitters"
     ],
-    "rank":46
+    "rank":46,
+    "strInstructions":"Rinse a chilled old-fashioned glass with the absinthe, add crushed ice, and set it aside. Stir the remaining ingredients over ice and set it aside. Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass. Add the lemon peel for garnish."
   },
   {
     "strDrink":"Screaming Orgasm",
@@ -399,7 +426,8 @@
       "Creamy Liqueur",
       "Vodka"
     ],
-    "rank":14
+    "rank":14,
+    "strInstructions":"Pour first vodka, then Bailey's, then Kahlua into a cocktail glass over crushed ice. Stir. Caution: use only high quality vodka. Cheap vodka can cause the Bailey's to curdle. Test your brand of vodka by mixing 1 Tsp each of vodka and Bailey's first."
   },
   {
     "strDrink":"Sidecar",
@@ -412,7 +440,8 @@
       "Brandy",
       "Triple Sec"
     ],
-    "rank":86
+    "rank":86,
+    "strInstructions":"Pour all ingredients into cocktail shaker filled with ice. Shake well and strain into cocktail glass."
   },
   {
     "strDrink":"Singapore Sling",
@@ -428,7 +457,8 @@
       "Brandy",
       "Gin"
     ],
-    "rank":21
+    "rank":21,
+    "strInstructions":"Pour all ingredients into cocktail shaker filled with ice cubes. Shake well. Strain into highball glass. Garnish with pineapple and cocktail cherry."
   },
   {
     "strDrink":"Tequila Sunrise",
@@ -440,7 +470,8 @@
     "Alc_type":[
       "Tequila"
     ],
-    "rank":39
+    "rank":39,
+    "strInstructions":"Pour the tequila and orange juice into glass over ice. Add the grenadine, which will sink to the bottom. Stir gently to create the sunrise effect. Garnish and serve."
   },
   {
     "strDrink":"Tommy's Margarita",
@@ -452,7 +483,8 @@
     "Alc_type":[
       "Tequila"
     ],
-    "rank":44
+    "rank":44,
+    "strInstructions":"Shake and strain into a chilled cocktail glass."
   },
   {
     "strDrink":"Vesper",
@@ -466,7 +498,8 @@
       "Vodka",
       "Sweet Liqueur"
     ],
-    "rank":36
+    "rank":36,
+    "strInstructions":"Shake over ice until well chilled, then strain into a deep goblet and garnish with a thin slice of lemon peel."
   },
   {
     "strDrink":"Whiskey Sour",
@@ -479,7 +512,8 @@
     "Alc_type":[
       "Whisky"
     ],
-    "rank":28
+    "rank":28,
+    "strInstructions":"Shake with ice. Strain into chilled glass, garnish and serve. If served 'On the rocks', strain ingredients into old-fashioned glass filled with ice."
   },
   {
     "strDrink":"White Lady",
@@ -492,6 +526,7 @@
       "Triple Sec",
       "Gin"
     ],
-    "rank":25
+    "rank":25,
+    "strInstructions":"Add all ingredients into cocktail shaker filled with ice. Shake well and strain into large cocktail glass."
   }
 ]
