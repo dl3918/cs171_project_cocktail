@@ -7,7 +7,7 @@ class iconVis {
         // Set dimensions of the parent element
         this.width = document.getElementById(this.parentElement).getBoundingClientRect().width;
         this.height = document.getElementById(this.parentElement).getBoundingClientRect().height;
-        this.iconWidth = 120; // Width of each icon
+        this.iconWidth = 100; // Width of each icon
 
         this.isPaused = false;
 
