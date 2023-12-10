@@ -317,7 +317,7 @@ h2 {
 
 #categorySelector, .legend-label{
     color: #08726d;
-    font-family: 'Amatic SC', sans-serif;
+    font-family: 'Indie Flower', sans-serif;
 }
 
 #colorSelector {
@@ -327,7 +327,7 @@ h2 {
 
 
 /*section-popular-transpage*/
-#section-popular-transpage h1, #section1-transpage h2, #section-treemap-transpage h1 {
+#section-popular-transpage h1, #section1-transpage h2, #section-treemap-transpage h1, #network-page h1 {
     color: #6b5a40;
     text-align: center;
     font-family: 'Amatic SC', sans-serif;
