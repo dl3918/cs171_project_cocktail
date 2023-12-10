@@ -385,64 +385,25 @@ class BubbleChart {
                     .attr('r', 65) // Smaller bubble radius
                     .style('fill', vis.alcTypeColorMap[clickedBubbleData.strDrink])
                     .style('opacity', 0.8)
-                    .on('mouseover', function(event, d){
-                        console.log(d)
+                    .on('mouseover', vis.showCocktailDetails
 
-                        // TODO: SHOW IMAGES INSTEAD OF TEXT!
-                        alcohol = d.strDrink.split(' ').join('_')
-
-                        let cocktailImgUrl = "img/rr_images/rr_cocktail_1.png"
-                        let liquorIconUrl = `img/DALLE_liquor/${alcohol}.png`
-
-                        vis.drinkText = ` 
-                            <div class="row" style="height: 100%">
-                                <div class="col-12">
-                                    <div class="row" style="height: 10vh; padding-top:5vh">
-                                        <h2 class="cocktail-name">Mojito</h2>
-                                    </div>
-                                    <div class="row cocktail-image" style="height: 20vh">
-                                        <img src="${cocktailImgUrl}" alt="Cocktail Image">
-                                    </div>
-                                    
-                                    <!-- Subheading for Liquor -->
-                                    <div class="row" style="height: 25vh">
-                                        <h3 class="subheading">Liquor</h3>
-                                        <div class="centered-text" style="height: 5vh; padding: 0 10vh 2vh 10vh">
-                                            <!-- Liquor icon here -->
-                                            <img src="${liquorIconUrl}" class="ingredient-icon" style="max-height: 80%; width: auto;">
-                                            <p class="cocktail-instructions"> <b>Instruction:</b> ${d.strInstructions}</p>
-
-                                        </div>
-                                    </div>
-        
-                                    <!-- Subheading for Ingredients -->
-                                    <div class="row">
-                                        <h3 class="subheading">Ingredients</h3>
-                                        <div class="ingredients col-12">
-                                            <div class="row" style="padding: 0 20% 0 20%">
-                                                <!-- First Row of Ingredients -->
-                                                <div class="col-3 d-flex justify-content-center">
-                                                    <img src="img/rr_images/sugar.png" alt="Ingredient 1" class="ingredient-icon" title="Ingredient 1">
-                                                </div>
-                                                <div class="col-3 d-flex justify-content-center">
-                                                    <img src="img/rr_images/lime.png" alt="Ingredient 2" class="ingredient-icon" title="Ingredient 2">
-                                                </div>
-                                                <div class="col-3 d-flex justify-content-center">
-                                                    <img src="img/rr_images/mint.png" alt="Ingredient 3" class="ingredient-icon" title="Ingredient 3">
-                                                </div>
-                                                <div class="col-3 d-flex justify-content-center">
-                                                    <img src="img/rr_images/mint.png" alt="Ingredient 4" class="ingredient-icon" title="Ingredient 4">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>`
-
-
-                        d3.select('.menu-page')
-                            .html(vis.drinkText)
-
-                    })
+                        // const container = document.getElementById('imagesContainer');
+                        //
+                        // // Clear existing content
+                        // container.innerHTML = '';
+                        //
+                        // // Loop through the data
+                        // d.Alc_type.forEach(item => {
+                        //     // Create an img element
+                        //     const img = document.createElement('img');
+                        //
+                        //     // Set the src attribute (modify as needed based on your data structure)
+                        //     img.src = `img/DALLE_liquor/${item}.png`;
+                        //
+                        //     // Append the img to the container
+                        //     container.appendChild(img);
+                        // });
+                    )
                     .on('mouseout', function (event, d) {
 
                         d3.select('.menu-page')
@@ -459,6 +420,12 @@ class BubbleChart {
                     .attr('dy', '0.3em')
                     .style('font-size', '22px')
                     .style('text-anchor', 'middle')
+                    .on('mouseover', vis.showCocktailDetails)
+                    .on('mouseout', function (event, d) {
+
+                        d3.select('.menu-page')
+                            .html(vis.liquorText)
+                    });
 
 
 
@@ -498,6 +465,69 @@ class BubbleChart {
         this.simulation.force('collision', d3.forceCollide().radius(node => {
             return node === d ? d.rank * vis.radiusMultiplier * 2 : d.rank * vis.radiusMultiplier;
         })).alpha(0.1).restart(); // Restart the simulation with updated collision radius
+    }
+
+    showCocktailDetails(element, d){
+        let vis = this;
+        console.log(d)
+
+        // TODO: SHOW IMAGES INSTEAD OF TEXT!
+        let alcohol = d.Alc_type[0].split(' ').join('_')
+        let cocktailImgUrl = `img/popular_drink/${d.strDrink}.png`
+        let liquorIconUrl = `img/DALLE_liquor/${alcohol}.png`
+
+        vis.drinkText = ` 
+                            <div class="row" style="height: 100%">
+                                <div class="col-12">
+                                    <div class="row" style="height: 10vh; padding-top: 6vh">
+                                        <h2 class="cocktail-name">${d.strDrink}</h2>
+                                    </div>
+                                    <div class="row cocktail-image" style="height: 20vh">
+                                        <img src="${cocktailImgUrl}" alt="Cocktail Image">
+                                    </div>
+                                    
+                                    <!-- Subheading for Liquor -->
+                                    <div class="row justify-content-center" style="height: 15vh; margin-top: 2vh">
+                                        <br>
+                                        <br>
+                                        <h3 class="subheading">Base Liquor: ${d.Alc_type[0]}</h3>
+                                        <img src="${liquorIconUrl}" alt="Liquor Image" style="width: 20%; height: 60%">
+                                    </div>
+        
+                                    <!-- Subheading for Ingredients -->
+                                    <div class="row">
+                                        <h3 class="subheading">Ingredients</h3>
+                                        <div class="ingredients col-12">
+                                            <div class="row" style="padding: 0 20% 0 20%">
+                                                <p class="cocktail-ingredients"> ${d.strIngredients.join(' ')}</p>
+                                                <!-- First Row of Ingredients -->
+<!--                                                <div class="col-3 d-flex justify-content-center">-->
+<!--                                                    <img src="img/rr_images/sugar.png" alt="Ingredient 1" class="ingredient-icon" title="Ingredient 1">-->
+<!--                                                </div>-->
+<!--                                                <div class="col-3 d-flex justify-content-center">-->
+<!--                                                    <img src="img/rr_images/lime.png" alt="Ingredient 2" class="ingredient-icon" title="Ingredient 2">-->
+<!--                                                </div>-->
+<!--                                                <div class="col-3 d-flex justify-content-center">-->
+<!--                                                    <img src="img/rr_images/mint.png" alt="Ingredient 3" class="ingredient-icon" title="Ingredient 3">-->
+<!--                                                </div>-->
+<!--                                                <div class="col-3 d-flex justify-content-center">-->
+<!--                                                    <img src="img/rr_images/mint.png" alt="Ingredient 4" class="ingredient-icon" title="Ingredient 4">-->
+<!--                                                </div>-->
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="centered-text" style="height: 5vh; padding: 0 8vh 2vh 8vh">
+                                            <!-- Liquor icon here -->
+                                            <h3 class="subheading">Instruction</h3>
+                                            <p class="cocktail-instructions"> ${d.strInstructions}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>`
+
+        d3.select('.menu-page')
+            .html(vis.drinkText)
+
     }
 
     resetView() {

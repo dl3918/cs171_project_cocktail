@@ -120,7 +120,7 @@ text.text-small-bubble{
     transition: opacity 0.3s; /* Smooth transition for appearing and disappearing */
 }
 
-.liquor-info, .liquor-fun, .cocktail-instructions {
+.liquor-info, .liquor-fun, .cocktail-instructions, .cocktail-ingredients {
     font-family: 'Josefin Slab', serif;
     font-size: 1em; /* Slightly smaller than the cocktail name */
     text-align: center;
