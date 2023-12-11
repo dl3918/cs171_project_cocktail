@@ -186,7 +186,8 @@ class MixologyVis {
             .attr('x', 25)
             .attr('y', 9)
             .attr('dy', '.35em')
-            .text(d => d.label);
+            .text(d => d.label)
+            .attr('font-family', "'Amatic SC', sans-serif")
     }
     updateSelectableIngredients() {
         let vis = this;
