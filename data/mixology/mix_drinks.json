@@ -6,7 +6,8 @@
             "Orange Juice",
             "Vodka",
             "Dark Rum"
-        ]
+        ],
+        "strInstructions": "Blend with ice. Serve in a wine glass. Garnish with carrot."
     },
     {
         "strDrink": "A Gilligan's Island",
@@ -15,7 +16,8 @@
             "Cranberry Juice",
             "Orange Juice",
             "Vodka"
-        ]
+        ],
+        "strInstructions": "Shaken, not stirred!"
     },
     {
         "strDrink": "A True Amaretto Sour",
@@ -23,7 +25,8 @@
             "Lemon",
             "Maraschino Cherry",
             "Amaretto"
-        ]
+        ],
+        "strInstructions": "Rub the rim of an old fashioned glass with lemon, and dip repeatedly into granulated sugar until it has a good \"frosted\" rim. Shake a jigger of Amaretto with the juice of 1/2 a lemon. Strain into glass and add ice. Garnish with a Marachino Cherry."
     },
     {
         "strDrink": "Abbey Cocktail",
@@ -32,7 +35,8 @@
             "Orange Bitters",
             "Cherry",
             "Gin"
-        ]
+        ],
+        "strInstructions": "Shake all ingredients (except for the cherry) with ice and strain into a cocktail glass. Top with the cherry and serve."
     },
     {
         "strDrink": "Absolutely Cranberry Smash",
@@ -40,7 +44,8 @@
             "Ginger Ale",
             "Cranberry Juice",
             "Vodka"
-        ]
+        ],
+        "strInstructions": "Stir ingredients together. Serve over ice."
     },
     {
         "strDrink": "Absolutely Fabulous",
@@ -48,7 +53,8 @@
             "Champagne",
             "Cranberry Juice",
             "Vodka"
-        ]
+        ],
+        "strInstructions": "Mix the Vodka and Cranberry juice together in a shaker and strain into a glass. Top up with Champagne."
     },
     {
         "strDrink": "Adam",
@@ -56,7 +62,8 @@
             "Lemon Juice",
             "Dark Rum",
             "Grenadine"
-        ]
+        ],
+        "strInstructions": "In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass."
     },
     {
         "strDrink": "Addington",
@@ -64,7 +71,8 @@
             "Dry Vermouth",
             "Soda Water",
             "Sweet Vermouth"
-        ]
+        ],
+        "strInstructions": "Mix both the vermouth's in a shaker and strain into a cold glass. Top up with a squirt of Soda Water. "
     },
     {
         "strDrink": "Addison Special",
@@ -72,7 +80,8 @@
             "Grenadine",
             "Orange Juice",
             "Vodka"
-        ]
+        ],
+        "strInstructions": "Combine ingredients in the order listed into a shaker. Fill half full with ice and shake well. Strain into glass with ice and garnish with a cherry and orange wedge."
     },
     {
         "strDrink": "Affinity",
@@ -81,7 +90,8 @@
             "Dry Vermouth",
             "Scotch",
             "Sweet Vermouth"
-        ]
+        ],
+        "strInstructions": "In a mixing glass half-filled with ice cubes, combine all of the ingredients. Stir well. Strain into a cocktail glass."
     },
     {
         "strDrink": "Almeria",
@@ -89,21 +99,24 @@
             "Dark Rum",
             "Egg White",
             "Kahlua"
-        ]
+        ],
+        "strInstructions": "In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass."
     },
     {
         "strDrink": "Amaretto And Cream",
         "strIngredients": [
             "Amaretto",
             "Light Cream"
-        ]
+        ],
+        "strInstructions": "Shake well with cracked ice, strain contents into a cocktail glass, and serve."
     },
     {
         "strDrink": "Amaretto Mist",
         "strIngredients": [
             "Amaretto",
             "Lime"
-        ]
+        ],
+        "strInstructions": "Pour amaretto in an old-fashioned glass over crushed ice. Add the wedge of lime and serve. (A wedge of lemon may be substituted for lime, if preferred.)"
     },
     {
         "strDrink": "Amaretto Rose",
@@ -111,7 +124,8 @@
             "Amaretto",
             "Lime Juice",
             "Club Soda"
-        ]
+        ],
+        "strInstructions": "Pour amaretto and lime juice over ice in a collins glass. Fill with club soda and serve."
     },
     {
         "strDrink": "Amaretto Sunrise",
@@ -119,7 +133,8 @@
             "Grenadine",
             "Amaretto",
             "Orange Juice"
-        ]
+        ],
+        "strInstructions": "Mix together the amaretto and orange juice. Pour into glass and then add the grenadine untill you see the sunrise."
     },
     {
         "strDrink": "Artillery",
@@ -127,14 +142,16 @@
             "Sweet Vermouth",
             "Gin",
             "Bitters"
-        ]
+        ],
+        "strInstructions": "Stir all ingredients with ice, strain into a cocktail glass, and serve."
     },
     {
         "strDrink": "Baby Guinness",
         "strIngredients": [
             "Bailey'S Irish Cream",
             "Kahlua"
-        ]
+        ],
+        "strInstructions": "Pour Kahlua, almost filling shot glass. Then, carefully pour Baileys, using wall of shot glass. This will give the \"Guinness\" its \"head\"."
     },
     {
         "strDrink": "Balmoral",
@@ -143,14 +160,16 @@
             "Sweet Vermouth",
             "Dry Vermouth",
             "Scotch"
-        ]
+        ],
+        "strInstructions": "In a mixing glass half-filled with ice cubes, combine all of the ingredients. Stir well. Strain into a cocktail glass."
     },
     {
         "strDrink": "Bellini",
         "strIngredients": [
             "Peach Schnapps",
             "Champagne"
-        ]
+        ],
+        "strInstructions": "Pour peach pur\u00e9e into chilled flute, add sparkling wine. Stir gently."
     },
     {
         "strDrink": "Bermuda Highball",
@@ -160,7 +179,8 @@
             "Lemon Peel",
             "Carbonated Water",
             "Gin"
-        ]
+        ],
+        "strInstructions": "Pour brandy, gin, and dry vermouth into a highball glass over ice cubes. Fill with carbonated water and stir. Add the twist of lemon and serve. (Ginger ale may be substituted for carbonated water, if preferred.)"
     },
     {
         "strDrink": "Between The Sheets",
@@ -169,7 +189,8 @@
             "Brandy",
             "Lemon Juice",
             "Light Rum"
-        ]
+        ],
+        "strInstructions": "Pour all ingredients into shaker with ice cubes, shake, strain into chilled cocktail glass."
     },
     {
         "strDrink": "Bluebird",
@@ -180,7 +201,8 @@
             "Blue Curacao",
             "Bitters",
             "Lemon Peel"
-        ]
+        ],
+        "strInstructions": "In a mixing glass half-filled with crushed ice, combine the gin, triple sec, Curacao, and bitters. Stir well. Strain into a cocktail glass and garnish with the lemon twist and the cherry."
     },
     {
         "strDrink": "Boston Sidecar",
@@ -189,7 +211,8 @@
             "Triple Sec",
             "Lime",
             "Brandy"
-        ]
+        ],
+        "strInstructions": "Shake all ingredients with ice, strain into a cocktail glass, and serve."
     },
     {
         "strDrink": "Bourbon Sling",
@@ -199,7 +222,8 @@
             "Bourbon",
             "Sugar",
             "Lemon Peel"
-        ]
+        ],
+        "strInstructions": "In a shaker half-filled with ice cubes, combine the sugar, water, lemon juice, and bourbon. Shake well. Strain well. Strain into a highball glass. Garnish with the lemon twist."
     },
     {
         "strDrink": "Bourbon Sour",
@@ -209,7 +233,8 @@
             "Maraschino Cherry",
             "Lemon Juice",
             "Orange"
-        ]
+        ],
+        "strInstructions": "In a shaker half-filled with ice cubes, combine the bourbon, lemon juice, and sugar. Shake well. Strain into a whiskey sour glass, garnish with the orange slice and cherry."
     },
     {
         "strDrink": "Boxcar",
@@ -219,7 +244,8 @@
             "Triple Sec",
             "Grenadine",
             "Egg White"
-        ]
+        ],
+        "strInstructions": "In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a sour glass."
     },
     {
         "strDrink": "Brandy Cobbler",
@@ -230,7 +256,8 @@
             "Lemon",
             "Orange",
             "Maraschino Cherry"
-        ]
+        ],
+        "strInstructions": "In an old-fashioned glass, dissolve the sugar in the club soda. Add crushed ice until the glass is almost full. Add the brandy. Stir well. Garnish with the cherry and the orange and lemon slices."
     },
     {
         "strDrink": "Brandy Sour",
@@ -240,7 +267,8 @@
             "Cherry",
             "Lemon",
             "Brandy"
-        ]
+        ],
+        "strInstructions": "Shake brandy, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass. Decorate with the lemon slice, top with the cherry, and serve."
     },
     {
         "strDrink": "Bruce's Puce",
@@ -248,7 +276,8 @@
             "Kahlua",
             "Bailey'S Irish Cream",
             "Grenadine"
-        ]
+        ],
+        "strInstructions": "In a regular-sized shot glass, layer, with a spoon or cherry, the grenadine , the Kahlua , then the Bailey's Irish cream in equal portions. It goes down really smooth ,and you don't even need a chaser. It tastes just like chocolate milk.(Really!)"
     },
     {
         "strDrink": "Cafe Savoy",
@@ -257,7 +286,8 @@
             "Coffee",
             "Milk",
             "Brandy"
-        ]
+        ],
+        "strInstructions": "Fill mug almost to top with coffee.Add milk, triple sec and brandy. Stir."
     },
     {
         "strDrink": "City Slicker",
@@ -265,7 +295,8 @@
             "Lemon Juice",
             "Triple Sec",
             "Brandy"
-        ]
+        ],
+        "strInstructions": "In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass."
     },
     {
         "strDrink": "Classic Old-Fashioned",
@@ -276,7 +307,8 @@
             "Bitters",
             "Maraschino Cherry",
             "Bourbon"
-        ]
+        ],
+        "strInstructions": "In an old-fashioned glass, muddle the bitters and water into the sugar cube, using the back of a teaspoon. Almost fill the glass with ice cubes and add the bourbon. Garnish with the orange slice and the cherry. Serve with a swizzle stick."
     },
     {
         "strDrink": "Clover Club",
@@ -285,7 +317,8 @@
             "Lemon",
             "Egg White",
             "Gin"
-        ]
+        ],
+        "strInstructions": "Dry shake ingredients to emulsify, add ice, shake and served straight up."
     },
     {
         "strDrink": "Cuba Libra",
@@ -293,7 +326,8 @@
             "Dark Rum",
             "Lime",
             "Coca-Cola"
-        ]
+        ],
+        "strInstructions": "Fill tall glass with ice cubes. Add rum. Rub cut edge of lime on rim of glass then squeeze juice into glass. Fill with Coca-Cola. Garnish with lime slice. Enjoy!"
     },
     {
         "strDrink": "Cuba Libre",
@@ -301,7 +335,8 @@
             "Light Rum",
             "Lime",
             "Coca-Cola"
-        ]
+        ],
+        "strInstructions": "Build all ingredients in a Collins glass filled with ice. Garnish with lime wedge."
     },
     {
         "strDrink": "Daiquiri",
@@ -309,7 +344,8 @@
             "Lime",
             "Light Rum",
             "Sugar"
-        ]
+        ],
+        "strInstructions": "Pour all ingredients into shaker with ice cubes. Shake well. Strain in chilled cocktail glass."
     },
     {
         "strDrink": "Dragonfly",
@@ -317,7 +353,8 @@
             "Ginger Ale",
             "Gin",
             "Lime"
-        ]
+        ],
+        "strInstructions": "In a highball glass almost filled with ice cubes, combine the gin and ginger ale. Stir well. Garnish with the lime wedge."
     },
     {
         "strDrink": "Dry Rob Roy",
@@ -325,7 +362,8 @@
             "Dry Vermouth",
             "Lemon Peel",
             "Scotch"
-        ]
+        ],
+        "strInstructions": "In a mixing glass half-filled with ice cubes, combine the Scotch and vermouth. Stir well. Strain into a cocktail glass. Garnish with the lemon twist."
     },
     {
         "strDrink": "English Highball",
@@ -335,14 +373,16 @@
             "Gin",
             "Sweet Vermouth",
             "Carbonated Water"
-        ]
+        ],
+        "strInstructions": "Pour brandy, gin, and sweet vermouth into a highball glass over ice cubes. Fill with carbonated water. Add the twist of lemon peel, stir, and serve. (Ginger ale may be substituted for carbonated water, if preferred.)"
     },
     {
         "strDrink": "Flying Dutchman",
         "strIngredients": [
             "Triple Sec",
             "Gin"
-        ]
+        ],
+        "strInstructions": "In an old-fashioned glass almost filled with ice cubes, combine the gin and triple sec. Stir well."
     },
     {
         "strDrink": "French 75",
@@ -353,7 +393,8 @@
             "Gin",
             "Maraschino Cherry",
             "Sugar"
-        ]
+        ],
+        "strInstructions": "Combine gin, sugar, and lemon juice in a cocktail shaker filled with ice. Shake vigorously and strain into a chilled champagne glass. Top up with Champagne. Stir gently."
     },
     {
         "strDrink": "Frozen Daiquiri",
@@ -363,14 +404,16 @@
             "Light Rum",
             "Sugar",
             "Lime Juice"
-        ]
+        ],
+        "strInstructions": "Combine all ingredients (except for the cherry) in an electric blender and blend at a low speed for five seconds, then blend at a high speed until firm. Pour contents into a champagne flute, top with the cherry, and serve."
     },
     {
         "strDrink": "Fuzzy Asshole",
         "strIngredients": [
             "Peach Schnapps",
             "Coffee"
-        ]
+        ],
+        "strInstructions": "fill coffe mug half full of coffee. Fill the other half full of Peach Schnapps. Stir and drink while hot."
     },
     {
         "strDrink": "Gentleman's Club",
@@ -379,7 +422,8 @@
             "Brandy",
             "Gin",
             "Club Soda"
-        ]
+        ],
+        "strInstructions": "In an old-fashioned glass almost filled with ice cubes, combine all of the ingredients. Stir well."
     },
     {
         "strDrink": "Gin Daisy",
@@ -390,7 +434,8 @@
             "Grenadine",
             "Orange",
             "Lemon Juice"
-        ]
+        ],
+        "strInstructions": "In a shaker half-filled with ice cubes, combine the wine, lemon juice, sugar, and grenadine. Shake well. Pour into an old-fashioned glass and garnish with the cherry and the orange slice."
     },
     {
         "strDrink": "Gin Fizz",
@@ -399,7 +444,8 @@
             "Gin",
             "Carbonated Water",
             "Sugar"
-        ]
+        ],
+        "strInstructions": "Shake all ingredients with ice cubes, except soda water. Pour into glass. Top with soda water."
     },
     {
         "strDrink": "Gin Rickey",
@@ -409,7 +455,8 @@
             "Lemon",
             "Grenadine",
             "Gin"
-        ]
+        ],
+        "strInstructions": "Half-fill a tall glass with ice. Mix the gin and Grenadine together and pour over the ice. Add the lime or lemon juice and top off with soda water. Decorate the glass with lime and/or lemon slices."
     },
     {
         "strDrink": "Gin Sour",
@@ -419,7 +466,8 @@
             "Gin",
             "Maraschino Cherry",
             "Orange"
-        ]
+        ],
+        "strInstructions": "In a shaker half-filled with ice cubes, combine the gin, lemon juice, and sugar. Shake well. Strain into a sour glass and garnish with the orange slice and the cherry."
     },
     {
         "strDrink": "Gin Swizzle",
@@ -429,7 +477,8 @@
             "Sugar",
             "Gin",
             "Club Soda"
-        ]
+        ],
+        "strInstructions": "In a shaker half-filled with ice cubes, combine the lime juice, sugar, gin, and bitters. Shake well. Almost fill a colling glass with ice cubes. Stir until the glass is frosted. Strain the mixture in the shaker into the glass and add the club soda."
     },
     {
         "strDrink": "Gin Toddy",
@@ -438,21 +487,24 @@
             "Lemon Peel",
             "Sugar",
             "Gin"
-        ]
+        ],
+        "strInstructions": "Mix powdered sugar and water in an old-fashioned glass. Add gin and one ice cube. Stir, add the twist of lemon peel, and serve."
     },
     {
         "strDrink": "Godfather",
         "strIngredients": [
             "Scotch",
             "Amaretto"
-        ]
+        ],
+        "strInstructions": "Pour all ingredients directly into old fashioned glass filled with ice cubes. Stir gently."
     },
     {
         "strDrink": "Godmother",
         "strIngredients": [
             "Vodka",
             "Amaretto"
-        ]
+        ],
+        "strInstructions": "Pour vodka and amaretto into an old-fashioned glass over ice and serve."
     },
     {
         "strDrink": "Grim Reaper",
@@ -460,7 +512,8 @@
             "151 Proof Rum",
             "Grenadine",
             "Kahlua"
-        ]
+        ],
+        "strInstructions": "Mix Kahlua and 151 in glass. Quickly add ice and pour grenadine over ice to give ice red tint."
     },
     {
         "strDrink": "Havana Cocktail",
@@ -468,7 +521,8 @@
             "Light Rum",
             "Pineapple Juice",
             "Lemon Juice"
-        ]
+        ],
+        "strInstructions": "In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass."
     },
     {
         "strDrink": "Hawaiian Cocktail",
@@ -476,7 +530,8 @@
             "Triple Sec",
             "Gin",
             "Pineapple Juice"
-        ]
+        ],
+        "strInstructions": "Shake all ingredients with ice, strain into a cocktail glass, and serve."
     },
     {
         "strDrink": "Horse's Neck",
@@ -485,14 +540,16 @@
             "Ginger Ale",
             "Lemon Peel",
             "Bitters"
-        ]
+        ],
+        "strInstructions": "Pour brandy and ginger ale directly into highball glass with ice cubes. Stir gently. Garnish with lemon zest. If desired, add dashes of Angostura Bitter."
     },
     {
         "strDrink": "Iced Coffee Fillip",
         "strIngredients": [
             "Coffee",
             "Kahlua"
-        ]
+        ],
+        "strInstructions": "Mix together in a coffee mug and chill before serving."
     },
     {
         "strDrink": "Irish Curdling Cow",
@@ -501,7 +558,8 @@
             "Bourbon",
             "Orange Juice",
             "Bailey'S Irish Cream"
-        ]
+        ],
+        "strInstructions": "Pour Irish Cream, Vodka, and Bourbon in a glass. Add some ice and mix in the orange juice."
     },
     {
         "strDrink": "John Collins",
@@ -512,7 +570,8 @@
             "Maraschino Cherry",
             "Lemon Juice",
             "Sugar"
-        ]
+        ],
+        "strInstructions": "Pour all ingredients directly into highball glass filled with ice. Stir gently. Garnish. Add a dash of Angostura bitters."
     },
     {
         "strDrink": "Kamikaze",
@@ -520,7 +579,8 @@
             "Triple Sec",
             "Lime Juice",
             "Vodka"
-        ]
+        ],
+        "strInstructions": "Shake all ingredients together with ice. Strain into glass, garnish and serve."
     },
     {
         "strDrink": "Kioki Coffee",
@@ -528,7 +588,8 @@
             "Brandy",
             "Kahlua",
             "Coffee"
-        ]
+        ],
+        "strInstructions": "Stir. Add whipped cream to the top."
     },
     {
         "strDrink": "Lady Love Fizz",
@@ -539,14 +600,16 @@
             "Sugar",
             "Gin",
             "Egg White"
-        ]
+        ],
+        "strInstructions": "Shake all ingredients (except carbonated water) with ice and strain into a cocktail glass over two ice cubes. Fill with carbonated water, stir, and serve."
     },
     {
         "strDrink": "Lone Tree Cocktail",
         "strIngredients": [
             "Sweet Vermouth",
             "Gin"
-        ]
+        ],
+        "strInstructions": "Stir ingredients with ice, strain into a cocktail glass, and serve."
     },
     {
         "strDrink": "Long Island Iced Tea",
@@ -557,7 +620,8 @@
             "Coca-Cola",
             "Tequila",
             "Lemon Peel"
-        ]
+        ],
+        "strInstructions": "Mix all contents in a highball glass and sitr gently. Add dash of Coca-Cola for the coloring and garnish with lemon or lime twist."
     },
     {
         "strDrink": "Martinez Cocktail",
@@ -567,14 +631,16 @@
             "Gin",
             "Cherry",
             "Orange Bitters"
-        ]
+        ],
+        "strInstructions": "Stir all ingredients (except cherry) with ice and strain into a cocktail glass. Top with the cherry and serve."
     },
     {
         "strDrink": "Mimosa",
         "strIngredients": [
             "Orange Juice",
             "Champagne"
-        ]
+        ],
+        "strInstructions": "Ensure both ingredients are well chilled, then mix into the glass. Serve cold."
     },
     {
         "strDrink": "Mississippi Planters Punch",
@@ -585,7 +651,8 @@
             "Brandy",
             "Lemon",
             "Carbonated Water"
-        ]
+        ],
+        "strInstructions": "Shake all ingredients (except carbonated water) with ice and strain into a collins glass over ice cubes. Fill with carbonated water, stir, and serve."
     },
     {
         "strDrink": "Moscow Mule",
@@ -593,7 +660,8 @@
             "Vodka",
             "Lime Juice",
             "Ginger Ale"
-        ]
+        ],
+        "strInstructions": "Combine vodka and ginger beer in a highball glass filled with ice. Add lime juice. Stir gently. Garnish."
     },
     {
         "strDrink": "Orange Crush",
@@ -601,14 +669,16 @@
             "Triple Sec",
             "Orange Juice",
             "Vodka"
-        ]
+        ],
+        "strInstructions": "Add all ingredients to tumbler-Pour as shot"
     },
     {
         "strDrink": "Pink Gin",
         "strIngredients": [
             "Bitters",
             "Gin"
-        ]
+        ],
+        "strInstructions": "Pour the bitters into a wine glass. Swirl the glass to coat the inside with the bitters, shake out the excess. Pour the gin into the glass. Do not add ice."
     },
     {
         "strDrink": "Pink Lady",
@@ -617,7 +687,8 @@
             "Grenadine",
             "Gin",
             "Light Cream"
-        ]
+        ],
+        "strInstructions": "Shake all ingredients with ice, strain into a cocktail glass, and serve."
     },
     {
         "strDrink": "Quentin",
@@ -626,7 +697,8 @@
             "Light Cream",
             "Nutmeg",
             "Kahlua"
-        ]
+        ],
+        "strInstructions": "In a shaker half-filled with ice cubes, combine the rum, Kahlua, and cream. Shake well. Strain into a cocktail glass and garnish with the nutmeg."
     },
     {
         "strDrink": "Ruby Tuesday",
@@ -634,7 +706,8 @@
             "Cranberry Juice",
             "Grenadine",
             "Gin"
-        ]
+        ],
+        "strInstructions": "Pour gin and cranberry into a highball filled with ice cubes. Add grenadine and stir."
     },
     {
         "strDrink": "Rum Cobbler",
@@ -645,7 +718,8 @@
             "Club Soda",
             "Orange",
             "Maraschino Cherry"
-        ]
+        ],
+        "strInstructions": "In an old-fashioned glass, dissolve the sugar in the club soda. Add crushed ice until the glass is almost full. Add the rum. Stir well. Garnish with the cherry and the orange and lemon slices."
     },
     {
         "strDrink": "Rum Milk Punch",
@@ -654,14 +728,16 @@
             "Light Rum",
             "Nutmeg",
             "Milk"
-        ]
+        ],
+        "strInstructions": "Shake all ingredients (except nutmeg) with ice and strain into a collins glass. Sprinkle nutmeg on top and serve."
     },
     {
         "strDrink": "Rum Screwdriver",
         "strIngredients": [
             "Light Rum",
             "Orange Juice"
-        ]
+        ],
+        "strInstructions": "Pour rum into a highball glass over ice cubes. Add orange juice, stir, and serve."
     },
     {
         "strDrink": "Rum Sour",
@@ -671,7 +747,8 @@
             "Lemon Juice",
             "Maraschino Cherry",
             "Orange"
-        ]
+        ],
+        "strInstructions": "In a shaker half-filled with ice cubes, combine the rum, lemon juice, and sugar. Shake well. Strain into a sour glass and garnish with the orange slice and the cherry."
     },
     {
         "strDrink": "Rum Toddy",
@@ -680,7 +757,8 @@
             "Sugar",
             "Lemon Peel",
             "Water"
-        ]
+        ],
+        "strInstructions": "Dissolve powdered sugar in water in an old-fashioned glass. Add rum and one ice cube and stir. Add the twist of lemon peel and serve."
     },
     {
         "strDrink": "Scooter",
@@ -688,7 +766,8 @@
             "Light Cream",
             "Brandy",
             "Amaretto"
-        ]
+        ],
+        "strInstructions": "Shake all ingredients well with cracked ice, strain into a cocktail glass, and serve."
     },
     {
         "strDrink": "Scotch Sour",
@@ -698,7 +777,8 @@
             "Lemon",
             "Cherry",
             "Scotch"
-        ]
+        ],
+        "strInstructions": "Shake scotch, juice of lime, and powdered sugar with ice and strain into a whiskey sour glass. Decorate with 1/2 slice lemon, top with the cherry, and serve."
     },
     {
         "strDrink": "Screaming Orgasm",
@@ -706,14 +786,16 @@
             "Bailey'S Irish Cream",
             "Kahlua",
             "Vodka"
-        ]
+        ],
+        "strInstructions": "Pour first vodka, then Bailey's, then Kahlua into a cocktail glass over crushed ice. Stir. Caution: use only high quality vodka. Cheap vodka can cause the Bailey's to curdle. Test your brand of vodka by mixing 1 Tsp each of vodka and Bailey's first."
     },
     {
         "strDrink": "Screwdriver",
         "strIngredients": [
             "Orange Juice",
             "Vodka"
-        ]
+        ],
+        "strInstructions": "Mix in a highball glass with ice. Garnish and serve."
     },
     {
         "strDrink": "Sidecar Cocktail",
@@ -721,7 +803,8 @@
             "Triple Sec",
             "Lemon",
             "Brandy"
-        ]
+        ],
+        "strInstructions": "Shake all ingredients with ice, strain into a cocktail glass, and serve."
     },
     {
         "strDrink": "Tequila Fizz",
@@ -731,7 +814,8 @@
             "Grenadine",
             "Lemon Juice",
             "Ginger Ale"
-        ]
+        ],
+        "strInstructions": "Shake all ingredients (except ginger ale) with ice and strain into a collins glass over ice cubes. Fill with ginger ale, stir, and serve."
     },
     {
         "strDrink": "Tequila Sour",
@@ -741,7 +825,8 @@
             "Cherry",
             "Tequila",
             "Lemon"
-        ]
+        ],
+        "strInstructions": "Shake tequila, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass. Add the half-slice of lemon, top with the cherry, and serve."
     },
     {
         "strDrink": "Tequila Sunrise",
@@ -749,7 +834,8 @@
             "Tequila",
             "Orange Juice",
             "Grenadine"
-        ]
+        ],
+        "strInstructions": "Pour the tequila and orange juice into glass over ice. Add the grenadine, which will sink to the bottom. Stir gently to create the sunrise effect. Garnish and serve."
     },
     {
         "strDrink": "Tom Collins",
@@ -760,7 +846,8 @@
             "Maraschino Cherry",
             "Orange",
             "Sugar"
-        ]
+        ],
+        "strInstructions": "In a shaker half-filled with ice cubes, combine the gin, lemon juice, and sugar. Shake well. Strain into a collins glass alomst filled with ice cubes. Add the club soda. Stir and garnish with the cherry and the orange slice."
     },
     {
         "strDrink": "Vesuvio",
@@ -770,7 +857,8 @@
             "Sweet Vermouth",
             "Sugar",
             "Lemon"
-        ]
+        ],
+        "strInstructions": "Shake all ingredients with ice, strain into an old-fashioned glass over ice cubes, and serve."
     },
     {
         "strDrink": "Victor",
@@ -778,7 +866,8 @@
             "Gin",
             "Brandy",
             "Sweet Vermouth"
-        ]
+        ],
+        "strInstructions": "Shake all ingredients with ice, strain into a cocktail glass, and serve."
     },
     {
         "strDrink": "Waikiki Beachcomber",
@@ -786,7 +875,8 @@
             "Gin",
             "Pineapple Juice",
             "Triple Sec"
-        ]
+        ],
+        "strInstructions": "Shake all ingredients with ice, strain into a cocktail glass, and serve."
     },
     {
         "strDrink": "White Lady",
@@ -794,6 +884,7 @@
             "Lemon Juice",
             "Triple Sec",
             "Gin"
-        ]
+        ],
+        "strInstructions": "Add all ingredients into cocktail shaker filled with ice. Shake well and strain into large cocktail glass."
     }
 ]
