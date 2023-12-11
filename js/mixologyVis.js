@@ -39,8 +39,6 @@ class MixologyVis {
 
     }
 
-
-
     updateShaker(isSelected) {
         let vis = this;
         if (isSelected){
@@ -122,6 +120,7 @@ class MixologyVis {
                         // Select
                         vis.selectedIngredients.push(d.label);
                         d3.select(this)
+                            .transition(1000)
                             .attr('fill', d => d3.rgb(vis.color(d.group)).darker())
                             // .attr('stroke', d3.rgb(color(d.group)).darker())
                             // .attr('stroke-width', 2); // Add darker stroke
@@ -130,6 +129,7 @@ class MixologyVis {
                         // Deselect
                         vis.selectedIngredients = vis.selectedIngredients.filter(i => i !== d.label);
                         d3.select(this)
+                            .transition(1000)
                             .attr('fill', d => vis.color(d.group))
                     }
                     vis.updateShaker(isSelected);
@@ -212,11 +212,6 @@ class MixologyVis {
 
     }
 
-
-
-
-
-
 // Function to check if selected ingredients make a cocktail
     checkCocktail() {
         let vis = this;
@@ -263,7 +258,10 @@ class MixologyVis {
             .ease(d3.easeCubicInOut);
         vis.cocktailStep = 0;
         vis.selectedIngredients = [];
-        vis.bubbles.attr('stroke', null).attr('fill', d => vis.color(d.group));
+        vis.bubbles
+            .transition(1000)
+            .attr('stroke', null)
+            .attr('fill', d => vis.color(d.group));
         vis.updateSelectableIngredients();
         vis.checkCocktail();
         // Remove any additional SVG elements (like the cocktail image) inside the cocktail shaker div

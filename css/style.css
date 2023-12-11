@@ -576,6 +576,10 @@ body, h2, h3, p {
     transition: fill 1000ms;
 }
 
+.bubble.selectable {
+    transition: fill 1000ms;
+}
+
 #mixology-page .label{
     font-family: 'Amatic SC', sans-serif;
     pointer-events: none;
