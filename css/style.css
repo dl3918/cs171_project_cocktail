@@ -279,13 +279,40 @@ h2 {
     margin-right: auto;
 }
 
-.large-bubbles:hover, .small-bubble:hover {
+.large-bubbles:hover, .small-bubble:hover .legend-circle:hover {
     cursor: pointer;
     stroke: darkgray;
     stroke-width: 2px;
     fill: darkgray;
 }
 
+#section-allcocktails .legend-circle:hover {
+    cursor: pointer;
+    stroke: darkgray;
+    stroke-width: 2px;
+    fill: darkgray;
+}
+
+#section-allcocktails .bubble:hover{
+    cursor: pointer;
+    stroke: darkgray;
+    stroke-width: 2px;
+    fill: darkgray;
+}
+
+#categorySelector {
+    cursor: pointer;
+    stroke: darkgray;
+    stroke-width: 2px;
+    fill: darkgray;
+}
+
+#colorSelector {
+    cursor: pointer;
+    stroke: darkgray;
+    stroke-width: 2px;
+    fill: darkgray;
+}
 /*section1-transpage*/
 #section1-transpage h1 {
     text-align: center;
