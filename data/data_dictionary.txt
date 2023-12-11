@@ -1,0 +1,19 @@
+Cocktail Data Dictionary
+All files in the data folder are either derived from the dataset here:
+    https://www.kaggle.com/datasets/svetlanagruzdeva/cocktails-data
+or scraped from:
+    https://www.diffordsguide.com/g/1127/worlds-top-100-cocktails/about
+
+Relevant data fields are as follows:
+    strDrink: The name of the cocktail, serving as an identifier.
+    strCategory: The category of the cocktail, which may reflect the type of occasion or style of the drink.
+    strGlass: The suggested type of glass for serving the cocktail, which may be related to the tradition or proper presentation of the drink.
+    strIngredients: The list of ingredients, which includes all the components required to make the cocktail.
+    Alc_type: The type of alcohol used, such as "Whiskey" or "Vodka," which can influence the cocktail's character.
+    Basic_taste: The fundamental taste profile of the cocktail, such as "Sweet" or "Bitter".
+    strInstructions: Detailed instructions on how to mix and serve the cocktail, providing step-by-step guidance.
+    strMeasures: The quantities of each ingredient, suggesting the proportions used in the cocktail.
+    Value_ml: The volume of ingredients in milliliters, providing a precise measurement for mixing the drink.
+    Value_gr: The weight of ingredients in grams, applicable when solid ingredients are used.
+    Garnish_amount: The amount of garnish used, which can be a decorative or flavorful addition to the cocktail.
+    Garnish_type: The type of garnish, such as a slice of lemon or an olive, which adds visual appeal and may complement the drink's flavor.
