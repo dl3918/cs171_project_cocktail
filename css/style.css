@@ -355,11 +355,25 @@ h2 {
     font-weight: bold;
 }
 
-#section-popular-transpage h2, #section-treemap-transpage h2, .fa, #network-page h2 {
+#section-popular-transpage h2, #section-treemap-transpage h2, .fa {
     color: #6b5a40;
     text-align: center;
     font-family: 'Indie Flower', sans-serif;
     font-size: 35px;
+}
+
+#network-page h2 {
+    color: #6b5a40;
+    text-align: center;
+    font-family: 'Indie Flower', sans-serif;
+    font-size: 30px;
+}
+
+#network-page h3 {
+    color: #6b5a40;
+    text-align: center;
+    font-family: 'Indie Flower', sans-serif;
+    font-size: 20px;
 }
 
 #mixology-intro h2 {
