@@ -98,7 +98,7 @@ class MixologyVis {
         const simulation = d3.forceSimulation(vis.ingredientData)
             .force('charge', d3.forceManyBody().strength(-500)) // Repulsive force, might need tuning
             .force('center', d3.forceCenter(width / 2, height / 2))
-            .force('collision', d3.forceCollide().radius(d => d.value*2 + 15)) // Add padding
+            .force('collision', d3.forceCollide().radius(d => vis.radiusScale(d.value) + 1)) // Add padding
             .force('group', groupForce) // Our custom force to cluster by group
             .on('tick', ticked);
 
@@ -122,7 +122,7 @@ class MixologyVis {
                         vis.selectedIngredients.push(d.label);
                         d3.select(this)
                             .attr('stroke', d3.rgb(color(d.group)).darker())
-                            .attr('stroke-width', 3); // Add darker stroke
+                            .attr('stroke-width', 2); // Add darker stroke
                     }
                     else {
                         // Deselect
@@ -188,6 +188,16 @@ class MixologyVis {
         } else {
             d3.select('#cocktail-message').text('');
         }
+    }
+
+    resetView() {
+        this.drawIngredients();
+
+        // Restore the original positions and opacity of the bubbles
+        this.bubbles.transition()
+            .duration(800)
+            .style('opacity', 0.7);
+
     }
 
 }

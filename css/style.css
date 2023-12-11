@@ -282,6 +282,7 @@ h2 {
     cursor: pointer;
     stroke: darkgray;
     stroke-width: 2px;
+    fill: darkgray;
 }
 
 /*section1-transpage*/
@@ -351,7 +352,7 @@ h2 {
 
 }
 
-#mixology-intro p {
+#mixology-intro p, #cocktail-message {
     color: #6b5a40;
     text-align: center;
     font-family: 'Indie Flower', sans-serif;
@@ -518,6 +519,7 @@ body, h2, h3, p {
 }
 
 #mixology-page .label{
+    font-family: 'Amatic SC', sans-serif;
     pointer-events: none;
 }
 
@@ -534,6 +536,5 @@ body, h2, h3, p {
     from { width: 0; }
     to { width: 100%; }
 }
-
 
 
