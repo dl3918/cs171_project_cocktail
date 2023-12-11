@@ -60,7 +60,7 @@ class iconVis {
             vis.tooltip.html(`<strong>${d.strDrink}</strong> <br>
                             <div style="text-align: left">
                                  <strong>Ingredients:</strong> ${d.strIngredients.join(", ")} <br>
-                                 <strong>Type:</strong> ${d.Alc_type.join(", ")}
+                                 <strong>Base Liquor:</strong> ${d.Alc_type.join(", ")}
                             </div>`)
                 .style("left", (event.pageX) + "px")
                 .style("top", (event.pageY - 28) + "px");
