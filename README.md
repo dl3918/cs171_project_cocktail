@@ -29,7 +29,7 @@ We wrote all the code in the codebase, with js code under /js folder, and python
 <li>treemap</li>
 </ul>
 
-###### Libraries Used:
+###### Libraries Used (under /css):
 <ul>
 <li>Bootstrap (basic CSS)</li>
 <li>FullPage (HTML structure)</li>
