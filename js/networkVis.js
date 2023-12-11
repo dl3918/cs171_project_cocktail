@@ -49,7 +49,7 @@ class NetworkVis {
             y: y,
             label: "Spirit",
             group: "spirit",
-            value: 1,
+            value: 5,
             fixed: true,
             physics: false,
         });
@@ -59,7 +59,7 @@ class NetworkVis {
             y: y + step,
             label: "Mixer",
             group: "mixer",
-            value: 1,
+            value: 5,
             fixed: true,
             physics: false,
         });
@@ -69,7 +69,7 @@ class NetworkVis {
             y: y + 2 * step,
             label: "Garnish",
             group: "garnish",
-            value: 1,
+            value: 5,
             fixed: true,
             physics: false,
         });
@@ -85,18 +85,47 @@ class NetworkVis {
                     },
                 },
             },
+            layout: {
+                randomSeed: "0.20431354987244443:1702265528605"
+                // randomSeed: "0.8287605638294304:1702263942549"
+            },
             interaction: {
                 zoomView: false,
                 dragView: false,
                 hover:true,
-                tooltipDelay: 100
+                tooltipDelay: 0
                 // hoverConnectedEdges: true
+            },
+            groups: {
+                diamonds: {
+                    color: {background: "red", border: "white"},
+                    shape: "diamond",
+                },
+                dotsWithLabel: {
+                    label: "I'm a dot!",
+                    shape: "dot",
+                    color: "cyan",
+                },
+                mints: {color: "rgb(0,255,140)"},
+                icons: {
+                    shape: "icon",
+                    icon: {
+                        face: "FontAwesome",
+                        code: "\uf0c0",
+                        size: 50,
+                        color: "orange",
+                    },
+                },
+                source: {
+                    color: {border: "white"},
+                }
             }
         };
 
 
 
         network = new vis.Network(container, data, options);
+        console.log(network.getSeed());
 
     }
 

@@ -60,7 +60,7 @@ class MixologyVis {
         let vis = this;
         // const width = 800;
         // const height = 800;
-        vis.margin = { top: 0, right: 0, bottom: 10, left: 10 };
+        vis.margin = { top: 0, right: 0, bottom: 0, left: 10 };
 
         const width = document.getElementById("ingredients-container").getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         const height = document.getElementById("ingredients-container").getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
