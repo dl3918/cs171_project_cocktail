@@ -58,8 +58,7 @@ class MixologyVis {
 
     drawIngredients(){
         let vis = this;
-        // const width = 800;
-        // const height = 800;
+
         vis.margin = { top: 0, right: 0, bottom: 0, left: 10 };
 
         const width = document.getElementById("ingredients-container").getBoundingClientRect().width - vis.margin.left - vis.margin.right;
@@ -72,7 +71,7 @@ class MixologyVis {
             .attr('height', height);
 
         // Create a color scale
-        const color = d3.scaleOrdinal()
+        vis.color = d3.scaleOrdinal()
             .domain(['mixer', 'spirit', 'garnish'])
             .range(['rgba(78,121,167,0.7)', 'rgba(242,142,44,0.7)', 'rgba(89,161,79,0.7)']);
 
@@ -113,7 +112,7 @@ class MixologyVis {
             .enter().append('circle')
             .attr('class', 'bubble')
             .attr('r', d => vis.radiusScale(d.value))
-            .attr('fill', d => color(d.group))
+            .attr('fill', d => vis.color(d.group))
             .on('click', function(event, d) {
                 if (vis.selectableIngredients.has(d.label)) {
                     const isSelected = !vis.selectedIngredients.includes(d.label);
@@ -121,13 +120,15 @@ class MixologyVis {
                         // Select
                         vis.selectedIngredients.push(d.label);
                         d3.select(this)
-                            .attr('stroke', d3.rgb(color(d.group)).darker())
-                            .attr('stroke-width', 2); // Add darker stroke
+                            .attr('fill', d => d3.rgb(vis.color(d.group)).darker())
+                            // .attr('stroke', d3.rgb(color(d.group)).darker())
+                            // .attr('stroke-width', 2); // Add darker stroke
                     }
                     else {
                         // Deselect
                         vis.selectedIngredients = vis.selectedIngredients.filter(i => i !== d.label);
-                        d3.select(this).attr('stroke', null); // Remove stroke
+                        d3.select(this)
+                            .attr('fill', d => vis.color(d.group))
                     }
                     vis.updateShaker(isSelected);
 
@@ -153,7 +154,7 @@ class MixologyVis {
 
     updateSelectableIngredients() {
         let vis = this;
-        console.log(vis.selectedIngredients);
+        // console.log(vis.selectedIngredients);
         // Reset selectable ingredients
         vis.selectableIngredients.clear();
         // Go through each cocktail and add ingredients to the set if they can make a cocktail
@@ -161,11 +162,11 @@ class MixologyVis {
             let canMakeCocktail = vis.selectedIngredients.every(ingredient => cocktail["strIngredients"].includes(ingredient));
 
             if (canMakeCocktail) {
-                console.log(cocktail);
+                // console.log(cocktail);
                 cocktail['strIngredients'].forEach(ingredient => vis.selectableIngredients.add(ingredient));
             }
         });
-        console.log(vis.selectableIngredients);
+        // console.log(vis.selectableIngredients);
 
         // Update the style of the bubbles based on whether they are selectable
         vis.bubbles.classed('non-selectable', d => !vis.selectableIngredients.has(d.label))
@@ -191,12 +192,16 @@ class MixologyVis {
     }
 
     resetView() {
-        this.drawIngredients();
-
-        // Restore the original positions and opacity of the bubbles
-        this.bubbles.transition()
-            .duration(800)
-            .style('opacity', 0.7);
+        let vis = this;
+        vis.liquid
+            .transition()
+            .duration(1000)
+            .attr("d", vis.cocktailStepPaths[0])
+            .ease(d3.easeCubicInOut);
+        vis.selectedIngredients = [];
+        vis.bubbles.attr('stroke', null).attr('fill', d => vis.color(d.group));
+        vis.updateSelectableIngredients();
+        vis.checkCocktail();
 
     }
 
