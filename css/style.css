@@ -278,7 +278,7 @@ h2 {
     margin-right: auto;
 }
 
-.large-bubbles:hover, .mixology-bubble:hover {
+.large-bubbles:hover, .mixology-bubble:hover, .small-bubble:hover {
     cursor: pointer;
     stroke: darkgray;
     stroke-width: 2px;
