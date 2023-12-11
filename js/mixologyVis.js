@@ -190,4 +190,14 @@ class MixologyVis {
         }
     }
 
+    resetView() {
+        this.drawIngredients();
+
+        // Restore the original positions and opacity of the bubbles
+        this.bubbles.transition()
+            .duration(800)
+            .style('opacity', 0.7);
+
+    }
+
 }
