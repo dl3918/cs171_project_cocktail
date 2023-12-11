@@ -368,7 +368,7 @@ class BubbleChart {
                 console.log(selectedDrinks)
 
                 // Unique identifier for the smaller bubbles (e.g., using strDrink)
-                let smallBubbleClass = 'small-bubble-' + clickedBubbleData.strDrink.replace(/[^a-zA-Z0-9]/g, ""); // Sanitize for class name
+                let smallBubbleClass = 'small-bubble ' + clickedBubbleData.strDrink.replace(/[^a-zA-Z0-9]/g, ""); // Sanitize for class name
 
                 // Calculate positions for smaller bubbles around the center
                 let smallBubblePositions = getCirclePositions(vis.width / 2, vis.height / 2, selectedDrinks.length, 105); // 50 is the spread radius
@@ -511,7 +511,7 @@ class BubbleChart {
                                         <h3 class="subheading">Ingredients</h3>
                                         <div class="ingredients col-12">
                                             <div class="row" style="padding: 0 20% 0 20%">
-                                                <p class="cocktail-ingredients"> ${d.strIngredients.join(' ')}</p>
+                                                <p class="cocktail-ingredients"> ${d.strIngredients.join(', ')}</p>
                                                 <!-- First Row of Ingredients -->
 <!--                                                <div class="col-3 d-flex justify-content-center">-->
 <!--                                                    <img src="img/rr_images/sugar.png" alt="Ingredient 1" class="ingredient-icon" title="Ingredient 1">-->
