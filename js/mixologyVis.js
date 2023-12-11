@@ -14,39 +14,40 @@ class MixologyVis {
         this.svgFilePath = "img/cocktail-shaker.svg";
 
         let step0 = "M37,90 Q50,92 62,90 L62,90 Q50, 92 37,90 Z"
-        let step1 = "M37,90 Q50,92 62,90 L64,80 Q50, 78 35,80 Z";
-        let step2 = "M37,90 Q50,92 62,90 L66,70 Q50, 68 33,70 Z"
-        let step3 = "M37,90 Q50,92 62,90 L66,60 Q50, 58 33,60 Z"
-        let step4 = "M37,90 Q50,92 62,90 L68,50 Q50,48 31,50 Z"
-        let step5 = "M37,90 Q50,92 62,90 L69,36 Q50, 39 30,36 Z"
-        this.cocktailStepPaths = [step0, step1, step2, step3, step4, step5]
+        let step1 = "M37,90 Q50,92 62,90 L64,81 Q50, 79 35,81 Z";
+        let step2 = "M37,90 Q50,92 62,90 L66,72 Q50, 70 33,72 Z"
+        let step3 = "M37,90 Q50,92 62,90 L66,63 Q50, 61 33,63 Z"
+        let step4 = "M37,90 Q50,92 62,90 L67,54 Q50, 52 32,54 Z"
+        let step5 = "M37,90 Q50,92 62,90 L68,45 Q50, 43 31,45 Z"
+        let step6 = "M37,90 Q50,92 62,90 L69,36 Q50, 42 30,36 Z"
+        this.cocktailStepPaths = [step0, step1, step2, step3, step4, step5, step6]
         this.cocktailStep = 0;
 
         this.initVis()
-
     }
 
     initVis() {
         let vis = this;
+
         d3.xml(vis.svgFilePath).then(data => {
-            d3.select("#cocktail-shaker").node().append(data.documentElement);
+            d3.select("#cocktail-shaker").node().appendChild(data.documentElement);
             vis.shakerSVG = d3.select("svg");
             vis.liquid = d3.select("#liquid");
-            d3.select("#fillButton").on("click", () => vis.fillShaker());
         });
         vis.ingredientData.forEach(ingredient => vis.selectableIngredients.add(ingredient.label));
         vis.drawIngredients();
+
     }
 
     updateShaker(isSelected) {
         let vis = this;
-        if(isSelected){
+        if (isSelected){
             this.cocktailStep++;
         }
         else{
             this.cocktailStep--;
         }
-        if (vis.cocktailStep < 6){
+        if (vis.cocktailStep <= 6){
             vis.liquid
                 .transition()
                 .duration(1000)
@@ -57,8 +58,6 @@ class MixologyVis {
 
     drawIngredients(){
         let vis = this;
-        // Assuming your JSON data is loaded as `ingredientsData`
-        // Set dimensions for your visualization
         const width = 800;
         const height = 600;
 
@@ -129,7 +128,6 @@ class MixologyVis {
                     // Check if a cocktail can be made with the selected ingredients
                     vis.checkCocktail();
                 }
-                // selectIngredient.call(this, d);
             });
         vis.bubbles = svg.selectAll('.bubble');
 
@@ -141,54 +139,30 @@ class MixologyVis {
             .text(d => d.label)
             .attr('text-anchor', 'middle')
             .attr('dy', '.3em');
-
-
-        // // Event listener for bubbles
-        // function selectIngredient(d) {
-        //     // Since we're using D3 v6 or above, we need to use d3.select(this) to get the current element
-        //     const bubble = d3.select(this);
-        //     // Toggle the selected class
-        //     const isSelected = !bubble.classed('selected');
-        //
-        //     // Toggle the selected class
-        //     bubble.classed('selected', isSelected);
-        //
-        //     // Change color based on the selected state
-        //     bubble.attr('fill', isSelected ? '#d3d3d3':color(d.group));  // Swap the color logic if needed
-        //
-        //     console.log('Ingredient selected:', d.label, 'Selected state:', isSelected);
-        //     if (isSelected) {
-        //         vis.selectedIngredients.push(d.label);
-        //     }
-        //     else{
-        //         let idx = vis.selectedIngredients.indexOf(d.label);
-        //         vis.selectedIngredients.splice(idx, 1);
-        //     }
-        //     vis.updateShaker(isSelected);
-        //     console.log(vis.selectedIngredients);
-        // }
-
+        vis.labels = svg.selectAll('.label')
     }
 
     updateSelectableIngredients() {
         let vis = this;
+        console.log(vis.selectedIngredients);
         // Reset selectable ingredients
         vis.selectableIngredients.clear();
         // Go through each cocktail and add ingredients to the set if they can make a cocktail
         vis.cocktailData.forEach(cocktail => {
-            let canMakeCocktail = cocktail['strIngredients'].every(ingredient =>
-                this.selectedIngredients.includes(ingredient) || !this.selectedIngredients.includes(ingredient) && vis.ingredientData.some(d => d.label === ingredient)
-            );
+            let canMakeCocktail = vis.selectedIngredients.every(ingredient => cocktail["strIngredients"].includes(ingredient));
 
             if (canMakeCocktail) {
+                console.log(cocktail);
                 cocktail['strIngredients'].forEach(ingredient => vis.selectableIngredients.add(ingredient));
             }
         });
-        console.log(vis.selectedIngredients);
+        console.log(vis.selectableIngredients);
 
         // Update the style of the bubbles based on whether they are selectable
         vis.bubbles.classed('non-selectable', d => !vis.selectableIngredients.has(d.label))
             .classed('selectable', d => vis.selectableIngredients.has(d.label));
+
+
     }
 
     // Function to check if selected ingredients make a cocktail
@@ -200,6 +174,7 @@ class MixologyVis {
 
         // Display a message if a cocktail is found
         if (foundCocktail) {
+            console.log(foundCocktail)
             d3.select('#cocktail-message').text(`You can make a ${foundCocktail.strDrink}!`);
         } else {
             d3.select('#cocktail-message').text('');

@@ -471,3 +471,26 @@ body, h2, h3, p {
     font-family: 'Amatic SC', sans-serif;
     font-size: 22px;
 }
+
+#mixology-page h1 {
+    color: rgb(107, 90, 64);
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.bubble.non-selectable {
+    fill: #d3d3d3; /* Gray out non-selectable bubbles */
+    pointer-events: none; /* Disable pointer events */
+    transition: fill 1000ms;
+}
+
+.bubble.selectable {
+    /* Style for selectable bubbles, if needed */
+}
+
+.bubble.selected {
+    stroke-width: 3px; /* Stroke width for selected bubbles */
+}
+
+#mixology-page .label{
+    pointer-events: none;
+}
