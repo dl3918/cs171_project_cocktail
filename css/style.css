@@ -510,10 +510,6 @@ body, h2, h3, p {
     transition: fill 1000ms;
 }
 
-.bubble.selectable {
-    /* Style for selectable bubbles, if needed */
-}
-
 #mixology-page .label{
     font-family: 'Amatic SC', sans-serif;
     pointer-events: none;
@@ -535,4 +531,19 @@ body, h2, h3, p {
     cursor: pointer;
     font-family: 'Amatic SC', sans-serif;
     font-size: 20px;
+}
+
+
+.line {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block; /* 让元素按行显示 */
+    width: 0;
+    visibility: hidden; /* 初始隐藏 */
+}
+
+/* 打字效果 */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
 }

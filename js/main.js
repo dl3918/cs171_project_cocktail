@@ -8,7 +8,25 @@ new fullpage('#fullpage', {
     navigationPosition: 'right',
 
     licenseKey: "gplv3-license",
-    anchors: ['page1', 'page2','page3','page4','page5','page6','page7','page8','page9','page10']
+    anchors: ['page1', 'page2','page3','page4','page5','page6','page7','page8','page9','page10'],
+
+    // 当section加载完成后触发
+    afterLoad: function(origin, destination, direction){
+        // 检查是否是特定的section
+        if(destination.item.id === 'section1-transpage'){
+            // 开始第一行的动画
+            const line1 = document.getElementById('line1');
+            line1.style.visibility = 'visible';
+            line1.style.animation = 'typing 1.5s steps(150, end) forwards';
+
+            // 第一行动画结束后开始第二行的动画
+            line1.addEventListener('animationend', () => {
+                const line2 = document.getElementById('line2');
+                line2.style.visibility = 'visible';
+                line2.style.animation = 'typing 2s steps(60, end) forwards';
+            });
+        }
+    }
 });
 
 
@@ -98,5 +116,3 @@ function groupByAlcType(data) {
     // Convert the grouped data to an array
     return Object.values(groupedData);
 }
-
-
