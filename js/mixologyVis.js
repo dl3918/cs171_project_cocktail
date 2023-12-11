@@ -73,7 +73,7 @@ class MixologyVis {
         // Create a color scale
         vis.color = d3.scaleOrdinal()
             .domain(['mixer', 'spirit', 'garnish'])
-            .range(['rgba(78,121,167,0.7)', 'rgba(255,157,167,0.7)', 'rgba(237,201,73,0.7)']);
+            .range(['rgba(78,121,167,0.7)','rgba(237,201,73,0.7)', 'rgba(255,157,167,0.7)']);
 
         const maxRadius = 55;
         vis.radiusScale = d3.scaleLinear()
@@ -175,7 +175,12 @@ class MixologyVis {
 
     }
 
-    // Function to check if selected ingredients make a cocktail
+
+
+
+
+
+// Function to check if selected ingredients make a cocktail
     checkCocktail() {
         let vis = this;
         const foundCocktail = vis.cocktailData.find(cocktail =>
@@ -185,18 +190,30 @@ class MixologyVis {
         //     return cocktailsData.find(cocktail => cocktail.strDrink === cocktailName);
         // }
 
-        // Display a message if a cocktail is found
-        if (foundCocktail) {
-            console.log(foundCocktail)
-            // vis.shakerSVG.select('#cocktail-shaker').remove()
-            // let selectedCocktail = findCocktailByName(foundCocktail.strDrink, this.allData);
+        // Function to show cocktail information
+        function showCocktailInfo(foundCocktail) {
             d3.select('#cocktail-message').html(`
-                <p>You made a <strong>${foundCocktail.strDrink}</strong>!</p><br>
-                <p><strong>Detailed Instructions:</strong> ${foundCocktail.strInstructions}</p>
-            `);
-            d3.select("#cocktail-shaker").selectAll("svg").remove();
-        } else {
+        <p>You made a <b>${foundCocktail.strDrink}</b>!</p>
+        <img class="centered-image" src="img/mix_drink/${foundCocktail.strDrink}.png" style="width: 70%">
+        <p><b>Detailed Instructions:</b> ${foundCocktail.strInstructions}</p>
+    `);
+            d3.select("#cocktail-shaker").classed("hidden", true);
+            d3.select("#cocktail-message").classed("hidden", false);
+        }
+
+        // Function to show shaker (and hide cocktail info)
+        function showShaker() {
             d3.select('#cocktail-message').text('');
+            d3.select("#cocktail-shaker").classed("hidden", false);
+            d3.select("#cocktail-message").classed("hidden", true);
+        }
+
+        // Display a message if a cocktail is found
+        // Assuming you have some event listener or logic to determine selection/deselection
+        if (foundCocktail) {
+            showCocktailInfo(foundCocktail);
+        } else {
+            showShaker();
         }
     }
 
@@ -211,6 +228,18 @@ class MixologyVis {
         vis.bubbles.attr('stroke', null).attr('fill', d => vis.color(d.group));
         vis.updateSelectableIngredients();
         vis.checkCocktail();
+        // Remove any additional SVG elements (like the cocktail image) inside the cocktail shaker div
+        d3.select("#cocktail-shaker").selectAll("svg:not(#originalShakerSVG)").remove();
+
+        // Load and display the original cocktail shaker SVG
+        if (d3.select("#cocktail-shaker").select("#originalShakerSVG").empty()) {
+            d3.xml(vis.svgFilePath).then(data => {
+                d3.select("#cocktail-shaker").node().appendChild(data.documentElement);
+                vis.shakerSVG = d3.select("#originalShakerSVG");
+                vis.liquid = d3.select("#liquid");
+            });
+        }
+
 
     }
 

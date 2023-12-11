@@ -353,7 +353,24 @@ h2 {
 
 }
 
-#mixology-intro p, #cocktail-message {
+.content-container {
+    position: relative;  /* or relative, depending on your layout */
+    /* other styling as needed */
+}
+
+.hidden {
+    display: none;
+}
+
+
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#mixology-intro p, #cocktail-message p {
     color: #6b5a40;
     text-align: center;
     font-family: 'Indie Flower', sans-serif;
