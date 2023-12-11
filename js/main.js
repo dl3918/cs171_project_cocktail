@@ -41,6 +41,11 @@ new fullpage('#fullpage', {
             const lines = document.querySelectorAll('#section-mixology-transpage .line');
             startTypingEffect(lines);
         }
+
+        if(destination.item.id === 'section-ourteam-transpage'){
+            const lines = document.querySelectorAll('#section-ourteam-transpage .line');
+            startTypingEffect(lines);
+        }
     }
 });
 
@@ -49,7 +54,7 @@ function startTypingEffect(lines) {
         setTimeout(() => {
             line.style.visibility = 'visible';
             line.style.animation = `typing 2s steps(${line.textContent.length* 2}, end) forwards`;
-        }, index * 1300); // Adjust the delay as needed
+        }, index * 1500); // Adjust the delay as needed
     });
 }
 
