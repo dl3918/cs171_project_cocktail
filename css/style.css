@@ -329,7 +329,7 @@ h2 {
 
 
 /*section-popular-transpage*/
-#section-popular-transpage h1, #section1-transpage h2, #section-treemap-transpage h1, #network-page h1, #mixology-page h1 {
+#section-popular-transpage h1, #section1-transpage h2, #section-treemap-transpage h1, #network-page h1, #mixology-page h1, .liquor-heading {
     color: #6b5a40;
     text-align: center;
     font-family: 'Amatic SC', sans-serif;
@@ -516,7 +516,7 @@ body, h2, h3, p {
     pointer-events: none;
 }
 
-#mixology-page .bubble:hover {
+#mixology-page .bubble:hover, .small-bubble:hover {
     cursor: pointer;
     stroke: #6b5a40;
     stroke-width: 2px;

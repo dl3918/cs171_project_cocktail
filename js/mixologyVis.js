@@ -73,7 +73,7 @@ class MixologyVis {
         // Create a color scale
         vis.color = d3.scaleOrdinal()
             .domain(['mixer', 'spirit', 'garnish'])
-            .range(['rgba(78,121,167,0.7)', 'rgba(242,142,44,0.7)', 'rgba(89,161,79,0.7)']);
+            .range(['rgba(78,121,167,0.7)', 'rgba(255,157,167,0.7)', 'rgba(237,201,73,0.7)']);
 
         const maxRadius = 55;
         vis.radiusScale = d3.scaleLinear()
@@ -181,11 +181,20 @@ class MixologyVis {
         const foundCocktail = vis.cocktailData.find(cocktail =>
             cocktail['strIngredients'].every(ingredient => vis.selectedIngredients.includes(ingredient))
         );
+        // function findCocktailByName(cocktailName, cocktailsData) {
+        //     return cocktailsData.find(cocktail => cocktail.strDrink === cocktailName);
+        // }
 
         // Display a message if a cocktail is found
         if (foundCocktail) {
             console.log(foundCocktail)
-            d3.select('#cocktail-message').text(`You can make a ${foundCocktail.strDrink}!`);
+            // vis.shakerSVG.select('#cocktail-shaker').remove()
+            // let selectedCocktail = findCocktailByName(foundCocktail.strDrink, this.allData);
+            d3.select('#cocktail-message').html(`
+                <p>You made a <strong>${foundCocktail.strDrink}</strong>!</p><br>
+                <p><strong>Detailed Instructions:</strong> ${foundCocktail.strInstructions}</p>
+            `);
+            d3.select("#cocktail-shaker").selectAll("svg").remove();
         } else {
             d3.select('#cocktail-message').text('');
         }
