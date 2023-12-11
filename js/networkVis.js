@@ -14,18 +14,6 @@ class NetworkVis {
     }
 
     initVis() {
-        // let vis = this;
-        //
-        // vis.margin = {top: 50, right: 50, bottom: 50, left: 50};
-        // vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        // vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
-        //
-        // // init drawing area
-        // vis.svg = d3.select("#" + vis.parentElement).append("svg")
-        //     .attr("width", vis.width)
-        //     .attr("height", vis.height)
-        //     .attr('transform', `translate (${vis.margin.left}, ${vis.margin.top})`);
-
         var nodes = null;
         var edges = null;
         var network = null;
@@ -44,15 +32,49 @@ class NetworkVis {
             record.title = "Used in cocktails:\n"+randomCocktails.join('\n');
         });
 
-        console.log(nodes)
-        console.log(edges)
-
         // Instantiate our network object.
         var container = document.getElementById(this.parentElement);
         var data = {
             nodes: nodes,
             edges: edges,
         };
+
+        // legend
+        var x = -container.clientWidth / 2 +50;
+        var y = -container.clientHeight / 2 + 50;
+        var step = 70;
+        nodes.push({
+            id: 1000,
+            x: x,
+            y: y,
+            label: "Spirit",
+            group: "spirit",
+            value: 1,
+            fixed: true,
+            physics: false,
+        });
+        nodes.push({
+            id: 1001,
+            x: x,
+            y: y + step,
+            label: "Mixer",
+            group: "mixer",
+            value: 1,
+            fixed: true,
+            physics: false,
+        });
+        nodes.push({
+            id: 1002,
+            x: x,
+            y: y + 2 * step,
+            label: "Garnish",
+            group: "garnish",
+            value: 1,
+            fixed: true,
+            physics: false,
+        });
+
+
         var options = {
             nodes: {
                 shape: "dot",
@@ -71,9 +93,11 @@ class NetworkVis {
                 // hoverConnectedEdges: true
             }
         };
+
+
+
         network = new vis.Network(container, data, options);
 
-        // vis.wrangleData();
     }
 
     wrangleData() {
