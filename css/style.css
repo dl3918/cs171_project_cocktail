@@ -278,7 +278,7 @@ h2 {
     margin-right: auto;
 }
 
-.large-bubbles:hover, .mixology-bubble:hover {
+.large-bubbles:hover, .mixology-bubble:hover, .small-bubble:hover {
     cursor: pointer;
     stroke: darkgray;
     stroke-width: 2px;
@@ -335,8 +335,7 @@ h2 {
     font-weight: bold;
 }
 
-
-#section-popular-transpage h2, #section-treemap-transpage h2, .fa {
+#section-popular-transpage h2, #section-treemap-transpage h2, .fa, #network-page h2 {
     color: #6b5a40;
     text-align: center;
     font-family: 'Indie Flower', sans-serif;
