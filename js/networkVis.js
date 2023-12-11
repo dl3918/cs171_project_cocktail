@@ -27,10 +27,10 @@ class NetworkVis {
         }
 
         // Modify the JSON data to include the "title" attribute with 5 randomly selected cocktails
-        edges.forEach(record => {
-            const randomCocktails = getRandomCocktails(record.cocktails);
-            record.title = "Used in cocktails:\n"+randomCocktails.join('\n');
-        });
+        // edges.forEach(record => {
+        //     const randomCocktails = getRandomCocktails(record.cocktails);
+        //     record.title = "Used in cocktails:\n"+randomCocktails.join('\n');
+        // });
 
         // Instantiate our network object.
         var container = document.getElementById(this.parentElement);
@@ -47,8 +47,8 @@ class NetworkVis {
             id: 1000,
             x: x,
             y: y,
-            label: "Spirit",
-            group: "spirit",
+            label: "Mixer",
+            group: "mixer",
             value: 5,
             fixed: true,
             physics: false,
@@ -57,8 +57,8 @@ class NetworkVis {
             id: 1001,
             x: x,
             y: y + step,
-            label: "Mixer",
-            group: "mixer",
+            label: "Spirit",
+            group: "spirit",
             value: 5,
             fixed: true,
             physics: false,
@@ -83,10 +83,11 @@ class NetworkVis {
                         min: 10,
                         max: 30,
                     },
-                },
+                }
             },
             layout: {
-                randomSeed: "0.20431354987244443:1702265528605"
+                randomSeed:"0.30393262567808477:1702276630643"
+                // randomSeed: "0.20431354987244443:1702265528605"
                 // randomSeed: "0.8287605638294304:1702263942549"
             },
             interaction: {
@@ -96,33 +97,7 @@ class NetworkVis {
                 tooltipDelay: 0
                 // hoverConnectedEdges: true
             },
-            groups: {
-                diamonds: {
-                    color: {background: "red", border: "white"},
-                    shape: "diamond",
-                },
-                dotsWithLabel: {
-                    label: "I'm a dot!",
-                    shape: "dot",
-                    color: "cyan",
-                },
-                mints: {color: "rgb(0,255,140)"},
-                icons: {
-                    shape: "icon",
-                    icon: {
-                        face: "FontAwesome",
-                        code: "\uf0c0",
-                        size: 50,
-                        color: "orange",
-                    },
-                },
-                source: {
-                    color: {border: "white"},
-                }
-            }
         };
-
-
 
         network = new vis.Network(container, data, options);
         console.log(network.getSeed());

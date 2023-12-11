@@ -224,6 +224,7 @@ class MixologyVis {
             .duration(1000)
             .attr("d", vis.cocktailStepPaths[0])
             .ease(d3.easeCubicInOut);
+        vis.cocktailStep = 0;
         vis.selectedIngredients = [];
         vis.bubbles.attr('stroke', null).attr('fill', d => vis.color(d.group));
         vis.updateSelectableIngredients();
