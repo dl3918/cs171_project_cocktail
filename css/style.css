@@ -476,8 +476,15 @@ body, h2, h3, p {
 #treemap-page em {
     color: #790406;
     text-align: center;
-    font-family: 'Amatic SC', sans-serif;
+    font-family: 'Indie Flower', sans-serif;
     font-size: 18px;
+}
+
+#treemap-page text{
+    fill: #790406;
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 #final-page h1 {
