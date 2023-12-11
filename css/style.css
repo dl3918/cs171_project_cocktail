@@ -278,10 +278,10 @@ h2 {
     margin-right: auto;
 }
 
-.large-bubbles:hover {
+.large-bubbles:hover, .mixology-bubble:hover {
     cursor: pointer;
     stroke: darkgray;
-    stroke-width: 1px;
+    stroke-width: 2px;
 }
 
 /*section1-transpage*/
@@ -327,7 +327,7 @@ h2 {
 
 
 /*section-popular-transpage*/
-#section-popular-transpage h1, #section1-transpage h2, #section-treemap-transpage h1, #network-page h1 {
+#section-popular-transpage h1, #section1-transpage h2, #section-treemap-transpage h1, #network-page h1, #mixology-page h1 {
     color: #6b5a40;
     text-align: center;
     font-family: 'Amatic SC', sans-serif;
@@ -335,11 +335,28 @@ h2 {
     font-weight: bold;
 }
 
-#section-popular-transpage h2, #section-treemap-transpage h2 {
+
+#section-popular-transpage h2, #section-treemap-transpage h2, .fa {
     color: #6b5a40;
     text-align: center;
     font-family: 'Indie Flower', sans-serif;
     font-size: 35px;
+}
+
+#mixology-intro h2 {
+    color: #6b5a40;
+    text-align: center;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+
+}
+
+#mixology-intro p {
+    color: #6b5a40;
+    text-align: center;
+    font-family: 'Indie Flower', sans-serif;
+    font-size: 25px;
 }
 
 
@@ -472,10 +489,7 @@ body, h2, h3, p {
     font-size: 22px;
 }
 
-#mixology-page h1 {
-    color: rgb(107, 90, 64);
-    font-family: 'Amatic SC', sans-serif;
-}
+
 
 .bubble.non-selectable {
     fill: #d3d3d3; /* Gray out non-selectable bubbles */

@@ -58,8 +58,12 @@ class MixologyVis {
 
     drawIngredients(){
         let vis = this;
-        const width = 800;
-        const height = 600;
+        // const width = 800;
+        // const height = 800;
+        vis.margin = { top: 0, right: 0, bottom: 10, left: 10 };
+
+        const width = document.getElementById("ingredients-container").getBoundingClientRect().width - vis.margin.left - vis.margin.right;
+        const height = document.getElementById("ingredients-container").getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
 
         // Create an SVG element
         const svg = d3.select('#ingredients-container')
@@ -70,7 +74,12 @@ class MixologyVis {
         // Create a color scale
         const color = d3.scaleOrdinal()
             .domain(['mixer', 'spirit', 'garnish'])
-            .range(['#1f77b4', '#ff7f0e', '#2ca02c']);
+            .range(['rgba(78,121,167,0.7)', 'rgba(242,142,44,0.7)', 'rgba(89,161,79,0.7)']);
+
+        const maxRadius = 55;
+        vis.radiusScale = d3.scaleLinear()
+            .domain([1, 31])
+            .range([20, maxRadius]);
 
         const groupCenters = {
             mixer: { x: width / 2, y: height / 3 },
@@ -89,7 +98,7 @@ class MixologyVis {
         const simulation = d3.forceSimulation(vis.ingredientData)
             .force('charge', d3.forceManyBody().strength(-500)) // Repulsive force, might need tuning
             .force('center', d3.forceCenter(width / 2, height / 2))
-            .force('collision', d3.forceCollide().radius(d => d.value*2 + 1)) // Add padding
+            .force('collision', d3.forceCollide().radius(d => d.value*2 + 15)) // Add padding
             .force('group', groupForce) // Our custom force to cluster by group
             .on('tick', ticked);
 
@@ -102,8 +111,8 @@ class MixologyVis {
         const bubbles = svg.selectAll('.bubble')
             .data(vis.ingredientData)
             .enter().append('circle')
-            .attr('class', 'bubble')
-            .attr('r', d => d.value*2)
+            .attr('class', 'mixology-bubble')
+            .attr('r', d => vis.radiusScale(d.value))
             .attr('fill', d => color(d.group))
             .on('click', function(event, d) {
                 if (vis.selectableIngredients.has(d.label)) {
@@ -129,7 +138,7 @@ class MixologyVis {
                     vis.checkCocktail();
                 }
             });
-        vis.bubbles = svg.selectAll('.bubble');
+        vis.bubbles = svg.selectAll('.mixology-bubble');
 
         // Add labels to each bubble
         const labels = svg.selectAll('.label')

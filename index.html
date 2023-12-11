@@ -14,6 +14,7 @@
     <!-- Load CSS libraries -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.css" integrity="sha512-wCVOuVtxsXqrQK7tj9j4BvyfITQmpp7UE7mVilD7aieGLYFEIAa5UKTP1RapOf6dxQ9JIKAneakcyykWG4r4Ow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
     <!-- GOOGLE FONTS -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,400italic,300italic' rel='stylesheet' type='text/css'>
@@ -54,17 +55,26 @@
 
     <!-- Title transection page -->
     <div class="section" id="section1-transpage">
-        <div class = "container-fluid" style="height: 100vh;">
-            <div class = "row justify-content-center align-self-center" style="height: 70vh; padding-top: 10vh;">
+        <div class = "container-fluid centered-content" style="height: 100vh;">
+<!--            <div class = "row justify-content-center align-self-center" style="height: 70vh; padding-top: 10vh;">-->
+                <p class="slide-text">
+                <span data-aos="fade-up" data-aos-delay="500" class="aos-init aos-animate">
+                    Savor the world's tales one cocktail at a time
+                </span>
+                <span data-aos="fade-up" data-aos-delay="1500" class="aos-init aos-animate">
+                    Where will your taste journey begin?
+                </span>
+                    <br>
+                    <br>
 <!--                <h1 style="text-align: center"> Discover the World in a Glass </h1>-->
-                <br><br><br><br><br><br><br>
-                <h2>Savor the world's tales one cocktail at a time <br><br> <br><br>where will your taste journey begin?</h2>
+<!--                <br><br><br><br><br><br><br>-->
+<!--                <h2>Savor the world's tales one cocktail at a time <br><br> <br><br>where will your taste journey begin?</h2>-->
 <!--                <h2 style="text-align: center"> Across the globe, countless drinks tell stories of culture, tradition, and innovation.<br><br>-->
 <!--                    Do you know them? <br><br>-->
 <!--                    From the bustling streets of Tokyo to the serene vineyards of Tuscany, every sip offers a journey. <br><br>-->
 <!--                    Let's embark on an adventure to uncover the secrets and stories behind the world's most fascinating cocktails. <br><br>-->
 <!--                    Where will your taste take you? </h2>-->
-            </div>
+
         </div>
     </div>
 
@@ -125,6 +135,10 @@
             <div class="row" style="height: 15vh">
                 <div class="col">
                     <h2 class="liquor-heading">Liquor Base</h2>
+                    <b class="text-center centertext aos-init aos-animate" style="color:#6b5a40" data-aos="fade-in" data-aos-delay="300">
+                        <i class="fa fa-hand-pointer-o"></i>
+                        Hover over the bubbles to read the story.
+                    </b>
                 </div>
             </div>
 <!--            ; border: thin solid black; border-radius: 5px-->
@@ -227,7 +241,7 @@
             <div class = "row justify-content-center align-self-center" style="height: 70vh; padding: 10vh;">
                 <h1 style="text-align: center"> Cheers to Variety!  </h1>
                 <br><br><br><br><br><br><br>
-                <h2 style="text-align: center"> Did you know each drink has its own glass? 🍸🥂 From Champagne Flutes to Whiskey Sours, every glass adds flair.
+                <h2 style="text-align: center"> Did you know each drink has its own glass? <br><br>🍸🥂 From Champagne Flutes to Whiskey Sours, every glass adds flair.
                     <br><br>Let's mix it up and garnish your glass - your next sip is not just a drink, it's a masterpiece! </h2>
             </div>
         </div>
@@ -255,6 +269,35 @@
         </div>
     </div>
 
+
+    <!-- Mixology -->
+    <div class="section" id="mixology-page">
+        <div class="container-fluid" style="height: 100vh; padding-top: 2vh">
+            <h1 style="text-align: center"> Mixology 101 </h1>
+            <div class="row" style="height: 75vh">
+                <div class="col-4">
+                    <div id="ingredients-container" style="height: 100%; width:100%; padding-left:10vh">
+                    </div>
+                </div>
+                <div class="col-4" style="padding-top: 10vh">
+                    <div id="cocktail-shaker">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div id="mixology-intro" style="padding-right: 10vh; padding-top: 15vh">
+                        <h2 style="text-align: center"> Get Mixing!  </h2>
+                        <p>Tap on the left-side bubbles to pick your mixers, spirits, and garnishes. Double-tap to remove
+                            an ingredient<br><br>
+                            We'll keep the mix right, showing only what works with your choice.<br><br>
+                            Ready to create your cocktail masterpiece? </p>
+                    </div>
+                </div>
+                <div id="cocktail-message">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Our Team -->
     <div class="section" id="our-team-page">
         <div class = "container-fluid" style="height: 100vh; padding-top: 2vh">
@@ -270,7 +313,7 @@
                     <div class="team-member">
                         <img src="img/team_img/team2.jpg" alt="Danni Lai">
                         <h3>Danni Lai</h3><br>
-                        <p>M.S in Data Science</p>
+                        <p>M.S in Data Science<br>Team Lead</p>
                     </div>
                     <div class="team-member">
                         <img src="img/team_img/team3.jpg" alt="Haitian Liu">
@@ -334,6 +377,12 @@
 <!-- - - - - - - - - - - - >
 <    Load JS libraries     >
 <- - - - - - - - - - - - -->
+
+    <!-- AOS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- embedding JS libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
