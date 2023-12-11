@@ -103,9 +103,10 @@ class allBubbleChart {
             .attr('x', vis.margin.left) // Position from the left edge
             .attr('y', textY) // Position from the top edge
             .attr('text-anchor', 'start') // Align text to the left
-            .style('fill', '#08726d') // Set the text color
-            .style('font-size', '14px') // Set the text size
-            .style('font-family', 'Young Serif')
+            .style('fill', '#6b5a40') // Set the text color
+            .style('font-size', '16px') // Set the text size
+            .style('font-family', 'Indie Flower')
+            .style('font-weight', 'bold')
             .text('* The size of the bubbles is determined by the number of ingredients in the cocktail. ' +
                 ' Click to see more details.');
     }
@@ -121,7 +122,6 @@ class allBubbleChart {
             .style("text-align", "center")
             .style("padding", "8px")
             .style("font", "12px sans-serif")
-            .style("background", "white")
             .style("border", "0px")
             .style("border-radius", "8px")
             .style("pointer-events", "none");
