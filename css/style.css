@@ -238,7 +238,6 @@ h2 {
     text-align: center;
     font-size: 20px;
     padding: 10px;
-
 }
 
 .dashed-table tr {
@@ -348,7 +347,7 @@ h2 {
 
 
 /*section-popular-transpage*/
-#section-popular-transpage h1, #section1-transpage h2, #section-treemap-transpage h1, #network-page h1, #mixology-page h1, .liquor-heading {
+#section-popular-transpage h1, #section1-transpage h2, #section-mixology-transpage h2, #section-treemap-transpage h1, #network-page h1, #mixology-page h1, .liquor-heading {
     color: #6b5a40;
     text-align: center;
     font-family: 'Amatic SC', sans-serif;
@@ -594,8 +593,22 @@ body, h2, h3, p {
     visibility: hidden; /* 初始隐藏 */
 }
 
+
 /* 打字效果 */
 @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.line-mixology {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block; /* 让元素按行显示 */
+    width: 0;
+    visibility: hidden; /* 初始隐藏 */
+}
+
+@keyframes typing-mixology {
     from { width: 0; }
     to { width: 100%; }
 }
