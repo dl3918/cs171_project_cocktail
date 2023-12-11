@@ -130,14 +130,6 @@
         ]
     },
     {
-        "strDrink": "Autodaf\u00e9",
-        "strIngredients": [
-            "Lime Juice",
-            "Soda Water",
-            "Vodka"
-        ]
-    },
-    {
         "strDrink": "Baby Guinness",
         "strIngredients": [
             "Bailey'S Irish Cream",
@@ -565,17 +557,6 @@
             "Coca-Cola",
             "Tequila",
             "Lemon Peel"
-        ]
-    },
-    {
-        "strDrink": "Long Island Tea",
-        "strIngredients": [
-            "Gin",
-            "Vodka",
-            "Coca-Cola",
-            "Light Rum",
-            "Lemon",
-            "Tequila"
         ]
     },
     {
