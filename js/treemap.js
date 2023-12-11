@@ -97,7 +97,8 @@ class TreeMap {
             .attr('y', d => d.y0)
             .attr('width', d => d.x1 - d.x0)
             .attr('height', d => d.y1 - d.y0)
-            .style("stroke", "black")
+            .style("stroke", "white")
+            .style("stroke-width", "2px")
             .style("fill", d => colorScale(d.data.value))
             .attr("class", "treemap_rect")
             .on('mouseover', function(event, d) {
@@ -151,7 +152,8 @@ class TreeMap {
                     .attr('y', d => d.y0)
                     .attr('width', d => (d.x1 - d.x0)/2)
                     .attr('height', d => d.y1 - d.y0)
-                    .style("stroke", "black")
+                    .style("stroke", "white")
+                    .style("stroke-width", "2px")
                     .style("fill", d => colorScale(d.data.value))
                     .attr("class", "treemap_rect")
                     .on('mouseover', function() {
@@ -176,7 +178,7 @@ class TreeMap {
                     .attr("font-family", "Young Serif")
                     .attr("fill", "white")
                     .attr("x", d => d.x0/2 + 5)
-                    .attr("y", d => d.y0 + 20)
+                    .attr("y", d => d.y0 + 25)
                     .attr("visibility", function(d) {
                         // Calculate the width of the text and compare with the width of the rectangle
                         d.textWidth = this.getComputedTextLength();
@@ -202,7 +204,7 @@ class TreeMap {
             .attr("fill", "white")
             .attr("font-family", "Young Serif")
             .attr("x", d => d.x0 + 5)
-            .attr("y", d => d.y0 + 20)
+            .attr("y", d => d.y0 + 25)
             .attr("visibility", function(d) {
                 // Calculate the width of the text and compare with the width of the rectangle
                 d.textWidth = this.getComputedTextLength();
