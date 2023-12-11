@@ -103,6 +103,7 @@ class TreeMap {
             .attr("class", "treemap_rect")
             .on('mouseover', function(event, d) {
                 d3.select(this)
+                    .style("cursor", "pointer")
                     .style("fill", hoverColor); // color when mouse is over
 
                 // Calculate rectangle dimensions
@@ -158,7 +159,9 @@ class TreeMap {
                     .attr("class", "treemap_rect")
                     .on('mouseover', function() {
                         d3.select(this)
-                            .style("fill", hoverColor); // color when mouse is over
+                            .style("fill", hoverColor) // color when mouse is over
+                            .style("cursor", "pointer");
+
                     })
                     .on('mouseout', function() {
                         d3.select(this)
