@@ -267,7 +267,7 @@ h2 {
     margin-right: auto;
 }
 
-.large-bubbles:hover, .small-bubble:hover .legend-circle:hover {
+.large-bubbles:hover, .small-bubble:hover {
     cursor: pointer;
     stroke: darkgray;
     stroke-width: 2px;
