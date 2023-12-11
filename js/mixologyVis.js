@@ -39,6 +39,8 @@ class MixologyVis {
 
     }
 
+
+
     updateShaker(isSelected) {
         let vis = this;
         if (isSelected){
@@ -150,8 +152,42 @@ class MixologyVis {
             .attr('text-anchor', 'middle')
             .attr('dy', '.3em');
         vis.labels = svg.selectAll('.label')
-    }
 
+        vis.drawLegend(svg, width, height);
+
+    }
+    drawLegend(svg, width, height) {
+        let vis = this;
+
+        const legendData = [
+            { label: 'Mixers', color: 'rgba(78,121,167,0.7)' },
+            { label: 'Spirits', color: 'rgba(237,201,73,0.7)' },
+            { label: 'Garnishes', color: 'rgba(255,157,167,0.7)' }
+        ];
+
+        // Adjust this value to move the legend down
+        const yOffset = 30; // You can increase this value to move the legend further down
+
+        // Create the legend items within the existing SVG
+        const legend = svg.selectAll('.legend')
+            .data(legendData)
+            .enter()
+            .append('g')
+            .attr('class', 'legend')
+            .attr('transform', (d, i) => `translate(10,${yOffset + i * 20})`);
+
+        legend.append('rect')
+            .attr('x', 0)
+            .attr('width', 18)
+            .attr('height', 18)
+            .style('fill', d => d.color);
+
+        legend.append('text')
+            .attr('x', 25)
+            .attr('y', 9)
+            .attr('dy', '.35em')
+            .text(d => d.label);
+    }
     updateSelectableIngredients() {
         let vis = this;
         // console.log(vis.selectedIngredients);
@@ -241,7 +277,5 @@ class MixologyVis {
             });
         }
 
-
     }
-
 }
