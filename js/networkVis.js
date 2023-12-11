@@ -21,17 +21,6 @@ class NetworkVis {
         nodes = this.ingNodes
         edges = this.ingEdges
 
-        // Function to randomly select 5 cocktails from an array
-        function getRandomCocktails(cocktailsArray) {
-            return cocktailsArray.sort(() => Math.random() - 0.5).slice(0, 5);
-        }
-
-        // Modify the JSON data to include the "title" attribute with 5 randomly selected cocktails
-        // edges.forEach(record => {
-        //     const randomCocktails = getRandomCocktails(record.cocktails);
-        //     record.title = "Used in cocktails:\n"+randomCocktails.join('\n');
-        // });
-
         // Instantiate our network object.
         var container = document.getElementById(this.parentElement);
         var data = {
@@ -40,7 +29,7 @@ class NetworkVis {
         };
 
         // legend
-        var x = -container.clientWidth / 2 +50;
+        var x = -container.clientWidth / 2 + 50;
         var y = -container.clientHeight / 2 + 50;
         var step = 70;
         nodes.push({
@@ -49,7 +38,8 @@ class NetworkVis {
             y: y,
             label: "Mixer",
             group: "mixer",
-            value: 5,
+            description: "Mixer is what you add to the alcohol to enhance its flavor, like juice or soda.",
+            value: 6,
             fixed: true,
             physics: false,
         });
@@ -59,7 +49,8 @@ class NetworkVis {
             y: y + step,
             label: "Spirit",
             group: "spirit",
-            value: 5,
+            description: "Spirit is the core alcoholic ingredient of any cocktail, such as whiskey or gin, that sets the stage for the drink.",
+            value: 6,
             fixed: true,
             physics: false,
         });
@@ -69,11 +60,11 @@ class NetworkVis {
             y: y + 2 * step,
             label: "Garnish",
             group: "garnish",
-            value: 5,
+            description: "Garnish is the decorative touch, like a slice of lemon or olive that adds a bit of zest and eye appeal to your cocktail.",
+            value: 6,
             fixed: true,
             physics: false,
         });
-
 
         var options = {
             nodes: {
@@ -83,7 +74,15 @@ class NetworkVis {
                         min: 10,
                         max: 30,
                     },
-                }
+                },
+                borderWidthSelected: 3,
+                font: {
+                    face: 'Amatic SC',
+                    size: 20,
+                },
+            },
+            edges:{
+
             },
             layout: {
                 randomSeed:"0.30393262567808477:1702276630643"
@@ -94,23 +93,56 @@ class NetworkVis {
                 zoomView: false,
                 dragView: false,
                 hover:true,
-                tooltipDelay: 0
-                // hoverConnectedEdges: true
+                tooltipDelay: 0,
+                selectConnectedEdges: false
             },
         };
 
         network = new vis.Network(container, data, options);
         console.log(network.getSeed());
 
+        network.on("selectNode", function (params) {
+            let selectedIngredient = nodes.find(({id}) => id === params.nodes[0]);
+            if (params.nodes[0] === 1000 || params.nodes[0] === 1001 || params.nodes[0] === 1002) {
+                document.getElementById("network-info-title").innerText = selectedIngredient.description;
+                document.getElementById("network-info-content").innerText = "";
+            }
+            else {
+                document.getElementById("network-info-title").innerText = selectedIngredient.label + " is usually paired with:";
+                let connectedIngredients = this.getConnectedNodes(params.nodes[0]).map(node => nodes.find(({id}) => id === node).label);
+                document.getElementById("network-info-content").innerText = connectedIngredients.join("\n");
+            }
+        });
+
+        network.on("selectEdge", function (params) {
+            let connectedIngredients =  this.getConnectedNodes(params.edges[0]).map(node => nodes.find(({id}) => id === node).label);
+            document.getElementById("network-info-title").innerText
+                = connectedIngredients.join(" + ") + "\nare used in:";
+            console.log(edges.find(({id}) => id === params.edges[0]));
+            let usedInCocktails = edges.find(({id}) => id === params.edges[0]).cocktails;
+            document.getElementById("network-info-content").innerText = usedInCocktails.join("\n");
+        });
+
+        // Change cursor
+        var networkCanvas = document
+            .getElementById("networkDiv")
+            .getElementsByTagName("canvas")[0];
+        function changeCursor(newCursorStyle) {
+            networkCanvas.style.cursor = newCursorStyle;
+        }
+
+        network.on("hoverNode", function () {
+            changeCursor("pointer");
+        });
+        network.on("blurNode", function () {
+            changeCursor("default");
+        });
+
+        network.on("hoverEdge", function () {
+            changeCursor("pointer");
+        });
+        network.on("blurEdge", function () {
+            changeCursor("default");
+        });
     }
-
-    wrangleData() {
-        let vis = this
-
-        vis.updateVis()
-    }
-
-    updateVis() {
-    }
-
 }
