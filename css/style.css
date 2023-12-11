@@ -95,6 +95,7 @@ text.text-small-bubble{
 /*}*/
 
 
+
 #liquor-tt {
     height: 55vh;
     width: 40vh;
@@ -310,19 +311,19 @@ h2 {
 }
 
 #section-allcocktails span {
-    color: #08726d;
+    color: #6b5a40;
     text-align: center;
     font-family: 'Amatic SC', sans-serif;
     font-size: 20px;
 }
 
 #categorySelector, .legend-label{
-    color: #08726d;
+    color: #6b5a40;
     font-family: 'Indie Flower', sans-serif;
 }
 
 #colorSelector {
-    color: #08726d;
+    color: #6b5a40;
     font-family: 'Amatic SC', sans-serif;
 }
 
