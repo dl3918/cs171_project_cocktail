@@ -37,6 +37,12 @@ We wrote all the code in the codebase, with js code under /js folder, and python
 <li>vis-network</li>
 </ul>
 
+###### Here is our first page:
+![Our first page](img/screenshot1.jpg?raw=true "Title")
+
+###### Here is our example mixology page:
+![Our mixlogy page](img/screenshot2.jpg?raw=true "Title")
+
 ###### Image Source:
 Images on our website are generated using DALL·E.
 
