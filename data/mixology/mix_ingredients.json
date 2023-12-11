@@ -30,12 +30,6 @@
         "group": "mixer"
     },
     {
-        "id": 5,
-        "value": 1,
-        "label": "Sweet And Sour",
-        "group": "mixer"
-    },
-    {
         "id": 6,
         "value": 16,
         "label": "Triple Sec",

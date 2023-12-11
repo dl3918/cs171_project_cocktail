@@ -111,7 +111,7 @@ class MixologyVis {
         const bubbles = svg.selectAll('.bubble')
             .data(vis.ingredientData)
             .enter().append('circle')
-            .attr('class', 'mixology-bubble')
+            .attr('class', 'bubble')
             .attr('r', d => vis.radiusScale(d.value))
             .attr('fill', d => color(d.group))
             .on('click', function(event, d) {
@@ -138,7 +138,7 @@ class MixologyVis {
                     vis.checkCocktail();
                 }
             });
-        vis.bubbles = svg.selectAll('.mixology-bubble');
+        vis.bubbles = svg.selectAll('.bubble');
 
         // Add labels to each bubble
         const labels = svg.selectAll('.label')
