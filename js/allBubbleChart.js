@@ -96,12 +96,12 @@ class allBubbleChart {
         const vis = this;
 
         // Check if the text will be within the bounds of the SVG
-        const textY = vis.height + vis.margin.top + vis.margin.bottom - 20; // Adjust this value to place it correctly
+        const textY = vis.height + vis.margin.top + vis.margin.bottom - 30; // Adjust this value to place it correctly
 
         // Append the text element to the SVG
         vis.svg.append('text')
             .attr('x', vis.margin.left) // Position from the left edge
-            .attr('y', textY-10) // Position from the top edge
+            .attr('y', textY) // Position from the top edge
             .attr('text-anchor', 'start') // Align text to the left
             .style('fill', '#6b5a40') // Set the text color
             .style('font-size', '16px') // Set the text size
