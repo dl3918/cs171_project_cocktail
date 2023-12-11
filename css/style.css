@@ -318,10 +318,11 @@ h2 {
 #section-allcocktails h1 {
     text-align: center;
     font-family: 'Amatic SC', sans-serif;
-    font-size: 4vh;
     background-image: linear-gradient(to right, #c3da6e, #da76bb, #9ad352, #a2636f);
     background-clip: text;
     -webkit-background-clip: text;
+    font-size: 66px;
+    font-weight: bold;
     color: transparent;
 }
 
@@ -335,11 +336,14 @@ h2 {
 #categorySelector, .legend-label{
     color: #6b5a40;
     font-family: 'Indie Flower', sans-serif;
+    font-size: 18px;
 }
 
 #colorSelector {
     color: #6b5a40;
     font-family: 'Amatic SC', sans-serif;
+    font-size: 18px;
+
 }
 
 
@@ -392,10 +396,10 @@ h2 {
     font-size: 25px;
 }
 
-em{
+em, tspan{
     color: #6b5a40;
     font-family: 'Indie Flower', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 

@@ -101,14 +101,17 @@ class allBubbleChart {
         // Append the text element to the SVG
         vis.svg.append('text')
             .attr('x', vis.margin.left) // Position from the left edge
-            .attr('y', textY) // Position from the top edge
+            .attr('y', textY-10) // Position from the top edge
             .attr('text-anchor', 'start') // Align text to the left
             .style('fill', '#6b5a40') // Set the text color
             .style('font-size', '16px') // Set the text size
             .style('font-family', 'Indie Flower')
             .style('font-weight', 'bold')
-            .text('* The size of the bubbles is determined by the number of ingredients in the cocktail. ' +
-                ' Click to see more details.');
+            .html(`
+                  <tspan>* Click legend to see selected view.    </tspan>
+                  <br><br>
+                  <tspan>* The size of the bubbles is determined by the number of ingredients in the cocktail.</tspan>
+              `);
     }
 
 
