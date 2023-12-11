@@ -50,4 +50,4 @@ Images on our website are generated using DALL·E.
 ###### Relevant Links:
 
 WEBSITE URL: https://dl3918.github.io/cs171_project_cocktail/
-<br/> SCREENCAST URL: 
+<br/> SCREENCAST URL: https://youtu.be/5T1FK7f2luE?si=D_DZoVlmnUYEHILM
