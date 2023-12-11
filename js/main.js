@@ -48,8 +48,8 @@ function startTypingEffect(lines) {
     lines.forEach((line, index) => {
         setTimeout(() => {
             line.style.visibility = 'visible';
-            line.style.animation = `typing 2s steps(${line.textContent.length}, end) forwards, blink-caret 0.75s step-end infinite`;
-        }, index * 2000); // Adjust the delay as needed
+            line.style.animation = `typing 2s steps(${line.textContent.length* 2}, end) forwards`;
+        }, index * 1300); // Adjust the delay as needed
     });
 }
 
