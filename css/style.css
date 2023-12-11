@@ -534,8 +534,7 @@ body, h2, h3, p {
     font-size: 20px;
 }
 
-
-.line {
+ .line {
     overflow: hidden;
     white-space: nowrap;
     display: inline-block; /* 让元素按行显示 */
@@ -547,4 +546,26 @@ body, h2, h3, p {
 @keyframes typing {
     from { width: 0; }
     to { width: 100%; }
+}
+
+.line-popular {
+    visibility: hidden; /* 初始时隐藏 */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.line-popular.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.line-treemap {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.line-treemap.visible {
+    visibility: visible;
+    opacity: 1;
 }

@@ -26,6 +26,24 @@ new fullpage('#fullpage', {
                 line2.style.animation = 'typing 2s steps(60, end) forwards';
             });
         }
+
+        if(destination.item.id === 'section-popular-transpage'){
+            let lines = document.querySelectorAll('#popularText .line-popular');
+            lines.forEach((line, index) => {
+                setTimeout(() => {
+                    line.classList.add('visible');
+                }, index * 1000); // 每行间隔1秒
+            });
+        }
+
+        if(destination.item.id === 'section-treemap-transpage'){
+            let lines = document.querySelectorAll('#treemapText .line-treemap');
+            lines.forEach((line, index) => {
+                setTimeout(() => {
+                    line.classList.add('visible');
+                }, index * 600); // 每行间隔1秒
+            });
+        }
     }
 });
 
