@@ -59,7 +59,7 @@ class MixologyVis {
     drawIngredients(){
         let vis = this;
 
-        vis.margin = { top: 0, right: 0, bottom: 0, left: 10 };
+        vis.margin = { top: 0, right: 0, bottom: 0, left: 0 };
 
         const width = document.getElementById("ingredients-container").getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         const height = document.getElementById("ingredients-container").getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
